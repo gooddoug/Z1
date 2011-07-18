@@ -1,0 +1,31 @@
+Z1 is a game for the uDevGames 2011 Mac game programming contest.
+
+Show your support for independent games and game devs by visiting
+http://www.udevgames.com 
+
+While you are there, make sure to vote for Z1.
+
+Code Monkey: Doug Whitmore
+All the cool stuff: Carlos Camacho
+
+Testers:
+Howdy Doody
+Cap'n Crunch
+Totoro
+Pikachu
+
+Doug would like to thank:
+- Carlos, for putting up with his constant, "Yeah we could do that, but 
+it's gonna take more time than we have"
+- Sandy and the kids for putting up with, "Can I just get two hours of 
+quiet to work on this?"
+- iDevGames and the uDevGames contest for giving me the push to get this 
+started and done.
+
+Carlos would like to thank:
+- Everyone!
+
+Now go vote for us. If you do you will find yourself more attractive to 
+the opposite sex. Your teeth will be brighter and life will just be better.
+
+What are you waiting for! Go vote now.

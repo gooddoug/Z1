@@ -48,6 +48,8 @@
         self.startSpinVar = 360.0;
         self.endSpin = 10.0;
         self.endSpinVar = 360.0;
+        CGSize size = [[CCDirector sharedDirector] winSize];
+        self.position = ccp(size.width / 2, size.height / 2.0);
     }
     return self;
 }

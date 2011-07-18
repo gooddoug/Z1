@@ -7,10 +7,9 @@
 //
 
 
-// Import the interfaces
 #import "Z1SplashScreen.h"
+#import "Z1MenuScreen.h"
 
-// HelloWorldLayer implementation
 @implementation Z1SplashScreen
 
 +(CCScene *) scene
@@ -24,30 +23,39 @@
 	return scene;
 }
 
-// on "init" you need to initialize your instance
 -(id) init
 {
-	// always call "super" init
-	// Apple recommends to re-assign "self" with the "super" return value
-	if( (self=[super init])) 
+	if(( self = [super init] )) 
     {
+        self.isKeyboardEnabled = YES;
+        
         CGSize size = [[CCDirector sharedDirector] winSize];
-	
 		CCSprite* background = [CCSprite spriteWithFile:@"menu.png"];
-        background.position = ccp(size.width / 2, size.height /2);
+        background.position = ccp(size.width / 2.0, size.height /2);
         [self addChild:background];
+        
+        // add press any key label
+        CCLabelTTF* pressKeyLabel = [CCLabelTTF labelWithString:@"Press any key" fontName:@"Helvetica" fontSize:48];
+        pressKeyLabel.position = ccp(size.width / 2.0, 100.0);
+        pressKeyLabel.opacity = 0.0;
+        CCFadeIn* fadeAction = [CCFadeIn actionWithDuration:1.0];
+        CCDelayTime* delayAction = [CCDelayTime actionWithDuration:2.5];
+        [pressKeyLabel runAction:[CCSequence actions:delayAction, fadeAction, nil]];
+        [self addChild:pressKeyLabel z:10];
 	}
 	return self;
 }
 
-// on "dealloc" you need to release all your retained objects
+- (BOOL) ccKeyUp:(NSEvent *)event
+{
+    
+    [[CCDirector sharedDirector] replaceScene:[Z1MenuScreen scene]];
+    
+    return YES;
+}
+
 - (void) dealloc
 {
-	// in case you have something to dealloc, do it in this method
-	// in this particular example nothing needs to be released.
-	// cocos2d will automatically release all the children (Label)
-	
-	// don't forget to call "super dealloc"
 	[super dealloc];
 }
 @end

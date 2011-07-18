@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF72D92B13D48A3100ABD27F /* credits.txt in Resources */ = {isa = PBXBuildFile; fileRef = EF72D92A13D48A3100ABD27F /* credits.txt */; };
+		EF72D92F13D48C4800ABD27F /* GDScrollingText.m in Sources */ = {isa = PBXBuildFile; fileRef = EF72D92E13D48C4800ABD27F /* GDScrollingText.m */; };
+		EF72D93213D491FA00ABD27F /* Z1CreditsScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = EF72D93113D491FA00ABD27F /* Z1CreditsScreen.m */; };
+		EF72D93413D4F50A00ABD27F /* TextBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = EF72D93313D4F50A00ABD27F /* TextBackground.png */; };
 		EFE5985713D337A400062F86 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5985613D337A400062F86 /* QuartzCore.framework */; };
 		EFE5985913D337A400062F86 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5985813D337A400062F86 /* OpenGL.framework */; };
 		EFE5985B13D337A400062F86 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5985A13D337A400062F86 /* OpenAL.framework */; };
@@ -123,9 +127,21 @@
 		EFE599C013D33BF300062F86 /* menu-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE599BC13D33BF300062F86 /* menu-yellow.png */; };
 		EFE599C113D33BF300062F86 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE599BD13D33BF300062F86 /* menu.png */; };
 		EFE599C213D33BF300062F86 /* nebula.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE599BE13D33BF300062F86 /* nebula.png */; };
+		EFE599CD13D34FC300062F86 /* GDParticleGalaxy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE599CC13D34FC300062F86 /* GDParticleGalaxy.m */; };
+		EFE599CF13D34FCE00062F86 /* galaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE599CE13D34FCE00062F86 /* galaxy.png */; };
+		EFE599D113D3F49600062F86 /* fog.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE599D013D3F49600062F86 /* fog.png */; };
+		EFE599D413D3F5B700062F86 /* GDBaseEffectsScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE599D313D3F5B600062F86 /* GDBaseEffectsScreen.m */; };
+		EFE599D713D3FD4000062F86 /* Z1MenuScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE599D613D3FD3E00062F86 /* Z1MenuScreen.m */; };
+		EFE599D913D3FF8700062F86 /* stars.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE599D813D3FF8700062F86 /* stars.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF72D92A13D48A3100ABD27F /* credits.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = credits.txt; sourceTree = "<group>"; };
+		EF72D92D13D48C4800ABD27F /* GDScrollingText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDScrollingText.h; sourceTree = "<group>"; };
+		EF72D92E13D48C4800ABD27F /* GDScrollingText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDScrollingText.m; sourceTree = "<group>"; };
+		EF72D93013D491F900ABD27F /* Z1CreditsScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1CreditsScreen.h; sourceTree = "<group>"; };
+		EF72D93113D491FA00ABD27F /* Z1CreditsScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1CreditsScreen.m; sourceTree = "<group>"; };
+		EF72D93313D4F50A00ABD27F /* TextBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextBackground.png; sourceTree = "<group>"; };
 		EFE5985213D337A400062F86 /* Z1_game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Z1_game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE5985613D337A400062F86 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EFE5985813D337A400062F86 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -353,6 +369,15 @@
 		EFE599BC13D33BF300062F86 /* menu-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-yellow.png"; sourceTree = "<group>"; };
 		EFE599BD13D33BF300062F86 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		EFE599BE13D33BF300062F86 /* nebula.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nebula.png; sourceTree = "<group>"; };
+		EFE599CB13D34FC300062F86 /* GDParticleGalaxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDParticleGalaxy.h; sourceTree = "<group>"; };
+		EFE599CC13D34FC300062F86 /* GDParticleGalaxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDParticleGalaxy.m; sourceTree = "<group>"; };
+		EFE599CE13D34FCE00062F86 /* galaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = galaxy.png; sourceTree = "<group>"; };
+		EFE599D013D3F49600062F86 /* fog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fog.png; sourceTree = "<group>"; };
+		EFE599D213D3F5B600062F86 /* GDBaseEffectsScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDBaseEffectsScreen.h; sourceTree = "<group>"; };
+		EFE599D313D3F5B600062F86 /* GDBaseEffectsScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDBaseEffectsScreen.m; sourceTree = "<group>"; };
+		EFE599D513D3FD3D00062F86 /* Z1MenuScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1MenuScreen.h; sourceTree = "<group>"; };
+		EFE599D613D3FD3E00062F86 /* Z1MenuScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1MenuScreen.m; sourceTree = "<group>"; };
+		EFE599D813D3FF8700062F86 /* stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stars.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -409,9 +434,17 @@
 				EFE5998213D337A700062F86 /* AppDelegate.m */,
 				EFE5998413D337A700062F86 /* Z1SplashScreen.h */,
 				EFE5998513D337A700062F86 /* Z1SplashScreen.m */,
+				EFE599D513D3FD3D00062F86 /* Z1MenuScreen.h */,
+				EFE599D613D3FD3E00062F86 /* Z1MenuScreen.m */,
+				EF72D93013D491F900ABD27F /* Z1CreditsScreen.h */,
+				EF72D93113D491FA00ABD27F /* Z1CreditsScreen.m */,
+				EFE599D213D3F5B600062F86 /* GDBaseEffectsScreen.h */,
+				EFE599D313D3F5B600062F86 /* GDBaseEffectsScreen.m */,
 				EFE599A313D3387000062F86 /* GDGameScreenProtocol.h */,
 				EFE599A413D3387000062F86 /* GDInputManager.h */,
 				EFE599A513D3387000062F86 /* GDInputManager.m */,
+				EF72D92D13D48C4800ABD27F /* GDScrollingText.h */,
+				EF72D92E13D48C4800ABD27F /* GDScrollingText.m */,
 				EFE5999C13D3384600062F86 /* Effects */,
 				EFE5998C13D3380800062F86 /* Sprite */,
 				EFE5986313D337A400062F86 /* Resources */,
@@ -425,6 +458,8 @@
 			isa = PBXGroup;
 			children = (
 				EFE599BB13D33BF300062F86 /* logo-crop.png */,
+				EF72D93313D4F50A00ABD27F /* TextBackground.png */,
+				EF72D92A13D48A3100ABD27F /* credits.txt */,
 				EFE599C313D33C0100062F86 /* Screen Backgrounds */,
 				EFE599B713D33A8A00062F86 /* menu.tif */,
 				EFE599B213D338B100062F86 /* Sounds */,
@@ -717,6 +752,8 @@
 		EFE5999C13D3384600062F86 /* Effects */ = {
 			isa = PBXGroup;
 			children = (
+				EFE599CB13D34FC300062F86 /* GDParticleGalaxy.h */,
+				EFE599CC13D34FC300062F86 /* GDParticleGalaxy.m */,
 				EFE5999D13D3385C00062F86 /* GDParticleStarfield.h */,
 				EFE5999E13D3385C00062F86 /* GDParticleStarfield.m */,
 				EFE5999F13D3385C00062F86 /* GDParticleFog.h */,
@@ -728,9 +765,12 @@
 		EFE599A713D3387900062F86 /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				EFE599D013D3F49600062F86 /* fog.png */,
+				EFE599CE13D34FCE00062F86 /* galaxy.png */,
 				EFE599A813D338A100062F86 /* shot.png */,
 				EFE599A913D338A100062F86 /* EnemyTest1.png */,
 				EFE599AA13D338A100062F86 /* smoke.png */,
+				EFE599D813D3FF8700062F86 /* stars.png */,
 				EFE599AB13D338A100062F86 /* StarMail.png */,
 				EFE599AC13D338A100062F86 /* fire.png */,
 			);
@@ -825,6 +865,11 @@
 				EFE599C013D33BF300062F86 /* menu-yellow.png in Resources */,
 				EFE599C113D33BF300062F86 /* menu.png in Resources */,
 				EFE599C213D33BF300062F86 /* nebula.png in Resources */,
+				EFE599CF13D34FCE00062F86 /* galaxy.png in Resources */,
+				EFE599D113D3F49600062F86 /* fog.png in Resources */,
+				EFE599D913D3FF8700062F86 /* stars.png in Resources */,
+				EF72D92B13D48A3100ABD27F /* credits.txt in Resources */,
+				EF72D93413D4F50A00ABD27F /* TextBackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -928,6 +973,11 @@
 				EFE599A113D3385C00062F86 /* GDParticleStarfield.m in Sources */,
 				EFE599A213D3385C00062F86 /* GDParticleFog.m in Sources */,
 				EFE599A613D3387000062F86 /* GDInputManager.m in Sources */,
+				EFE599CD13D34FC300062F86 /* GDParticleGalaxy.m in Sources */,
+				EFE599D413D3F5B700062F86 /* GDBaseEffectsScreen.m in Sources */,
+				EFE599D713D3FD4000062F86 /* Z1MenuScreen.m in Sources */,
+				EF72D92F13D48C4800ABD27F /* GDScrollingText.m in Sources */,
+				EF72D93213D491FA00ABD27F /* Z1CreditsScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1043,6 +1093,7 @@
 				EFE5998B13D337A700062F86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

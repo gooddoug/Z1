@@ -54,6 +54,8 @@
         
         self.radialAccel = 100.0;
         self.radialAccelVar = 25.0;
+        CGSize size = [[CCDirector sharedDirector] winSize];
+        self.position = ccp(size.width / 2, size.height / 2.0);
     }
     return self;
 }
