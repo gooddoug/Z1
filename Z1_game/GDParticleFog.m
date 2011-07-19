@@ -19,7 +19,7 @@
 
 - (id) init
 {
-    self = [self initWithTotalParticles:50];
+    self = [self initWithTotalParticles:100];
     
     return self;
 }
@@ -37,12 +37,12 @@
         [self setEndColor:aEndColor];
         self.angle = 90.0;
         self.angleVar = 360.0;
-        self.life = 9.0;
+        self.life = 15.0;
         self.emissionRate = self.totalParticles/self.life;
         self.startSize = 150.0f;
 		self.startSizeVar = 20.0f;
-        self.endSize = 450.0f;
-        self.endSizeVar = 30.0f;
+        self.endSize = 650.0f;
+        self.endSizeVar = 50.0f;
         //spin
         self.startSpin = 0.0f;
         self.startSpinVar = 360.0;

@@ -12,6 +12,8 @@
 
 @implementation Z1SplashScreen
 
+@synthesize menuScreen = _menuScreen;
+
 +(CCScene *) scene
 {
 	CCScene *scene = [CCScene node];
@@ -23,10 +25,19 @@
 	return scene;
 }
 
+- (void) dealloc
+{
+    [_menuScreen release];
+    
+    [super dealloc];
+}
+
 -(id) init
 {
 	if(( self = [super init] )) 
     {
+        self.menuScreen = [Z1MenuScreen scene];
+        
         self.isKeyboardEnabled = YES;
         
         CGSize size = [[CCDirector sharedDirector] winSize];
@@ -49,13 +60,9 @@
 - (BOOL) ccKeyUp:(NSEvent *)event
 {
     
-    [[CCDirector sharedDirector] replaceScene:[Z1MenuScreen scene]];
+    [[CCDirector sharedDirector] replaceScene:self.menuScreen];
     
     return YES;
 }
 
-- (void) dealloc
-{
-	[super dealloc];
-}
 @end

@@ -30,6 +30,7 @@
 	
 	
 	[director runWithScene:[Z1SplashScreen scene]];
+    [director setFullScreen:YES];
 }
 
 - (BOOL) applicationShouldTerminateAfterLastWindowClosed: (NSApplication *) theApplication

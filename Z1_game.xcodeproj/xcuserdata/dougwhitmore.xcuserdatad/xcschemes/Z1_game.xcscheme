@@ -15,7 +15,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EFE5985113D337A400062F86"
                BuildableName = "Z1_game.app"
-               BlueprintName = "Z1_game"
+               BlueprintName = "Z1"
                ReferencedContainer = "container:Z1_game.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,7 +42,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EFE5985113D337A400062F86"
             BuildableName = "Z1_game.app"
-            BlueprintName = "Z1_game"
+            BlueprintName = "Z1"
             ReferencedContainer = "container:Z1_game.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -61,7 +61,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EFE5985113D337A400062F86"
             BuildableName = "Z1_game.app"
-            BlueprintName = "Z1_game"
+            BlueprintName = "Z1"
             ReferencedContainer = "container:Z1_game.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

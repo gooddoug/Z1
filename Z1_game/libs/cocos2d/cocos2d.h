@@ -118,6 +118,10 @@
 #import "ccTypes.h"
 #import "ccMacros.h"
 
+//
+// My stuff
+//
+#import "ClippingNode.h"
 
 // Platform common
 #import "Platforms/CCGL.h"

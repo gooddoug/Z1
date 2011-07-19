@@ -31,23 +31,29 @@
     if (( self = [super init] ))
     {
         self.scrollingSpeed = 20.0;
-        self.text = [CCLabelTTF labelWithString:inText fontName:@"Helvetica" fontSize:24];
+        self.text = [CCLabelTTF labelWithString:inText fontName:@"Helvetica" fontSize:18];
         CGSize textSize = self.text.textureRect.size;
         
-        self.text.position = ccp(0.0f, 0.0f);
         
         self.background = [CCSprite spriteWithFile:@"TextBackground.png"];
         //self.background.textureRect = self.text.textureRect;
         // scale the background
-        if (textSize.width > self.background.textureRect.size.width)
-        {
-            float toScale = (textSize.width + 100) / self.background.textureRect.size.width;
-            self.background.scaleX = toScale;
-            self.background.scaleY = 1.5;
-        }
+        
+        float toScale = (textSize.width + 100) / self.background.textureRect.size.width;
+        self.background.scaleX = toScale;
+        self.background.scaleY = 1.5;
         self.background.position = ccp(0.0f, 0.0f);
         
-        [self addChild:self.text];
+        ClippingNode* clipNode = [ClippingNode node];
+        CGRect backgroundBounds = [self.background boundingBox];
+        
+        // FIX ME to work when not full screen
+        clipNode.clippingRegion = CGRectMake(200, 80.0, backgroundBounds.size.width, 600.0);
+        self.text.position = ccp(0.0f, -300.0f);
+        
+        [self addChild:clipNode];
+        
+        [clipNode addChild:self.text];
         
         [self scheduleUpdate];
     }

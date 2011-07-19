@@ -8,6 +8,7 @@
 
 #import "Z1MenuScreen.h"
 #import "Z1CreditsScreen.h"
+#import "Z1EndScreen.h"
 
 
 @implementation Z1MenuScreen
@@ -40,7 +41,10 @@
         CCLabelTTF* menuLabelQuit = [CCLabelTTF labelWithString:@"Quit" fontName:@"Helvetica" fontSize:32];
         CCMenuItemLabel* menuItemQuit = [CCMenuItemLabel itemWithLabel:menuLabelQuit block:^(id sender)
                                        {
-                                           [NSApp terminate:self];
+                                           CCTransitionScene* trans = [CCTransitionFade transitionWithDuration:1 
+                                                                                                         scene:[Z1EndScreen scene]
+                                                                                                     withColor:ccWHITE];
+                                           [[CCDirector sharedDirector] pushScene:trans];
                                        }];
         
         CCLabelTTF* menuLabelUDG = [CCLabelTTF labelWithString:@"uDevGames" fontName:@"Helvetica" fontSize:32];
@@ -56,7 +60,6 @@
                                                                                                              scene:[Z1CreditsScreen scene]
                                                                                                          withColor:ccWHITE];
                                                 [[CCDirector sharedDirector] pushScene:trans];
-                                                NSLog(@"credits screen");
                                             }];
         
         CCMenu* aMenu = [CCMenu menuWithItems:menuItemPlay, menuItemQuit, menuItemCredits, menuItemUDG, nil];
@@ -66,6 +69,10 @@
         
         aMenu.position = ccp(200.0f, size.height / 2.0);
         [self addChild:aMenu z:10];
+        
+        CCSprite* background = [CCSprite spriteWithFile:@"nebula.png"];
+        background.position = ccp(size.width / 2.0, size.height / 2.0);
+        [self addChild:background z:0];
 
     }
     return self;

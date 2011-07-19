@@ -52,7 +52,7 @@
     // remove old children
     [self removeAllChildrenWithCleanup:YES];
     // add them as children
-    int i = 0;
+    int i = 1;
     for (CCNode* aNode in _effects) 
     {
         [self addChild:aNode z:i];

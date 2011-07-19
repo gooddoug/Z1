@@ -1,22 +1,21 @@
 //
-//  Z1CreditsScreen.m
+//  Z1EndScreen.m
 //  Z1_game
 //
 //  Created by Doug Whitmore on 7/18/11.
 //  Copyright 2011 Good Doug. All rights reserved.
 //
 
-#import "Z1CreditsScreen.h"
+#import "Z1EndScreen.h"
 #import "GDScrollingText.h"
 
-
-@implementation Z1CreditsScreen
+@implementation Z1EndScreen
 
 +(CCScene*) scene
 {
     CCScene *scene = [CCScene node];
 	
-	Z1CreditsScreen *layer = [Z1CreditsScreen node];
+	Z1EndScreen *layer = [Z1EndScreen node];
 	
 	[scene addChild: layer];
 	
@@ -25,31 +24,32 @@
 
 - (id) init
 {
-    if (( self = [super initWithEffectNames:[NSArray arrayWithObjects:@"GDParticleStarfield", @"GDParticleFog", nil]] ))
+    if ((self = [self initWithEffectNames:[NSArray arrayWithObjects:@"GDParticleStarfield", nil]] ))
     {
+        // add background later after checking stars
         self.isKeyboardEnabled = YES;
-        
-        GDScrollingText* scrollingText = [[[GDScrollingText alloc] initWithFile:[[NSBundle mainBundle] pathForResource:@"credits" ofType:@"txt"]] autorelease];
+        GDScrollingText* scrollingText = [[[GDScrollingText alloc] initWithFile:[[NSBundle mainBundle] pathForResource:@"end" ofType:@"txt"]] autorelease];
         CGSize size = [[CCDirector sharedDirector] winSize];
         
         scrollingText.position = ccp(400.0, size.height / 2.0);
         [self addChild:scrollingText z:20];
-
-		CCSprite* background = [CCSprite spriteWithFile:@"menu-yellow.png"];
-        background.position = ccp(size.width / 2, size.height /2);
-        [self addChild:background z:1];
-        
         CCLabelTTF* menuLabelUDG = [CCLabelTTF labelWithString:@"uDevGames" fontName:@"Helvetica" fontSize:32];
         CCMenuItemLabel* menuItemUDG = [CCMenuItemLabel itemWithLabel:menuLabelUDG block:^(id sender)
                                         {
                                             [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.udevgames.com"]];
+                                            [NSApp terminate:self];
                                         }];
         CCLabelTTF* menuLabelBack = [CCLabelTTF labelWithString:@"Back" fontName:@"Helvetica" fontSize:32];
         CCMenuItemLabel* menuItemBack = [CCMenuItemLabel itemWithLabel:menuLabelBack block:^(id sender)
                                          {
-                                            [[CCDirector sharedDirector] popScene]; 
+                                             [[CCDirector sharedDirector] popScene]; 
                                          }];
-        CCMenu* aMenu = [CCMenu menuWithItems:menuItemUDG, menuItemBack, nil];
+        CCLabelTTF* menuLabelQuit = [CCLabelTTF labelWithString:@"Quit" fontName:@"Helvetica" fontSize:32];
+        CCMenuItemLabel* menuItemQuit = [CCMenuItemLabel itemWithLabel:menuLabelQuit block:^(id sender)
+                                         {
+                                             [NSApp terminate:self];
+                                         }];
+        CCMenu* aMenu = [CCMenu menuWithItems:menuItemUDG, menuItemBack, menuItemQuit, nil];
 		[aMenu alignItemsVertically];
         self.isMouseEnabled = YES;
         
@@ -57,13 +57,11 @@
         [self addChild:aMenu z:10];
     }
     return self;
-}
+} 
 
 - (BOOL) ccKeyUp:(NSEvent *)event
 {
-    
-    [[CCDirector sharedDirector] popScene];
-    
+    [NSApp terminate:self];
     return YES;
 }
 
