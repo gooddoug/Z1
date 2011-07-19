@@ -9,6 +9,7 @@
 #import "Z1MenuScreen.h"
 #import "Z1CreditsScreen.h"
 #import "Z1EndScreen.h"
+#import "Z1GameScreen.h"
 
 
 @implementation Z1MenuScreen
@@ -32,11 +33,11 @@
         CCLabelTTF* menuLabelPlay = [CCLabelTTF labelWithString:@"Play" fontName:@"Helvetica" fontSize:48];
         CCMenuItemLabel* menuItemPlay = [CCMenuItemLabel itemWithLabel:menuLabelPlay block:^(id sender)
                                        {
-                                           /*CCTransitionScene* trans = [CCTransitionFade transitionWithDuration:1 
-                                                                                                         scene:[GameTestLayer scene]
+                                           NSLog(@"got here");
+                                           CCTransitionScene* trans = [CCTransitionFade transitionWithDuration:1 
+                                                                                                         scene:[Z1GameScreen scene]
                                                                                                      withColor:ccWHITE];
-                                           [[CCDirector sharedDirector] pushScene:trans];*/
-                                           NSLog(@"start new game");
+                                           [[CCDirector sharedDirector] pushScene:trans];
                                        }];
         CCLabelTTF* menuLabelQuit = [CCLabelTTF labelWithString:@"Quit" fontName:@"Helvetica" fontSize:32];
         CCMenuItemLabel* menuItemQuit = [CCMenuItemLabel itemWithLabel:menuLabelQuit block:^(id sender)
@@ -56,6 +57,7 @@
         CCLabelTTF* menuLabelCredits = [CCLabelTTF labelWithString:@"Credits" fontName:@"Helvetica" fontSize:32];
         CCMenuItemLabel* menuItemCredits = [CCMenuItemLabel itemWithLabel:menuLabelCredits block:^(id sender)
                                             {
+                                                NSLog(@"What the hell?");
                                                 CCTransitionScene* trans = [CCTransitionFade transitionWithDuration:1 
                                                                                                              scene:[Z1CreditsScreen scene]
                                                                                                          withColor:ccWHITE];

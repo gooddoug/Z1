@@ -15,8 +15,10 @@
 
 @property (retain, nonatomic) GDInputManager* inputManager;
 @property (retain, nonatomic) CCSprite* playerSprite;
-
 @property (retain, nonatomic) NSMutableArray* enemySprites;
+@property (retain, nonatomic) NSMutableSet* playerShots;
+
+@property (retain, nonatomic) NSArray* effects;
 
 - (void) addEnemySprite:(id)aSprite;
 

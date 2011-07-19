@@ -14,6 +14,7 @@
 		EF72D94213D5011200ABD27F /* ClippingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EF72D94113D5011200ABD27F /* ClippingNode.m */; };
 		EF72D94D13D5521D00ABD27F /* Z1EndScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = EF72D94C13D5521C00ABD27F /* Z1EndScreen.m */; };
 		EF72D94F13D5532D00ABD27F /* end.txt in Resources */ = {isa = PBXBuildFile; fileRef = EF72D94E13D5532C00ABD27F /* end.txt */; };
+		EF72D95213D5DEFF00ABD27F /* Z1GameScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = EF72D95113D5DEFD00ABD27F /* Z1GameScreen.m */; };
 		EFE5985713D337A400062F86 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5985613D337A400062F86 /* QuartzCore.framework */; };
 		EFE5985913D337A400062F86 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5985813D337A400062F86 /* OpenGL.framework */; };
 		EFE5985B13D337A400062F86 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5985A13D337A400062F86 /* OpenAL.framework */; };
@@ -118,7 +119,7 @@
 		EFE599A213D3385C00062F86 /* GDParticleFog.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE599A013D3385C00062F86 /* GDParticleFog.m */; };
 		EFE599A613D3387000062F86 /* GDInputManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE599A513D3387000062F86 /* GDInputManager.m */; };
 		EFE599AD13D338A100062F86 /* shot.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE599A813D338A100062F86 /* shot.png */; };
-		EFE599AE13D338A100062F86 /* EnemyTest1.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE599A913D338A100062F86 /* EnemyTest1.png */; };
+		EFE599AE13D338A100062F86 /* ship1.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE599A913D338A100062F86 /* ship1.png */; };
 		EFE599AF13D338A100062F86 /* smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE599AA13D338A100062F86 /* smoke.png */; };
 		EFE599B013D338A100062F86 /* StarMail.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE599AB13D338A100062F86 /* StarMail.png */; };
 		EFE599B113D338A100062F86 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE599AC13D338A100062F86 /* fire.png */; };
@@ -150,7 +151,9 @@
 		EF72D94B13D5521B00ABD27F /* Z1EndScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1EndScreen.h; sourceTree = "<group>"; };
 		EF72D94C13D5521C00ABD27F /* Z1EndScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1EndScreen.m; sourceTree = "<group>"; };
 		EF72D94E13D5532C00ABD27F /* end.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = end.txt; sourceTree = "<group>"; };
-		EFE5985213D337A400062F86 /* Z1_game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Z1_game.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF72D95013D5DEFC00ABD27F /* Z1GameScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1GameScreen.h; sourceTree = "<group>"; };
+		EF72D95113D5DEFD00ABD27F /* Z1GameScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1GameScreen.m; sourceTree = "<group>"; };
+		EFE5985213D337A400062F86 /* Z1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Z1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE5985613D337A400062F86 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EFE5985813D337A400062F86 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		EFE5985A13D337A400062F86 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -365,7 +368,7 @@
 		EFE599A413D3387000062F86 /* GDInputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDInputManager.h; sourceTree = "<group>"; };
 		EFE599A513D3387000062F86 /* GDInputManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDInputManager.m; sourceTree = "<group>"; };
 		EFE599A813D338A100062F86 /* shot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shot.png; sourceTree = "<group>"; };
-		EFE599A913D338A100062F86 /* EnemyTest1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EnemyTest1.png; sourceTree = "<group>"; };
+		EFE599A913D338A100062F86 /* ship1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship1.png; sourceTree = "<group>"; };
 		EFE599AA13D338A100062F86 /* smoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smoke.png; sourceTree = "<group>"; };
 		EFE599AB13D338A100062F86 /* StarMail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StarMail.png; sourceTree = "<group>"; };
 		EFE599AC13D338A100062F86 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
@@ -417,7 +420,7 @@
 		EFE5985313D337A400062F86 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EFE5985213D337A400062F86 /* Z1_game.app */,
+				EFE5985213D337A400062F86 /* Z1.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -448,9 +451,11 @@
 				EFE599D613D3FD3E00062F86 /* Z1MenuScreen.m */,
 				EF72D93013D491F900ABD27F /* Z1CreditsScreen.h */,
 				EF72D93113D491FA00ABD27F /* Z1CreditsScreen.m */,
+				EF72D95013D5DEFC00ABD27F /* Z1GameScreen.h */,
+				EF72D95113D5DEFD00ABD27F /* Z1GameScreen.m */,
+				EFE599A313D3387000062F86 /* GDGameScreenProtocol.h */,
 				EFE599D213D3F5B600062F86 /* GDBaseEffectsScreen.h */,
 				EFE599D313D3F5B600062F86 /* GDBaseEffectsScreen.m */,
-				EFE599A313D3387000062F86 /* GDGameScreenProtocol.h */,
 				EFE599A413D3387000062F86 /* GDInputManager.h */,
 				EFE599A513D3387000062F86 /* GDInputManager.m */,
 				EF72D92D13D48C4800ABD27F /* GDScrollingText.h */,
@@ -781,7 +786,7 @@
 				EFE599D013D3F49600062F86 /* fog.png */,
 				EFE599CE13D34FCE00062F86 /* galaxy.png */,
 				EFE599A813D338A100062F86 /* shot.png */,
-				EFE599A913D338A100062F86 /* EnemyTest1.png */,
+				EFE599A913D338A100062F86 /* ship1.png */,
 				EFE599AA13D338A100062F86 /* smoke.png */,
 				EFE599D813D3FF8700062F86 /* stars.png */,
 				EFE599AB13D338A100062F86 /* StarMail.png */,
@@ -827,7 +832,7 @@
 			);
 			name = Z1;
 			productName = Z1_game;
-			productReference = EFE5985213D337A400062F86 /* Z1_game.app */;
+			productReference = EFE5985213D337A400062F86 /* Z1.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -866,7 +871,7 @@
 				EFE5986C13D337A400062F86 /* fps_images.png in Resources */,
 				EFE5986E13D337A400062F86 /* icon.icns in Resources */,
 				EFE599AD13D338A100062F86 /* shot.png in Resources */,
-				EFE599AE13D338A100062F86 /* EnemyTest1.png in Resources */,
+				EFE599AE13D338A100062F86 /* ship1.png in Resources */,
 				EFE599AF13D338A100062F86 /* smoke.png in Resources */,
 				EFE599B013D338A100062F86 /* StarMail.png in Resources */,
 				EFE599B113D338A100062F86 /* fire.png in Resources */,
@@ -994,6 +999,7 @@
 				EF72D93213D491FA00ABD27F /* Z1CreditsScreen.m in Sources */,
 				EF72D94213D5011200ABD27F /* ClippingNode.m in Sources */,
 				EF72D94D13D5521D00ABD27F /* Z1EndScreen.m in Sources */,
+				EF72D95213D5DEFF00ABD27F /* Z1GameScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1060,7 +1066,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -1078,7 +1084,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
