@@ -11,7 +11,9 @@
 
 @interface GDScrollingText : CCNode 
 {
-    
+    CCSprite* _background;
+    CCLabelTTF* _text;
+    float scrollingSpeed;
 }
 
 @property (nonatomic, retain) CCSprite* background;

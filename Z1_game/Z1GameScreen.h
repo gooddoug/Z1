@@ -14,7 +14,15 @@
 
 @interface Z1GameScreen : CCLayer <GDGameScreenProtocol>
 {
+    GDInputManager* _inputManager;
+    CCSprite* _playerSprite;
+    NSMutableArray* _enemySprites;
+    NSMutableSet* _playerShots;
+    NSArray* _effects;
     
+    NSDictionary* _levelDescription;
+    CCSprite* _backgroundSprite;
+    NSSound* _playerShotSound;
 }
 
 +(CCScene*) scene;

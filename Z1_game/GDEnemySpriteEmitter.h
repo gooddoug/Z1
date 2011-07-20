@@ -12,7 +12,13 @@
 
 @interface GDEnemySpriteEmitter : CCNode 
 {
+    int howMany;
+    int howLong;
+    float time;
+    int spawned;
     
+    AnimBlock _movementAnimation;
+    CCAnimation* _frameAnimation;
 }
 
 @property int howMany;

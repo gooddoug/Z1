@@ -11,7 +11,7 @@
 
 @interface GDBaseEffectsScreen : CCLayer 
 {
-    
+    NSArray* _effects;
 }
 
 @property (nonatomic, retain) NSArray* effects;

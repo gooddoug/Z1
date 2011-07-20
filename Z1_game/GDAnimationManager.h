@@ -12,7 +12,7 @@
 
 @interface GDAnimationManager : NSObject 
 {
-    
+    NSDictionary* _animations;
 }
 
 @property (nonatomic, retain) NSDictionary* animations;

@@ -11,7 +11,9 @@
 
 @interface GDPlayerShot : CCSprite 
 {
-    
+    float timeAlive;
+    BOOL hitSomething;
+    CGPoint _decay;
 }
 
 @property float timeAlive;

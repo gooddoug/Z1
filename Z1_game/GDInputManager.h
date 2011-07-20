@@ -11,7 +11,14 @@
 
 @interface GDInputManager : NSObject 
 {
-    
+    BOOL _fire;
+    BOOL left;
+    BOOL right;
+    BOOL pause;
+    unsigned char fireKey;
+    unsigned char rightKey;
+    unsigned char leftKey;
+    unsigned char pauseKey;
 }
 
 // actual properties...

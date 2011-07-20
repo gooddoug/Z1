@@ -11,7 +11,9 @@
 
 @interface GDParticleGalaxy : CCNode
 {
-    
+    CCParticleGalaxy* _particleEmitter;
+    CCSprite* _center;
+    float rotationalSpeed;
 }
 
 @property (nonatomic, retain) CCParticleGalaxy* particleEmitter;

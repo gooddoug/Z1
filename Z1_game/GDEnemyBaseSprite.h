@@ -24,7 +24,12 @@ typedef void(^AnimBlock)(ccTime, GDEnemyBaseSprite*);
 
 @interface GDEnemyBaseSprite : CCNode 
 {
-    
+    float _speed;
+    float _time;
+    CCSprite* _sprite;
+    id _animInfo;
+    BOOL dead;
+    AnimBlock animBlock;
 }
 
 @property (readonly) CGPoint heading;
