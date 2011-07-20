@@ -10,7 +10,7 @@
 #import "Z1CreditsScreen.h"
 #import "Z1EndScreen.h"
 #import "Z1GameScreen.h"
-
+#import "GDSoundsManager.h"
 
 @implementation Z1MenuScreen
 
@@ -45,6 +45,7 @@
                                                                                                          scene:[Z1EndScreen scene]
                                                                                                      withColor:ccWHITE];
                                            [[CCDirector sharedDirector] pushScene:trans];
+                                           [[GDSoundsManager sharedSoundsManager] playSoundForName:SCREEN_TRANSITION];
                                        }];
         
         CCLabelTTF* menuLabelUDG = [CCLabelTTF labelWithString:@"uDevGames" fontName:@"Helvetica" fontSize:32];
@@ -60,6 +61,7 @@
                                                                                                              scene:[Z1CreditsScreen scene]
                                                                                                          withColor:ccWHITE];
                                                 [[CCDirector sharedDirector] pushScene:trans];
+                                                [[GDSoundsManager sharedSoundsManager] playSoundForName:SCREEN_TRANSITION];
                                             }];
         
         CCMenu* aMenu = [CCMenu menuWithItems:menuItemPlay, menuItemQuit, menuItemCredits, menuItemUDG, nil];

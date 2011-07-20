@@ -150,7 +150,7 @@
         [aShot runAction:[CCScaleTo actionWithDuration:0.5 scale:0.001]];
         
         // shot sound
-        [[GDSoundsManager sharedSoundsManager] playSoundForName:@"BasicWeapon"];
+        [[GDSoundsManager sharedSoundsManager] playSoundForName:@"Laser"];
     }
     
     [self sweep];

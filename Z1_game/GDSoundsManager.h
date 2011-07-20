@@ -8,6 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
+// some constants:
+#define SCREEN_TRANSITION @"screen_transition"
+
 
 @interface GDSoundsManager : NSObject 
 {

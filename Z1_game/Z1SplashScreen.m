@@ -56,7 +56,7 @@
 
 - (BOOL) ccKeyUp:(NSEvent *)event
 {
-    [[GDSoundsManager sharedSoundsManager] playSoundForName:@"screen_transition"];
+    [[GDSoundsManager sharedSoundsManager] playSoundForName:SCREEN_TRANSITION];
     [[CCDirector sharedDirector] replaceScene:[Z1MenuScreen scene]];
     
     return YES;
