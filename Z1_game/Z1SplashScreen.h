@@ -8,8 +8,9 @@
 
 
 #import "cocos2d.h"
+#import "GDBaseEffectsScreen.h"
 
-@interface Z1SplashScreen : CCLayer
+@interface Z1SplashScreen : GDBaseEffectsScreen
 {
 }
 

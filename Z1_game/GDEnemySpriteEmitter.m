@@ -7,6 +7,7 @@
 //
 
 #import "GDEnemySpriteEmitter.h"
+#import "GDAnimationManager.h"
 
 @interface GDEnemySpriteEmitter()
 
@@ -66,6 +67,11 @@
     enemySprite.speed = 300.0;
     
     [self.parent addEnemySprite:enemySprite];
+}
+
+- (void) movementAnimtationForName:(NSString*)moveName
+{
+    
 }
 
 @end

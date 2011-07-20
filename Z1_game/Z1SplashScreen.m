@@ -34,7 +34,7 @@
 
 -(id) init
 {
-	if(( self = [super init] )) 
+	if(( self = [self initWithEffectNames:[NSArray arrayWithObjects:@"GDParticleStarfield", nil]] )) 
     {
         self.menuScreen = [Z1MenuScreen scene];
         
@@ -43,14 +43,14 @@
         CGSize size = [[CCDirector sharedDirector] winSize];
 		CCSprite* background = [CCSprite spriteWithFile:@"menu.png"];
         background.position = ccp(size.width / 2.0, size.height /2);
-        [self addChild:background];
+        [self addChild:background z:0];
         
         // add press any key label
         CCLabelTTF* pressKeyLabel = [CCLabelTTF labelWithString:@"Press any key" fontName:@"Helvetica" fontSize:48];
         pressKeyLabel.position = ccp(size.width / 2.0, 100.0);
         pressKeyLabel.opacity = 0.0;
         CCFadeIn* fadeAction = [CCFadeIn actionWithDuration:1.0];
-        CCDelayTime* delayAction = [CCDelayTime actionWithDuration:2.5];
+        CCDelayTime* delayAction = [CCDelayTime actionWithDuration:0.5];
         [pressKeyLabel runAction:[CCSequence actions:delayAction, fadeAction, nil]];
         [self addChild:pressKeyLabel z:10];
 	}

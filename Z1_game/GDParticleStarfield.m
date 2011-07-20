@@ -18,7 +18,7 @@
 
 - (id) init
 {
-    self = [self initWithTotalParticles:100];
+    self = [self initWithTotalParticles:200];
     
     return self;
 }

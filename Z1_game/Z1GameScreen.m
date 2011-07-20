@@ -69,7 +69,7 @@
         self.playerSprite = [CCSprite spriteWithFile:@"ship1.png"];
         self.playerSprite.scale = 0.25;
         
-        self.playerSprite.anchorPoint = ccp( 0.0 , 10.0 );
+        self.playerSprite.anchorPoint = ccp( 0.5 , 10.0 );
         self.playerSprite.position = ccp( size.width /2 , size.height/2 );
         
         [self addChild:self.playerSprite z:20];
@@ -142,7 +142,7 @@
     if (self.inputManager.fire)
     {
         CGSize size = [[CCDirector sharedDirector] winSize];
-        GDPlayerShot* aShot = [GDPlayerShot shotAtRotation:self.playerSprite.rotation anchorPoint:ccp(0.0, 17.0)];
+        GDPlayerShot* aShot = [GDPlayerShot shotAtRotation:self.playerSprite.rotation anchorPoint:ccp(0.5, 16.0)];
         aShot.position = ccp( size.width /2 , size.height/2 );
         
         [self addChild:aShot z:10];

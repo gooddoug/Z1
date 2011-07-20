@@ -15,6 +15,7 @@
 		EF72D94D13D5521D00ABD27F /* Z1EndScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = EF72D94C13D5521C00ABD27F /* Z1EndScreen.m */; };
 		EF72D94F13D5532D00ABD27F /* end.txt in Resources */ = {isa = PBXBuildFile; fileRef = EF72D94E13D5532C00ABD27F /* end.txt */; };
 		EF72D95213D5DEFF00ABD27F /* Z1GameScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = EF72D95113D5DEFD00ABD27F /* Z1GameScreen.m */; };
+		EF72D95513D64D7000ABD27F /* GDAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF72D95413D64D7000ABD27F /* GDAnimationManager.m */; };
 		EFE5985713D337A400062F86 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5985613D337A400062F86 /* QuartzCore.framework */; };
 		EFE5985913D337A400062F86 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5985813D337A400062F86 /* OpenGL.framework */; };
 		EFE5985B13D337A400062F86 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5985A13D337A400062F86 /* OpenAL.framework */; };
@@ -153,6 +154,8 @@
 		EF72D94E13D5532C00ABD27F /* end.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = end.txt; sourceTree = "<group>"; };
 		EF72D95013D5DEFC00ABD27F /* Z1GameScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1GameScreen.h; sourceTree = "<group>"; };
 		EF72D95113D5DEFD00ABD27F /* Z1GameScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1GameScreen.m; sourceTree = "<group>"; };
+		EF72D95313D64D7000ABD27F /* GDAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDAnimationManager.h; sourceTree = "<group>"; };
+		EF72D95413D64D7000ABD27F /* GDAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDAnimationManager.m; sourceTree = "<group>"; };
 		EFE5985213D337A400062F86 /* Z1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Z1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE5985613D337A400062F86 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EFE5985813D337A400062F86 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -761,6 +764,8 @@
 				EFE5999213D3383700062F86 /* GDButtonSprite.m */,
 				EFE5999313D3383700062F86 /* GDEnemySpriteEmitter.h */,
 				EFE5999413D3383700062F86 /* GDEnemySpriteEmitter.m */,
+				EF72D95313D64D7000ABD27F /* GDAnimationManager.h */,
+				EF72D95413D64D7000ABD27F /* GDAnimationManager.m */,
 				EFE5999513D3383700062F86 /* GDEnemyBaseSprite.h */,
 				EFE5999613D3383700062F86 /* GDEnemyBaseSprite.m */,
 			);
@@ -1000,6 +1005,7 @@
 				EF72D94213D5011200ABD27F /* ClippingNode.m in Sources */,
 				EF72D94D13D5521D00ABD27F /* Z1EndScreen.m in Sources */,
 				EF72D95213D5DEFF00ABD27F /* Z1GameScreen.m in Sources */,
+				EF72D95513D64D7000ABD27F /* GDAnimationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
