@@ -10,12 +10,12 @@
 #import "GDInputManager.h"
 #import "GDPlayerShot.h"
 #import "GDEnemySpriteEmitter.h"
+#import "GDSoundsManager.h"
 
 @interface Z1GameScreen ()
 
 @property (nonatomic, retain) NSDictionary* levelDescription;
 @property (nonatomic, retain) CCSprite* backgroundSprite;
-@property (nonatomic, retain) NSSound* playerShotSound;
 
 - (void) sweep;
 - (void) resolveFire;
@@ -27,7 +27,7 @@
 @synthesize inputManager = _inputManager, playerSprite = _playerSprite, enemySprites = _enemySprites;
 @synthesize playerShots = _playerShots, effects = _effects;
 
-@synthesize levelDescription = _levelDescription, backgroundSprite = _backgroundSprite, playerShotSound = _playerShotSound;
+@synthesize levelDescription = _levelDescription, backgroundSprite = _backgroundSprite;
 
 +(CCScene*) scene
 {
@@ -49,7 +49,6 @@
     [_effects release];
     [_levelDescription release];
     [_backgroundSprite release];
-    [_playerShotSound release];
     
     [super dealloc];
 }
@@ -65,9 +64,7 @@
         [self scheduleUpdate];
         self.enemySprites = [NSMutableArray array];
         self.playerShots = [NSMutableSet set];
-        
-        self.playerShotSound = [NSSound soundNamed:@"BasicWeapon"];
-        
+                
         self.playerSprite = [CCSprite spriteWithFile:@"ship1.png"];
         self.playerSprite.scale = 0.25;
         
@@ -75,6 +72,7 @@
         self.playerSprite.position = ccp( size.width /2 , size.height/2 );
         
         [self addChild:self.playerSprite z:20];
+        [[GDSoundsManager sharedSoundsManager] playSoundForName:@"level_start"];
     }
     return self;
 }
@@ -152,11 +150,7 @@
         [aShot runAction:[CCScaleTo actionWithDuration:0.5 scale:0.001]];
         
         // shot sound
-        if ([self.playerShotSound isPlaying])
-        {
-            [self.playerShotSound stop];
-        }
-        [self.playerShotSound play];
+        [[GDSoundsManager sharedSoundsManager] playSoundForName:@"BasicWeapon"];
     }
     
     [self sweep];

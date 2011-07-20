@@ -9,6 +9,7 @@
 
 #import "Z1SplashScreen.h"
 #import "Z1MenuScreen.h"
+#import "GDSoundsManager.h"
 
 @implementation Z1SplashScreen
 
@@ -55,7 +56,7 @@
 
 - (BOOL) ccKeyUp:(NSEvent *)event
 {
-    
+    [[GDSoundsManager sharedSoundsManager] playSoundForName:@"screen_transition"];
     [[CCDirector sharedDirector] replaceScene:[Z1MenuScreen scene]];
     
     return YES;

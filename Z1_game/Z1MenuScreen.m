@@ -33,7 +33,6 @@
         CCLabelTTF* menuLabelPlay = [CCLabelTTF labelWithString:@"Play" fontName:@"Helvetica" fontSize:48];
         CCMenuItemLabel* menuItemPlay = [CCMenuItemLabel itemWithLabel:menuLabelPlay block:^(id sender)
                                        {
-                                           NSLog(@"got here");
                                            CCTransitionScene* trans = [CCTransitionFade transitionWithDuration:1 
                                                                                                          scene:[Z1GameScreen scene]
                                                                                                      withColor:ccWHITE];
@@ -57,7 +56,6 @@
         CCLabelTTF* menuLabelCredits = [CCLabelTTF labelWithString:@"Credits" fontName:@"Helvetica" fontSize:32];
         CCMenuItemLabel* menuItemCredits = [CCMenuItemLabel itemWithLabel:menuLabelCredits block:^(id sender)
                                             {
-                                                NSLog(@"What the hell?");
                                                 CCTransitionScene* trans = [CCTransitionFade transitionWithDuration:1 
                                                                                                              scene:[Z1CreditsScreen scene]
                                                                                                          withColor:ccWHITE];

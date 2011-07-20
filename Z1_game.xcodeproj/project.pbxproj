@@ -16,6 +16,14 @@
 		EF72D94F13D5532D00ABD27F /* end.txt in Resources */ = {isa = PBXBuildFile; fileRef = EF72D94E13D5532C00ABD27F /* end.txt */; };
 		EF72D95213D5DEFF00ABD27F /* Z1GameScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = EF72D95113D5DEFD00ABD27F /* Z1GameScreen.m */; };
 		EF72D95513D64D7000ABD27F /* GDAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF72D95413D64D7000ABD27F /* GDAnimationManager.m */; };
+		EF72D95813D7764C00ABD27F /* GDSoundsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF72D95713D7764900ABD27F /* GDSoundsManager.m */; };
+		EF72D95F13D778D900ABD27F /* enemy_explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF72D95913D778D800ABD27F /* enemy_explosion.wav */; };
+		EF72D96013D778D900ABD27F /* enemy_explosion2.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF72D95A13D778D800ABD27F /* enemy_explosion2.wav */; };
+		EF72D96113D778D900ABD27F /* Laser.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF72D95B13D778D800ABD27F /* Laser.wav */; };
+		EF72D96213D778D900ABD27F /* level_start.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF72D95C13D778D800ABD27F /* level_start.wav */; };
+		EF72D96313D778D900ABD27F /* player_explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF72D95D13D778D800ABD27F /* player_explosion.wav */; };
+		EF72D96413D778D900ABD27F /* quick_hit.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF72D95E13D778D800ABD27F /* quick_hit.wav */; };
+		EF72D96613D77A2500ABD27F /* screen_transition.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF72D96513D77A2500ABD27F /* screen_transition.wav */; };
 		EFE5985713D337A400062F86 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5985613D337A400062F86 /* QuartzCore.framework */; };
 		EFE5985913D337A400062F86 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5985813D337A400062F86 /* OpenGL.framework */; };
 		EFE5985B13D337A400062F86 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5985A13D337A400062F86 /* OpenAL.framework */; };
@@ -156,6 +164,15 @@
 		EF72D95113D5DEFD00ABD27F /* Z1GameScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1GameScreen.m; sourceTree = "<group>"; };
 		EF72D95313D64D7000ABD27F /* GDAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDAnimationManager.h; sourceTree = "<group>"; };
 		EF72D95413D64D7000ABD27F /* GDAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDAnimationManager.m; sourceTree = "<group>"; };
+		EF72D95613D7764500ABD27F /* GDSoundsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSoundsManager.h; sourceTree = "<group>"; };
+		EF72D95713D7764900ABD27F /* GDSoundsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDSoundsManager.m; sourceTree = "<group>"; };
+		EF72D95913D778D800ABD27F /* enemy_explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = enemy_explosion.wav; sourceTree = "<group>"; };
+		EF72D95A13D778D800ABD27F /* enemy_explosion2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = enemy_explosion2.wav; sourceTree = "<group>"; };
+		EF72D95B13D778D800ABD27F /* Laser.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Laser.wav; sourceTree = "<group>"; };
+		EF72D95C13D778D800ABD27F /* level_start.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = level_start.wav; sourceTree = "<group>"; };
+		EF72D95D13D778D800ABD27F /* player_explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = player_explosion.wav; sourceTree = "<group>"; };
+		EF72D95E13D778D800ABD27F /* quick_hit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = quick_hit.wav; sourceTree = "<group>"; };
+		EF72D96513D77A2500ABD27F /* screen_transition.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = screen_transition.wav; sourceTree = "<group>"; };
 		EFE5985213D337A400062F86 /* Z1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Z1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE5985613D337A400062F86 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EFE5985813D337A400062F86 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -463,6 +480,8 @@
 				EFE599A513D3387000062F86 /* GDInputManager.m */,
 				EF72D92D13D48C4800ABD27F /* GDScrollingText.h */,
 				EF72D92E13D48C4800ABD27F /* GDScrollingText.m */,
+				EF72D95613D7764500ABD27F /* GDSoundsManager.h */,
+				EF72D95713D7764900ABD27F /* GDSoundsManager.m */,
 				EFE5999C13D3384600062F86 /* Effects */,
 				EFE5998C13D3380800062F86 /* Sprite */,
 				EFE5986313D337A400062F86 /* Resources */,
@@ -804,7 +823,14 @@
 			isa = PBXGroup;
 			children = (
 				EFE599B313D338C700062F86 /* explosion.wav */,
+				EF72D95913D778D800ABD27F /* enemy_explosion.wav */,
+				EF72D95A13D778D800ABD27F /* enemy_explosion2.wav */,
+				EF72D95B13D778D800ABD27F /* Laser.wav */,
+				EF72D95C13D778D800ABD27F /* level_start.wav */,
+				EF72D95D13D778D800ABD27F /* player_explosion.wav */,
+				EF72D95E13D778D800ABD27F /* quick_hit.wav */,
 				EFE599B413D338C700062F86 /* BasicWeapon.WAV */,
+				EF72D96513D77A2500ABD27F /* screen_transition.wav */,
 			);
 			name = Sounds;
 			sourceTree = "<group>";
@@ -894,6 +920,13 @@
 				EF72D92B13D48A3100ABD27F /* credits.txt in Resources */,
 				EF72D93413D4F50A00ABD27F /* TextBackground.png in Resources */,
 				EF72D94F13D5532D00ABD27F /* end.txt in Resources */,
+				EF72D95F13D778D900ABD27F /* enemy_explosion.wav in Resources */,
+				EF72D96013D778D900ABD27F /* enemy_explosion2.wav in Resources */,
+				EF72D96113D778D900ABD27F /* Laser.wav in Resources */,
+				EF72D96213D778D900ABD27F /* level_start.wav in Resources */,
+				EF72D96313D778D900ABD27F /* player_explosion.wav in Resources */,
+				EF72D96413D778D900ABD27F /* quick_hit.wav in Resources */,
+				EF72D96613D77A2500ABD27F /* screen_transition.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1006,6 +1039,7 @@
 				EF72D94D13D5521D00ABD27F /* Z1EndScreen.m in Sources */,
 				EF72D95213D5DEFF00ABD27F /* Z1GameScreen.m in Sources */,
 				EF72D95513D64D7000ABD27F /* GDAnimationManager.m in Sources */,
+				EF72D95813D7764C00ABD27F /* GDSoundsManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

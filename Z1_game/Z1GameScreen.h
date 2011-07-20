@@ -22,7 +22,6 @@
     
     NSDictionary* _levelDescription;
     CCSprite* _backgroundSprite;
-    NSSound* _playerShotSound;
 }
 
 +(CCScene*) scene;
