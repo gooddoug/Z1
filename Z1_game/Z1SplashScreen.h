@@ -14,8 +14,6 @@
 {
 }
 
-@property (nonatomic, retain) CCScene* menuScreen;
-
 +(CCScene *) scene;
 
 @end

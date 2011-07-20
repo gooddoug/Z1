@@ -8,6 +8,7 @@
 
 #import "GDEnemySpriteEmitter.h"
 #import "GDAnimationManager.h"
+#import "Z1GameScreen.h"
 
 @interface GDEnemySpriteEmitter()
 
@@ -59,14 +60,14 @@
 - (void) spawnSprite
 {
     // create a new sprite and add it to the parent
-    GDEnemyBaseSprite* enemySprite = [GDEnemyBaseSprite spriteWithFile:@"EnemyTest1.png"];
+    GDEnemyBaseSprite* enemySprite = [GDEnemyBaseSprite spriteWithFile:@"ship1.png"];
     enemySprite.position = self.position;
     enemySprite.rotation = self.rotation;
     enemySprite.animBlock = self.movementAnimation;
     enemySprite.scale = 0.25;
     enemySprite.speed = 300.0;
     
-    [self.parent addEnemySprite:enemySprite];
+    [(Z1GameScreen*)self.parent addEnemySprite:enemySprite];
 }
 
 - (void) movementAnimtationForName:(NSString*)moveName

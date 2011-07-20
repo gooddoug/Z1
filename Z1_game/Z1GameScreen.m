@@ -66,10 +66,12 @@
         self.enemySprites = [NSMutableArray array];
         self.playerShots = [NSMutableSet set];
         
+        self.playerShotSound = [NSSound soundNamed:@"BasicWeapon"];
+        
         self.playerSprite = [CCSprite spriteWithFile:@"ship1.png"];
         self.playerSprite.scale = 0.25;
         
-        self.playerSprite.anchorPoint = ccp( 0.5 , 10.0 );
+        self.playerSprite.anchorPoint = ccp( 0.65 , 10.0 );
         self.playerSprite.position = ccp( size.width /2 , size.height/2 );
         
         [self addChild:self.playerSprite z:20];
