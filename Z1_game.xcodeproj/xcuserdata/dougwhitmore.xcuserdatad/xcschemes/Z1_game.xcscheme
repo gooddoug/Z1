@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   version = "1.3">
+   version = "1.8">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EFE5985113D337A400062F86"
-               BuildableName = "Z1_game.app"
+               BuildableName = "Z1.app"
                BlueprintName = "Z1"
                ReferencedContainer = "container:Z1_game.xcodeproj">
             </BuildableReference>
@@ -41,7 +41,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EFE5985113D337A400062F86"
-            BuildableName = "Z1_game.app"
+            BuildableName = "Z1.app"
             BlueprintName = "Z1"
             ReferencedContainer = "container:Z1_game.xcodeproj">
          </BuildableReference>
@@ -60,7 +60,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EFE5985113D337A400062F86"
-            BuildableName = "Z1_game.app"
+            BuildableName = "Z1.app"
             BlueprintName = "Z1"
             ReferencedContainer = "container:Z1_game.xcodeproj">
          </BuildableReference>

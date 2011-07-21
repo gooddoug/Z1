@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Test level</string>
+	<key>id</key>
+	<string>test</string>
+	<key>nextLevel</key>
+	<string>none</string>
+	<key>preLevelTextPath</key>
+	<string>test_intro.txt</string>
+	<key>effects</key>
+	<array>
+		<string>GDParticleStarfield</string>
+		<string>GDParticleFog</string>
+	</array>
+	<key>background</key>
+	<string>starbg.png</string>
+	<key>spawners</key>
+	<array>
+		<dict>
+			<key>x</key>
+			<integer>512</integer>
+			<key>y</key>
+			<integer>383</integer>
+			<key>time</key>
+			<integer>2</integer>
+			<key>howMany</key>
+			<integer>4</integer>
+			<key>howLong</key>
+			<integer>3</integer>
+			<key>animation</key>
+			<string>FigureEight</string>
+		</dict>
+	</array>
+	<key>howLong</key>
+	<integer>60</integer>
+</dict>
+</plist>

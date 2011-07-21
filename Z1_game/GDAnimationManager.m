@@ -7,7 +7,6 @@
 //
 
 #import "GDAnimationManager.h"
-#import "GDEnemyBaseSprite.h"
 
 
 @implementation GDAnimationManager
@@ -45,6 +44,8 @@ static GDAnimationManager* _animationManager = nil;
              aSprite.rotation = aSprite.rotation + ([aSprite.animInfo intValue] * 2);
              aSprite.scale = aSprite.scale + (0.002 * [aSprite.animInfo intValue]);
          } forKey:@"FigureEight"];
+        
+        _animationManager.animations = [NSDictionary dictionaryWithDictionary:blockDict];
     }
     return _animationManager;
 }

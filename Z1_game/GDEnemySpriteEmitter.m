@@ -31,6 +31,18 @@
     [super dealloc];
 }
 
+- (id) initWithDictionary:(NSDictionary*)inDict
+{
+    if (( self = [super init] ))
+    {
+        self.howLong = [[inDict objectForKey:@"howLong"] intValue];
+        self.howMany = [[inDict objectForKey:@"howMany"] intValue];
+        self.movementAnimation = [[GDAnimationManager sharedAnimationManager] movementAnimationForKey:[inDict objectForKey:@"animation"]];
+        self.position = ccp([[inDict objectForKey:@"x"] floatValue], [[inDict objectForKey:@"y"] floatValue]);
+    }
+    return self;
+}
+
 - (id) init
 {
     if ((self = [super init]))

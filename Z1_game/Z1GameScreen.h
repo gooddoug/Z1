@@ -18,10 +18,13 @@
     CCSprite* _playerSprite;
     NSMutableArray* _enemySprites;
     NSMutableSet* _playerShots;
-    NSArray* _effects;
+    float _time;
+    int _spawnerIndex;
     
+    NSArray* _effects;
     NSDictionary* _levelDescription;
     CCSprite* _backgroundSprite;
+    NSArray* _spawners;
 }
 
 +(CCScene*) scene;

@@ -37,7 +37,8 @@ static GDSoundsManager* _soundsManager = nil;
     {
         self.sounds = [NSMutableDictionary dictionary];
         // preload any sounds here
-        NSSound* temp = [self soundForName:@"screen_tranistion"];
+        NSSound* temp = [self soundForName:@"screen_transition"];
+        #pragma unused (temp)
     }
     
     return self;

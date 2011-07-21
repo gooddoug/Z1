@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
+#import "GDEnemyBaseSprite.h"
 
 
 @interface GDAnimationManager : NSObject 
@@ -16,5 +17,10 @@
 }
 
 @property (nonatomic, retain) NSDictionary* animations;
+
++ (GDAnimationManager*) sharedAnimationManager;
+
+
+- (AnimBlock) movementAnimationForKey:(NSString*)key;
 
 @end

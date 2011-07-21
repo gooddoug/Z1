@@ -16,24 +16,30 @@
 
 @property (nonatomic, retain) NSDictionary* levelDescription;
 @property (nonatomic, retain) CCSprite* backgroundSprite;
+@property (nonatomic, retain) NSArray* spawners;
+@property float time;
+@property int spawnerIndex;
 
-- (void) sweep;
+- (void) sweepForDead;
 - (void) resolveFire;
+- (void) handleInput:(ccTime)dt;
+- (void) checkSpawners:(ccTime)dt;
 
 @end
 
 @implementation Z1GameScreen
 
 @synthesize inputManager = _inputManager, playerSprite = _playerSprite, enemySprites = _enemySprites;
-@synthesize playerShots = _playerShots, effects = _effects;
+@synthesize playerShots = _playerShots, effects = _effects, time = _time, spawnerIndex = _spawnerIndex;
 
-@synthesize levelDescription = _levelDescription, backgroundSprite = _backgroundSprite;
+@synthesize levelDescription = _levelDescription, backgroundSprite = _backgroundSprite, spawners = _spawners;
 
 +(CCScene*) scene
 {
     CCScene *scene = [CCScene node];
 	
-	Z1GameScreen *layer = [Z1GameScreen node];
+    // cheat this first time
+	Z1GameScreen *layer = [[[Z1GameScreen alloc] initWithFile:@"test"] autorelease];
 	
 	[scene addChild: layer];
 	
@@ -45,7 +51,7 @@
     [_inputManager release];
     [_playerShots release];
     [_enemySprites release];
-    [_playerShots release];
+    //[_playerShots release];
     [_effects release];
     [_levelDescription release];
     [_backgroundSprite release];
@@ -53,7 +59,7 @@
     [super dealloc];
 }
 
-- (id) init
+- (id) initWithFile:(NSString*)inFile
 {
     if (( self = [super init] ))
     {
@@ -73,6 +79,24 @@
         
         [self addChild:self.playerSprite z:20];
         [[GDSoundsManager sharedSoundsManager] playSoundForName:@"level_start"];
+        
+        NSString* levelPath = [[NSBundle mainBundle] pathForResource:inFile ofType:@"z1level"];
+        NSString* plistPath = [levelPath stringByAppendingPathComponent:@"level.plist"];
+        self.levelDescription = [NSDictionary dictionaryWithContentsOfFile:plistPath];
+        NSString* backgroundName = [self.levelDescription objectForKey:@"background"];
+        if (backgroundName)
+        {
+            self.backgroundSprite = [CCSprite spriteWithFile:[levelPath stringByAppendingPathComponent:backgroundName]];
+            self.backgroundSprite.position = ccp(size.width / 2.0f, size.height / 2.0f);
+            [self addChild:self.backgroundSprite z:0];
+        }
+        NSMutableArray* tempEffects = [NSMutableArray array];
+        for (NSString* anEffect in [self.levelDescription objectForKey:@"effects"])
+        {
+            [tempEffects addObject:[[[NSClassFromString(anEffect) alloc] init] autorelease]];
+        }
+        self.effects = tempEffects;
+        self.spawners = [self.levelDescription objectForKey:@"spawners"];
     }
     return self;
 }
@@ -88,9 +112,9 @@
     return [self.inputManager handleKeyUp:event];
 }
 
-- (void) update:(ccTime)dt
+- (void) handleInput:(ccTime)dt  
 {
-    if (self.inputManager.pause)
+  if (self.inputManager.pause)
     {
         [[CCDirector sharedDirector] popScene];
     }
@@ -153,11 +177,19 @@
         [[GDSoundsManager sharedSoundsManager] playSoundForName:@"Laser"];
     }
     
-    [self sweep];
+
+}
+- (void) update:(ccTime)dt
+{
+    [self handleInput: dt];
+    
+    [self checkSpawners:dt];
+    
+    [self sweepForDead];
     [self resolveFire];
 }
 
-- (void) sweep
+- (void) sweepForDead
 {
     // sweep through object lists looking for ones to cull
     // in this case, shots
@@ -225,6 +257,54 @@
         }
     }
 }
+
+- (void) checkSpawners:(ccTime)dt
+{
+    self.time = self.time + dt;
+    if (self.spawnerIndex < [self.spawners count])
+    {
+        NSDictionary* nextSpawner = [self.spawners objectAtIndex:self.spawnerIndex];
+        if (self.time > [[nextSpawner objectForKey:@"time"] intValue])
+        {
+            // create the spawner
+            GDEnemySpriteEmitter* emitter = [[[GDEnemySpriteEmitter alloc] initWithDictionary:nextSpawner] autorelease];
+            // set position
+            // set rotation
+            // schedule updates
+            [emitter scheduleUpdate];
+            // add as child
+            [self addChild:emitter];
+            self.spawnerIndex = self.spawnerIndex + 1;
+        }
+    }
+}
+
+#pragma mark - implemented accessors
+
+- (void) setEffects:(NSArray *)effects
+{
+    if (effects == _effects)
+    {
+        return;
+    }
+    NSArray* temp = [effects retain];
+    [_effects release];
+    _effects = temp;
+    
+    // add them as children
+    int i = 1;
+    for (CCNode* aNode in _effects) 
+    {
+        [self addChild:aNode z:i];
+        i++;
+    }
+}
+
+- (NSArray*) effects
+{
+    return _effects;
+}
+
 
 #pragma mark - GDGameScreenProtocol
 

@@ -28,6 +28,9 @@
 @property (copy, nonatomic) AnimBlock movementAnimation;
 @property (retain, nonatomic) CCAnimation* frameAnimation;
 
+
+- (id) initWithDictionary:(NSDictionary*)inDict;
+
 - (void) spawnSprite;
 
 @end
