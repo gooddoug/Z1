@@ -20,6 +20,15 @@
 	<key>spawners</key>
 	<array>
 		<dict>
+			<key>sprite</key>
+			<dict>
+				<key>initialSpeed</key>
+				<real>300</real>
+				<key>scale</key>
+				<real>0.1</real>
+				<key>name</key>
+				<string>ship1.png</string>
+			</dict>
 			<key>x</key>
 			<integer>512</integer>
 			<key>y</key>
@@ -32,6 +41,29 @@
 			<integer>3</integer>
 			<key>animation</key>
 			<string>FigureEight</string>
+		</dict>
+		<dict>
+			<key>sprite</key>
+			<dict>
+				<key>initialSpeed</key>
+				<real>400</real>
+				<key>scale</key>
+				<real>0.1</real>
+				<key>name</key>
+				<string>ship1.png</string>
+			</dict>
+			<key>y</key>
+			<integer>383</integer>
+			<key>x</key>
+			<integer>512</integer>
+			<key>howLong</key>
+			<integer>3</integer>
+			<key>howMany</key>
+			<integer>5</integer>
+			<key>animation</key>
+			<string>FigureEight</string>
+			<key>time</key>
+			<string>16</string>
 		</dict>
 	</array>
 	<key>howLong</key>

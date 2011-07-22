@@ -14,13 +14,14 @@
 
 @property (readonly) float intervalBetweenSpawns;
 @property int spawned;
+@property (nonatomic, retain) NSDictionary* spriteDict;
 
 @end
 
 @implementation GDEnemySpriteEmitter
 
 @synthesize howMany, howLong, time, frameAnimation = _frameAnimation, movementAnimation = _movementAnimation;
-@synthesize spawned;
+@synthesize spawned, spriteDict = _spriteDict;
 
 
 - (void) dealloc
@@ -38,7 +39,16 @@
         self.howLong = [[inDict objectForKey:@"howLong"] intValue];
         self.howMany = [[inDict objectForKey:@"howMany"] intValue];
         self.movementAnimation = [[GDAnimationManager sharedAnimationManager] movementAnimationForKey:[inDict objectForKey:@"animation"]];
-        self.position = ccp([[inDict objectForKey:@"x"] floatValue], [[inDict objectForKey:@"y"] floatValue]);
+        if([inDict objectForKey:@"x"])
+            self.position = ccp([[inDict objectForKey:@"x"] floatValue], [[inDict objectForKey:@"y"] floatValue]);
+        else
+            self.position = ccp(512, 383);
+        
+        if ([inDict objectForKey:@"rotation"]) 
+        {
+            self.rotation = [[inDict objectForKey:@"rotation"] floatValue];
+        }
+        self.spriteDict = [inDict objectForKey:@"sprite"];
     }
     return self;
 }
@@ -72,12 +82,10 @@
 - (void) spawnSprite
 {
     // create a new sprite and add it to the parent
-    GDEnemyBaseSprite* enemySprite = [GDEnemyBaseSprite spriteWithFile:@"ship1.png"];
+    GDEnemyBaseSprite* enemySprite = [GDEnemyBaseSprite spriteWithDict:self.spriteDict];
     enemySprite.position = self.position;
     enemySprite.rotation = self.rotation;
     enemySprite.animBlock = self.movementAnimation;
-    enemySprite.scale = 0.25;
-    enemySprite.speed = 300.0;
     
     [(Z1GameScreen*)self.parent addEnemySprite:enemySprite];
 }

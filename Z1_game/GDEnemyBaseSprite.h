@@ -41,6 +41,7 @@ typedef void(^AnimBlock)(ccTime, GDEnemyBaseSprite*);
 @property (retain, nonatomic) id animInfo;
 
 + (GDEnemyBaseSprite*) spriteWithFile:(NSString*)inFilename;
++ (GDEnemyBaseSprite*) spriteWithDict:(NSDictionary*)inDict;
 
 - (id) initWithFile:(NSString*)inFilename;
 

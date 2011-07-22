@@ -21,6 +21,26 @@
     return [[[GDEnemyBaseSprite alloc] initWithFile:inFilename] autorelease];
 }
 
++ (GDEnemyBaseSprite*) spriteWithDict:(NSDictionary*)inDict
+{
+    NSString* name = [inDict objectForKey:@"name"];
+    if (!name)
+    {
+        name = @"ship1.png";
+    }
+    GDEnemyBaseSprite* val = [GDEnemyBaseSprite spriteWithFile:name];
+    if ([inDict objectForKey:@"scale"]) 
+    {
+        val.scale = [[inDict objectForKey:@"scale"] floatValue];
+    }
+    if ([inDict objectForKey:@"initialSpeed"])
+    {
+        val.speed = [[inDict objectForKey:@"initialSpeed"] floatValue];
+    }
+    
+    return val;
+}
+
 - (id) init
 {
     if ((self = [super init]))

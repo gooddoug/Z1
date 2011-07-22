@@ -42,7 +42,7 @@ static GDAnimationManager* _animationManager = nil;
                  aSprite.animInfo = [NSNumber numberWithInt:1];
              }
              aSprite.rotation = aSprite.rotation + ([aSprite.animInfo intValue] * 2);
-             aSprite.scale = aSprite.scale + (0.002 * [aSprite.animInfo intValue]);
+             aSprite.scale = aSprite.scale + (0.001 * [aSprite.animInfo intValue]);
          } forKey:@"FigureEight"];
         
         _animationManager.animations = [NSDictionary dictionaryWithDictionary:blockDict];

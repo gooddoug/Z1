@@ -89,6 +89,7 @@
             self.backgroundSprite = [CCSprite spriteWithFile:[levelPath stringByAppendingPathComponent:backgroundName]];
             self.backgroundSprite.position = ccp(size.width / 2.0f, size.height / 2.0f);
             [self addChild:self.backgroundSprite z:0];
+            [self.backgroundSprite runAction:[CCScaleBy actionWithDuration:200 scale:5]];
         }
         NSMutableArray* tempEffects = [NSMutableArray array];
         for (NSString* anEffect in [self.levelDescription objectForKey:@"effects"])
@@ -171,7 +172,7 @@
         
         [self addChild:aShot z:10];
         [self.playerShots addObject:aShot];
-        [aShot runAction:[CCScaleTo actionWithDuration:0.5 scale:0.001]];
+        [aShot runAction:[CCScaleTo actionWithDuration:1.0 scale:0.001]];
         
         // shot sound
         [[GDSoundsManager sharedSoundsManager] playSoundForName:@"Laser"];
@@ -196,7 +197,7 @@
     NSMutableArray* oldShots = [NSMutableArray array];
     for (GDPlayerShot* aShot in self.playerShots) 
     {
-        if (aShot.scale < 0.002)
+        if (aShot.scale < 0.002 || aShot.hitSomething)
         {
             [self removeChild:aShot cleanup:YES];
             [oldShots addObject:aShot];
@@ -208,6 +209,7 @@
      CGSize size = [[CCDirector sharedDirector] winSize];
      CCParticleExplosion* expl = [[[CCParticleExplosion alloc] init] autorelease];
      expl.position = ccp( size.width /2 , size.height/2 );
+     expl.scale = 0.5;
      [self addChild:expl z:13];
      }*/
     for (GDPlayerShot* aShot in oldShots) 
@@ -224,8 +226,13 @@
             [deadEnemies addObject:anEnemy];
         }
     }
+    
     for (GDEnemyBaseSprite* deadEnenmy in deadEnemies) 
     {
+        CCParticleExplosion* expl = [[[CCParticleExplosion alloc] init] autorelease];
+        expl.position = deadEnenmy.position;
+        expl.scale = 0.5;
+        [self addChild:expl z:13];
         [self.enemySprites removeObject:deadEnenmy];
         [self removeChild:deadEnenmy cleanup:YES];
     }
@@ -234,7 +241,7 @@
 - (void) resolveFire
 {
     // stupid brute force test of all player shots with all enemies...
-    for (CCSprite* aShot in self.playerShots) 
+    for (GDPlayerShot* aShot in self.playerShots) 
     {
         for (GDEnemyBaseSprite* anEnemy in self.enemySprites) 
         {
@@ -251,7 +258,8 @@
                 if (dist <= exSize)
                 {
                     NSLog(@"Got one!");
-                    
+                    anEnemy.dead = YES;
+                    aShot.hitSomething = YES;
                 }
             }
         }
