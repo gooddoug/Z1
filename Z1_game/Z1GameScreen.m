@@ -221,10 +221,6 @@
     
     for (GDEnemyBaseSprite* deadEnenmy in deadEnemies) 
     {
-        CCParticleExplosion* expl = [[[CCParticleExplosion alloc] init] autorelease];
-        expl.position = deadEnenmy.position;
-        expl.scale = 0.5;
-        [self addChild:expl z:13];
         [self.enemySprites removeObject:deadEnenmy];
         [self removeChild:deadEnenmy cleanup:YES];
     }
@@ -249,9 +245,22 @@
                 float dist = sqrtf((distX*distX) + (distY*distY));
                 if (dist <= exSize)
                 {
-                    NSLog(@"Got one!");
+                    NSLog(@"Got one! shot: %f, %f  enemy: %f, %f", centerShot.x, centerShot.y, anEnemy.position.x, anEnemy.position.y);
                     anEnemy.dead = YES;
                     aShot.hitSomething = YES;
+                    CCParticleExplosion* expl = [[[CCParticleExplosion alloc] init] autorelease];
+                    expl.position = anEnemy.position;
+                    expl.scale = 0.5;
+                    expl.life = 1.0f;
+                    expl.lifeVar = 0.5;
+                    ccColor4F aStartColor = {0.9f, 0.25f, 0.0f, 1.0f};
+                    ccColor4F aEndColor = {0.0f, 0.0f, 0.0f, 0.0f};
+                    ccColor4F aStartColorVar = {0.0f, 1.0f, 0.0f, 0.0f};
+                    expl.startColor = aStartColor;
+                    expl.endColor = aEndColor;
+                    expl.startColorVar = aStartColorVar;
+                    [self addChild:expl z:13];
+                    [[GDSoundsManager sharedSoundsManager] playSoundForName:@"explosion"];
                 }
             }
         }
