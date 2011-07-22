@@ -87,7 +87,7 @@
         if (backgroundName)
         {
             self.backgroundSprite = [CCSprite spriteWithFile:[levelPath stringByAppendingPathComponent:backgroundName]];
-            self.backgroundSprite.position = ccp(size.width / 2.0f, size.height / 2.0f);
+            self.backgroundSprite.position = ccp(size.width / 2.0f, size.height / 2.0f  + 10.0);
             [self addChild:self.backgroundSprite z:0];
             [self.backgroundSprite runAction:[CCScaleBy actionWithDuration:200 scale:5]];
         }
@@ -203,15 +203,7 @@
             [oldShots addObject:aShot];
         }
     }
-    /*  //make my own, tighter explosion
-     if ([oldShots count])
-     {
-     CGSize size = [[CCDirector sharedDirector] winSize];
-     CCParticleExplosion* expl = [[[CCParticleExplosion alloc] init] autorelease];
-     expl.position = ccp( size.width /2 , size.height/2 );
-     expl.scale = 0.5;
-     [self addChild:expl z:13];
-     }*/
+    
     for (GDPlayerShot* aShot in oldShots) 
     {
         [self.playerShots removeObject:aShot];
