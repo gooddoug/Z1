@@ -147,6 +147,9 @@
 		EFE599D413D3F5B700062F86 /* GDBaseEffectsScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE599D313D3F5B600062F86 /* GDBaseEffectsScreen.m */; };
 		EFE599D713D3FD4000062F86 /* Z1MenuScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE599D613D3FD3E00062F86 /* Z1MenuScreen.m */; };
 		EFE599D913D3FF8700062F86 /* stars.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE599D813D3FF8700062F86 /* stars.png */; };
+		EFF097A6140D8F020025FBD6 /* GDStarBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF097A5140D8F020025FBD6 /* GDStarBackground.m */; };
+		EFF097AA140DAAF80025FBD6 /* Z1-Sprites_default.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFF097A8140DAAF80025FBD6 /* Z1-Sprites_default.plist */; };
+		EFF097AB140DAAF80025FBD6 /* ship2.png in Resources */ = {isa = PBXBuildFile; fileRef = EFF097A9140DAAF80025FBD6 /* ship2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -411,6 +414,10 @@
 		EFE599D513D3FD3D00062F86 /* Z1MenuScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1MenuScreen.h; sourceTree = "<group>"; };
 		EFE599D613D3FD3E00062F86 /* Z1MenuScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1MenuScreen.m; sourceTree = "<group>"; };
 		EFE599D813D3FF8700062F86 /* stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stars.png; sourceTree = "<group>"; };
+		EFF097A4140D8F020025FBD6 /* GDStarBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDStarBackground.h; sourceTree = "<group>"; };
+		EFF097A5140D8F020025FBD6 /* GDStarBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDStarBackground.m; sourceTree = "<group>"; };
+		EFF097A8140DAAF80025FBD6 /* Z1-Sprites_default.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Z1-Sprites_default.plist"; sourceTree = "<group>"; };
+		EFF097A9140DAAF80025FBD6 /* ship2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -811,6 +818,8 @@
 				EFE5999E13D3385C00062F86 /* GDParticleStarfield.m */,
 				EFE5999F13D3385C00062F86 /* GDParticleFog.h */,
 				EFE599A013D3385C00062F86 /* GDParticleFog.m */,
+				EFF097A4140D8F020025FBD6 /* GDStarBackground.h */,
+				EFF097A5140D8F020025FBD6 /* GDStarBackground.m */,
 			);
 			name = Effects;
 			sourceTree = "<group>";
@@ -826,6 +835,8 @@
 				EFE599D813D3FF8700062F86 /* stars.png */,
 				EFE599AB13D338A100062F86 /* StarMail.png */,
 				EFE599AC13D338A100062F86 /* fire.png */,
+				EFF097A8140DAAF80025FBD6 /* Z1-Sprites_default.plist */,
+				EFF097A9140DAAF80025FBD6 /* ship2.png */,
 			);
 			name = Sprites;
 			sourceTree = "<group>";
@@ -939,6 +950,8 @@
 				EF72D96313D778D900ABD27F /* player_explosion.wav in Resources */,
 				EF72D96413D778D900ABD27F /* quick_hit.wav in Resources */,
 				EF72D96613D77A2500ABD27F /* screen_transition.wav in Resources */,
+				EFF097AA140DAAF80025FBD6 /* Z1-Sprites_default.plist in Resources */,
+				EFF097AB140DAAF80025FBD6 /* ship2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1052,6 +1065,7 @@
 				EF72D95213D5DEFF00ABD27F /* Z1GameScreen.m in Sources */,
 				EF72D95513D64D7000ABD27F /* GDAnimationManager.m in Sources */,
 				EF72D95813D7764C00ABD27F /* GDSoundsManager.m in Sources */,
+				EFF097A6140D8F020025FBD6 /* GDStarBackground.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

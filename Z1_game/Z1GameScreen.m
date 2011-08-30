@@ -71,10 +71,11 @@
         self.enemySprites = [NSMutableArray array];
         self.playerShots = [NSMutableSet set];
                 
-        self.playerSprite = [CCSprite spriteWithFile:@"ship1.png"];
-        self.playerSprite.scale = 0.25;
+        self.playerSprite = [CCSprite spriteWithFile:@"ship2.png"];
+        self.playerSprite.scale = 0.5;
+        self.playerSprite.flipY = YES;
         
-        self.playerSprite.anchorPoint = ccp( 0.65 , 10.0 );
+        self.playerSprite.anchorPoint = ccp( 0.65 , 5.0 );
         self.playerSprite.position = ccp( size.width /2 , size.height/2 );
         
         [self addChild:self.playerSprite z:20];
@@ -226,6 +227,24 @@
     }
 }
 
+- (void)createExplosionAtPoint:(NSPoint)aPoint  
+{
+    CCParticleExplosion* expl = [[[CCParticleExplosion alloc] init] autorelease];
+    expl.position = aPoint;
+    expl.scale = 0.5;
+    expl.life = 1.0f;
+    expl.lifeVar = 0.5;
+    ccColor4F aStartColor = {0.9f, 0.25f, 0.0f, 1.0f};
+    ccColor4F aEndColor = {0.0f, 0.0f, 0.0f, 0.0f};
+    ccColor4F aStartColorVar = {0.0f, 1.0f, 0.0f, 0.0f};
+    expl.startColor = aStartColor;
+    expl.endColor = aEndColor;
+    expl.startColorVar = aStartColorVar;
+    [self addChild:expl z:13];
+    [[GDSoundsManager sharedSoundsManager] playSoundForName:@"explosion"];
+
+}
+
 - (void) resolveFire
 {
     // stupid brute force test of all player shots with all enemies...
@@ -248,19 +267,8 @@
                     NSLog(@"Got one! shot: %f, %f  enemy: %f, %f", centerShot.x, centerShot.y, anEnemy.position.x, anEnemy.position.y);
                     anEnemy.dead = YES;
                     aShot.hitSomething = YES;
-                    CCParticleExplosion* expl = [[[CCParticleExplosion alloc] init] autorelease];
-                    expl.position = anEnemy.position;
-                    expl.scale = 0.5;
-                    expl.life = 1.0f;
-                    expl.lifeVar = 0.5;
-                    ccColor4F aStartColor = {0.9f, 0.25f, 0.0f, 1.0f};
-                    ccColor4F aEndColor = {0.0f, 0.0f, 0.0f, 0.0f};
-                    ccColor4F aStartColorVar = {0.0f, 1.0f, 0.0f, 0.0f};
-                    expl.startColor = aStartColor;
-                    expl.endColor = aEndColor;
-                    expl.startColorVar = aStartColorVar;
-                    [self addChild:expl z:13];
-                    [[GDSoundsManager sharedSoundsManager] playSoundForName:@"explosion"];
+                    
+                    [self createExplosionAtPoint: anEnemy.position];
                 }
             }
         }
