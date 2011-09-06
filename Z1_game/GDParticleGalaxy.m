@@ -8,6 +8,7 @@
 
 #import "GDParticleGalaxy.h"
 
+#define DEFAULT_HOW_MANY 600
 
 @implementation GDParticleGalaxy
 
@@ -25,9 +26,31 @@
     [super dealloc];
 }
 
+- (id) initWithEffectDictionary:(NSDictionary*)inDict
+{
+    int howMany = [[inDict valueForKey:@"howMany"] intValue];
+    if (!howMany)
+    {
+        howMany = DEFAULT_HOW_MANY;
+    }
+    self = [self initWithTotalParticles:howMany];
+    
+    // startColor
+    
+    // endColor
+    
+    // speed
+    
+    // radialAccel
+    
+    // tangentialAccel
+    
+    return self;
+}
+
 - (id) init
 {
-    return [self initWithTotalParticles:600];
+    return [self initWithTotalParticles:DEFAULT_HOW_MANY];
 }
 
 - (id) initWithTotalParticles:(NSUInteger)numberOfParticles

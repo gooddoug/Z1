@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GDEffectProtocol.h"
 #import "cocos2d.h"
 
-@interface GDParticleGalaxy : CCNode
+@interface GDParticleGalaxy : CCNode <GDEffectProtocol>
 {
     CCParticleGalaxy* _particleEmitter;
     CCSprite* _center;

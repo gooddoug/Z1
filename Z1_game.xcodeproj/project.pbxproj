@@ -24,6 +24,8 @@
 		EF72D96313D778D900ABD27F /* player_explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF72D95D13D778D800ABD27F /* player_explosion.wav */; };
 		EF72D96413D778D900ABD27F /* quick_hit.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF72D95E13D778D800ABD27F /* quick_hit.wav */; };
 		EF72D96613D77A2500ABD27F /* screen_transition.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF72D96513D77A2500ABD27F /* screen_transition.wav */; };
+		EF7F5661141143B400D8B26A /* GDUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F5660141143B400D8B26A /* GDUtilities.m */; };
+		EF7F5664141672D400D8B26A /* GDBasicSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F5663141672D400D8B26A /* GDBasicSprite.m */; };
 		EFB5EA3013D8CC900058DB94 /* test.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EFB5EA2F13D8CC900058DB94 /* test.z1level */; };
 		EFE5985713D337A400062F86 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5985613D337A400062F86 /* QuartzCore.framework */; };
 		EFE5985913D337A400062F86 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5985813D337A400062F86 /* OpenGL.framework */; };
@@ -124,7 +126,7 @@
 		EFE5999813D3383700062F86 /* GDMenuItemSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE5999013D3383700062F86 /* GDMenuItemSprite.m */; };
 		EFE5999913D3383700062F86 /* GDButtonSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE5999213D3383700062F86 /* GDButtonSprite.m */; };
 		EFE5999A13D3383700062F86 /* GDEnemySpriteEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE5999413D3383700062F86 /* GDEnemySpriteEmitter.m */; };
-		EFE5999B13D3383700062F86 /* GDEnemyBaseSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE5999613D3383700062F86 /* GDEnemyBaseSprite.m */; };
+		EFE5999B13D3383700062F86 /* GDUnboundSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE5999613D3383700062F86 /* GDUnboundSprite.m */; };
 		EFE599A113D3385C00062F86 /* GDParticleStarfield.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE5999E13D3385C00062F86 /* GDParticleStarfield.m */; };
 		EFE599A213D3385C00062F86 /* GDParticleFog.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE599A013D3385C00062F86 /* GDParticleFog.m */; };
 		EFE599A613D3387000062F86 /* GDInputManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE599A513D3387000062F86 /* GDInputManager.m */; };
@@ -152,6 +154,16 @@
 		EFF097AB140DAAF80025FBD6 /* ship2.png in Resources */ = {isa = PBXBuildFile; fileRef = EFF097A9140DAAF80025FBD6 /* ship2.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EF7F565C140FDC6600D8B26A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF7F5658140FDC6600D8B26A /* Z1-editor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EF7F551E140FDC6300D8B26A;
+			remoteInfo = "Z1-editor";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		EF72D92A13D48A3100ABD27F /* credits.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = credits.txt; sourceTree = "<group>"; };
 		EF72D92D13D48C4800ABD27F /* GDScrollingText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDScrollingText.h; sourceTree = "<group>"; };
@@ -177,6 +189,12 @@
 		EF72D95D13D778D800ABD27F /* player_explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = player_explosion.wav; sourceTree = "<group>"; };
 		EF72D95E13D778D800ABD27F /* quick_hit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = quick_hit.wav; sourceTree = "<group>"; };
 		EF72D96513D77A2500ABD27F /* screen_transition.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = screen_transition.wav; sourceTree = "<group>"; };
+		EF7F5658140FDC6600D8B26A /* Z1-editor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Z1-editor.xcodeproj"; path = "Z1-editor/Z1-editor.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		EF7F565E14113DA500D8B26A /* GDEffectProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDEffectProtocol.h; sourceTree = "<group>"; };
+		EF7F565F141143B400D8B26A /* GDUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDUtilities.h; sourceTree = "<group>"; };
+		EF7F5660141143B400D8B26A /* GDUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDUtilities.m; sourceTree = "<group>"; };
+		EF7F5662141672D400D8B26A /* GDBasicSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDBasicSprite.h; sourceTree = "<group>"; };
+		EF7F5663141672D400D8B26A /* GDBasicSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDBasicSprite.m; sourceTree = "<group>"; };
 		EFB5EA2F13D8CC900058DB94 /* test.z1level */ = {isa = PBXFileReference; lastKnownFileType = folder; path = test.z1level; sourceTree = "<group>"; };
 		EFE5985213D337A400062F86 /* Z1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Z1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE5985613D337A400062F86 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -383,8 +401,8 @@
 		EFE5999213D3383700062F86 /* GDButtonSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDButtonSprite.m; sourceTree = "<group>"; };
 		EFE5999313D3383700062F86 /* GDEnemySpriteEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDEnemySpriteEmitter.h; sourceTree = "<group>"; };
 		EFE5999413D3383700062F86 /* GDEnemySpriteEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDEnemySpriteEmitter.m; sourceTree = "<group>"; };
-		EFE5999513D3383700062F86 /* GDEnemyBaseSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDEnemyBaseSprite.h; sourceTree = "<group>"; };
-		EFE5999613D3383700062F86 /* GDEnemyBaseSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDEnemyBaseSprite.m; sourceTree = "<group>"; };
+		EFE5999513D3383700062F86 /* GDUnboundSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDUnboundSprite.h; sourceTree = "<group>"; };
+		EFE5999613D3383700062F86 /* GDUnboundSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDUnboundSprite.m; sourceTree = "<group>"; };
 		EFE5999D13D3385C00062F86 /* GDParticleStarfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDParticleStarfield.h; sourceTree = "<group>"; };
 		EFE5999E13D3385C00062F86 /* GDParticleStarfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDParticleStarfield.m; sourceTree = "<group>"; };
 		EFE5999F13D3385C00062F86 /* GDParticleFog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDParticleFog.h; sourceTree = "<group>"; };
@@ -437,6 +455,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF7F5659140FDC6600D8B26A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F565D140FDC6600D8B26A /* Z1-editor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		EFB5EA2213D889190058DB94 /* Levels */ = {
 			isa = PBXGroup;
 			children = (
@@ -447,6 +473,7 @@
 		EFE5984713D337A400062F86 = {
 			isa = PBXGroup;
 			children = (
+				EF7F5658140FDC6600D8B26A /* Z1-editor.xcodeproj */,
 				EFB5EA2F13D8CC900058DB94 /* test.z1level */,
 				EFE5986213D337A400062F86 /* Z1_game */,
 				EFE5985513D337A400062F86 /* Frameworks */,
@@ -803,8 +830,10 @@
 				EFE5999413D3383700062F86 /* GDEnemySpriteEmitter.m */,
 				EF72D95313D64D7000ABD27F /* GDAnimationManager.h */,
 				EF72D95413D64D7000ABD27F /* GDAnimationManager.m */,
-				EFE5999513D3383700062F86 /* GDEnemyBaseSprite.h */,
-				EFE5999613D3383700062F86 /* GDEnemyBaseSprite.m */,
+				EFE5999513D3383700062F86 /* GDUnboundSprite.h */,
+				EFE5999613D3383700062F86 /* GDUnboundSprite.m */,
+				EF7F5662141672D400D8B26A /* GDBasicSprite.h */,
+				EF7F5663141672D400D8B26A /* GDBasicSprite.m */,
 			);
 			name = Sprite;
 			sourceTree = "<group>";
@@ -812,6 +841,9 @@
 		EFE5999C13D3384600062F86 /* Effects */ = {
 			isa = PBXGroup;
 			children = (
+				EF7F565E14113DA500D8B26A /* GDEffectProtocol.h */,
+				EF7F565F141143B400D8B26A /* GDUtilities.h */,
+				EF7F5660141143B400D8B26A /* GDUtilities.m */,
 				EFE599CB13D34FC300062F86 /* GDParticleGalaxy.h */,
 				EFE599CC13D34FC300062F86 /* GDParticleGalaxy.m */,
 				EFE5999D13D3385C00062F86 /* GDParticleStarfield.h */,
@@ -907,12 +939,28 @@
 			mainGroup = EFE5984713D337A400062F86;
 			productRefGroup = EFE5985313D337A400062F86 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EF7F5659140FDC6600D8B26A /* Products */;
+					ProjectRef = EF7F5658140FDC6600D8B26A /* Z1-editor.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EFE5985113D337A400062F86 /* Z1 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EF7F565D140FDC6600D8B26A /* Z1-editor.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Z1-editor.app";
+			remoteRef = EF7F565C140FDC6600D8B26A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EFE5985013D337A400062F86 /* Resources */ = {
@@ -1051,7 +1099,7 @@
 				EFE5999813D3383700062F86 /* GDMenuItemSprite.m in Sources */,
 				EFE5999913D3383700062F86 /* GDButtonSprite.m in Sources */,
 				EFE5999A13D3383700062F86 /* GDEnemySpriteEmitter.m in Sources */,
-				EFE5999B13D3383700062F86 /* GDEnemyBaseSprite.m in Sources */,
+				EFE5999B13D3383700062F86 /* GDUnboundSprite.m in Sources */,
 				EFE599A113D3385C00062F86 /* GDParticleStarfield.m in Sources */,
 				EFE599A213D3385C00062F86 /* GDParticleFog.m in Sources */,
 				EFE599A613D3387000062F86 /* GDInputManager.m in Sources */,
@@ -1066,6 +1114,8 @@
 				EF72D95513D64D7000ABD27F /* GDAnimationManager.m in Sources */,
 				EF72D95813D7764C00ABD27F /* GDSoundsManager.m in Sources */,
 				EFF097A6140D8F020025FBD6 /* GDStarBackground.m in Sources */,
+				EF7F5661141143B400D8B26A /* GDUtilities.m in Sources */,
+				EF7F5664141672D400D8B26A /* GDBasicSprite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

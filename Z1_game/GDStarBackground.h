@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GDEffectProtocol.h"
 #import "cocos2d.h"
 
-@interface GDStarBackground : CCNode 
+@interface GDStarBackground : CCNode <GDEffectProtocol>
 {
     int howManyStars;
     float scaleLow;

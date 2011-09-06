@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GDEffectProtocol.h"
 #import "CCParticleExamples.h"
 
-@interface GDParticleFog : CCParticleSun 
+@interface GDParticleFog : CCParticleSun <GDEffectProtocol>
 {
     
 }

@@ -7,8 +7,11 @@
 //
 
 #import "GDParticleFog.h"
+#import "GDUtilities.h"
 #import "cocos2d.h"
 
+
+#define DEFAULT_HOW_MANY 100
 
 @implementation GDParticleFog
 
@@ -19,10 +22,55 @@
 
 - (id) init
 {
-    self = [self initWithTotalParticles:100];
+    self = [self initWithTotalParticles:DEFAULT_HOW_MANY];
     
     return self;
 }
+
+- (id) initWithEffectDictionary:(NSDictionary*)inDict
+{
+    int howMany = [[inDict valueForKey:@"howMany"] intValue];
+    if (!howMany)
+    {
+        howMany = DEFAULT_HOW_MANY;
+    }
+    self = [self initWithTotalParticles:howMany];
+    
+    // startColor
+    NSDictionary* aStartColorDict = [inDict objectForKey:@"startColor"];
+    if (aStartColorDict)
+    {
+        self.startColor = dictToColor(aStartColorDict);
+    }
+    
+    // endColor
+    NSDictionary* aEndColorDict = [inDict objectForKey:@"endColor"];
+    if (aEndColorDict)
+    {
+        self.endColor = dictToColor(aEndColorDict);
+    }
+    
+    // speed
+    float aSpeed = [[inDict objectForKey:@"speed"] floatValue];
+    if (aSpeed)
+    {
+        self.speed = aSpeed;
+    }
+    // startSize
+    float aStartSize = [[inDict objectForKey:@"startSize"] floatValue];
+    if (aStartSize)
+    {
+        self.startSize = aStartSize;
+    }
+    // endSize
+    float aEndSize = [[inDict objectForKey:@"endSize"] floatValue];
+    if (aEndSize)
+    {
+        self.endSize = aEndSize;
+    }
+    return self;
+}
+
 
 - (id) initWithTotalParticles:(NSUInteger)numberOfParticles
 {

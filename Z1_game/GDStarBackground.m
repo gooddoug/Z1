@@ -8,7 +8,6 @@
 
 #import "GDStarBackground.h"
 
-
 @implementation GDStarBackground
 
 @synthesize howManyStars, scaleHigh, scaleLow;
@@ -16,6 +15,11 @@
 + (GDStarBackground*) starBackground
 {
     return [[[self alloc] init] autorelease];
+}
+
+- (id) initWithEffectDictionary:(NSDictionary *)inDict
+{
+    return [self init];
 }
 
 - (id) initWithHowMany:(int)inHowMany scaleLow:(float)inScaleLow scaleHigh:(float)inScaleHigh

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
-#import "GDEnemyBaseSprite.h"
+#import "GDUnboundSprite.h"
 
 @interface GDEnemySpriteEmitter : CCNode 
 {

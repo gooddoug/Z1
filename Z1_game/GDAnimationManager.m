@@ -23,7 +23,7 @@ static GDAnimationManager* _animationManager = nil;
         NSMutableDictionary* blockDict = [NSMutableDictionary dictionary];
         
         // FigureEight
-        [blockDict setObject:^(ccTime dt, GDEnemyBaseSprite* aSprite)
+        [blockDict setObject:^(ccTime dt, GDUnboundSprite* aSprite)
          {
              if (aSprite.time > 10.0)
              {
@@ -44,6 +44,23 @@ static GDAnimationManager* _animationManager = nil;
              aSprite.rotation = aSprite.rotation + ([aSprite.animInfo intValue] * 2);
              aSprite.scale = aSprite.scale + (0.001 * [aSprite.animInfo intValue]);
          } forKey:@"FigureEight"];
+        
+        // simple spiral
+        [blockDict setObject:^(ccTime dt, GDBasicSprite* aSprite)
+         {
+             if (aSprite.scale <= 0.01)
+             {
+                 aSprite.dead = YES;
+             }
+             // I want the sprite to be slightly aimed in... and for the scale to be related to how close to the center of the screen it is
+             if (!aSprite.animInfo)
+             {
+                 
+             }
+             aSprite.scale = aSprite.scale - (dt * 0.1);
+             aSprite.rotation = aSprite.rotation + (dt * aSprite.speed);
+             
+         } forKey:@"SimpleSpiralInClockwise"];
         
         _animationManager.animations = [NSDictionary dictionaryWithDictionary:blockDict];
     }

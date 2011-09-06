@@ -12,58 +12,46 @@
 	<string>test_intro.txt</string>
 	<key>effects</key>
 	<array>
-		<string>GDParticleStarfield</string>
-		<string>GDParticleFog</string>
+		<dict>
+			<key>name</key>
+			<string>GDParticleStarfield</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>GDParticleFog</string>
+			<key>startColor</key>
+			<dict>
+				<key>r</key>
+				<real>0.9</real>
+				<key>g</key>
+				<real>0.8</real>
+				<key>b</key>
+				<real>1</real>
+				<key>a</key>
+				<real>0</real>
+			</dict>
+		</dict>
 	</array>
-	<key>background</key>
-	<string>starbg.png</string>
 	<key>spawners</key>
 	<array>
 		<dict>
 			<key>sprite</key>
 			<dict>
 				<key>initialSpeed</key>
-				<real>300</real>
+				<integer>80</integer>
 				<key>scale</key>
-				<real>0.1</real>
+				<real>0.5</real>
 				<key>name</key>
 				<string>ship1.png</string>
 			</dict>
-			<key>x</key>
-			<integer>512</integer>
-			<key>y</key>
-			<integer>383</integer>
-			<key>time</key>
-			<integer>2</integer>
-			<key>howMany</key>
-			<integer>4</integer>
 			<key>howLong</key>
-			<integer>3</integer>
-			<key>animation</key>
-			<string>FigureEight</string>
-		</dict>
-		<dict>
-			<key>sprite</key>
-			<dict>
-				<key>initialSpeed</key>
-				<real>400</real>
-				<key>scale</key>
-				<real>0.1</real>
-				<key>name</key>
-				<string>ship1.png</string>
-			</dict>
-			<key>y</key>
-			<integer>383</integer>
-			<key>x</key>
-			<integer>512</integer>
-			<key>howLong</key>
-			<integer>3</integer>
-			<key>howMany</key>
 			<integer>5</integer>
+			<key>howMany</key>
+			<integer>10</integer>
 			<key>animation</key>
-			<string>FigureEight</string>
+			<string>SimpleSpiralInClockwise</string>
 			<key>time</key>
-			<string>16</string>
+			<string>3</string>
 		</dict>
 	</array>
 	<key>howLong</key>

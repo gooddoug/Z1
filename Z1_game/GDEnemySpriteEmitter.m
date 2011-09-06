@@ -82,15 +82,15 @@
 - (void) spawnSprite
 {
     // create a new sprite and add it to the parent
-    GDEnemyBaseSprite* enemySprite = [GDEnemyBaseSprite spriteWithDict:self.spriteDict];
-    enemySprite.position = self.position;
+    GDBasicSprite* enemySprite = [GDBasicSprite spriteWithDict:self.spriteDict];
+    //enemySprite.position = self.position;
     enemySprite.rotation = self.rotation;
     enemySprite.animBlock = self.movementAnimation;
     
     [(Z1GameScreen*)self.parent addEnemySprite:enemySprite];
 }
 
-- (void) movementAnimtationForName:(NSString*)moveName
+- (void) movementAnimationForName:(NSString*)moveName
 {
     
 }

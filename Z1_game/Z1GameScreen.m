@@ -10,6 +10,7 @@
 #import "GDInputManager.h"
 #import "GDPlayerShot.h"
 #import "GDEnemySpriteEmitter.h"
+#import "GDEffectProtocol.h"
 #import "GDSoundsManager.h"
 
 @interface Z1GameScreen ()
@@ -93,9 +94,9 @@
             [self.backgroundSprite runAction:[CCScaleBy actionWithDuration:200 scale:5]];
         }
         NSMutableArray* tempEffects = [NSMutableArray array];
-        for (NSString* anEffect in [self.levelDescription objectForKey:@"effects"])
+        for (NSDictionary* anEffect in [self.levelDescription objectForKey:@"effects"])
         {
-            [tempEffects addObject:[[[NSClassFromString(anEffect) alloc] init] autorelease]];
+            [tempEffects addObject:[[[NSClassFromString([anEffect objectForKey:@"name"]) alloc] initWithEffectDictionary:anEffect] autorelease]];
         }
         self.effects = tempEffects;
         self.spawners = [self.levelDescription objectForKey:@"spawners"];
@@ -178,9 +179,8 @@
         // shot sound
         [[GDSoundsManager sharedSoundsManager] playSoundForName:@"Laser"];
     }
-    
-
 }
+
 - (void) update:(ccTime)dt
 {
     [self handleInput: dt];
@@ -212,7 +212,7 @@
     
     // now sweep through enemies
     NSMutableArray* deadEnemies = [NSMutableArray array];
-    for (GDEnemyBaseSprite* anEnemy in self.enemySprites)
+    for (GDUnboundSprite* anEnemy in self.enemySprites)
     {
         if (anEnemy.dead)
         {
@@ -220,7 +220,7 @@
         }
     }
     
-    for (GDEnemyBaseSprite* deadEnenmy in deadEnemies) 
+    for (GDUnboundSprite* deadEnenmy in deadEnemies) 
     {
         [self.enemySprites removeObject:deadEnenmy];
         [self removeChild:deadEnenmy cleanup:YES];
@@ -250,25 +250,27 @@
     // stupid brute force test of all player shots with all enemies...
     for (GDPlayerShot* aShot in self.playerShots) 
     {
-        for (GDEnemyBaseSprite* anEnemy in self.enemySprites) 
+        float exSize = 15.0; // be smarter about this later
+        CGRect shotRect = [aShot boundingBox]; // get boundingBox to account for rotation and anchorPoint offset
+        CGPoint centerShot = CGPointMake(shotRect.origin.x + (shotRect.size.width / 2), shotRect.origin.y + (shotRect.size.height / 2));
+        
+        for (GDBasicSprite* anEnemy in self.enemySprites) 
         {
+            CGRect enemyRect = [anEnemy boundingBox]; // get boundingBox to account for rotation and anchorPoint offset
+            CGPoint centerEnemy = CGPointMake(enemyRect.origin.x + (enemyRect.size.width / 2), enemyRect.origin.y + (enemyRect.size.height / 2));
+            NSLog(@"centerEnemy: %f, %f", centerEnemy.x, centerEnemy.y);
             // test distance
-            float exSize = 8.0;
-            CGRect shotRect = [aShot boundingBox]; // get boundingBox to account for rotation and anchorPoint offset
-            CGPoint centerShot = CGPointMake(shotRect.origin.x + (shotRect.size.width / 2), shotRect.origin.y + (shotRect.size.height / 2));
-            
-            float distX = abs(centerShot.x - anEnemy.position.x);
+            float distX = abs(centerShot.x - centerEnemy.x);
             if (distX <= exSize)
             {
-                float distY = abs(centerShot.y - anEnemy.position.y);
+                float distY = abs(centerShot.y - centerEnemy.y);
                 float dist = sqrtf((distX*distX) + (distY*distY));
                 if (dist <= exSize)
                 {
-                    NSLog(@"Got one! shot: %f, %f  enemy: %f, %f", centerShot.x, centerShot.y, anEnemy.position.x, anEnemy.position.y);
                     anEnemy.dead = YES;
                     aShot.hitSomething = YES;
-                    
-                    [self createExplosionAtPoint: anEnemy.position];
+                                        
+                    [self createExplosionAtPoint:centerEnemy];
                 }
             }
         }
