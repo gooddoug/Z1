@@ -258,7 +258,7 @@
         {
             CGRect enemyRect = [anEnemy boundingBox]; // get boundingBox to account for rotation and anchorPoint offset
             CGPoint centerEnemy = CGPointMake(enemyRect.origin.x + (enemyRect.size.width / 2), enemyRect.origin.y + (enemyRect.size.height / 2));
-            NSLog(@"centerEnemy: %f, %f", centerEnemy.x, centerEnemy.y);
+
             // test distance
             float distX = abs(centerShot.x - centerEnemy.x);
             if (distX <= exSize)

@@ -17,6 +17,7 @@ typedef void(^AnimBlock)(ccTime, GDBasicSprite*);
 {
     float _speed;
     float _time;
+    int _scaleDirection;
     CCSprite* _sprite;
     id _animInfo;
     BOOL dead;
@@ -29,6 +30,7 @@ typedef void(^AnimBlock)(ccTime, GDBasicSprite*);
 @property float speed;
 @property BOOL dead;
 @property float time;
+@property int scaleDirection;
 @property int currentFrame;
 @property (nonatomic, retain) CCSprite* sprite;
 @property (copy, nonatomic) AnimBlock animBlock;

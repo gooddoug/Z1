@@ -11,7 +11,7 @@
 
 @implementation GDBasicSprite
 
-@synthesize speed = _speed, time = _time, sprite = _sprite, animBlock, animInfo = _animInfo, dead, currentFrame = _currentFrame, heading = _heading;
+@synthesize speed = _speed, time = _time, sprite = _sprite, animBlock, animInfo = _animInfo, dead, currentFrame = _currentFrame, heading = _heading, scaleDirection = _scaleDirection;
 
 + (GDBasicSprite*) spriteWithFile:(NSString*)inFilename
 {
@@ -58,7 +58,8 @@
         CGPoint center = ccp( size.width /2 , size.height/2 );
         self.position = center;
         self.contentSize = self.sprite.contentSize;
-        self.anchorPoint = ccp( 0.5 , 8 );
+        float anchorFactor = (size.height / self.sprite.contentSize.height) + 1;
+        self.anchorPoint = ccp( 0.5 , anchorFactor );
     }
     
     return self;

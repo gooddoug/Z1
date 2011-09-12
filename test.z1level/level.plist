@@ -53,6 +53,44 @@
 			<key>time</key>
 			<string>3</string>
 		</dict>
+		<dict>
+			<key>sprite</key>
+			<dict>
+				<key>initialSpeed</key>
+				<integer>80</integer>
+				<key>scale</key>
+				<real>1.0</real>
+				<key>name</key>
+				<string>blood.png</string>
+			</dict>
+			<key>howLong</key>
+			<integer>5</integer>
+			<key>howMany</key>
+			<integer>5</integer>
+			<key>animation</key>
+			<string>SimpleSpiralInCounterClockwise</string>
+			<key>time</key>
+			<string>10</string>
+		</dict>
+		<dict>
+			<key>sprite</key>
+			<dict>
+				<key>initialSpeed</key>
+				<integer>80</integer>
+				<key>scale</key>
+				<real>1.0</real>
+				<key>name</key>
+				<string>blood.png</string>
+			</dict>
+			<key>howLong</key>
+			<integer>5</integer>
+			<key>howMany</key>
+			<integer>8</integer>
+			<key>animation</key>
+			<string>SpiralInAndOutClockwise</string>
+			<key>time</key>
+			<string>20</string>
+		</dict>
 	</array>
 	<key>howLong</key>
 	<integer>60</integer>

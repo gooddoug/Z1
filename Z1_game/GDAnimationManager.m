@@ -62,6 +62,69 @@ static GDAnimationManager* _animationManager = nil;
              
          } forKey:@"SimpleSpiralInClockwise"];
         
+        [blockDict setObject:^(ccTime dt, GDBasicSprite* aSprite)
+         {
+             if (aSprite.scale <= 0.01)
+             {
+                 aSprite.dead = YES;
+             }
+             // I want the sprite to be slightly aimed in... and for the scale to be related to how close to the center of the screen it is
+             if (!aSprite.animInfo)
+             {
+                 
+             }
+             aSprite.scale = aSprite.scale - (dt * 0.1);
+             aSprite.rotation = aSprite.rotation - (dt * aSprite.speed);
+             
+         } forKey:@"SimpleSpiralInCounterClockwise"];
+        
+        // spiral in and out again
+        [blockDict setObject:^(ccTime dt, GDBasicSprite* aSprite)
+         {
+             if (!aSprite.animInfo)
+             {
+                 aSprite.animInfo = [NSNumber numberWithInt:-1];
+             }
+             
+             if (aSprite.scale <= 0.1)
+             {
+                 aSprite.animInfo = [NSNumber numberWithInt:1];
+             }
+             
+             if (aSprite.scale >= 2.0)
+             {
+                 aSprite.dead = YES;
+             }
+             int factor = [aSprite.animInfo intValue];
+             
+             aSprite.scale = aSprite.scale + (dt * 0.25 * factor);
+             aSprite.rotation = aSprite.rotation + (dt * aSprite.speed);
+             
+         } forKey:@"SpiralInAndOutClockwise"];
+        
+        [blockDict setObject:^(ccTime dt, GDBasicSprite* aSprite)
+         {
+             if (!aSprite.animInfo)
+             {
+                 aSprite.animInfo = [NSNumber numberWithInt:-1];
+             }
+             
+             if (aSprite.scale <= 0.1)
+             {
+                 aSprite.animInfo = [NSNumber numberWithInt:1];
+             }
+             
+             if (aSprite.scale >= 2.0)
+             {
+                 aSprite.dead = YES;
+             }
+             int factor = [aSprite.animInfo intValue];
+             
+             aSprite.scale = aSprite.scale + (dt * 0.25 * factor);
+             aSprite.rotation = aSprite.rotation - (dt * aSprite.speed);
+             
+         } forKey:@"SpiralInAndOutCounterClockwise"];
+        
         _animationManager.animations = [NSDictionary dictionaryWithDictionary:blockDict];
     }
     return _animationManager;

@@ -16,6 +16,7 @@
     int howLong;
     float time;
     int spawned;
+    BOOL startInside;
     NSDictionary* spriteDict;
     
     AnimBlock _movementAnimation;

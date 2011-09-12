@@ -14,6 +14,7 @@
 
 @property (readonly) float intervalBetweenSpawns;
 @property int spawned;
+@property BOOL startInside;
 @property (nonatomic, retain) NSDictionary* spriteDict;
 
 @end
@@ -21,7 +22,7 @@
 @implementation GDEnemySpriteEmitter
 
 @synthesize howMany, howLong, time, frameAnimation = _frameAnimation, movementAnimation = _movementAnimation;
-@synthesize spawned, spriteDict = _spriteDict;
+@synthesize spawned, spriteDict = _spriteDict, startInside;
 
 
 - (void) dealloc
@@ -44,9 +45,15 @@
         else
             self.position = ccp(512, 383);
         
-        if ([inDict objectForKey:@"rotation"]) 
+        NSNumber* rot;
+        if ((rot = [inDict objectForKey:@"rotation"])) 
         {
-            self.rotation = [[inDict objectForKey:@"rotation"] floatValue];
+            self.rotation = [rot floatValue];
+        }
+        NSNumber* startInside = [NSNumber numberWithBool:NO];
+        if ((startInside = [inDict objectForKey:@"startInside"]))
+        {
+            self.startInside = [startInside boolValue];
         }
         self.spriteDict = [inDict objectForKey:@"sprite"];
     }
@@ -86,6 +93,8 @@
     //enemySprite.position = self.position;
     enemySprite.rotation = self.rotation;
     enemySprite.animBlock = self.movementAnimation;
+    enemySprite.scaleDirection = self.startInside ? -1 : 1;
+    enemySprite.scale = self.startInside ? 0.01 : 1.0;
     
     [(Z1GameScreen*)self.parent addEnemySprite:enemySprite];
 }

@@ -152,6 +152,7 @@
 		EFF097A6140D8F020025FBD6 /* GDStarBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF097A5140D8F020025FBD6 /* GDStarBackground.m */; };
 		EFF097AA140DAAF80025FBD6 /* Z1-Sprites_default.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFF097A8140DAAF80025FBD6 /* Z1-Sprites_default.plist */; };
 		EFF097AB140DAAF80025FBD6 /* ship2.png in Resources */ = {isa = PBXBuildFile; fileRef = EFF097A9140DAAF80025FBD6 /* ship2.png */; };
+		EFFD402E1419850300A48B07 /* blood.png in Resources */ = {isa = PBXBuildFile; fileRef = EFFD402D1419850300A48B07 /* blood.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -436,6 +437,7 @@
 		EFF097A5140D8F020025FBD6 /* GDStarBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDStarBackground.m; sourceTree = "<group>"; };
 		EFF097A8140DAAF80025FBD6 /* Z1-Sprites_default.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Z1-Sprites_default.plist"; sourceTree = "<group>"; };
 		EFF097A9140DAAF80025FBD6 /* ship2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship2.png; sourceTree = "<group>"; };
+		EFFD402D1419850300A48B07 /* blood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blood.png; path = Resources/blood.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -860,6 +862,7 @@
 			isa = PBXGroup;
 			children = (
 				EFE599D013D3F49600062F86 /* fog.png */,
+				EFFD402D1419850300A48B07 /* blood.png */,
 				EFE599CE13D34FCE00062F86 /* galaxy.png */,
 				EFE599A813D338A100062F86 /* shot.png */,
 				EFE599A913D338A100062F86 /* ship1.png */,
@@ -1000,6 +1003,7 @@
 				EF72D96613D77A2500ABD27F /* screen_transition.wav in Resources */,
 				EFF097AA140DAAF80025FBD6 /* Z1-Sprites_default.plist in Resources */,
 				EFF097AB140DAAF80025FBD6 /* ship2.png in Resources */,
+				EFFD402E1419850300A48B07 /* blood.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
