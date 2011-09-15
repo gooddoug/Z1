@@ -15,9 +15,10 @@
     int howMany;
     int howLong;
     float time;
+    float _spriteSpeed;
     int spawned;
-    BOOL startInside;
-    NSDictionary* spriteDict;
+    BOOL _startInside;
+    NSString* _sprite;
     
     AnimBlock _movementAnimation;
     CCAnimation* _frameAnimation;
@@ -26,6 +27,7 @@
 @property int howMany;
 @property int howLong;
 @property float time;
+@property BOOL startInside;
 
 @property (copy, nonatomic) AnimBlock movementAnimation;
 @property (retain, nonatomic) CCAnimation* frameAnimation;

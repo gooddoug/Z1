@@ -40,7 +40,7 @@
     CCScene *scene = [CCScene node];
 	
     // cheat this first time
-	Z1GameScreen *layer = [[[Z1GameScreen alloc] initWithFile:@"test"] autorelease];
+	Z1GameScreen *layer = [[[Z1GameScreen alloc] initWithFile:@"simple_test"] autorelease];
 	
 	[scene addChild: layer];
 	
@@ -83,16 +83,20 @@
         [[GDSoundsManager sharedSoundsManager] playSoundForName:@"level_start"];
         
         NSString* levelPath = [[NSBundle mainBundle] pathForResource:inFile ofType:@"z1level"];
-        NSString* plistPath = [levelPath stringByAppendingPathComponent:@"level.plist"];
-        self.levelDescription = [NSDictionary dictionaryWithContentsOfFile:plistPath];
-        NSString* backgroundName = [self.levelDescription objectForKey:@"background"];
+        if (!levelPath)
+        {
+            // find a folder next to the app named levels?
+            
+        }
+        self.levelDescription = [NSDictionary dictionaryWithContentsOfFile:levelPath];
+        /*NSString* backgroundName = [self.levelDescription objectForKey:@"background"];
         if (backgroundName)
         {
             self.backgroundSprite = [CCSprite spriteWithFile:[levelPath stringByAppendingPathComponent:backgroundName]];
             self.backgroundSprite.position = ccp(size.width / 2.0f, size.height / 2.0f  + 10.0);
             [self addChild:self.backgroundSprite z:0];
             [self.backgroundSprite runAction:[CCScaleBy actionWithDuration:200 scale:5]];
-        }
+        }*/
         NSMutableArray* tempEffects = [NSMutableArray array];
         for (NSDictionary* anEffect in [self.levelDescription objectForKey:@"effects"])
         {
@@ -146,7 +150,7 @@
         /*CGPoint currPos = self.playerSprite.position;
          CGPoint newPos = ccp(currPos.x - (dt * 100), currPos.y);
          self.playerSprite.position = newPos;*/
-        float rot = self.playerSprite.rotation - (200 * dt);
+        float rot = self.playerSprite.rotation - (300 * dt);
         if (rot < 0)
         {
             rot = 360.0 + rot;
@@ -227,7 +231,7 @@
     }
 }
 
-- (void)createExplosionAtPoint:(NSPoint)aPoint  
+- (void)createExplosionAtPoint:(CGPoint)aPoint  
 {
     CCParticleExplosion* expl = [[[CCParticleExplosion alloc] init] autorelease];
     expl.position = aPoint;
@@ -283,7 +287,7 @@
     if (self.spawnerIndex < [self.spawners count])
     {
         NSDictionary* nextSpawner = [self.spawners objectAtIndex:self.spawnerIndex];
-        if (self.time > [[nextSpawner objectForKey:@"time"] intValue])
+        if (self.time > [[nextSpawner objectForKey:@"when"] intValue])
         {
             // create the spawner
             GDEnemySpriteEmitter* emitter = [[[GDEnemySpriteEmitter alloc] initWithDictionary:nextSpawner] autorelease];

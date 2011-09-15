@@ -14,15 +14,15 @@
 
 @property (readonly) float intervalBetweenSpawns;
 @property int spawned;
-@property BOOL startInside;
-@property (nonatomic, retain) NSDictionary* spriteDict;
+@property (nonatomic, retain) NSString* sprite;
+@property float spriteSpeed;
 
 @end
 
 @implementation GDEnemySpriteEmitter
 
 @synthesize howMany, howLong, time, frameAnimation = _frameAnimation, movementAnimation = _movementAnimation;
-@synthesize spawned, spriteDict = _spriteDict, startInside;
+@synthesize spawned, sprite = _sprite, startInside = _startInside, spriteSpeed = _spriteSpeed;
 
 
 - (void) dealloc
@@ -39,7 +39,8 @@
     {
         self.howLong = [[inDict objectForKey:@"howLong"] intValue];
         self.howMany = [[inDict objectForKey:@"howMany"] intValue];
-        self.movementAnimation = [[GDAnimationManager sharedAnimationManager] movementAnimationForKey:[inDict objectForKey:@"animation"]];
+        self.movementAnimation = [[GDAnimationManager sharedAnimationManager] movementAnimationForKey:[inDict objectForKey:@"movementAnimation"]];
+        self.spriteSpeed = [[inDict objectForKey:@"speed"] floatValue];
         if([inDict objectForKey:@"x"])
             self.position = ccp([[inDict objectForKey:@"x"] floatValue], [[inDict objectForKey:@"y"] floatValue]);
         else
@@ -55,7 +56,7 @@
         {
             self.startInside = [startInside boolValue];
         }
-        self.spriteDict = [inDict objectForKey:@"sprite"];
+        self.sprite = [inDict objectForKey:@"sprite"];
     }
     return self;
 }
@@ -89,12 +90,13 @@
 - (void) spawnSprite
 {
     // create a new sprite and add it to the parent
-    GDBasicSprite* enemySprite = [GDBasicSprite spriteWithDict:self.spriteDict];
+    GDBasicSprite* enemySprite = [GDBasicSprite spriteWithFile:self.sprite];
     //enemySprite.position = self.position;
     enemySprite.rotation = self.rotation;
     enemySprite.animBlock = self.movementAnimation;
     enemySprite.scaleDirection = self.startInside ? -1 : 1;
     enemySprite.scale = self.startInside ? 0.01 : 1.0;
+    enemySprite.speed = self.spriteSpeed;
     
     [(Z1GameScreen*)self.parent addEnemySprite:enemySprite];
 }

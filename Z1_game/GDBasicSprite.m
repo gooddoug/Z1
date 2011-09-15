@@ -53,6 +53,11 @@
     if ((self = [self init]))
     {
         self.sprite = [CCSprite spriteWithFile:inFilename];
+        if (!self.sprite)
+        {
+            NSLog(@"bad filename for sprite");
+            return nil;
+        }
         [self addChild:self.sprite];
         CGSize size = [[CCDirector sharedDirector] winSize];
         CGPoint center = ccp( size.width /2 , size.height/2 );

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF5574511421C5890035F6C2 /* simple_test.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EF5574501421C5890035F6C2 /* simple_test.z1level */; };
 		EF72D92B13D48A3100ABD27F /* credits.txt in Resources */ = {isa = PBXBuildFile; fileRef = EF72D92A13D48A3100ABD27F /* credits.txt */; };
 		EF72D92F13D48C4800ABD27F /* GDScrollingText.m in Sources */ = {isa = PBXBuildFile; fileRef = EF72D92E13D48C4800ABD27F /* GDScrollingText.m */; };
 		EF72D93213D491FA00ABD27F /* Z1CreditsScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = EF72D93113D491FA00ABD27F /* Z1CreditsScreen.m */; };
@@ -26,7 +27,6 @@
 		EF72D96613D77A2500ABD27F /* screen_transition.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF72D96513D77A2500ABD27F /* screen_transition.wav */; };
 		EF7F5661141143B400D8B26A /* GDUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F5660141143B400D8B26A /* GDUtilities.m */; };
 		EF7F5664141672D400D8B26A /* GDBasicSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F5663141672D400D8B26A /* GDBasicSprite.m */; };
-		EFB5EA3013D8CC900058DB94 /* test.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EFB5EA2F13D8CC900058DB94 /* test.z1level */; };
 		EFE5985713D337A400062F86 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5985613D337A400062F86 /* QuartzCore.framework */; };
 		EFE5985913D337A400062F86 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5985813D337A400062F86 /* OpenGL.framework */; };
 		EFE5985B13D337A400062F86 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5985A13D337A400062F86 /* OpenAL.framework */; };
@@ -166,6 +166,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF5574501421C5890035F6C2 /* simple_test.z1level */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = simple_test.z1level; sourceTree = "<group>"; };
 		EF72D92A13D48A3100ABD27F /* credits.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = credits.txt; sourceTree = "<group>"; };
 		EF72D92D13D48C4800ABD27F /* GDScrollingText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDScrollingText.h; sourceTree = "<group>"; };
 		EF72D92E13D48C4800ABD27F /* GDScrollingText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDScrollingText.m; sourceTree = "<group>"; };
@@ -468,6 +469,7 @@
 		EFB5EA2213D889190058DB94 /* Levels */ = {
 			isa = PBXGroup;
 			children = (
+				EF5574501421C5890035F6C2 /* simple_test.z1level */,
 			);
 			name = Levels;
 			sourceTree = "<group>";
@@ -970,7 +972,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFB5EA3013D8CC900058DB94 /* test.z1level in Resources */,
 				EFE5986713D337A400062F86 /* InfoPlist.strings in Resources */,
 				EFE5986A13D337A400062F86 /* MainMenu.xib in Resources */,
 				EFE5986C13D337A400062F86 /* fps_images.png in Resources */,
@@ -1004,6 +1005,7 @@
 				EFF097AA140DAAF80025FBD6 /* Z1-Sprites_default.plist in Resources */,
 				EFF097AB140DAAF80025FBD6 /* ship2.png in Resources */,
 				EFFD402E1419850300A48B07 /* blood.png in Resources */,
+				EF5574511421C5890035F6C2 /* simple_test.z1level in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -125,6 +125,18 @@ static GDAnimationManager* _animationManager = nil;
              
          } forKey:@"SpiralInAndOutCounterClockwise"];
         
+        [blockDict setObject:^(ccTime dt, GDBasicSprite* aSprite)
+         {
+             if (aSprite.scale >= 2.0)
+             {
+                 aSprite.dead = YES;
+             }
+            
+             aSprite.scale = aSprite.scale + (dt * 0.25);
+             
+         } forKey:@"ZoomOut"];
+        
+
         _animationManager.animations = [NSDictionary dictionaryWithDictionary:blockDict];
     }
     return _animationManager;
