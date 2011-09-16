@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "GDGameScreenProtocol.h"
+#import "Z1PreLevelOverlay.h"
 
 @class GDInputManager;
 
@@ -20,13 +21,17 @@
     NSMutableSet* _playerShots;
     float _time;
     int _spawnerIndex;
+    BOOL _started;
     
     NSArray* _effects;
     NSDictionary* _levelDescription;
     CCSprite* _backgroundSprite;
     NSArray* _spawners;
+    Z1PreLevelOverlay* _overlay;
 }
 
 +(CCScene*) scene;
+
+- (void) prelevelScriptsFinished;
 
 @end

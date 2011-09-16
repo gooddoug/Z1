@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF14EDE31422C2AC00D19D92 /* Run_3_minute_edit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF14EDE21422C2AC00D19D92 /* Run_3_minute_edit.mp3 */; };
+		EF14EDE91422CC2E00D19D92 /* Z1PreLevelOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = EF14EDE81422CC2E00D19D92 /* Z1PreLevelOverlay.m */; };
+		EF14EDEE1423072A00D19D92 /* artur-poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF14EDEB1423072A00D19D92 /* artur-poster.jpg */; };
+		EF14EDEF1423072A00D19D92 /* asha-poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF14EDEC1423072A00D19D92 /* asha-poster.jpg */; };
+		EF14EDF01423072A00D19D92 /* lea-poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF14EDED1423072A00D19D92 /* lea-poster.jpg */; };
+		EF14EDF41423088600D19D92 /* Artur-head.png in Resources */ = {isa = PBXBuildFile; fileRef = EF14EDF11423088500D19D92 /* Artur-head.png */; };
+		EF14EDF51423088600D19D92 /* Asha-head.png in Resources */ = {isa = PBXBuildFile; fileRef = EF14EDF21423088500D19D92 /* Asha-head.png */; };
+		EF14EDF61423088600D19D92 /* Lea-head.png in Resources */ = {isa = PBXBuildFile; fileRef = EF14EDF31423088500D19D92 /* Lea-head.png */; };
 		EF5574511421C5890035F6C2 /* simple_test.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EF5574501421C5890035F6C2 /* simple_test.z1level */; };
 		EF72D92B13D48A3100ABD27F /* credits.txt in Resources */ = {isa = PBXBuildFile; fileRef = EF72D92A13D48A3100ABD27F /* credits.txt */; };
 		EF72D92F13D48C4800ABD27F /* GDScrollingText.m in Sources */ = {isa = PBXBuildFile; fileRef = EF72D92E13D48C4800ABD27F /* GDScrollingText.m */; };
@@ -166,6 +174,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF14EDE21422C2AC00D19D92 /* Run_3_minute_edit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Run_3_minute_edit.mp3; sourceTree = "<group>"; };
+		EF14EDE71422CC2D00D19D92 /* Z1PreLevelOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1PreLevelOverlay.h; sourceTree = "<group>"; };
+		EF14EDE81422CC2E00D19D92 /* Z1PreLevelOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1PreLevelOverlay.m; sourceTree = "<group>"; };
+		EF14EDEB1423072A00D19D92 /* artur-poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "artur-poster.jpg"; sourceTree = "<group>"; };
+		EF14EDEC1423072A00D19D92 /* asha-poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "asha-poster.jpg"; sourceTree = "<group>"; };
+		EF14EDED1423072A00D19D92 /* lea-poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lea-poster.jpg"; sourceTree = "<group>"; };
+		EF14EDF11423088500D19D92 /* Artur-head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artur-head.png"; sourceTree = "<group>"; };
+		EF14EDF21423088500D19D92 /* Asha-head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Asha-head.png"; sourceTree = "<group>"; };
+		EF14EDF31423088500D19D92 /* Lea-head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lea-head.png"; sourceTree = "<group>"; };
 		EF5574501421C5890035F6C2 /* simple_test.z1level */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = simple_test.z1level; sourceTree = "<group>"; };
 		EF72D92A13D48A3100ABD27F /* credits.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = credits.txt; sourceTree = "<group>"; };
 		EF72D92D13D48C4800ABD27F /* GDScrollingText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDScrollingText.h; sourceTree = "<group>"; };
@@ -458,6 +475,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF14EDEA142306D400D19D92 /* Actors */ = {
+			isa = PBXGroup;
+			children = (
+				EF14EDF11423088500D19D92 /* Artur-head.png */,
+				EF14EDF21423088500D19D92 /* Asha-head.png */,
+				EF14EDF31423088500D19D92 /* Lea-head.png */,
+				EF14EDEB1423072A00D19D92 /* artur-poster.jpg */,
+				EF14EDEC1423072A00D19D92 /* asha-poster.jpg */,
+				EF14EDED1423072A00D19D92 /* lea-poster.jpg */,
+			);
+			name = Actors;
+			sourceTree = "<group>";
+		};
 		EF7F5659140FDC6600D8B26A /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -519,6 +549,8 @@
 				EFE599D613D3FD3E00062F86 /* Z1MenuScreen.m */,
 				EF72D93013D491F900ABD27F /* Z1CreditsScreen.h */,
 				EF72D93113D491FA00ABD27F /* Z1CreditsScreen.m */,
+				EF14EDE71422CC2D00D19D92 /* Z1PreLevelOverlay.h */,
+				EF14EDE81422CC2E00D19D92 /* Z1PreLevelOverlay.m */,
 				EF72D95013D5DEFC00ABD27F /* Z1GameScreen.h */,
 				EF72D95113D5DEFD00ABD27F /* Z1GameScreen.m */,
 				EFE599A313D3387000062F86 /* GDGameScreenProtocol.h */,
@@ -550,6 +582,7 @@
 				EFE599C313D33C0100062F86 /* Screen Backgrounds */,
 				EFE599B713D33A8A00062F86 /* menu.tif */,
 				EFE599B213D338B100062F86 /* Sounds */,
+				EF14EDEA142306D400D19D92 /* Actors */,
 				EFE599A713D3387900062F86 /* Sprites */,
 				EFE5986B13D337A400062F86 /* fps_images.png */,
 				EFE5986D13D337A400062F86 /* icon.icns */,
@@ -881,6 +914,7 @@
 		EFE599B213D338B100062F86 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				EF14EDE21422C2AC00D19D92 /* Run_3_minute_edit.mp3 */,
 				EFE599B313D338C700062F86 /* explosion.wav */,
 				EF72D95913D778D800ABD27F /* enemy_explosion.wav */,
 				EF72D95A13D778D800ABD27F /* enemy_explosion2.wav */,
@@ -1006,6 +1040,13 @@
 				EFF097AB140DAAF80025FBD6 /* ship2.png in Resources */,
 				EFFD402E1419850300A48B07 /* blood.png in Resources */,
 				EF5574511421C5890035F6C2 /* simple_test.z1level in Resources */,
+				EF14EDE31422C2AC00D19D92 /* Run_3_minute_edit.mp3 in Resources */,
+				EF14EDEE1423072A00D19D92 /* artur-poster.jpg in Resources */,
+				EF14EDEF1423072A00D19D92 /* asha-poster.jpg in Resources */,
+				EF14EDF01423072A00D19D92 /* lea-poster.jpg in Resources */,
+				EF14EDF41423088600D19D92 /* Artur-head.png in Resources */,
+				EF14EDF51423088600D19D92 /* Asha-head.png in Resources */,
+				EF14EDF61423088600D19D92 /* Lea-head.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1122,6 +1163,7 @@
 				EFF097A6140D8F020025FBD6 /* GDStarBackground.m in Sources */,
 				EF7F5661141143B400D8B26A /* GDUtilities.m in Sources */,
 				EF7F5664141672D400D8B26A /* GDBasicSprite.m in Sources */,
+				EF14EDE91422CC2E00D19D92 /* Z1PreLevelOverlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

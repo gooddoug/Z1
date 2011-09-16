@@ -6,6 +6,8 @@
 //  Copyright 2011 Good Doug. All rights reserved.
 //
 
+#import "SimpleAudioEngine.h"
+
 #import "Z1GameScreen.h"
 #import "GDInputManager.h"
 #import "GDPlayerShot.h"
@@ -20,6 +22,8 @@
 @property (nonatomic, retain) NSArray* spawners;
 @property float time;
 @property int spawnerIndex;
+@property (nonatomic, retain) Z1PreLevelOverlay* overlay;
+@property BOOL started;
 
 - (void) sweepForDead;
 - (void) resolveFire;
@@ -31,9 +35,9 @@
 @implementation Z1GameScreen
 
 @synthesize inputManager = _inputManager, playerSprite = _playerSprite, enemySprites = _enemySprites;
-@synthesize playerShots = _playerShots, effects = _effects, time = _time, spawnerIndex = _spawnerIndex;
+@synthesize playerShots = _playerShots, effects = _effects, time = _time, spawnerIndex = _spawnerIndex, started = _started;
 
-@synthesize levelDescription = _levelDescription, backgroundSprite = _backgroundSprite, spawners = _spawners;
+@synthesize levelDescription = _levelDescription, backgroundSprite = _backgroundSprite, spawners = _spawners, overlay = _overlay;
 
 +(CCScene*) scene
 {
@@ -67,19 +71,12 @@
         CGSize size = [[CCDirector sharedDirector] winSize];
         
         self.isKeyboardEnabled = YES;
+        self.started = NO;
         self.inputManager = [[[GDInputManager alloc] init] autorelease];
         [self scheduleUpdate];
         self.enemySprites = [NSMutableArray array];
         self.playerShots = [NSMutableSet set];
-                
-        self.playerSprite = [CCSprite spriteWithFile:@"ship2.png"];
-        self.playerSprite.scale = 0.5;
-        self.playerSprite.flipY = YES;
         
-        self.playerSprite.anchorPoint = ccp( 0.65 , 5.0 );
-        self.playerSprite.position = ccp( size.width /2 , size.height/2 );
-        
-        [self addChild:self.playerSprite z:20];
         [[GDSoundsManager sharedSoundsManager] playSoundForName:@"level_start"];
         
         NSString* levelPath = [[NSBundle mainBundle] pathForResource:inFile ofType:@"z1level"];
@@ -89,6 +86,31 @@
             
         }
         self.levelDescription = [NSDictionary dictionaryWithContentsOfFile:levelPath];
+        
+        // background music
+        NSString* backgroundMusicName = [self.levelDescription objectForKey:@"backgroundMusic"];
+        if(!backgroundMusicName)
+            backgroundMusicName = @"Run_3_minute_edit.mp3";
+        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:backgroundMusicName];
+        
+        // setup pre level overlay...
+        self.overlay = [[[Z1PreLevelOverlay alloc] initWithScripts:[self.levelDescription objectForKey:@"preLevelScripts"]] autorelease];
+        [self addChild:self.overlay z:100];
+        
+        // player ship
+        NSString* shipSprite = [self.levelDescription objectForKey:@"shipSprite"];
+        if (!shipSprite)
+            shipSprite = @"ship2.png";
+            
+        self.playerSprite = [CCSprite spriteWithFile:shipSprite];
+        //self.playerSprite.scale = 0.5;
+        self.playerSprite.flipY = YES;
+        
+        self.playerSprite.anchorPoint = ccp( 0.65 , 5.0 );
+        self.playerSprite.position = ccp( size.width /2 , size.height/2 );
+        
+        [self addChild:self.playerSprite z:20];
+            
         /*NSString* backgroundName = [self.levelDescription objectForKey:@"background"];
         if (backgroundName)
         {
@@ -121,7 +143,7 @@
 
 - (void) handleInput:(ccTime)dt  
 {
-  if (self.inputManager.pause)
+    if (self.inputManager.pause)
     {
         [[CCDirector sharedDirector] popScene];
     }
@@ -150,7 +172,7 @@
         /*CGPoint currPos = self.playerSprite.position;
          CGPoint newPos = ccp(currPos.x - (dt * 100), currPos.y);
          self.playerSprite.position = newPos;*/
-        float rot = self.playerSprite.rotation - (300 * dt);
+        float rot = self.playerSprite.rotation - (200 * dt);
         if (rot < 0)
         {
             rot = 360.0 + rot;
@@ -181,12 +203,15 @@
         [aShot runAction:[CCScaleTo actionWithDuration:1.0 scale:0.001]];
         
         // shot sound
-        [[GDSoundsManager sharedSoundsManager] playSoundForName:@"Laser"];
+        [[GDSoundsManager sharedSoundsManager] playSoundForName:@"BasicWeapon"];
     }
 }
 
 - (void) update:(ccTime)dt
 {
+    if (!self.started)
+        return;
+    
     [self handleInput: dt];
     
     [self checkSpawners:dt];
@@ -336,6 +361,15 @@
     //[aSprite scheduleUpdateWithPriority:3];
     [self.enemySprites addObject:aSprite];
     [self addChild:aSprite z:10];
+}
+
+- (void) prelevelScriptsFinished
+{
+    // dump the prelevel overlay
+    [self removeChild:self.overlay cleanup:YES];
+    
+    // start the level
+    self.started = YES;
 }
 
 @end
