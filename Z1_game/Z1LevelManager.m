@@ -51,8 +51,8 @@ static Z1LevelManager* sharedInstance = nil;
 {
     if (whichIndex >= [self.levelList count])
     {
-        NSLog(@"Hosed: start index is greater than how many levels we have");
-        exit(10);
+        NSLog(@"Trying to index past the level list, going back to 0");
+        whichIndex = 0;
     }
     self.currentLevelIndex = whichIndex;
     NSString* whichLevel = [self.levelList objectAtIndex:self.currentLevelIndex];

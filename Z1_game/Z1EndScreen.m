@@ -24,7 +24,7 @@
 
 - (id) init
 {
-    if ((self = [self initWithEffectNames:[NSArray arrayWithObjects:@"GDParticleStarfield", nil]] ))
+    if ((self = [self initWithEffectNames:[NSArray array]] ))
     {
         // add background later after checking stars
         self.isKeyboardEnabled = YES;
@@ -33,18 +33,18 @@
         
         scrollingText.position = ccp(400.0, size.height / 2.0);
         [self addChild:scrollingText z:20];
-        CCLabelTTF* menuLabelUDG = [CCLabelTTF labelWithString:@"uDevGames" fontName:@"Helvetica" fontSize:32];
+        CCLabelTTF* menuLabelUDG = [CCLabelTTF labelWithString:@"uDevGames" fontName:@"Nationalyze" fontSize:32];
         CCMenuItemLabel* menuItemUDG = [CCMenuItemLabel itemWithLabel:menuLabelUDG block:^(id sender)
                                         {
                                             [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.udevgames.com"]];
                                             [NSApp terminate:self];
                                         }];
-        CCLabelTTF* menuLabelBack = [CCLabelTTF labelWithString:@"Back" fontName:@"Helvetica" fontSize:32];
+        CCLabelTTF* menuLabelBack = [CCLabelTTF labelWithString:@"Back" fontName:@"Nationalyze" fontSize:32];
         CCMenuItemLabel* menuItemBack = [CCMenuItemLabel itemWithLabel:menuLabelBack block:^(id sender)
                                          {
                                              [[CCDirector sharedDirector] popScene]; 
                                          }];
-        CCLabelTTF* menuLabelQuit = [CCLabelTTF labelWithString:@"Quit" fontName:@"Helvetica" fontSize:32];
+        CCLabelTTF* menuLabelQuit = [CCLabelTTF labelWithString:@"Quit" fontName:@"Nationalyze" fontSize:32];
         CCMenuItemLabel* menuItemQuit = [CCMenuItemLabel itemWithLabel:menuLabelQuit block:^(id sender)
                                          {
                                              [NSApp terminate:self];

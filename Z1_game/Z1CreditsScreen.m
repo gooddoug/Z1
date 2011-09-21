@@ -25,7 +25,7 @@
 
 - (id) init
 {
-    if (( self = [super initWithEffectNames:[NSArray arrayWithObjects:@"GDParticleStarfield", @"GDParticleFog", nil]] ))
+    if (( self = [super initWithEffectNames:[NSArray array]] ))
     {
         self.isKeyboardEnabled = YES;
         
@@ -39,12 +39,12 @@
         background.position = ccp(size.width / 2, size.height /2);
         [self addChild:background z:1];
         
-        CCLabelTTF* menuLabelUDG = [CCLabelTTF labelWithString:@"uDevGames" fontName:@"Helvetica" fontSize:32];
+        CCLabelTTF* menuLabelUDG = [CCLabelTTF labelWithString:@"uDevGames" fontName:@"Nationalyze" fontSize:32];
         CCMenuItemLabel* menuItemUDG = [CCMenuItemLabel itemWithLabel:menuLabelUDG block:^(id sender)
                                         {
                                             [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.udevgames.com"]];
                                         }];
-        CCLabelTTF* menuLabelBack = [CCLabelTTF labelWithString:@"Back" fontName:@"Helvetica" fontSize:32];
+        CCLabelTTF* menuLabelBack = [CCLabelTTF labelWithString:@"Back" fontName:@"Nationalyze" fontSize:32];
         CCMenuItemLabel* menuItemBack = [CCMenuItemLabel itemWithLabel:menuLabelBack block:^(id sender)
                                          {
                                             [[CCDirector sharedDirector] popScene]; 

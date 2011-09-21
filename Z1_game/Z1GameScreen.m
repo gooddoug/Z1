@@ -59,7 +59,6 @@
     [_inputManager release];
     [_playerShots release];
     [_enemySprites release];
-    //[_playerShots release];
     [_effects release];
     [_levelDescription release];
     [_backgroundSprite release];
@@ -80,7 +79,7 @@
         self.enemySprites = [NSMutableArray array];
         self.playerShots = [NSMutableSet set];
         
-        [[GDSoundsManager sharedSoundsManager] playSoundForName:@"level_start"];
+        //[[GDSoundsManager sharedSoundsManager] playSoundForName:@"ui_click_up"];
         
         NSString* levelPath = [[NSBundle mainBundle] pathForResource:inFile ofType:@"z1level"];
         if (!levelPath)
@@ -206,7 +205,7 @@
     if (self.inputManager.fire)
     {
         CGSize size = [[CCDirector sharedDirector] winSize];
-        GDPlayerShot* aShot = [GDPlayerShot shotAtRotation:self.playerSprite.rotation anchorPoint:ccp(0.5, 16.0)];
+        GDPlayerShot* aShot = [GDPlayerShot shotAtRotation:self.playerSprite.rotation anchorPoint:ccp(0.5, 19.0)];
         aShot.position = ccp( size.width /2 , size.height/2 );
         
         [self addChild:aShot z:10];

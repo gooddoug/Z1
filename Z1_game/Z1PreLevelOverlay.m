@@ -32,7 +32,7 @@
         [self addChild:background];
         
         // set up the skip button
-        CCLabelTTF* menuLabelBack = [CCLabelTTF labelWithString:@"Skip" fontName:@"Helvetica" fontSize:24];
+        CCLabelTTF* menuLabelBack = [CCLabelTTF labelWithString:@"Skip" fontName:@"Nationalyze" fontSize:24];
         CCMenuItemLabel* menuItemBack = [CCMenuItemLabel itemWithLabel:menuLabelBack block:^(id sender)
                                          {
                                              [self done]; 
@@ -94,7 +94,7 @@
         [self removeChild:self.currentText cleanup:YES];
     
     NSString* text = [[[NSAttributedString alloc] initWithData:[currentScript objectForKey:@"text"] options:nil documentAttributes:nil error:nil] string];
-    self.currentText = [CCLabelTTF labelWithString:text fontName:@"Helvetica" fontSize:18];
+    self.currentText = [CCLabelTTF labelWithString:text fontName:@"Helvetica" fontSize:24];
     CGSize size = [[CCDirector sharedDirector] winSize];
 
     self.currentText.position = ccp(size.width / 2, 200.0);

@@ -26,10 +26,10 @@
 
 - (id) init
 {
-    if ((self = [self initWithEffectNames:[NSArray arrayWithObjects:@"GDParticleGalaxy", nil]] ))
+    if ((self = [self initWithEffectNames:[NSArray array]] ))
     {
         // now add buttons
-        CCLabelTTF* menuLabelRestart = [CCLabelTTF labelWithString:@"Restart Game" fontName:@"Helvetica" fontSize:32];
+        CCLabelTTF* menuLabelRestart = [CCLabelTTF labelWithString:@"Restart Game" fontName:@"Nationalyze" fontSize:32];
         CCMenuItemLabel* menuItemRestart = [CCMenuItemLabel itemWithLabel:menuLabelRestart block:^(id sender)
                                          {
                                              // zero out the score and lastLevel
@@ -39,7 +39,7 @@
                                                                                                        withColor:ccWHITE];
                                              [[CCDirector sharedDirector] pushScene:trans];
                                          }];
-        CCLabelTTF* menuLabelStartFromLast = [CCLabelTTF labelWithString:@"Resume" fontName:@"Helvetica" fontSize:32];
+        CCLabelTTF* menuLabelStartFromLast = [CCLabelTTF labelWithString:@"Resume" fontName:@"Nationalyze" fontSize:32];
         CCMenuItemLabel* menuItemStartFromLast = [CCMenuItemLabel itemWithLabel:menuLabelStartFromLast block:^(id sender)
                                          {
                                              CCTransitionScene* trans = [CCTransitionFade transitionWithDuration:1 
@@ -47,13 +47,13 @@
                                                                                                        withColor:ccWHITE];
                                              [[CCDirector sharedDirector] pushScene:trans];
                                          }];
-        CCLabelTTF* menuLabelBack = [CCLabelTTF labelWithString:@"Back" fontName:@"Helvetica" fontSize:32];
+        CCLabelTTF* menuLabelBack = [CCLabelTTF labelWithString:@"Back" fontName:@"Nationalyze" fontSize:32];
         CCMenuItemLabel* menuItemBack = [CCMenuItemLabel itemWithLabel:menuLabelBack block:^(id sender)
                                          {
                                              [[CCDirector sharedDirector] popScene]; 
                                          }];
         
-        CCLabelTTF* menuLabelEmpty = [CCLabelTTF labelWithString:@"_" fontName:@"Helvetica" fontSize:32];
+        CCLabelTTF* menuLabelEmpty = [CCLabelTTF labelWithString:@"_" fontName:@"Nationalyze" fontSize:32];
         CCMenuItemLabel* menuItemEmpty = [CCMenuItemLabel itemWithLabel:menuLabelEmpty block:^(id sender)
                                          {
                                              [[CCDirector sharedDirector] popScene]; 

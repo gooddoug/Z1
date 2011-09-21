@@ -27,19 +27,10 @@
 
 - (id) init
 {
-    if ((self = [self initWithEffectNames:[NSArray arrayWithObjects:@"GDParticleGalaxy", nil]] ))
+    if ((self = [self initWithEffectNames:[NSArray array]] ))
     {
-        for (NSString* name in [NSArray arrayWithObjects:@"Hartland Regular", @"Hartland", @"Helvetica", nil]) 
-        {
-            NSFont* aFont = [[NSFontManager sharedFontManager] fontWithFamily:name traits:NSUnboldFontMask | NSUnitalicFontMask weight:0 size:32];
-            if (!aFont)
-            {
-                NSLog(@"Couldn't get a Font for %@", name);
-            }
-        }
-        
         // now add buttons
-        CCLabelTTF* menuLabelPlay = [CCLabelTTF labelWithString:@"Play" fontName:@"Helvetica" fontSize:32];
+        CCLabelTTF* menuLabelPlay = [CCLabelTTF labelWithString:@"Play" fontName:@"Nationalyze" fontSize:32];
         CCMenuItemLabel* menuItemPlay = [CCMenuItemLabel itemWithLabel:menuLabelPlay block:^(id sender)
                                        {
                                            CCTransitionScene* trans = [CCTransitionFade transitionWithDuration:1 
@@ -47,7 +38,7 @@
                                                                                                      withColor:ccWHITE];
                                            [[CCDirector sharedDirector] pushScene:trans];
                                        }];
-        CCLabelTTF* menuLabelQuit = [CCLabelTTF labelWithString:@"Quit" fontName:@"Helvetica" fontSize:32];
+        CCLabelTTF* menuLabelQuit = [CCLabelTTF labelWithString:@"Quit" fontName:@"Nationalyze" fontSize:32];
         CCMenuItemLabel* menuItemQuit = [CCMenuItemLabel itemWithLabel:menuLabelQuit block:^(id sender)
                                        {
                                            CCTransitionScene* trans = [CCTransitionFade transitionWithDuration:1 
@@ -57,13 +48,13 @@
                                            [[GDSoundsManager sharedSoundsManager] playSoundForName:SCREEN_TRANSITION];
                                        }];
         
-        CCLabelTTF* menuLabelUDG = [CCLabelTTF labelWithString:@"uDevGames" fontName:@"Helvetica" fontSize:32];
+        CCLabelTTF* menuLabelUDG = [CCLabelTTF labelWithString:@"uDevGames" fontName:@"Nationalyze" fontSize:32];
         CCMenuItemLabel* menuItemUDG = [CCMenuItemLabel itemWithLabel:menuLabelUDG block:^(id sender)
                                       {
                                           [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.udevgames.com"]];
                                       }];
         
-        CCLabelTTF* menuLabelCredits = [CCLabelTTF labelWithString:@"Credits" fontName:@"Helvetica" fontSize:32];
+        CCLabelTTF* menuLabelCredits = [CCLabelTTF labelWithString:@"Credits" fontName:@"Nationalyze" fontSize:32];
         CCMenuItemLabel* menuItemCredits = [CCMenuItemLabel itemWithLabel:menuLabelCredits block:^(id sender)
                                             {
                                                 CCTransitionScene* trans = [CCTransitionFade transitionWithDuration:1 

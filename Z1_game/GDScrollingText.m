@@ -35,7 +35,7 @@
         
         ClippingNode* clipNode = [ClippingNode node];
         
-        clipNode.clippingRegion = CGRectMake(200, 300.0, 736, 350);
+        clipNode.clippingRegion = CGRectMake(300, 300.0, 736, 350);
         self.text.position = ccp(0.0f, -400.0f);
         
         [self addChild:clipNode];
