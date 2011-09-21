@@ -32,24 +32,11 @@
     {
         self.scrollingSpeed = 20.0;
         self.text = [CCLabelTTF labelWithString:inText fontName:@"Helvetica" fontSize:18];
-        CGSize textSize = self.text.textureRect.size;
-        
-        
-        self.background = [CCSprite spriteWithFile:@"TextBackground.png"];
-        //self.background.textureRect = self.text.textureRect;
-        // scale the background
-        
-        float toScale = (textSize.width + 100) / self.background.textureRect.size.width;
-        self.background.scaleX = toScale;
-        self.background.scaleY = 1.5;
-        self.background.position = ccp(0.0f, 0.0f);
         
         ClippingNode* clipNode = [ClippingNode node];
-        CGRect backgroundBounds = [self.background boundingBox];
         
-        // FIX ME to work when not full screen
-        clipNode.clippingRegion = CGRectMake(200, 80.0, backgroundBounds.size.width, 600.0);
-        self.text.position = ccp(0.0f, -300.0f);
+        clipNode.clippingRegion = CGRectMake(200, 300.0, 736, 350);
+        self.text.position = ccp(0.0f, -400.0f);
         
         [self addChild:clipNode];
         
@@ -66,28 +53,12 @@
     return [self initWithText:text];
 }
 
-- (void) setBackground:(CCSprite *)background
-{
-    if (_background == background)
-    {
-        return;
-    }
-    [background retain];
-    [self removeChild:_background cleanup:YES];
-    [_background release];
-    _background = background;
-    [self addChild:_background];
-}
-
-- (CCSprite*) background
-{
-    return _background;
-}
-
 - (void) update:(ccTime)dt
 {
     CGPoint oldPoint = CGPointMake(self.text.position.x, self.text.position.y);
     self.text.position = ccp(oldPoint.x, oldPoint.y + (dt * self.scrollingSpeed));
+    
+    // TODO: repeat after all text has scrolled
 }
 
 @end

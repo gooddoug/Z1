@@ -53,6 +53,10 @@
 		[aMenu alignItemsVertically];
         self.isMouseEnabled = YES;
         
+        CCSprite* background = [CCSprite spriteWithFile:@"credits.png"];
+        background.position = ccp(size.width / 2, size.height /2);
+        [self addChild:background z:1];
+        
         aMenu.position = ccp(900.0f, size.height / 2.0);
         [self addChild:aMenu z:10];
     }

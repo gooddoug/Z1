@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>backgroundMusic</key>
+	<string>Run_3_minute_edit.mp3</string>
 	<key>effects</key>
 	<array>
 		<dict>
@@ -53,7 +55,7 @@
 		</dict>
 	</array>
 	<key>shipSprite</key>
-	<string>ship2.png</string>
+	<string>ship2_64x64.png</string>
 	<key>spawners</key>
 	<array>
 		<dict>

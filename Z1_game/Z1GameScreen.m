@@ -9,6 +9,7 @@
 #import "SimpleAudioEngine.h"
 
 #import "Z1GameScreen.h"
+#import "Z1LevelManager.h"
 #import "GDInputManager.h"
 #import "GDPlayerShot.h"
 #import "GDEnemySpriteEmitter.h"
@@ -100,7 +101,7 @@
         // player ship
         NSString* shipSprite = [self.levelDescription objectForKey:@"shipSprite"];
         if (!shipSprite)
-            shipSprite = @"ship2.png";
+            shipSprite = @"ship2_64x64.png";
             
         self.playerSprite = [CCSprite spriteWithFile:shipSprite];
         //self.playerSprite.scale = 0.5;
@@ -323,6 +324,12 @@
             // add as child
             [self addChild:emitter];
             self.spawnerIndex = self.spawnerIndex + 1;
+        }
+    } else 
+    {
+        if (self.time > ([[[self.spawners lastObject] objectForKey:@"when"] intValue] + [[[self.spawners lastObject] objectForKey:@"howLong"] intValue] + 5))
+        {
+            [[Z1LevelManager sharedLevelManager] finishedCurrentLevel];
         }
     }
 }

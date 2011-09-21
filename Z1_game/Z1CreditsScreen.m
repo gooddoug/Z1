@@ -32,10 +32,10 @@
         GDScrollingText* scrollingText = [[[GDScrollingText alloc] initWithFile:[[NSBundle mainBundle] pathForResource:@"credits" ofType:@"txt"]] autorelease];
         CGSize size = [[CCDirector sharedDirector] winSize];
         
-        scrollingText.position = ccp(400.0, size.height / 2.0);
+        scrollingText.position = ccp(size.width / 2.0, size.height / 2.0);
         [self addChild:scrollingText z:20];
 
-		CCSprite* background = [CCSprite spriteWithFile:@"menu-yellow.png"];
+		CCSprite* background = [CCSprite spriteWithFile:@"credits.png"];
         background.position = ccp(size.width / 2, size.height /2);
         [self addChild:background z:1];
         

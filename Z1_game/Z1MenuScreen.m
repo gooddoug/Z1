@@ -9,7 +9,7 @@
 #import "Z1MenuScreen.h"
 #import "Z1CreditsScreen.h"
 #import "Z1EndScreen.h"
-#import "Z1GameScreen.h"
+#import "Z1GameMenuScreen.h"
 #import "GDSoundsManager.h"
 
 @implementation Z1MenuScreen
@@ -29,12 +29,21 @@
 {
     if ((self = [self initWithEffectNames:[NSArray arrayWithObjects:@"GDParticleGalaxy", nil]] ))
     {
+        for (NSString* name in [NSArray arrayWithObjects:@"Hartland Regular", @"Hartland", @"Helvetica", nil]) 
+        {
+            NSFont* aFont = [[NSFontManager sharedFontManager] fontWithFamily:name traits:NSUnboldFontMask | NSUnitalicFontMask weight:0 size:32];
+            if (!aFont)
+            {
+                NSLog(@"Couldn't get a Font for %@", name);
+            }
+        }
+        
         // now add buttons
-        CCLabelTTF* menuLabelPlay = [CCLabelTTF labelWithString:@"Play" fontName:@"Helvetica" fontSize:48];
+        CCLabelTTF* menuLabelPlay = [CCLabelTTF labelWithString:@"Play" fontName:@"Helvetica" fontSize:32];
         CCMenuItemLabel* menuItemPlay = [CCMenuItemLabel itemWithLabel:menuLabelPlay block:^(id sender)
                                        {
                                            CCTransitionScene* trans = [CCTransitionFade transitionWithDuration:1 
-                                                                                                         scene:[Z1GameScreen scene]
+                                                                                                         scene:[Z1GameMenuScreen scene]
                                                                                                      withColor:ccWHITE];
                                            [[CCDirector sharedDirector] pushScene:trans];
                                        }];
@@ -64,15 +73,15 @@
                                                 [[GDSoundsManager sharedSoundsManager] playSoundForName:SCREEN_TRANSITION];
                                             }];
         
-        CCMenu* aMenu = [CCMenu menuWithItems:menuItemPlay, menuItemQuit, menuItemCredits, menuItemUDG, nil];
-		[aMenu alignItemsVertically];
+        CCMenu* aMenu = [CCMenu menuWithItems:menuItemPlay, menuItemUDG, menuItemQuit, menuItemCredits, nil];
+		[aMenu alignItemsVerticallyWithPadding:30];
         self.isMouseEnabled = YES;
         CGSize size = [[CCDirector sharedDirector] winSize];
         
-        aMenu.position = ccp(200.0f, size.height / 2.0);
+        aMenu.position = ccp(800.0f, 295.0f);
         [self addChild:aMenu z:10];
         
-        CCSprite* background = [CCSprite spriteWithFile:@"nebula.png"];
+        CCSprite* background = [CCSprite spriteWithFile:@"ui-screen.png"];
         background.position = ccp(size.width / 2.0, size.height / 2.0);
         [self addChild:background z:0];
 
