@@ -10,6 +10,7 @@
 
 #import "Z1GameScreen.h"
 #import "Z1LevelManager.h"
+#import "Z1Player.h"
 #import "GDInputManager.h"
 #import "GDPlayerShot.h"
 #import "GDEnemySpriteEmitter.h"
@@ -24,6 +25,7 @@
 @property float time;
 @property int spawnerIndex;
 @property (nonatomic, retain) Z1PreLevelOverlay* overlay;
+@property (nonatomic, retain) CCLabelAtlas* scoreLabel;
 @property BOOL started;
 
 - (void) sweepForDead;
@@ -38,7 +40,7 @@
 @synthesize inputManager = _inputManager, playerSprite = _playerSprite, enemySprites = _enemySprites;
 @synthesize playerShots = _playerShots, effects = _effects, time = _time, spawnerIndex = _spawnerIndex, started = _started;
 
-@synthesize levelDescription = _levelDescription, backgroundSprite = _backgroundSprite, spawners = _spawners, overlay = _overlay;
+@synthesize levelDescription = _levelDescription, backgroundSprite = _backgroundSprite, spawners = _spawners, overlay = _overlay, scoreLabel = _scoreLabel;
 
 +(CCScene*) scene
 {
@@ -107,7 +109,7 @@
         //self.playerSprite.scale = 0.5;
         self.playerSprite.flipY = YES;
         
-        self.playerSprite.anchorPoint = ccp( 0.65 , 5.0 );
+        self.playerSprite.anchorPoint = ccp( 0.65 , 6.0 );
         self.playerSprite.position = ccp( size.width /2 , size.height/2 );
         
         [self addChild:self.playerSprite z:20];
@@ -127,6 +129,14 @@
         }
         self.effects = tempEffects;
         self.spawners = [self.levelDescription objectForKey:@"spawners"];
+        
+        // 
+        CCTexture2DPixelFormat currentFormat = [CCTexture2D defaultAlphaPixelFormat];
+		[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
+		self.scoreLabel = [[CCLabelAtlas labelWithString:[NSString stringWithFormat:@"%d", [Z1Player sharedPlayer].score] charMapFile:@"fps_images.png" itemWidth:16 itemHeight:24 startCharMap:'.'] retain];
+		[CCTexture2D setDefaultAlphaPixelFormat:currentFormat];
+        self.scoreLabel.position = ccp(100.0, 700.0);
+        [self addChild:self.scoreLabel];
     }
     return self;
 }
@@ -301,6 +311,9 @@
                     aShot.hitSomething = YES;
                                         
                     [self createExplosionAtPoint:centerEnemy];
+                    Z1Player* player = [Z1Player sharedPlayer];
+                    player.score += 100;
+                    [self.scoreLabel setString:[NSString stringWithFormat:@"%4d", player.score]];
                 }
             }
         }

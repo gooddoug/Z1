@@ -8,6 +8,7 @@
 
 #import "Z1LevelManager.h"
 #import "Z1GameScreen.h"
+#import "Z1Player.h"
 
 @implementation Z1LevelManager
 
@@ -73,6 +74,9 @@ static Z1LevelManager* sharedInstance = nil;
 
 - (CCScene*) nextGameScreen
 {
+    Z1Player* player = [Z1Player sharedPlayer];
+    player.lastLevel = self.currentLevelIndex;
+    
     self.currentLevelIndex++; 
     if (self.currentLevelIndex >= [self.levelList count])
     {

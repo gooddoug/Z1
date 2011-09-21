@@ -28,6 +28,7 @@
     CCSprite* _backgroundSprite;
     NSArray* _spawners;
     Z1PreLevelOverlay* _overlay;
+    CCLabelAtlas* _scoreLabel;
 }
 
 +(CCScene*) scene;

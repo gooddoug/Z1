@@ -8,6 +8,7 @@
 
 #import "Z1GameMenuScreen.h"
 #import "Z1LevelManager.h"
+#import "Z1Player.h"
 
 
 @implementation Z1GameMenuScreen
@@ -31,6 +32,8 @@
         CCLabelTTF* menuLabelRestart = [CCLabelTTF labelWithString:@"Restart Game" fontName:@"Helvetica" fontSize:32];
         CCMenuItemLabel* menuItemRestart = [CCMenuItemLabel itemWithLabel:menuLabelRestart block:^(id sender)
                                          {
+                                             // zero out the score and lastLevel
+                                             [[Z1Player sharedPlayer] resetPlayer];
                                              CCTransitionScene* trans = [CCTransitionFade transitionWithDuration:1 
                                                                                                            scene:[[Z1LevelManager sharedLevelManager] levelSceneAtIndex:0]
                                                                                                        withColor:ccWHITE];
@@ -40,7 +43,7 @@
         CCMenuItemLabel* menuItemStartFromLast = [CCMenuItemLabel itemWithLabel:menuLabelStartFromLast block:^(id sender)
                                          {
                                              CCTransitionScene* trans = [CCTransitionFade transitionWithDuration:1 
-                                                                                                           scene:[[Z1LevelManager sharedLevelManager] levelSceneAtIndex:1] // TODO: get from sharedDefaults
+                                                                                                           scene:[[Z1LevelManager sharedLevelManager] levelSceneAtIndex:[Z1Player sharedPlayer].lastLevel + 1] 
                                                                                                        withColor:ccWHITE];
                                              [[CCDirector sharedDirector] pushScene:trans];
                                          }];
