@@ -331,7 +331,7 @@
         CGRect enemyRect = [anEnemy boundingBox]; // get boundingBox to account for rotation and anchorPoint offset
         CGPoint centerEnemy = CGPointMake(enemyRect.origin.x + (enemyRect.size.width / 2), enemyRect.origin.y + (enemyRect.size.height / 2));
         // check whether the enemy's center is in the bounding box (makes for a small kill box for now)
-        if (NSPointInRect(centerEnemy, playerRect))
+        if (CGRectContainsPoint(playerRect, centerEnemy))
         {
             NSLog(@"BOOM!");
             anEnemy.dead = YES;
@@ -350,8 +350,6 @@
         {
             // create the spawner
             GDEnemySpriteEmitter* emitter = [[[GDEnemySpriteEmitter alloc] initWithDictionary:nextSpawner] autorelease];
-            // set position
-            // set rotation
             // schedule updates
             [emitter scheduleUpdate];
             // add as child
@@ -360,7 +358,7 @@
         }
     } else 
     {
-        if (self.time > ([[[self.spawners lastObject] objectForKey:@"when"] intValue] + [[[self.spawners lastObject] objectForKey:@"howLong"] intValue] + 5))
+        if (self.time > ([[[self.spawners lastObject] objectForKey:@"when"] intValue] + [[[self.spawners lastObject] objectForKey:@"howLong"] intValue] + 10))
         {
             [[Z1LevelManager sharedLevelManager] finishedCurrentLevel];
         }
