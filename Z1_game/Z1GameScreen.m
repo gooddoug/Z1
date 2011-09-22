@@ -30,6 +30,7 @@
 
 - (void) sweepForDead;
 - (void) resolveFire;
+- (void) resolvePlayerCollision;
 - (void) handleInput:(ccTime)dt;
 - (void) checkSpawners:(ccTime)dt;
 
@@ -228,6 +229,7 @@
     
     [self sweepForDead];
     [self resolveFire];
+    [self resolvePlayerCollision];
 }
 
 - (void) sweepForDead
@@ -321,7 +323,21 @@
 
 - (void) resolvePlayerCollision
 {
+    CGRect playerRect = [self.playerSprite boundingBox];
+    
     // again simple brute force...
+    for (GDBasicSprite* anEnemy in self.enemySprites) 
+    {
+        CGRect enemyRect = [anEnemy boundingBox]; // get boundingBox to account for rotation and anchorPoint offset
+        CGPoint centerEnemy = CGPointMake(enemyRect.origin.x + (enemyRect.size.width / 2), enemyRect.origin.y + (enemyRect.size.height / 2));
+        // check whether the enemy's center is in the bounding box (makes for a small kill box for now)
+        if (NSPointInRect(centerEnemy, playerRect))
+        {
+            NSLog(@"BOOM!");
+            anEnemy.dead = YES;
+            [self createExplosionAtPoint:centerEnemy];
+        }
+    }
 }
 
 - (void) checkSpawners:(ccTime)dt
