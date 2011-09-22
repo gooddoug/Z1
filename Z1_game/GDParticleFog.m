@@ -11,7 +11,7 @@
 #import "cocos2d.h"
 
 
-#define DEFAULT_HOW_MANY 100
+#define DEFAULT_HOW_MANY 300
 
 @implementation GDParticleFog
 
@@ -79,6 +79,7 @@
         [self setTexture:[[CCTextureCache sharedTextureCache] addImage:@"smoke.png"]];
         [self setSpeed:70.0];
         [self setSpeedVar:20.0];
+        [self setRadialAccel:30.0];
         ccColor4F aStartColor = {0.9, 0.9, 1.0, 0.0};
         ccColor4F aEndColor = {1.0, 0.9, 0.9, 0.4};
         [self setStartColor:aStartColor];

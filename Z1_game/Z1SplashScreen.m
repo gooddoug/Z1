@@ -33,7 +33,7 @@
 
 -(id) init
 {
-	if(( self = [self initWithEffectNames:[NSArray arrayWithObjects:@"GDParticleStarfield", nil]] )) 
+	if(( self = [self initWithEffectNames:[NSArray array]] )) 
     {        
         self.isKeyboardEnabled = YES;
         
@@ -45,17 +45,17 @@
         CCSprite* endBackground = [CCSprite spriteWithFile:@"title-screen-end.png"];
         endBackground.position = ccp(size.width / 2.0, size.height /2);
         endBackground.opacity = 0.0;
-        CCFadeIn* backgroundFadeAction = [CCFadeIn actionWithDuration:2.0];
+        CCFadeIn* backgroundFadeAction = [CCFadeIn actionWithDuration:3.0];
         CCDelayTime* backgroundDelayAction = [CCDelayTime actionWithDuration:1.0];
         [endBackground runAction:[CCSequence actions:backgroundDelayAction, backgroundFadeAction, nil]];
         [self addChild:endBackground z:1];
         
         // add press any key label
         CCLabelTTF* pressKeyLabel = [CCLabelTTF labelWithString:@"Press any key" fontName:@"Nationalyze" fontSize:48];
-        pressKeyLabel.position = ccp(size.width / 2.0, 100.0);
+        pressKeyLabel.position = ccp(size.width / 2.0, 60.0);
         pressKeyLabel.opacity = 0.0;
         CCFadeIn* fadeAction = [CCFadeIn actionWithDuration:1.0];
-        CCDelayTime* delayAction = [CCDelayTime actionWithDuration:3.0];
+        CCDelayTime* delayAction = [CCDelayTime actionWithDuration:4.5];
         [pressKeyLabel runAction:[CCSequence actions:delayAction, fadeAction, nil]];
         [self addChild:pressKeyLabel z:10];
 	}

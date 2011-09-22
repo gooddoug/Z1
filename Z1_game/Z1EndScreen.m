@@ -30,9 +30,10 @@
         self.isKeyboardEnabled = YES;
         GDScrollingText* scrollingText = [[[GDScrollingText alloc] initWithFile:[[NSBundle mainBundle] pathForResource:@"end" ofType:@"txt"]] autorelease];
         CGSize size = [[CCDirector sharedDirector] winSize];
+        scrollingText.position = ccp(size.width / 2.0, size.height / 2.0);
         
-        scrollingText.position = ccp(400.0, size.height / 2.0);
         [self addChild:scrollingText z:20];
+        
         CCLabelTTF* menuLabelUDG = [CCLabelTTF labelWithString:@"uDevGames" fontName:@"Nationalyze" fontSize:32];
         CCMenuItemLabel* menuItemUDG = [CCMenuItemLabel itemWithLabel:menuLabelUDG block:^(id sender)
                                         {

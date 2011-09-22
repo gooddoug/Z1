@@ -1,34 +1,26 @@
-Z1 is a game for the uDevGames 2011 Mac game
-programming contest.
+Z1 is a game for the uDevGames 2011 Mac game programming
+contest.
 
-Show your support for independent games and
-game devs by visiting
-http://www.udevgames.com 
+Vote for ZW1 and show your support for independent games 
+by visiting http://www.udevgames.com 
 
-While you are there, make sure to vote for Z1.
+Software Engineer:
+Doug Whitmore
 
-Code Monkey: Doug Whitmore
-All the cool stuff: Carlos Camacho
+Game SFX, Visuals & Story:
+Carlos Camacho
 
-Testers:
-Howdy Doody
-Cap'n Crunch
-Totoro
-Pikachu
+Character Design:
+Noriko Jepson
 
-Doug would like to thank:
-- Carlos, for putting up with his constant, "Yeah we could
-do that, but it's gonna take more time than we have"
-- Sandy and the kids for putting up with, "Can I just get
-two hours of quiet to work on this?"
-- iDevGames and the uDevGames contest for giving me the
-push to get this started and done.
+Music:
+David Juteau
 
-Carlos would like to thank:
-- Everyone!
+Special Thanks:
+Seth Willits
 
-Now go vote for us. If you do you will find yourself more
-attractive to the opposite sex. Your teeth will be brighter
-and life will just be better.
 
-What are you waiting for! Go vote now.
+Look for the expanded version of Z1 on the Apple's App Store 
+in the future.
+
+© 2011 junigames

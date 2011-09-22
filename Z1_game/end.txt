@@ -1,13 +1,10 @@
-Thank you for playing!
+Z1 is a game for the uDevGames 2011 Mac game programming
+contest.
 
-Show your support for independent games and game
-devs by visiting
-http://www.udevgames.com 
+Vote for Z1 and show your support for independent games
+by visiting http://www.udevgames.com
 
-While you are there, make sure to vote for Z1.
+Did you like Z1? Look for the expanded version of Z1 on 
+Apple's App Store in the future.
 
-If you do, we'll come to your house when you are
-sleeping and apply an invisible sealant to your 
-car that will make it shinier.
-
-Promise!
+© 2011 junigames
