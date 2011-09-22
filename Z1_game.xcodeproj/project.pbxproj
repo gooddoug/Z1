@@ -36,7 +36,6 @@
 		EF8F0197142A62BA00A774E1 /* ship2_128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = EF8F0195142A62BA00A774E1 /* ship2_128x128.png */; };
 		EF8F019A142A6D3D00A774E1 /* Z1Player.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8F0199142A6D3C00A774E1 /* Z1Player.m */; };
 		EF8F01A0142A7F5900A774E1 /* Nationalyze.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF8F019F142A7F5900A774E1 /* Nationalyze.ttf */; };
-		EF8F01A4142A831000A774E1 /* Motoplatio_Font_by_LGRuffa.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF8F01A3142A831000A774E1 /* Motoplatio_Font_by_LGRuffa.ttf */; };
 		EF91F1691423CE0B002683D4 /* Z1GameMenuScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91F1681423CE0B002683D4 /* Z1GameMenuScreen.m */; };
 		EF91F16B1423DCDC002683D4 /* test_2.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EF91F16A1423DCDC002683D4 /* test_2.z1level */; };
 		EF9771A9142A8807005DA458 /* ui_click_ok.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF9771A7142A8807005DA458 /* ui_click_ok.wav */; };
@@ -158,6 +157,7 @@
 		EFE599D413D3F5B700062F86 /* GDBaseEffectsScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE599D313D3F5B600062F86 /* GDBaseEffectsScreen.m */; };
 		EFE599D713D3FD4000062F86 /* Z1MenuScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE599D613D3FD3E00062F86 /* Z1MenuScreen.m */; };
 		EFE599D913D3FF8700062F86 /* stars.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE599D813D3FF8700062F86 /* stars.png */; };
+		EFE6E5AE142BDA1400B594AD /* udg.level_list in Resources */ = {isa = PBXBuildFile; fileRef = EFE6E5AD142BDA1400B594AD /* udg.level_list */; };
 		EFF097A6140D8F020025FBD6 /* GDStarBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF097A5140D8F020025FBD6 /* GDStarBackground.m */; };
 		EFF097AA140DAAF80025FBD6 /* Z1-Sprites_default.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFF097A8140DAAF80025FBD6 /* Z1-Sprites_default.plist */; };
 		EFF097AB140DAAF80025FBD6 /* ship2.png in Resources */ = {isa = PBXBuildFile; fileRef = EFF097A9140DAAF80025FBD6 /* ship2.png */; };
@@ -218,7 +218,6 @@
 		EF8F0198142A6D3C00A774E1 /* Z1Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1Player.h; sourceTree = "<group>"; };
 		EF8F0199142A6D3C00A774E1 /* Z1Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1Player.m; sourceTree = "<group>"; };
 		EF8F019F142A7F5900A774E1 /* Nationalyze.ttf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Nationalyze.ttf; sourceTree = "<group>"; };
-		EF8F01A3142A831000A774E1 /* Motoplatio_Font_by_LGRuffa.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Motoplatio_Font_by_LGRuffa.ttf; sourceTree = "<group>"; };
 		EF91F1671423CE0B002683D4 /* Z1GameMenuScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1GameMenuScreen.h; sourceTree = "<group>"; };
 		EF91F1681423CE0B002683D4 /* Z1GameMenuScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = Z1GameMenuScreen.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		EF91F16A1423DCDC002683D4 /* test_2.z1level */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test_2.z1level; sourceTree = "<group>"; };
@@ -456,6 +455,7 @@
 		EFE599D513D3FD3D00062F86 /* Z1MenuScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1MenuScreen.h; sourceTree = "<group>"; };
 		EFE599D613D3FD3E00062F86 /* Z1MenuScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = Z1MenuScreen.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		EFE599D813D3FF8700062F86 /* stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stars.png; sourceTree = "<group>"; };
+		EFE6E5AD142BDA1400B594AD /* udg.level_list */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = udg.level_list; sourceTree = "<group>"; };
 		EFF097A4140D8F020025FBD6 /* GDStarBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDStarBackground.h; sourceTree = "<group>"; };
 		EFF097A5140D8F020025FBD6 /* GDStarBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDStarBackground.m; sourceTree = "<group>"; };
 		EFF097A8140DAAF80025FBD6 /* Z1-Sprites_default.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Z1-Sprites_default.plist"; sourceTree = "<group>"; };
@@ -530,6 +530,7 @@
 			children = (
 				EF91F16A1423DCDC002683D4 /* test_2.z1level */,
 				EF5574501421C5890035F6C2 /* simple_test.z1level */,
+				EFE6E5AD142BDA1400B594AD /* udg.level_list */,
 			);
 			name = Levels;
 			sourceTree = "<group>";
@@ -602,7 +603,6 @@
 		EFE5986313D337A400062F86 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				EF8F01A3142A831000A774E1 /* Motoplatio_Font_by_LGRuffa.ttf */,
 				EF8F019F142A7F5900A774E1 /* Nationalyze.ttf */,
 				EF8F0187142A4C6E00A774E1 /* Backgrounds */,
 				EFB5EA2213D889190058DB94 /* Levels */,
@@ -1067,9 +1067,9 @@
 				EF8F0196142A62BA00A774E1 /* ship2_64x64.png in Resources */,
 				EF8F0197142A62BA00A774E1 /* ship2_128x128.png in Resources */,
 				EF8F01A0142A7F5900A774E1 /* Nationalyze.ttf in Resources */,
-				EF8F01A4142A831000A774E1 /* Motoplatio_Font_by_LGRuffa.ttf in Resources */,
 				EF9771A9142A8807005DA458 /* ui_click_ok.wav in Resources */,
 				EF9771AA142A8807005DA458 /* ui_click_up.wav in Resources */,
+				EFE6E5AE142BDA1400B594AD /* udg.level_list in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

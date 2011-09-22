@@ -10,6 +10,8 @@
 #import "Z1GameScreen.h"
 #import "Z1Player.h"
 
+#define DEFAULT_LEVEL_LIST @"udg"
+
 @implementation Z1LevelManager
 
 static Z1LevelManager* sharedInstance = nil;
@@ -34,7 +36,20 @@ static Z1LevelManager* sharedInstance = nil;
 
 - (id)init
 {
-    return [self initWithLevels:[Z1LevelManager defaultLevels]];
+    return [self initWithLevelListFile:DEFAULT_LEVEL_LIST];
+}
+
+- (id) initWithLevelListFile:(NSString*)inFile
+{
+    NSArray* levels = nil;
+    NSString* levelPath = [[NSBundle mainBundle] pathForResource:inFile ofType:@"level_list"];
+    if (!levelPath)
+    {
+        // find a folder next to the app named levels?
+        levels = [Z1LevelManager defaultLevels];
+    }
+    levels = [NSArray arrayWithContentsOfFile:levelPath];
+    return [self initWithLevels:levels];
 }
 
 - (id) initWithLevels:(NSArray*)inLevels

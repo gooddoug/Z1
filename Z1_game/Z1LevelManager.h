@@ -21,6 +21,7 @@
 + (NSArray*) defaultLevels;
 + (Z1LevelManager*) sharedLevelManager;
 
+- (id) initWithLevelListFile:(NSString*)inFile;
 - (id) initWithLevels:(NSArray*)inLevels;
 
 - (CCScene*) levelSceneAtIndex:(int)whichIndex;

@@ -319,6 +319,11 @@
     }
 }
 
+- (void) resolvePlayerCollision
+{
+    // again simple brute force...
+}
+
 - (void) checkSpawners:(ccTime)dt
 {
     self.time = self.time + dt;
