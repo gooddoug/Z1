@@ -31,7 +31,8 @@
                 aSquare.opacity = 0.0;
                 float time = (arc4random() % 100) / 15.0;
                 CCFadeIn* fadeAction = [CCFadeIn actionWithDuration:time];
-                [aSquare runAction:fadeAction];
+                CCDelayTime* delayAction = [CCDelayTime actionWithDuration:1.0];
+                [aSquare runAction:[CCSequence actions:delayAction, fadeAction, nil]];
                 [self addChild:aSquare];
             }
         }

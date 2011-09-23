@@ -232,13 +232,16 @@
     if (!self.started)
         return;
     
-    [self handleInput: dt];
-    
     [self checkSpawners:dt];
-    
     [self sweepForDead];
-    [self resolveFire];
-    [self resolvePlayerCollision];
+    
+    if (!self.gameOver) 
+    {
+        [self resolveFire];
+        [self resolvePlayerCollision];
+        
+        [self handleInput: dt];
+    }
 }
 
 - (void) sweepForDead
@@ -426,7 +429,7 @@
     self.gameOverScreen = [[[Z1GameOverOverlay alloc] init] autorelease];
     [self addChild:self.gameOverScreen z:100];
     self.gameOver = YES;
-    self.started = NO;
+    [self removeChild:self.playerSprite cleanup:YES];
 }
 
 @end

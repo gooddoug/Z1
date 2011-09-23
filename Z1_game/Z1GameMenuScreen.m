@@ -29,7 +29,7 @@
     if ((self = [self initWithEffectNames:[NSArray array]] ))
     {
         // now add buttons
-        CCLabelTTF* menuLabelRestart = [CCLabelTTF labelWithString:@"Restart Game" fontName:@"Nationalyze" fontSize:32];
+        CCLabelTTF* menuLabelRestart = [CCLabelTTF labelWithString:@"New Game" fontName:@"Nationalyze" fontSize:32];
         CCMenuItemLabel* menuItemRestart = [CCMenuItemLabel itemWithLabel:menuLabelRestart block:^(id sender)
                                          {
                                              // zero out the score and lastLevel
