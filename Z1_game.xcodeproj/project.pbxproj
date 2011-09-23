@@ -160,6 +160,8 @@
 		EFE6E5AE142BDA1400B594AD /* udg.level_list in Resources */ = {isa = PBXBuildFile; fileRef = EFE6E5AD142BDA1400B594AD /* udg.level_list */; };
 		EFE6E5B0142BFC9000B594AD /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = EFE6E5AF142BFC9000B594AD /* License.txt */; };
 		EFE6E5B2142BFD0400B594AD /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = EFE6E5B1142BFD0400B594AD /* Readme.txt */; };
+		EFE6E5B5142BFE8100B594AD /* Z1GameOverOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE6E5B4142BFE8100B594AD /* Z1GameOverOverlay.m */; };
+		EFE6E5B7142C00F700B594AD /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE6E5B6142C00F700B594AD /* square.png */; };
 		EFF097A6140D8F020025FBD6 /* GDStarBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF097A5140D8F020025FBD6 /* GDStarBackground.m */; };
 		EFF097AA140DAAF80025FBD6 /* Z1-Sprites_default.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFF097A8140DAAF80025FBD6 /* Z1-Sprites_default.plist */; };
 		EFF097AB140DAAF80025FBD6 /* ship2.png in Resources */ = {isa = PBXBuildFile; fileRef = EFF097A9140DAAF80025FBD6 /* ship2.png */; };
@@ -460,6 +462,9 @@
 		EFE6E5AD142BDA1400B594AD /* udg.level_list */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = udg.level_list; sourceTree = "<group>"; };
 		EFE6E5AF142BFC9000B594AD /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		EFE6E5B1142BFD0400B594AD /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
+		EFE6E5B3142BFE8100B594AD /* Z1GameOverOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1GameOverOverlay.h; sourceTree = "<group>"; };
+		EFE6E5B4142BFE8100B594AD /* Z1GameOverOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1GameOverOverlay.m; sourceTree = "<group>"; };
+		EFE6E5B6142C00F700B594AD /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square.png; sourceTree = "<group>"; };
 		EFF097A4140D8F020025FBD6 /* GDStarBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDStarBackground.h; sourceTree = "<group>"; };
 		EFF097A5140D8F020025FBD6 /* GDStarBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDStarBackground.m; sourceTree = "<group>"; };
 		EFF097A8140DAAF80025FBD6 /* Z1-Sprites_default.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Z1-Sprites_default.plist"; sourceTree = "<group>"; };
@@ -502,6 +507,8 @@
 				EFE599A313D3387000062F86 /* GDGameScreenProtocol.h */,
 				EF14EDE71422CC2D00D19D92 /* Z1PreLevelOverlay.h */,
 				EF14EDE81422CC2E00D19D92 /* Z1PreLevelOverlay.m */,
+				EFE6E5B3142BFE8100B594AD /* Z1GameOverOverlay.h */,
+				EFE6E5B4142BFE8100B594AD /* Z1GameOverOverlay.m */,
 				EF72D95013D5DEFC00ABD27F /* Z1GameScreen.h */,
 				EF72D95113D5DEFD00ABD27F /* Z1GameScreen.m */,
 				EF14EDF81423B9A300D19D92 /* Z1LevelManager.h */,
@@ -933,6 +940,7 @@
 			isa = PBXGroup;
 			children = (
 				EFE599D013D3F49600062F86 /* fog.png */,
+				EFE6E5B6142C00F700B594AD /* square.png */,
 				EFFD402D1419850300A48B07 /* blood.png */,
 				EFE599CE13D34FCE00062F86 /* galaxy.png */,
 				EFE599A813D338A100062F86 /* shot.png */,
@@ -1078,6 +1086,7 @@
 				EFE6E5AE142BDA1400B594AD /* udg.level_list in Resources */,
 				EFE6E5B0142BFC9000B594AD /* License.txt in Resources */,
 				EFE6E5B2142BFD0400B594AD /* Readme.txt in Resources */,
+				EFE6E5B7142C00F700B594AD /* square.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1198,6 +1207,7 @@
 				EF14EDFA1423B9A300D19D92 /* Z1LevelManager.m in Sources */,
 				EF91F1691423CE0B002683D4 /* Z1GameMenuScreen.m in Sources */,
 				EF8F019A142A6D3D00A774E1 /* Z1Player.m in Sources */,
+				EFE6E5B5142BFE8100B594AD /* Z1GameOverOverlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

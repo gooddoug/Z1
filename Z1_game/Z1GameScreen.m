@@ -25,11 +25,14 @@
 @property float time;
 @property int spawnerIndex;
 @property (nonatomic, retain) Z1PreLevelOverlay* overlay;
+@property (nonatomic, retain) Z1GameOverOverlay* gameOverScreen;
 @property (nonatomic, retain) CCLabelAtlas* scoreLabel;
 @property BOOL started;
+@property BOOL gameOver;
 
 - (void) sweepForDead;
 - (void) resolveFire;
+- (void) playerDied;
 - (void) resolvePlayerCollision;
 - (void) handleInput:(ccTime)dt;
 - (void) checkSpawners:(ccTime)dt;
@@ -41,7 +44,7 @@
 @synthesize inputManager = _inputManager, playerSprite = _playerSprite, enemySprites = _enemySprites;
 @synthesize playerShots = _playerShots, effects = _effects, time = _time, spawnerIndex = _spawnerIndex, started = _started;
 
-@synthesize levelDescription = _levelDescription, backgroundSprite = _backgroundSprite, spawners = _spawners, overlay = _overlay, scoreLabel = _scoreLabel;
+@synthesize levelDescription = _levelDescription, backgroundSprite = _backgroundSprite, spawners = _spawners, overlay = _overlay, gameOverScreen = _gameOverScreen, gameOver = _gameOver, scoreLabel = _scoreLabel;
 
 +(CCScene*) scene
 {
@@ -143,13 +146,19 @@
 
 - (BOOL) ccKeyDown:(NSEvent *)event
 {
-    return [self.inputManager handleKeyDown:event];
+    if (self.started)
+        return [self.inputManager handleKeyDown:event];
+    return NO;
 }
 
 
 - (BOOL) ccKeyUp:(NSEvent *)event
 {
-    return [self.inputManager handleKeyUp:event];
+    if (self.started) 
+    {
+        return [self.inputManager handleKeyUp:event];
+    }
+    return NO;
 }
 
 - (void) handleInput:(ccTime)dt  
@@ -336,6 +345,7 @@
             NSLog(@"BOOM!");
             anEnemy.dead = YES;
             [self createExplosionAtPoint:centerEnemy];
+            [self playerDied];
         }
     }
 }
@@ -405,9 +415,18 @@
 {
     // dump the prelevel overlay
     [self removeChild:self.overlay cleanup:YES];
+    self.overlay = nil;
     
     // start the level
     self.started = YES;
+}
+
+- (void) playerDied
+{
+    self.gameOverScreen = [[[Z1GameOverOverlay alloc] init] autorelease];
+    [self addChild:self.gameOverScreen z:100];
+    self.gameOver = YES;
+    self.started = NO;
 }
 
 @end

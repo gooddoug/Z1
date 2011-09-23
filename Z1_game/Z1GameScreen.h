@@ -10,6 +10,7 @@
 #import "cocos2d.h"
 #import "GDGameScreenProtocol.h"
 #import "Z1PreLevelOverlay.h"
+#import "Z1GameOverOverlay.h"
 
 @class GDInputManager;
 
@@ -22,12 +23,14 @@
     float _time;
     int _spawnerIndex;
     BOOL _started;
+    BOOL _gameOver;
     
     NSArray* _effects;
     NSDictionary* _levelDescription;
     CCSprite* _backgroundSprite;
     NSArray* _spawners;
     Z1PreLevelOverlay* _overlay;
+    Z1GameOverOverlay* _gameOverScreen;
     CCLabelAtlas* _scoreLabel;
 }
 
