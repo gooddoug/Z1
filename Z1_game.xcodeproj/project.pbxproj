@@ -13,6 +13,18 @@
 		EF14EDF51423088600D19D92 /* Asha-head.png in Resources */ = {isa = PBXBuildFile; fileRef = EF14EDF21423088500D19D92 /* Asha-head.png */; };
 		EF14EDF61423088600D19D92 /* Lea-head.png in Resources */ = {isa = PBXBuildFile; fileRef = EF14EDF31423088500D19D92 /* Lea-head.png */; };
 		EF14EDFA1423B9A300D19D92 /* Z1LevelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF14EDF91423B9A300D19D92 /* Z1LevelManager.m */; };
+		EF35084E142CFE9300249654 /* game-over.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35084A142CFE9300249654 /* game-over.png */; };
+		EF35084F142CFE9300249654 /* main-menu.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35084B142CFE9300249654 /* main-menu.png */; };
+		EF350850142CFE9300249654 /* mockup-menu.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35084C142CFE9300249654 /* mockup-menu.png */; };
+		EF350851142CFE9300249654 /* monitor.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35084D142CFE9300249654 /* monitor.png */; };
+		EF350858142D00CD00249654 /* credits-button.png in Resources */ = {isa = PBXBuildFile; fileRef = EF350853142D00CD00249654 /* credits-button.png */; };
+		EF350859142D00CD00249654 /* options-button.png in Resources */ = {isa = PBXBuildFile; fileRef = EF350854142D00CD00249654 /* options-button.png */; };
+		EF35085A142D00CD00249654 /* restart-button.png in Resources */ = {isa = PBXBuildFile; fileRef = EF350855142D00CD00249654 /* restart-button.png */; };
+		EF35085B142D00CD00249654 /* start-button.png in Resources */ = {isa = PBXBuildFile; fileRef = EF350856142D00CD00249654 /* start-button.png */; };
+		EF35085C142D00CD00249654 /* vote-button.png in Resources */ = {isa = PBXBuildFile; fileRef = EF350857142D00CD00249654 /* vote-button.png */; };
+		EF35085F142D052E00249654 /* quit-button-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35085D142D052E00249654 /* quit-button-selected.png */; };
+		EF350860142D052E00249654 /* quit-button.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35085E142D052E00249654 /* quit-button.png */; };
+		EF350863142D0F4A00249654 /* Z1MessageOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = EF350862142D0F4A00249654 /* Z1MessageOverlay.m */; };
 		EF5574511421C5890035F6C2 /* simple_test.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EF5574501421C5890035F6C2 /* simple_test.z1level */; };
 		EF72D92B13D48A3100ABD27F /* credits.txt in Resources */ = {isa = PBXBuildFile; fileRef = EF72D92A13D48A3100ABD27F /* credits.txt */; };
 		EF72D92F13D48C4800ABD27F /* GDScrollingText.m in Sources */ = {isa = PBXBuildFile; fileRef = EF72D92E13D48C4800ABD27F /* GDScrollingText.m */; };
@@ -187,6 +199,19 @@
 		EF14EDF31423088500D19D92 /* Lea-head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lea-head.png"; sourceTree = "<group>"; };
 		EF14EDF81423B9A300D19D92 /* Z1LevelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1LevelManager.h; sourceTree = "<group>"; };
 		EF14EDF91423B9A300D19D92 /* Z1LevelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1LevelManager.m; sourceTree = "<group>"; };
+		EF35084A142CFE9300249654 /* game-over.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "game-over.png"; sourceTree = "<group>"; };
+		EF35084B142CFE9300249654 /* main-menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-menu.png"; sourceTree = "<group>"; };
+		EF35084C142CFE9300249654 /* mockup-menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mockup-menu.png"; sourceTree = "<group>"; };
+		EF35084D142CFE9300249654 /* monitor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monitor.png; sourceTree = "<group>"; };
+		EF350853142D00CD00249654 /* credits-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "credits-button.png"; sourceTree = "<group>"; };
+		EF350854142D00CD00249654 /* options-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "options-button.png"; sourceTree = "<group>"; };
+		EF350855142D00CD00249654 /* restart-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "restart-button.png"; sourceTree = "<group>"; };
+		EF350856142D00CD00249654 /* start-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start-button.png"; sourceTree = "<group>"; };
+		EF350857142D00CD00249654 /* vote-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vote-button.png"; sourceTree = "<group>"; };
+		EF35085D142D052E00249654 /* quit-button-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quit-button-selected.png"; sourceTree = "<group>"; };
+		EF35085E142D052E00249654 /* quit-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quit-button.png"; sourceTree = "<group>"; };
+		EF350861142D0F4A00249654 /* Z1MessageOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1MessageOverlay.h; sourceTree = "<group>"; };
+		EF350862142D0F4A00249654 /* Z1MessageOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1MessageOverlay.m; sourceTree = "<group>"; };
 		EF5574501421C5890035F6C2 /* simple_test.z1level */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = simple_test.z1level; sourceTree = "<group>"; };
 		EF72D92A13D48A3100ABD27F /* credits.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = credits.txt; sourceTree = "<group>"; };
 		EF72D92D13D48C4800ABD27F /* GDScrollingText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDScrollingText.h; sourceTree = "<group>"; };
@@ -517,6 +542,20 @@
 			name = GameScreen;
 			sourceTree = "<group>";
 		};
+		EF350852142D009F00249654 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				EF350853142D00CD00249654 /* credits-button.png */,
+				EF35085D142D052E00249654 /* quit-button-selected.png */,
+				EF35085E142D052E00249654 /* quit-button.png */,
+				EF350854142D00CD00249654 /* options-button.png */,
+				EF350855142D00CD00249654 /* restart-button.png */,
+				EF350856142D00CD00249654 /* start-button.png */,
+				EF350857142D00CD00249654 /* vote-button.png */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
 		EF7F5659140FDC6600D8B26A /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -529,6 +568,10 @@
 			isa = PBXGroup;
 			children = (
 				EF8F0188142A4C8800A774E1 /* credits.png */,
+				EF35084A142CFE9300249654 /* game-over.png */,
+				EF35084B142CFE9300249654 /* main-menu.png */,
+				EF35084C142CFE9300249654 /* mockup-menu.png */,
+				EF35084D142CFE9300249654 /* monitor.png */,
 				EF8F0189142A4C8800A774E1 /* title-screen-end.png */,
 				EF8F018A142A4C8800A774E1 /* title-screen-start.png */,
 				EF8F018B142A4C8800A774E1 /* ui-screen.png */,
@@ -587,6 +630,8 @@
 				EFE5998213D337A700062F86 /* AppDelegate.m */,
 				EFE5998413D337A700062F86 /* Z1SplashScreen.h */,
 				EFE5998513D337A700062F86 /* Z1SplashScreen.m */,
+				EF350861142D0F4A00249654 /* Z1MessageOverlay.h */,
+				EF350862142D0F4A00249654 /* Z1MessageOverlay.m */,
 				EF72D94B13D5521B00ABD27F /* Z1EndScreen.h */,
 				EF72D94C13D5521C00ABD27F /* Z1EndScreen.m */,
 				EFE599D513D3FD3D00062F86 /* Z1MenuScreen.h */,
@@ -617,13 +662,13 @@
 			isa = PBXGroup;
 			children = (
 				EF8F019F142A7F5900A774E1 /* Nationalyze.ttf */,
+				EF350852142D009F00249654 /* Buttons */,
 				EF8F0187142A4C6E00A774E1 /* Backgrounds */,
 				EFB5EA2213D889190058DB94 /* Levels */,
 				EFE599BB13D33BF300062F86 /* logo-crop.png */,
 				EF72D93313D4F50A00ABD27F /* TextBackground.png */,
 				EF72D92A13D48A3100ABD27F /* credits.txt */,
 				EF72D94E13D5532C00ABD27F /* end.txt */,
-				EFE599C313D33C0100062F86 /* Screen Backgrounds */,
 				EFE599B213D338B100062F86 /* Sounds */,
 				EF14EDEA142306D400D19D92 /* Actors */,
 				EFE599A713D3387900062F86 /* Sprites */,
@@ -971,13 +1016,6 @@
 			name = Sounds;
 			sourceTree = "<group>";
 		};
-		EFE599C313D33C0100062F86 /* Screen Backgrounds */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Screen Backgrounds";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1087,6 +1125,17 @@
 				EFE6E5B0142BFC9000B594AD /* License.txt in Resources */,
 				EFE6E5B2142BFD0400B594AD /* Readme.txt in Resources */,
 				EFE6E5B7142C00F700B594AD /* square.png in Resources */,
+				EF35084E142CFE9300249654 /* game-over.png in Resources */,
+				EF35084F142CFE9300249654 /* main-menu.png in Resources */,
+				EF350850142CFE9300249654 /* mockup-menu.png in Resources */,
+				EF350851142CFE9300249654 /* monitor.png in Resources */,
+				EF350858142D00CD00249654 /* credits-button.png in Resources */,
+				EF350859142D00CD00249654 /* options-button.png in Resources */,
+				EF35085A142D00CD00249654 /* restart-button.png in Resources */,
+				EF35085B142D00CD00249654 /* start-button.png in Resources */,
+				EF35085C142D00CD00249654 /* vote-button.png in Resources */,
+				EF35085F142D052E00249654 /* quit-button-selected.png in Resources */,
+				EF350860142D052E00249654 /* quit-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1208,6 +1257,7 @@
 				EF91F1691423CE0B002683D4 /* Z1GameMenuScreen.m in Sources */,
 				EF8F019A142A6D3D00A774E1 /* Z1Player.m in Sources */,
 				EFE6E5B5142BFE8100B594AD /* Z1GameOverOverlay.m in Sources */,
+				EF350863142D0F4A00249654 /* Z1MessageOverlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

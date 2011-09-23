@@ -15,7 +15,7 @@
 
 - (id) initWithEffectNames:(NSArray*)inNames
 {
-    NSMutableArray* effects = [NSMutableArray arrayWithCapacity:[inNames count]];
+    NSMutableArray* effects = [NSMutableArray array];
     for (NSString* aName in inNames) 
     {
         [effects addObject:[[[NSClassFromString(aName) alloc] init] autorelease]];

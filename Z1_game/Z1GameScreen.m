@@ -17,6 +17,8 @@
 #import "GDEffectProtocol.h"
 #import "GDSoundsManager.h"
 
+#define PLAYER_ROT_FACTOR 100
+
 @interface Z1GameScreen ()
 
 @property (nonatomic, retain) NSDictionary* levelDescription;
@@ -175,7 +177,7 @@
         /*CGPoint currPos = self.playerSprite.position;
          CGPoint newPos = ccp(currPos.x + (dt * 100), currPos.y);
          self.playerSprite.position = newPos;*/
-        float rot = self.playerSprite.rotation + (200 * dt);
+        float rot = self.playerSprite.rotation + (PLAYER_ROT_FACTOR * dt);
         if (rot < 0)
         {
             rot = 360.0 + rot;
@@ -192,7 +194,7 @@
         /*CGPoint currPos = self.playerSprite.position;
          CGPoint newPos = ccp(currPos.x - (dt * 100), currPos.y);
          self.playerSprite.position = newPos;*/
-        float rot = self.playerSprite.rotation - (200 * dt);
+        float rot = self.playerSprite.rotation - (PLAYER_ROT_FACTOR * dt);
         if (rot < 0)
         {
             rot = 360.0 + rot;

@@ -32,7 +32,7 @@
         [self addChild:background];
         
         // set up the skip button
-        CCLabelTTF* menuLabelBack = [CCLabelTTF labelWithString:@"Skip" fontName:@"Nationalyze" fontSize:24];
+        CCLabelTTF* menuLabelBack = [CCLabelTTF labelWithString:@"Skip" fontName:@"Helvetica" fontSize:24];
         CCMenuItemLabel* menuItemBack = [CCMenuItemLabel itemWithLabel:menuLabelBack block:^(id sender)
                                          {
                                              [self done]; 

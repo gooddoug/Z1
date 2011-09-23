@@ -7,6 +7,7 @@
 //
 
 #import "Z1GameOverOverlay.h"
+#import "SimpleAudioEngine.h"
 
 #define X_SQUARES 80
 #define Y_SQUARES 60
@@ -29,13 +30,24 @@
                 aSquare.scale = 0.25f;
                 aSquare.position = ccp(x * xOffset, y * yOffset);
                 aSquare.opacity = 0.0;
-                float time = (arc4random() % 100) / 15.0;
+                float time = (arc4random() % 100) / 20.0;
                 CCFadeIn* fadeAction = [CCFadeIn actionWithDuration:time];
                 CCDelayTime* delayAction = [CCDelayTime actionWithDuration:1.0];
                 [aSquare runAction:[CCSequence actions:delayAction, fadeAction, nil]];
                 [self addChild:aSquare];
+                
             }
         }
+        // now add the screen
+        CGSize size = [[CCDirector sharedDirector] winSize];
+        CCSprite* gameOverBackground = [CCSprite spriteWithFile:@"game-over.png"];
+        gameOverBackground.position = ccp(size.width / 2.0, size.height / 2.0);
+        gameOverBackground.opacity = 0.0;
+        
+        CCFadeIn* fadeBackAction = [CCFadeIn actionWithDuration:2.0];
+        CCDelayTime* delayBackAction = [CCDelayTime actionWithDuration:3.0];
+        [gameOverBackground runAction:[CCSequence actions:delayBackAction, fadeBackAction, nil]];
+        [self addChild:gameOverBackground];
     }
     return self;
 }
@@ -43,6 +55,7 @@
 - (BOOL) ccKeyDown:(NSEvent *)event
 {
     [[CCDirector sharedDirector] popScene];
+    [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
     return YES;
 }
 

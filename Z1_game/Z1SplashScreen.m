@@ -51,7 +51,7 @@
         [self addChild:endBackground z:1];
         
         // add press any key label
-        CCLabelTTF* pressKeyLabel = [CCLabelTTF labelWithString:@"Press any key" fontName:@"Nationalyze" fontSize:48];
+        CCLabelTTF* pressKeyLabel = [CCLabelTTF labelWithString:@"Press any key" fontName:@"Helvetica" fontSize:48];
         pressKeyLabel.position = ccp(size.width / 2.0, 60.0);
         pressKeyLabel.opacity = 0.0;
         CCFadeIn* fadeAction = [CCFadeIn actionWithDuration:1.0];
