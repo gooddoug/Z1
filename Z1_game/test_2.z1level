@@ -108,7 +108,7 @@
 			<key>speed</key>
 			<real>10</real>
 			<key>sprite</key>
-			<string>StarMail.png</string>
+			<string>alien001_01_64.png</string>
 			<key>when</key>
 			<real>2</real>
 		</dict>
@@ -124,7 +124,7 @@
 			<key>speed</key>
 			<real>10</real>
 			<key>sprite</key>
-			<string>blood.png</string>
+			<string>alien001_02_64.png</string>
 			<key>when</key>
 			<real>8</real>
 		</dict>

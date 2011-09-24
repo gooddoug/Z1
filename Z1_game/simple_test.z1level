@@ -70,7 +70,7 @@
 			<key>speed</key>
 			<real>40</real>
 			<key>sprite</key>
-			<string>blood.png</string>
+			<string>alien001_01_64.png</string>
 			<key>when</key>
 			<real>1</real>
 		</dict>
@@ -86,7 +86,7 @@
 			<key>speed</key>
 			<real>80</real>
 			<key>sprite</key>
-			<string>blood.png</string>
+			<string>alien001_01_64.png</string>
 			<key>when</key>
 			<real>10</real>
 		</dict>
@@ -102,7 +102,7 @@
 			<key>speed</key>
 			<real>10</real>
 			<key>sprite</key>
-			<string>ship1.png</string>
+			<string>alien001_03_64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
@@ -120,7 +120,7 @@
 			<key>speed</key>
 			<real>1</real>
 			<key>sprite</key>
-			<string>ship1.png</string>
+			<string>alien001_03_64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
@@ -138,7 +138,7 @@
 			<key>speed</key>
 			<real>1</real>
 			<key>sprite</key>
-			<string>ship1.png</string>
+			<string>alien001_03_64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
@@ -156,7 +156,7 @@
 			<key>speed</key>
 			<real>1</real>
 			<key>sprite</key>
-			<string>ship1.png</string>
+			<string>alien001_03_64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>

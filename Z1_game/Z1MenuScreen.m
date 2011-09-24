@@ -7,7 +7,6 @@
 //
 
 #import "Z1MenuScreen.h"
-#import "Z1CreditsScreen.h"
 #import "Z1EndScreen.h"
 #import "Z1GameMenuScreen.h"
 #import "Z1Player.h"
@@ -64,16 +63,14 @@
                                                [[CCDirector sharedDirector] pushScene:trans];
                                            }];
         
-        // credits CHANGE THE BLOCK
+        // credits
         CCSprite* creditsButtonSprite = [CCSprite spriteWithFile:@"credits-button.png"];
         CCSprite* creditsButtonSpriteSelected = [CCSprite spriteWithFile:@"credits-button.png"]; // same for now
         creditsButtonSpriteSelected.scale = 1.15;
         CCMenuItemSprite* creditsButton = [CCMenuItemSprite itemFromNormalSprite:creditsButtonSprite selectedSprite:creditsButtonSpriteSelected block:^(id sender)
                                            {
-                                               CCTransitionScene* trans = [CCTransitionFade transitionWithDuration:1 
-                                                                                                             scene:[Z1CreditsScreen scene]
-                                                                                                         withColor:ccWHITE];
-                                               [[CCDirector sharedDirector] pushScene:trans];
+                                               [self.messageOverlay toggle];
+                                               
                                                [[GDSoundsManager sharedSoundsManager] playSoundForName:SCREEN_TRANSITION];
                                            }];
         
@@ -126,6 +123,16 @@
         [self addChild:aMenu z:10];
     }
     return self;
+}
+
+- (Z1MessageOverlay*) messageOverlay
+{
+    if (!_messageOverlay)
+    {
+        _messageOverlay = [[Z1MessageOverlay alloc] initWithText:@"Hello World!"];
+        [self addChild:_messageOverlay z:200];
+    }
+    return _messageOverlay;
 }
 
 @end

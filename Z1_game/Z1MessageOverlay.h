@@ -11,7 +11,18 @@
 
 @interface Z1MessageOverlay : CCLayer 
 {
-    
+    NSString* _text;
+    CCSprite* _monitor;
+    BOOL _showing;
 }
+
+@property (nonatomic, retain) NSString* text;
+@property BOOL showing;
+
+- (id) initWithText:(NSString*)inMessage;
+
+- (void) show;
+- (void) hide;
+- (void) toggle;
 
 @end
