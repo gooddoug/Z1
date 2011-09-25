@@ -11,36 +11,25 @@
 @interface Z1MessageOverlay ()
 
 @property (nonatomic, retain, readonly) CCSprite* monitor;
+@property (nonatomic, retain) CCSprite* textSprite;
 
 @end
 
 @implementation Z1MessageOverlay
 
-@synthesize showing = _showing;
+@synthesize showing = _showing, textSprite = _textSprite, text = _text;
 
 - (id) initWithText:(NSString*)inMessage
 {
     if (( self = [super init] ))
     {
         self.showing = NO;
+        self.text = inMessage;
     }
     return self;
 }
 
 #pragma mark Accessors
-
-- (NSString*) text
-{
-    return _text;
-}
-
-- (void) setText:(NSString *)text
-{
-    [text retain];
-    [_text release];
-    _text = text;
-    // now set the text sprite
-}
 
 - (CCSprite*) monitor
 {
@@ -59,18 +48,30 @@
 {
     if (self.showing)
         return;
-    CCMoveBy* moveAnimation = [CCMoveBy actionWithDuration:1.0 position:ccp(0.0, -(self.monitor.contentSize.height + 200))];
+    float howLong = 1.0;
+    CCMoveBy* moveAnimation = [CCMoveBy actionWithDuration:howLong position:ccp(0.0, -(self.monitor.contentSize.height + 200))];
     [self.monitor runAction:moveAnimation];
     self.showing = YES;
+    CCLabelTTF* textSprite = [CCLabelTTF labelWithString:self.text fontName:@"menlo" fontSize:10];
+    textSprite.position = ccp(1324 - self.monitor.contentSize.width, 575);
+    textSprite.opacity = 0.0;
+    CCFadeIn* fadeInAction = [CCFadeIn actionWithDuration:0.25];
+    CCDelayTime* delayAction = [CCDelayTime actionWithDuration:howLong];
+    CCSequence* action = [CCSequence actionsWithArray:[NSArray arrayWithObjects:delayAction, fadeInAction, nil]];
+    [textSprite runAction:action];
+    self.textSprite = textSprite;
+    [self addChild:self.textSprite z:220];
 }
 
 - (void) hide
 {
     if (!self.showing)
         return;
-    CCMoveBy* moveAnimation = [CCMoveBy actionWithDuration:1.0 position:ccp(0.0, self.monitor.contentSize.height + 200)];
+    float howLong = 1.0;
+    CCMoveBy* moveAnimation = [CCMoveBy actionWithDuration:howLong position:ccp(0.0, self.monitor.contentSize.height + 200)];
     [self.monitor runAction:moveAnimation];
     self.showing = NO;
+    [self removeChild:self.textSprite cleanup:YES];
 }
 
 - (void) toggle

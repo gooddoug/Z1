@@ -13,6 +13,7 @@
 {
     NSString* _text;
     CCSprite* _monitor;
+    CCSprite* _textSprite;
     BOOL _showing;
 }
 

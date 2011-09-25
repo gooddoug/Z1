@@ -69,9 +69,23 @@
         creditsButtonSpriteSelected.scale = 1.15;
         CCMenuItemSprite* creditsButton = [CCMenuItemSprite itemFromNormalSprite:creditsButtonSprite selectedSprite:creditsButtonSpriteSelected block:^(id sender)
                                            {
-                                               [self.messageOverlay toggle];
-                                               
-                                               [[GDSoundsManager sharedSoundsManager] playSoundForName:SCREEN_TRANSITION];
+                                               if (self.messageOverlay.showing)
+                                               {
+                                                   [self.messageOverlay hide];
+                                               }
+                                               else
+                                               {
+                                                   NSString* creditsPath = [[NSBundle mainBundle] pathForResource:@"credits" ofType:@"txt"];
+                                                   NSString* creditsText = [NSString stringWithContentsOfFile:creditsPath encoding:NSUTF8StringEncoding error:nil];
+                                                   self.messageOverlay.text = creditsText;
+                                                   [self.messageOverlay show];
+                                                   double delayInSeconds = 20.0;
+                                                   dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+                                                   dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                                                       [self.messageOverlay hide];
+                                                   });
+                                                   [[GDSoundsManager sharedSoundsManager] playSoundForName:SCREEN_TRANSITION];
+                                               }
                                            }];
         
         // vote
@@ -97,11 +111,24 @@
         CCSprite* quitButtonSpriteSelected = [CCSprite spriteWithFile:@"quit-button-selected.png"]; // same for now
         CCMenuItemSprite* quitButton = [CCMenuItemSprite itemFromNormalSprite:quitButtonSprite selectedSprite:quitButtonSpriteSelected block:^(id sender)
                                         {
-                                            CCTransitionScene* trans = [CCTransitionFade transitionWithDuration:1 
-                                                                                                          scene:[Z1EndScreen scene]
-                                                                                                      withColor:ccWHITE];
-                                            [[CCDirector sharedDirector] pushScene:trans];
-                                            [[GDSoundsManager sharedSoundsManager] playSoundForName:SCREEN_TRANSITION];
+                                            if (self.messageOverlay.showing)
+                                            {
+                                                [self.messageOverlay hide];
+                                            }
+                                            else
+                                            {
+                                                NSString* creditsPath = [[NSBundle mainBundle] pathForResource:@"end" ofType:@"txt"];
+                                                NSString* creditsText = [NSString stringWithContentsOfFile:creditsPath encoding:NSUTF8StringEncoding error:nil];
+                                                self.messageOverlay.text = creditsText;
+                                                [self.messageOverlay show];
+                                                double delayInSeconds = 5.0;
+                                                dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+                                                dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                                                    [self.messageOverlay hide];
+                                                    [NSApp terminate:self];
+                                                });
+                                                [[GDSoundsManager sharedSoundsManager] playSoundForName:SCREEN_TRANSITION];
+                                            }
                                         }];
         
         
@@ -133,6 +160,17 @@
         [self addChild:_messageOverlay z:200];
     }
     return _messageOverlay;
+}
+
+#pragma mark key responders
+
+- (BOOL) ccKeyUp:(NSEvent *)event
+{
+    if (_messageOverlay && self.messageOverlay.showing)
+    {
+        [self.messageOverlay hide];
+    }
+    return NO;
 }
 
 @end

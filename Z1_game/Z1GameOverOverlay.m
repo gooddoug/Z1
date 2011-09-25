@@ -26,7 +26,7 @@
             for (int y = 0; y < Y_SQUARES; y++) 
             {
                 // make a tile and place it
-                CCSprite* aSquare = [CCSprite spriteWithFile:@"square.png"];
+                CCSprite* aSquare = [CCSprite spriteWithFile:@"red-square.png"];
                 aSquare.scale = 0.25f;
                 aSquare.position = ccp(x * xOffset, y * yOffset);
                 aSquare.opacity = 0.0;

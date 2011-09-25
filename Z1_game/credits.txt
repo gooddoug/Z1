@@ -1,26 +1,16 @@
 Z1 is a game for the uDevGames 2011 Mac game programming
 contest.
-
-Vote for ZW1 and show your support for independent games 
+Vote for Z1 and show your support for independent games 
 by visiting http://www.udevgames.com 
-
 Software Engineer:
-Doug Whitmore
-
+    Doug Whitmore
 Game SFX, Visuals & Story:
-Carlos Camacho
-
+    Carlos Camacho
 Character Design:
-Noriko Jepson
-
+    Noriko Jepson
 Music:
-David Juteau
-
+    David Juteau
 Special Thanks:
-Seth Willits
-
-
+    Seth Willits
 Look for the expanded version of Z1 on the Apple's App Store 
 in the future.
-
-© 2011 junigames
