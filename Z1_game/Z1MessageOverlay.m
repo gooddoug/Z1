@@ -29,6 +29,16 @@
     return self;
 }
 
+- (void) dealloc
+{
+    if (_monitor)
+        [_monitor release];
+    [_text release];
+    if (_textSprite)
+        [_textSprite release];
+    [super dealloc];
+}
+
 #pragma mark Accessors
 
 - (CCSprite*) monitor

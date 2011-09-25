@@ -50,6 +50,8 @@
 
 - (void) dealloc
 {
+    [_currentText release];
+    [_currentActor release];
     [_scripts release];
     [super dealloc];
 }
@@ -86,14 +88,14 @@
     
     if (self.currentActor)
         [self removeChild:self.currentActor cleanup:YES];
-    self.currentActor = [CCSprite spriteWithFile:[NSString stringWithFormat:@"%@-head.png", [currentScript objectForKey:@"actor"]]];
+    self.currentActor = [CCSprite spriteWithFile:[NSString stringWithFormat:@"head-%@.png", [currentScript objectForKey:@"actor"]]];
     self.currentActor.position = ccp(250.0, 500.0);
     [self addChild:self.currentActor];
     
     if (self.currentText)
         [self removeChild:self.currentText cleanup:YES];
     
-    NSString* text = [[[NSAttributedString alloc] initWithData:[currentScript objectForKey:@"text"] options:nil documentAttributes:nil error:nil] string];
+    NSString* text = [[[[NSAttributedString alloc] initWithData:[currentScript objectForKey:@"text"] options:nil documentAttributes:nil error:nil] autorelease] string];
     self.currentText = [CCLabelTTF labelWithString:text fontName:@"Helvetica" fontSize:24];
     CGSize size = [[CCDirector sharedDirector] winSize];
 

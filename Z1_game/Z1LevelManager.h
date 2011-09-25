@@ -26,7 +26,7 @@
 
 - (CCScene*) levelSceneAtIndex:(int)whichIndex;
 
-- (void) finishedCurrentLevel;
+- (BOOL) moveToNextLevel;
 - (CCScene*) nextGameScreen;
 
 @end

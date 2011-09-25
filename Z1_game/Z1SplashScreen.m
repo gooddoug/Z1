@@ -65,7 +65,10 @@
 - (BOOL) ccKeyUp:(NSEvent *)event
 {
     [[GDSoundsManager sharedSoundsManager] playSoundForName:SCREEN_TRANSITION];
-    [[CCDirector sharedDirector] replaceScene:[Z1MenuScreen scene]];
+    CCTransitionScene* trans = [CCTransitionFade transitionWithDuration:1 
+                                                                  scene:[Z1MenuScreen scene] 
+                                                              withColor:ccWHITE];
+    [[CCDirector sharedDirector] replaceScene:trans];
     
     return YES;
 }

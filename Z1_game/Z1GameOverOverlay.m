@@ -14,7 +14,7 @@
 
 @implementation Z1GameOverOverlay
 
-- (id) init
+- (id) initAndFinsihed:(BOOL)finished
 {
     if (( self = [super init] ))
     {
@@ -48,15 +48,32 @@
         CCDelayTime* delayBackAction = [CCDelayTime actionWithDuration:3.0];
         [gameOverBackground runAction:[CCSequence actions:delayBackAction, fadeBackAction, nil]];
         [self addChild:gameOverBackground];
+        
+        if (finished)
+        {
+            CCSprite* gameWonBackground = [CCSprite spriteWithFile:@"ending-credits.png"];
+            gameWonBackground.position = ccp(size.width / 2.0, size.height / 2.0);
+            gameWonBackground.opacity = 0.0;
+            
+            CCFadeIn* fadeBackAction = [CCFadeIn actionWithDuration:1.0];
+            CCDelayTime* delayBackAction = [CCDelayTime actionWithDuration:5.0];
+            [gameWonBackground runAction:[CCSequence actions:delayBackAction, fadeBackAction, nil]];
+            [self addChild:gameWonBackground];
+        }
+
     }
     return self;
 }
 
 - (BOOL) ccKeyDown:(NSEvent *)event
 {
-    [[CCDirector sharedDirector] popScene];
-    [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
-    return YES;
+    if ([event keyCode] == 36 )
+    {
+        [[CCDirector sharedDirector] popScene];
+        [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
+        return YES;
+    }
+    return NO;
 }
 
 @end

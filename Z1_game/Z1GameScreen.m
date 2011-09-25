@@ -35,6 +35,7 @@
 - (void) sweepForDead;
 - (void) resolveFire;
 - (void) playerDied;
+- (void) endLevel;
 - (void) resolvePlayerCollision;
 - (void) handleInput:(ccTime)dt;
 - (void) checkSpawners:(ccTime)dt;
@@ -84,9 +85,7 @@
         [self scheduleUpdate];
         self.enemySprites = [NSMutableArray array];
         self.playerShots = [NSMutableSet set];
-        
-        //[[GDSoundsManager sharedSoundsManager] playSoundForName:@"ui_click_up"];
-        
+                
         NSString* levelPath = [[NSBundle mainBundle] pathForResource:inFile ofType:@"z1level"];
         if (!levelPath)
         {
@@ -138,7 +137,7 @@
         // 
         CCTexture2DPixelFormat currentFormat = [CCTexture2D defaultAlphaPixelFormat];
 		[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
-		self.scoreLabel = [[CCLabelAtlas labelWithString:[NSString stringWithFormat:@"%d", [Z1Player sharedPlayer].score] charMapFile:@"fps_images.png" itemWidth:16 itemHeight:24 startCharMap:'.'] retain];
+		self.scoreLabel = [CCLabelAtlas labelWithString:[NSString stringWithFormat:@"%d", [Z1Player sharedPlayer].score] charMapFile:@"fps_images.png" itemWidth:16 itemHeight:24 startCharMap:'.'];
 		[CCTexture2D setDefaultAlphaPixelFormat:currentFormat];
         self.scoreLabel.position = ccp(100.0, 700.0);
         [self addChild:self.scoreLabel];
@@ -375,7 +374,10 @@
     {
         if (self.time > ([[[self.spawners lastObject] objectForKey:@"when"] intValue] + [[[self.spawners lastObject] objectForKey:@"howLong"] intValue] + 10))
         {
-            [[Z1LevelManager sharedLevelManager] finishedCurrentLevel];
+            if (!self.gameOver)
+            {
+                [self endLevel];
+            }
         }
     }
 }
@@ -428,10 +430,40 @@
 
 - (void) playerDied
 {
-    self.gameOverScreen = [[[Z1GameOverOverlay alloc] init] autorelease];
+    self.gameOverScreen = [[[Z1GameOverOverlay alloc] initAndFinsihed:NO] autorelease];
     [self addChild:self.gameOverScreen z:100];
     self.gameOver = YES;
     [self removeChild:self.playerSprite cleanup:YES];
+    double delayInSeconds = 10.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        if (self)
+        {
+            [[CCDirector sharedDirector] popScene];
+            [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
+        }
+    });
+}
+
+- (void) endLevel
+{
+    BOOL endGame = !([[Z1LevelManager sharedLevelManager] moveToNextLevel]);
+    if (endGame)
+    {
+        self.gameOverScreen = [[[Z1GameOverOverlay alloc] initAndFinsihed:YES] autorelease];
+        [self addChild:self.gameOverScreen z:100];
+        self.gameOver = YES;
+        [self removeChild:self.playerSprite cleanup:YES];
+        double delayInSeconds = 60.0;
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            if (self)
+            {
+                [[CCDirector sharedDirector] popScene];
+                [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
+            }
+        });
+    }
 }
 
 @end

@@ -11,7 +11,9 @@
 
 @interface Z1GameOverOverlay : CCLayer 
 {
-    
+
 }
+
+- (id) initAndFinsihed:(BOOL)finished;
 
 @end

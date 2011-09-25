@@ -45,8 +45,8 @@ static Z1LevelManager* sharedInstance = nil;
     NSString* levelPath = [[NSBundle mainBundle] pathForResource:inFile ofType:@"level_list"];
     if (!levelPath)
     {
-        // find a folder next to the app named levels?
-        levels = [Z1LevelManager defaultLevels];
+        NSLog(@"Was not able to get level path:%@", levelPath);
+        return nil;
     }
     levels = [NSArray arrayWithContentsOfFile:levelPath];
     return [self initWithLevels:levels];
@@ -66,8 +66,8 @@ static Z1LevelManager* sharedInstance = nil;
 {
     if (whichIndex >= [self.levelList count])
     {
-        NSLog(@"Trying to index past the level list, going back to 0");
-        whichIndex = 0;
+        NSLog(@"Trying to index past the level list, we're at the end");
+        return nil;
     }
     self.currentLevelIndex = whichIndex;
     NSString* whichLevel = [self.levelList objectAtIndex:self.currentLevelIndex];
@@ -82,9 +82,13 @@ static Z1LevelManager* sharedInstance = nil;
 	return scene;
 }
 
-- (void) finishedCurrentLevel
+- (BOOL) moveToNextLevel
 {
-    [[CCDirector sharedDirector] replaceScene:[self nextGameScreen]];
+    CCScene* aScene = [self nextGameScreen];
+    if (!aScene)
+        return NO;
+    [[CCDirector sharedDirector] replaceScene:aScene];
+    return YES;
 }
 
 - (CCScene*) nextGameScreen
@@ -93,10 +97,7 @@ static Z1LevelManager* sharedInstance = nil;
     player.lastLevel = self.currentLevelIndex;
     
     self.currentLevelIndex++; 
-    if (self.currentLevelIndex >= [self.levelList count])
-    {
-        self.currentLevelIndex = 0;
-    }
+    
     CCScene* nextScene = [self levelSceneAtIndex:self.currentLevelIndex];
     
     return nextScene;
