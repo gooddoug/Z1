@@ -124,11 +124,11 @@
                                                 NSString* creditsText = [NSString stringWithContentsOfFile:creditsPath encoding:NSUTF8StringEncoding error:nil];
                                                 self.messageOverlay.text = creditsText;
                                                 [self.messageOverlay show];
-                                                double delayInSeconds = 5.0;
+                                                double delayInSeconds = 10.0;
                                                 dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
                                                 dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
                                                     [self.messageOverlay hide];
-                                                    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.udevgames.com"]];
+                                                    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.udevgames.com/entries/210"]];
                                                 });
                                                 [[GDSoundsManager sharedSoundsManager] playSoundForName:SCREEN_TRANSITION];
                                             }

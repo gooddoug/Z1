@@ -107,6 +107,8 @@
 		EF91F16B1423DCDC002683D4 /* level_02.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EF91F16A1423DCDC002683D4 /* level_02.z1level */; };
 		EF9771A9142A8807005DA458 /* ui_click_ok.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF9771A7142A8807005DA458 /* ui_click_ok.wav */; };
 		EF9771AA142A8807005DA458 /* ui_click_up.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF9771A8142A8807005DA458 /* ui_click_up.wav */; };
+		EF9EAD10142F933300FEE580 /* Z1_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = EF9EAD0F142F933300FEE580 /* Z1_icon.icns */; };
+		EF9EAD12142F938900FEE580 /* Z1_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = EF9EAD11142F938900FEE580 /* Z1_icon.icns */; };
 		EFE5985713D337A400062F86 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5985613D337A400062F86 /* QuartzCore.framework */; };
 		EFE5985913D337A400062F86 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5985813D337A400062F86 /* OpenGL.framework */; };
 		EFE5985B13D337A400062F86 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5985A13D337A400062F86 /* OpenAL.framework */; };
@@ -355,6 +357,8 @@
 		EF91F16A1423DCDC002683D4 /* level_02.z1level */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level_02.z1level; sourceTree = "<group>"; };
 		EF9771A7142A8807005DA458 /* ui_click_ok.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ui_click_ok.wav; sourceTree = "<group>"; };
 		EF9771A8142A8807005DA458 /* ui_click_up.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ui_click_up.wav; sourceTree = "<group>"; };
+		EF9EAD0F142F933300FEE580 /* Z1_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Z1_icon.icns; sourceTree = "<group>"; };
+		EF9EAD11142F938900FEE580 /* Z1_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Z1_icon.icns; sourceTree = "<group>"; };
 		EFB5EA2F13D8CC900058DB94 /* test.z1level */ = {isa = PBXFileReference; lastKnownFileType = folder; path = test.z1level; sourceTree = "<group>"; };
 		EFE5985213D337A400062F86 /* Z1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Z1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE5985613D337A400062F86 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -757,6 +761,7 @@
 		EFE5984713D337A400062F86 = {
 			isa = PBXGroup;
 			children = (
+				EF9EAD11142F938900FEE580 /* Z1_icon.icns */,
 				EFE6E5AF142BFC9000B594AD /* License.txt */,
 				EFE6E5B1142BFD0400B594AD /* Readme.txt */,
 				EF7F5658140FDC6600D8B26A /* Z1-editor.xcodeproj */,
@@ -831,6 +836,7 @@
 				EF14EDEA142306D400D19D92 /* Actors */,
 				EFE599A713D3387900062F86 /* Sprites */,
 				EFE5986B13D337A400062F86 /* fps_images.png */,
+				EF9EAD0F142F933300FEE580 /* Z1_icon.icns */,
 				EFE5986D13D337A400062F86 /* icon.icns */,
 				EFE5986F13D337A400062F86 /* Info.plist */,
 				EFE5986413D337A400062F86 /* English.lproj */,
@@ -1348,6 +1354,8 @@
 				EF836A64142F01C7009EBFF6 /* head-nikori.png in Resources */,
 				EF836A65142F01C7009EBFF6 /* head-vicente.png in Resources */,
 				EF836A67142F0667009EBFF6 /* easter-egg.png in Resources */,
+				EF9EAD10142F933300FEE580 /* Z1_icon.icns in Resources */,
+				EF9EAD12142F938900FEE580 /* Z1_icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
