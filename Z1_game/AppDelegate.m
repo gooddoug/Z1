@@ -27,11 +27,12 @@
 	//[director setResizeMode:kCCDirectorResize_NoScale];
 	
 	// Enable "moving" mouse event. Default no.
-	[window_ setAcceptsMouseMovedEvents:NO];
+	[window_ setAcceptsMouseMovedEvents:YES];
 	
 	
 	[director runWithScene:[Z1SplashScreen scene]];
     [director setFullScreen:YES];
+    NSLog(@"%@ accpetsMouseMovedEvents", [window_ acceptsMouseMovedEvents] ? @"yes" : @"no");
 }
 
 - (BOOL) applicationShouldTerminateAfterLastWindowClosed: (NSApplication *) theApplication

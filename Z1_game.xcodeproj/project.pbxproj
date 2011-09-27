@@ -13,6 +13,11 @@
 		EF14EDF51423088600D19D92 /* Asha-head.png in Resources */ = {isa = PBXBuildFile; fileRef = EF14EDF21423088500D19D92 /* Asha-head.png */; };
 		EF14EDF61423088600D19D92 /* Lea-head.png in Resources */ = {isa = PBXBuildFile; fileRef = EF14EDF31423088500D19D92 /* Lea-head.png */; };
 		EF14EDFA1423B9A300D19D92 /* Z1LevelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF14EDF91423B9A300D19D92 /* Z1LevelManager.m */; };
+		EF24DE871431AC8200965461 /* button-credits-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24DE821431AC8200965461 /* button-credits-hover.png */; };
+		EF24DE881431AC8200965461 /* button-restart-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24DE831431AC8200965461 /* button-restart-hover.png */; };
+		EF24DE891431AC8200965461 /* button-saga-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24DE841431AC8200965461 /* button-saga-hover.png */; };
+		EF24DE8A1431AC8200965461 /* button-start-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24DE851431AC8200965461 /* button-start-hover.png */; };
+		EF24DE8B1431AC8200965461 /* button-vote-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24DE861431AC8200965461 /* button-vote-hover.png */; };
 		EF35084E142CFE9300249654 /* game-over.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35084A142CFE9300249654 /* game-over.png */; };
 		EF35084F142CFE9300249654 /* main-menu.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35084B142CFE9300249654 /* main-menu.png */; };
 		EF350851142CFE9300249654 /* monitor.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35084D142CFE9300249654 /* monitor.png */; };
@@ -109,6 +114,7 @@
 		EF9771AA142A8807005DA458 /* ui_click_up.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF9771A8142A8807005DA458 /* ui_click_up.wav */; };
 		EF9EAD10142F933300FEE580 /* Z1_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = EF9EAD0F142F933300FEE580 /* Z1_icon.icns */; };
 		EF9EAD12142F938900FEE580 /* Z1_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = EF9EAD11142F938900FEE580 /* Z1_icon.icns */; };
+		EF9EAE911431A56700FEE580 /* GDSpriteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EAE901431A56700FEE580 /* GDSpriteButton.m */; };
 		EFE5985713D337A400062F86 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5985613D337A400062F86 /* QuartzCore.framework */; };
 		EFE5985913D337A400062F86 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5985813D337A400062F86 /* OpenGL.framework */; };
 		EFE5985B13D337A400062F86 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5985A13D337A400062F86 /* OpenAL.framework */; };
@@ -253,6 +259,11 @@
 		EF14EDF31423088500D19D92 /* Lea-head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lea-head.png"; sourceTree = "<group>"; };
 		EF14EDF81423B9A300D19D92 /* Z1LevelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1LevelManager.h; sourceTree = "<group>"; };
 		EF14EDF91423B9A300D19D92 /* Z1LevelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1LevelManager.m; sourceTree = "<group>"; };
+		EF24DE821431AC8200965461 /* button-credits-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-credits-hover.png"; sourceTree = "<group>"; };
+		EF24DE831431AC8200965461 /* button-restart-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-restart-hover.png"; sourceTree = "<group>"; };
+		EF24DE841431AC8200965461 /* button-saga-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-saga-hover.png"; sourceTree = "<group>"; };
+		EF24DE851431AC8200965461 /* button-start-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-start-hover.png"; sourceTree = "<group>"; };
+		EF24DE861431AC8200965461 /* button-vote-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-vote-hover.png"; sourceTree = "<group>"; };
 		EF35084A142CFE9300249654 /* game-over.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "game-over.png"; sourceTree = "<group>"; };
 		EF35084B142CFE9300249654 /* main-menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-menu.png"; sourceTree = "<group>"; };
 		EF35084D142CFE9300249654 /* monitor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monitor.png; sourceTree = "<group>"; };
@@ -359,6 +370,8 @@
 		EF9771A8142A8807005DA458 /* ui_click_up.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ui_click_up.wav; sourceTree = "<group>"; };
 		EF9EAD0F142F933300FEE580 /* Z1_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Z1_icon.icns; sourceTree = "<group>"; };
 		EF9EAD11142F938900FEE580 /* Z1_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Z1_icon.icns; sourceTree = "<group>"; };
+		EF9EAE8F1431A56700FEE580 /* GDSpriteButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSpriteButton.h; sourceTree = "<group>"; };
+		EF9EAE901431A56700FEE580 /* GDSpriteButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDSpriteButton.m; sourceTree = "<group>"; };
 		EFE5985213D337A400062F86 /* Z1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Z1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE5985613D337A400062F86 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EFE5985813D337A400062F86 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -659,6 +672,11 @@
 			isa = PBXGroup;
 			children = (
 				EF836A34142EF6AB009EBFF6 /* button-credits-press.png */,
+				EF24DE821431AC8200965461 /* button-credits-hover.png */,
+				EF24DE831431AC8200965461 /* button-restart-hover.png */,
+				EF24DE841431AC8200965461 /* button-saga-hover.png */,
+				EF24DE851431AC8200965461 /* button-start-hover.png */,
+				EF24DE861431AC8200965461 /* button-vote-hover.png */,
 				EF836A35142EF6AB009EBFF6 /* button-credits.png */,
 				EF836A36142EF6AB009EBFF6 /* button-restart-press.png */,
 				EF836A37142EF6AB009EBFF6 /* button-restart.png */,
@@ -804,6 +822,8 @@
 				EFE599D613D3FD3E00062F86 /* Z1MenuScreen.m */,
 				EF8F0198142A6D3C00A774E1 /* Z1Player.h */,
 				EF8F0199142A6D3C00A774E1 /* Z1Player.m */,
+				EF9EAE8F1431A56700FEE580 /* GDSpriteButton.h */,
+				EF9EAE901431A56700FEE580 /* GDSpriteButton.m */,
 				EF14EDF71423B93A00D19D92 /* GameScreen */,
 				EFE599D213D3F5B600062F86 /* GDBaseEffectsScreen.h */,
 				EFE599D313D3F5B600062F86 /* GDBaseEffectsScreen.m */,
@@ -1354,6 +1374,11 @@
 				EF836A67142F0667009EBFF6 /* easter-egg.png in Resources */,
 				EF9EAD10142F933300FEE580 /* Z1_icon.icns in Resources */,
 				EF9EAD12142F938900FEE580 /* Z1_icon.icns in Resources */,
+				EF24DE871431AC8200965461 /* button-credits-hover.png in Resources */,
+				EF24DE881431AC8200965461 /* button-restart-hover.png in Resources */,
+				EF24DE891431AC8200965461 /* button-saga-hover.png in Resources */,
+				EF24DE8A1431AC8200965461 /* button-start-hover.png in Resources */,
+				EF24DE8B1431AC8200965461 /* button-vote-hover.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1472,6 +1497,7 @@
 				EF8F019A142A6D3D00A774E1 /* Z1Player.m in Sources */,
 				EFE6E5B5142BFE8100B594AD /* Z1GameOverOverlay.m in Sources */,
 				EF350863142D0F4A00249654 /* Z1MessageOverlay.m in Sources */,
+				EF9EAE911431A56700FEE580 /* GDSpriteButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

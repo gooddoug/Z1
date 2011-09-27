@@ -11,8 +11,18 @@
 #import "Z1MenuScreen.h"
 #import "GDSoundsManager.h"
 
+@interface Z1SplashScreen ()
+{
+    BOOL movedOn;
+}
+
+@property BOOL movedOn;
+
+@end
+
 @implementation Z1SplashScreen
 
+@synthesize movedOn;
 
 +(CCScene *) scene
 {
@@ -36,6 +46,7 @@
 	if(( self = [self initWithEffectNames:[NSArray array]] )) 
     {        
         self.isKeyboardEnabled = YES;
+        self.isMouseEnabled = YES;
         
         CGSize size = [[CCDirector sharedDirector] winSize];
 		CCSprite* background = [CCSprite spriteWithFile:@"title-screen-start.png"];
@@ -58,19 +69,37 @@
         CCDelayTime* delayAction = [CCDelayTime actionWithDuration:4.5];
         [pressKeyLabel runAction:[CCSequence actions:delayAction, fadeAction, nil]];
         [self addChild:pressKeyLabel z:10];
+        
+        double delayInSeconds = 15.0;
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            if (!self.movedOn)
+                [self moveOn];
+        });
 	}
 	return self;
 }
 
 - (BOOL) ccKeyUp:(NSEvent *)event
 {
+    [self moveOn];
+    
+    return YES;
+}
+
+- (BOOL) ccMouseUp:(NSEvent *)event
+{
+    [self moveOn];
+}
+
+- (void) moveOn
+{
+    self.movedOn = YES;
     [[GDSoundsManager sharedSoundsManager] playSoundForName:SCREEN_TRANSITION];
     CCTransitionScene* trans = [CCTransitionFade transitionWithDuration:1 
                                                                   scene:[Z1MenuScreen scene] 
                                                               withColor:ccWHITE];
     [[CCDirector sharedDirector] replaceScene:trans];
-    
-    return YES;
 }
 
 @end

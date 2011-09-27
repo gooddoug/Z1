@@ -125,6 +125,7 @@
         
         // Attach glView to fullscreen window
         [fullScreenWindow_ setContentView:openGLView_];
+        [fullScreenWindow_ setAcceptsMouseMovedEvents:YES];
         
         // Show the fullscreen window
         [fullScreenWindow_ makeMainWindow];
@@ -146,6 +147,7 @@
         [openGLView_ setFrame:originalWinRect_];
         
         // Show the window
+        [windowGLView_ setAcceptsMouseMovedEvents:YES];
         [windowGLView_ makeMainWindow];
         [windowGLView_ makeKeyAndOrderFront:self];
     }

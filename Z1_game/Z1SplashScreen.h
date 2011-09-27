@@ -16,4 +16,6 @@
 
 +(CCScene *) scene;
 
+- (void) moveOn;
+
 @end
