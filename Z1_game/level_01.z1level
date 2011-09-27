@@ -92,15 +92,15 @@
 		</dict>
 		<dict>
 			<key>howLong</key>
-			<real>1</real>
+			<real>4</real>
 			<key>howMany</key>
-			<real>1</real>
+			<real>6</real>
 			<key>movementAnimation</key>
-			<string>ZoomOut</string>
+			<string>SpiralOutClockwiseAndCircle</string>
 			<key>rotation</key>
 			<string>45</string>
 			<key>speed</key>
-			<real>10</real>
+			<real>40</real>
 			<key>sprite</key>
 			<string>alien001_03_64.png</string>
 			<key>startInside</key>

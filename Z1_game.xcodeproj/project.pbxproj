@@ -359,7 +359,6 @@
 		EF9771A8142A8807005DA458 /* ui_click_up.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ui_click_up.wav; sourceTree = "<group>"; };
 		EF9EAD0F142F933300FEE580 /* Z1_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Z1_icon.icns; sourceTree = "<group>"; };
 		EF9EAD11142F938900FEE580 /* Z1_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Z1_icon.icns; sourceTree = "<group>"; };
-		EFB5EA2F13D8CC900058DB94 /* test.z1level */ = {isa = PBXFileReference; lastKnownFileType = folder; path = test.z1level; sourceTree = "<group>"; };
 		EFE5985213D337A400062F86 /* Z1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Z1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE5985613D337A400062F86 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EFE5985813D337A400062F86 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -765,7 +764,6 @@
 				EFE6E5AF142BFC9000B594AD /* License.txt */,
 				EFE6E5B1142BFD0400B594AD /* Readme.txt */,
 				EF7F5658140FDC6600D8B26A /* Z1-editor.xcodeproj */,
-				EFB5EA2F13D8CC900058DB94 /* test.z1level */,
 				EFE5986213D337A400062F86 /* Z1_game */,
 				EFE5985513D337A400062F86 /* Frameworks */,
 				EFE5985313D337A400062F86 /* Products */,

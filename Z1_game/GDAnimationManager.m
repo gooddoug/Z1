@@ -77,6 +77,38 @@ static GDAnimationManager* _animationManager = nil;
              aSprite.rotation = aSprite.rotation - (dt * aSprite.speed);
              
          } forKey:@"SimpleSpiralInCounterClockwise"];
+        // simple spiral
+        [blockDict setObject:^(ccTime dt, GDBasicSprite* aSprite)
+         {
+             if (aSprite.scale >= 2.0)
+             {
+                 aSprite.dead = YES;
+             }
+             // I want the sprite to be slightly aimed in... and for the scale to be related to how close to the center of the screen it is
+             if (!aSprite.animInfo)
+             {
+                 
+             }
+             aSprite.scale = aSprite.scale + (dt * 0.1);
+             aSprite.rotation = aSprite.rotation + (dt * aSprite.speed);
+             
+         } forKey:@"SimpleSpiralOutClockwise"];
+        
+        [blockDict setObject:^(ccTime dt, GDBasicSprite* aSprite)
+         {
+             if (aSprite.scale >= 2.0)
+             {
+                 aSprite.dead = YES;
+             }
+             // I want the sprite to be slightly aimed in... and for the scale to be related to how close to the center of the screen it is
+             if (!aSprite.animInfo)
+             {
+                 
+             }
+             aSprite.scale = aSprite.scale + (dt * 0.1);
+             aSprite.rotation = aSprite.rotation - (dt * aSprite.speed);
+             
+         } forKey:@"SimpleSpiralOutCounterClockwise"];
         
         // spiral in and out again
         [blockDict setObject:^(ccTime dt, GDBasicSprite* aSprite)
@@ -136,7 +168,55 @@ static GDAnimationManager* _animationManager = nil;
              
          } forKey:@"ZoomOut"];
         
-
+        // zoom out and circle
+        [blockDict setObject:^(ccTime dt, GDBasicSprite* aSprite)
+         {
+             float scaleFactor = 0.1;
+             if (aSprite.scale >= 2.0)
+             {
+                 aSprite.dead = YES;
+             }
+             if (aSprite.scale <= 0.25 && aSprite.scale > 0.2)
+             {
+                 scaleFactor = 0.01;
+             }
+             // I want the sprite to be slightly aimed in... and for the scale to be related to how close to the center of the screen it is
+             if (!aSprite.animInfo)
+             {
+                 
+             }
+             aSprite.scale = aSprite.scale + (dt * scaleFactor);
+             aSprite.rotation = aSprite.rotation + (dt * aSprite.speed);
+             
+         } forKey:@"SpiralOutClockwiseAndCircle"];
+        
+        [blockDict setObject:^(ccTime dt, GDBasicSprite* aSprite)
+         {
+             float scaleFactor = 0.1;
+             if (aSprite.scale >= 2.0)
+             {
+                 aSprite.dead = YES;
+             }
+             if (aSprite.scale <= 0.25 && aSprite.scale > 0.2)
+             {
+                 scaleFactor = 0.01;
+             }
+             // I want the sprite to be slightly aimed in... and for the scale to be related to how close to the center of the screen it is
+             if (!aSprite.animInfo)
+             {
+                 
+             }
+             aSprite.scale = aSprite.scale + (dt * scaleFactor);
+             aSprite.rotation = aSprite.rotation - (dt * aSprite.speed);
+             
+         } forKey:@"SpiralOutCounterClockwiseAndCircle"];
+        
+        // log the names of the animations
+        for (NSString* aKey in [blockDict keyEnumerator]) 
+        {
+            NSLog(@"%@\n", aKey);
+        }
+        
         _animationManager.animations = [NSDictionary dictionaryWithDictionary:blockDict];
     }
     return _animationManager;
