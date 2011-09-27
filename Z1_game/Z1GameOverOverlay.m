@@ -8,16 +8,20 @@
 
 #import "Z1GameOverOverlay.h"
 #import "SimpleAudioEngine.h"
+#import "GDSoundsManager.h"
 
 #define X_SQUARES 80
 #define Y_SQUARES 60
 
 @implementation Z1GameOverOverlay
 
+@synthesize showing;
+
 - (id) initAndFinsihed:(BOOL)finished
 {
     if (( self = [super init] ))
     {
+        [[GDSoundsManager sharedSoundsManager] playMusicForSceneNamed:@"gameOver"];
         self.isKeyboardEnabled = YES;
         float xOffset = 15.0;
         float yOffset = 15.0;
@@ -60,18 +64,22 @@
             [gameWonBackground runAction:[CCSequence actions:delayBackAction, fadeBackAction, nil]];
             [self addChild:gameWonBackground];
         }
-
+                
+        self.showing = YES;
     }
     return self;
 }
-
+         
 - (BOOL) ccKeyDown:(NSEvent *)event
 {
     if ([event keyCode] == 36 )
     {
-        [[CCDirector sharedDirector] popScene];
-        [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
-        return YES;
+        if(self.showing)
+        {
+            self.showing = NO;
+            [self.parent moveOn:self];
+            return YES;
+        }
     }
     return NO;
 }

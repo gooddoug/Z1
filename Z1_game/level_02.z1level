@@ -102,7 +102,7 @@
 			<key>howMany</key>
 			<real>12</real>
 			<key>movementAnimation</key>
-			<string>SpiralInAndOutClockwise</string>
+			<string>SpiralOutCounterClockwiseAndCircle</string>
 			<key>rotation</key>
 			<string>0</string>
 			<key>speed</key>
@@ -118,7 +118,7 @@
 			<key>howMany</key>
 			<real>12</real>
 			<key>movementAnimation</key>
-			<string>SpiralInAndOutCounterClockwise</string>
+			<string>SpiralOutClockwiseAndCircle</string>
 			<key>rotation</key>
 			<string>90</string>
 			<key>speed</key>

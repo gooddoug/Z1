@@ -12,10 +12,11 @@
 
 @interface Z1SplashScreen : GDBaseEffectsScreen
 {
+    BOOL movedOn;
 }
 
 +(CCScene *) scene;
 
-- (void) moveOn;
+- (void) moveOn:(id)sender;
 
 @end

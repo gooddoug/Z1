@@ -14,7 +14,7 @@
 
 @class GDInputManager;
 
-@interface Z1GameScreen : CCLayer <GDGameScreenProtocol>
+@interface Z1GameScreen : CCLayerColor <GDGameScreenProtocol>
 {
     GDInputManager* _inputManager;
     CCSprite* _playerSprite;
@@ -34,8 +34,12 @@
     CCLabelAtlas* _scoreLabel;
 }
 
-+(CCScene*) scene;
+@property (nonatomic, retain) NSDictionary* levelDescription;
 
++(CCScene*) scene;
++ (CCScene*) sceneWithDictionary:(NSDictionary*)levelDict;
+
+- (id) initWithDictionary:(NSDictionary*)levelDict;
 - (void) prelevelScriptsFinished;
 
 @end

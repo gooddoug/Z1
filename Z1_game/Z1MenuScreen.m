@@ -9,6 +9,7 @@
 #import "Z1MenuScreen.h"
 #import "Z1Player.h"
 #import "Z1LevelManager.h"
+#import "Z1PreLevelScreen.h"
 #import "GDSoundsManager.h"
 
 @implementation Z1MenuScreen
@@ -46,7 +47,7 @@
 
 - (id) init
 {
-    if ((self = [super initWithEffectNames:[NSArray array]]))
+    if ((self = [super init]))
     {
         [self setIsMouseEnabled:YES];
         [self setIsKeyboardEnabled:YES];
@@ -296,7 +297,7 @@
     
     unsigned char key = [event keyCode];
     
-    int newIndex = -1;
+    long newIndex = -1;
     if (key == 125)
     {
         // down arrow

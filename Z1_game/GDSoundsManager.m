@@ -7,16 +7,19 @@
 //
 
 #import "GDSoundsManager.h"
+#import "SimpleAudioEngine.h"
 
 @interface GDSoundsManager()
 
 @property (nonatomic, retain) NSMutableDictionary* sounds;
+@property (nonatomic, retain) NSMutableDictionary* music;
+
 
 @end
 
 @implementation GDSoundsManager
 
-@synthesize sounds = _sounds;
+@synthesize sounds = _sounds, music = _music;
 
 
 static GDSoundsManager* _soundsManager = nil;
@@ -37,8 +40,13 @@ static GDSoundsManager* _soundsManager = nil;
     {
         self.sounds = [NSMutableDictionary dictionary];
         // preload any sounds here
-        NSSound* temp = [self soundForName:@"screen_transition"];
+        NSSound* temp = [self soundForName:@"BasicWeapon"];
         #pragma unused (temp)
+        self.music = [NSMutableDictionary dictionary];
+        [self.music setObject:@"sfx-level-start.mp3" forKey:@"levelIntro"];
+        [self.music setObject:@"sfx-game-logo.mp3" forKey:@"mainMenu"];
+        [self.music setObject:@"sfx-death-screen.mp3" forKey:@"gameOver"];
+        [self.music setObject:@"sfx-credits-screen.mp3" forKey:@"credits"];
     }
     
     return self;
@@ -47,6 +55,7 @@ static GDSoundsManager* _soundsManager = nil;
 - (void)dealloc
 {
     [_sounds release];
+    [_music release];
     
     [super dealloc];
 }
@@ -82,6 +91,19 @@ static GDSoundsManager* _soundsManager = nil;
         [aSound stop];
     }
     [aSound play];
+}
+
+- (void) playMusicForSceneNamed:(NSString*)name
+{
+    // map music to screens here
+    NSString* filename = [self.music objectForKey:name];
+    [self playMusicFromFilename:filename];
+}
+
+- (void) playMusicFromFilename:(NSString*)name
+{
+    [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
+    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:name];
 }
 
 @end

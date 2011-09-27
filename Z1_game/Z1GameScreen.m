@@ -21,7 +21,6 @@
 
 @interface Z1GameScreen ()
 
-@property (nonatomic, retain) NSDictionary* levelDescription;
 @property (nonatomic, retain) CCSprite* backgroundSprite;
 @property (nonatomic, retain) NSArray* spawners;
 @property float time;
@@ -61,6 +60,18 @@
 	return scene;
 }
 
++ (CCScene*) sceneWithDictionary:(NSDictionary*)levelDict
+{
+    CCScene *scene = [CCScene node];
+	
+    // cheat this first time
+	Z1GameScreen *layer = [[[Z1GameScreen alloc] initWithDictionary:levelDict] autorelease];
+	
+	[scene addChild: layer];
+	
+	return scene;
+}
+
 - (void) dealloc
 {
     [_inputManager release];
@@ -75,7 +86,19 @@
 
 - (id) initWithFile:(NSString*)inFile
 {
-    if (( self = [super init] ))
+    NSString* levelPath = [[NSBundle mainBundle] pathForResource:inFile ofType:@"z1level"];
+    if (!levelPath)
+    {
+        // find a folder next to the app named levels?
+        
+    }
+    NSDictionary* levelDescription = [NSDictionary dictionaryWithContentsOfFile:levelPath];
+    return [self initWithDictionary:levelDescription];
+}
+
+- (id) initWithDictionary:(NSDictionary*)levelDict
+{
+    if (( self = [super initWithColor:ccc4(0, 0, 0, 255)] ))
     {
         CGSize size = [[CCDirector sharedDirector] winSize];
         
@@ -86,23 +109,13 @@
         self.enemySprites = [NSMutableArray array];
         self.playerShots = [NSMutableSet set];
                 
-        NSString* levelPath = [[NSBundle mainBundle] pathForResource:inFile ofType:@"z1level"];
-        if (!levelPath)
-        {
-            // find a folder next to the app named levels?
-            
-        }
-        self.levelDescription = [NSDictionary dictionaryWithContentsOfFile:levelPath];
+        self.levelDescription = levelDict;
         
         // background music
         NSString* backgroundMusicName = [self.levelDescription objectForKey:@"backgroundMusic"];
         if(!backgroundMusicName)
             backgroundMusicName = @"Run_3_minute_edit.mp3";
-        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:backgroundMusicName];
-        
-        // setup pre level overlay...
-        self.overlay = [[[Z1PreLevelOverlay alloc] initWithScripts:[self.levelDescription objectForKey:@"preLevelScripts"]] autorelease];
-        [self addChild:self.overlay z:100];
+        [[GDSoundsManager sharedSoundsManager] playMusicFromFilename:backgroundMusicName];
         
         // player ship
         NSString* shipSprite = [self.levelDescription objectForKey:@"shipSprite"];
@@ -141,6 +154,8 @@
 		[CCTexture2D setDefaultAlphaPixelFormat:currentFormat];
         self.scoreLabel.position = ccp(100.0, 700.0);
         [self addChild:self.scoreLabel];
+        
+        self.started = YES;
     }
     return self;
 }
@@ -166,6 +181,7 @@
 {
     if (self.inputManager.pause)
     {
+        [[GDSoundsManager sharedSoundsManager] playMusicForSceneNamed:@"mainMenu"];
         [[CCDirector sharedDirector] popScene];
     }
     
@@ -418,31 +434,23 @@
     [self addChild:aSprite z:10];
 }
 
-- (void) prelevelScriptsFinished
-{
-    // dump the prelevel overlay
-    [self removeChild:self.overlay cleanup:YES];
-    self.overlay = nil;
-    
-    // start the level
-    self.started = YES;
-}
-
 - (void) playerDied
 {
     self.gameOverScreen = [[[Z1GameOverOverlay alloc] initAndFinsihed:NO] autorelease];
     [self addChild:self.gameOverScreen z:100];
     self.gameOver = YES;
     [self removeChild:self.playerSprite cleanup:YES];
-    double delayInSeconds = 10.0;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        if (self)
-        {
-            [[CCDirector sharedDirector] popScene];
-            [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
-        }
-    });
+    CCDelayTime* delayEndAction = [CCDelayTime actionWithDuration:8];
+    CCCallFunc* popSceneAction = [CCCallFunc actionWithTarget:self selector:@selector(moveOn:)];
+    CCFadeOut* fadeOutAction = [CCFadeOut actionWithDuration:2.0];
+    [self runAction:[CCSequence actions:delayEndAction, fadeOutAction, popSceneAction, nil]];
+
+}
+
+- (void) moveOn:(id) sender
+{
+    [[CCDirector sharedDirector] popScene];
+    [[GDSoundsManager sharedSoundsManager] playMusicForSceneNamed:@"mainMenu"];
 }
 
 - (void) endLevel
@@ -454,15 +462,6 @@
         [self addChild:self.gameOverScreen z:100];
         self.gameOver = YES;
         [self removeChild:self.playerSprite cleanup:YES];
-        double delayInSeconds = 60.0;
-        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-            if (self)
-            {
-                [[CCDirector sharedDirector] popScene];
-                [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
-            }
-        });
     }
 }
 

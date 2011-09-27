@@ -12,9 +12,6 @@
 #import "GDSoundsManager.h"
 
 @interface Z1SplashScreen ()
-{
-    BOOL movedOn;
-}
 
 @property BOOL movedOn;
 
@@ -47,6 +44,7 @@
     {        
         self.isKeyboardEnabled = YES;
         self.isMouseEnabled = YES;
+        [[GDSoundsManager sharedSoundsManager] playMusicForSceneNamed:@"mainMenu"];
         
         CGSize size = [[CCDirector sharedDirector] winSize];
 		CCSprite* background = [CCSprite spriteWithFile:@"title-screen-start.png"];
@@ -67,32 +65,28 @@
         pressKeyLabel.opacity = 0.0;
         CCFadeIn* fadeAction = [CCFadeIn actionWithDuration:1.0];
         CCDelayTime* delayAction = [CCDelayTime actionWithDuration:4.5];
-        [pressKeyLabel runAction:[CCSequence actions:delayAction, fadeAction, nil]];
+        CCCallFunc* moveOnAction = [CCCallFunc actionWithTarget:self selector:@selector(moveOn:)];
+        CCDelayTime* delay10Action = [CCDelayTime actionWithDuration:10];
+        [pressKeyLabel runAction:[CCSequence actions:delayAction, fadeAction, delay10Action, moveOnAction, nil]];
         [self addChild:pressKeyLabel z:10];
-        
-        double delayInSeconds = 15.0;
-        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-            if (!self.movedOn)
-                [self moveOn];
-        });
 	}
 	return self;
 }
 
 - (BOOL) ccKeyUp:(NSEvent *)event
 {
-    [self moveOn];
+    [self moveOn:self];
     
     return YES;
 }
 
 - (BOOL) ccMouseUp:(NSEvent *)event
 {
-    [self moveOn];
+    [self moveOn:self];
+    return YES;
 }
 
-- (void) moveOn
+- (void) moveOn:(id)sender
 {
     self.movedOn = YES;
     [[GDSoundsManager sharedSoundsManager] playSoundForName:SCREEN_TRANSITION];

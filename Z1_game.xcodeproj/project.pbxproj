@@ -18,6 +18,22 @@
 		EF24DE891431AC8200965461 /* button-saga-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24DE841431AC8200965461 /* button-saga-hover.png */; };
 		EF24DE8A1431AC8200965461 /* button-start-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24DE851431AC8200965461 /* button-start-hover.png */; };
 		EF24DE8B1431AC8200965461 /* button-vote-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24DE861431AC8200965461 /* button-vote-hover.png */; };
+		EF24DE951432253900965461 /* music-new-a-thousand-new-paths.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF24DE941432253900965461 /* music-new-a-thousand-new-paths.mp3 */; };
+		EF24DE9A1432254C00965461 /* sfx-credits-screen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF24DE961432254C00965461 /* sfx-credits-screen.mp3 */; };
+		EF24DE9B1432254C00965461 /* sfx-death-screen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF24DE971432254C00965461 /* sfx-death-screen.mp3 */; };
+		EF24DE9C1432254C00965461 /* sfx-game-logo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF24DE981432254C00965461 /* sfx-game-logo.mp3 */; };
+		EF24DE9D1432254C00965461 /* sfx-level-start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF24DE991432254C00965461 /* sfx-level-start.mp3 */; };
+		EF24DEA6143229A900965461 /* level_03.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EF24DE9E143229A900965461 /* level_03.z1level */; };
+		EF24DEA7143229A900965461 /* level_04.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EF24DE9F143229A900965461 /* level_04.z1level */; };
+		EF24DEA8143229A900965461 /* level_05.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EF24DEA0143229A900965461 /* level_05.z1level */; };
+		EF24DEA9143229A900965461 /* level_06.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EF24DEA1143229A900965461 /* level_06.z1level */; };
+		EF24DEAA143229A900965461 /* level_07.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EF24DEA2143229A900965461 /* level_07.z1level */; };
+		EF24DEAB143229A900965461 /* level_08.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EF24DEA3143229A900965461 /* level_08.z1level */; };
+		EF24DEAC143229A900965461 /* level_09.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EF24DEA4143229A900965461 /* level_09.z1level */; };
+		EF24DEAD143229A900965461 /* level_10.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EF24DEA5143229A900965461 /* level_10.z1level */; };
+		EF24DEB014324E1100965461 /* Z1PreLevelScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = EF24DEAF14324E1100965461 /* Z1PreLevelScreen.m */; };
+		EF24DEB21432574100965461 /* chapter-screen.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24DEB11432574100965461 /* chapter-screen.png */; };
+		EF24DEB41432574F00965461 /* dialog-boxes.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24DEB31432574F00965461 /* dialog-boxes.png */; };
 		EF35084E142CFE9300249654 /* game-over.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35084A142CFE9300249654 /* game-over.png */; };
 		EF35084F142CFE9300249654 /* main-menu.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35084B142CFE9300249654 /* main-menu.png */; };
 		EF350851142CFE9300249654 /* monitor.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35084D142CFE9300249654 /* monitor.png */; };
@@ -264,6 +280,23 @@
 		EF24DE841431AC8200965461 /* button-saga-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-saga-hover.png"; sourceTree = "<group>"; };
 		EF24DE851431AC8200965461 /* button-start-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-start-hover.png"; sourceTree = "<group>"; };
 		EF24DE861431AC8200965461 /* button-vote-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-vote-hover.png"; sourceTree = "<group>"; };
+		EF24DE941432253900965461 /* music-new-a-thousand-new-paths.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "music-new-a-thousand-new-paths.mp3"; sourceTree = "<group>"; };
+		EF24DE961432254C00965461 /* sfx-credits-screen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sfx-credits-screen.mp3"; sourceTree = "<group>"; };
+		EF24DE971432254C00965461 /* sfx-death-screen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sfx-death-screen.mp3"; sourceTree = "<group>"; };
+		EF24DE981432254C00965461 /* sfx-game-logo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sfx-game-logo.mp3"; sourceTree = "<group>"; };
+		EF24DE991432254C00965461 /* sfx-level-start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sfx-level-start.mp3"; sourceTree = "<group>"; };
+		EF24DE9E143229A900965461 /* level_03.z1level */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level_03.z1level; sourceTree = "<group>"; };
+		EF24DE9F143229A900965461 /* level_04.z1level */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level_04.z1level; sourceTree = "<group>"; };
+		EF24DEA0143229A900965461 /* level_05.z1level */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level_05.z1level; sourceTree = "<group>"; };
+		EF24DEA1143229A900965461 /* level_06.z1level */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level_06.z1level; sourceTree = "<group>"; };
+		EF24DEA2143229A900965461 /* level_07.z1level */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level_07.z1level; sourceTree = "<group>"; };
+		EF24DEA3143229A900965461 /* level_08.z1level */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level_08.z1level; sourceTree = "<group>"; };
+		EF24DEA4143229A900965461 /* level_09.z1level */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level_09.z1level; sourceTree = "<group>"; };
+		EF24DEA5143229A900965461 /* level_10.z1level */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level_10.z1level; sourceTree = "<group>"; };
+		EF24DEAE14324E1100965461 /* Z1PreLevelScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1PreLevelScreen.h; sourceTree = "<group>"; };
+		EF24DEAF14324E1100965461 /* Z1PreLevelScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1PreLevelScreen.m; sourceTree = "<group>"; };
+		EF24DEB11432574100965461 /* chapter-screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chapter-screen.png"; sourceTree = "<group>"; };
+		EF24DEB31432574F00965461 /* dialog-boxes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dialog-boxes.png"; sourceTree = "<group>"; };
 		EF35084A142CFE9300249654 /* game-over.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "game-over.png"; sourceTree = "<group>"; };
 		EF35084B142CFE9300249654 /* main-menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-menu.png"; sourceTree = "<group>"; };
 		EF35084D142CFE9300249654 /* monitor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monitor.png; sourceTree = "<group>"; };
@@ -658,6 +691,8 @@
 				EFE599A313D3387000062F86 /* GDGameScreenProtocol.h */,
 				EF14EDE71422CC2D00D19D92 /* Z1PreLevelOverlay.h */,
 				EF14EDE81422CC2E00D19D92 /* Z1PreLevelOverlay.m */,
+				EF24DEAE14324E1100965461 /* Z1PreLevelScreen.h */,
+				EF24DEAF14324E1100965461 /* Z1PreLevelScreen.m */,
 				EFE6E5B3142BFE8100B594AD /* Z1GameOverOverlay.h */,
 				EFE6E5B4142BFE8100B594AD /* Z1GameOverOverlay.m */,
 				EF72D95013D5DEFC00ABD27F /* Z1GameScreen.h */,
@@ -753,6 +788,8 @@
 		EF8F0187142A4C6E00A774E1 /* Backgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				EF24DEB31432574F00965461 /* dialog-boxes.png */,
+				EF24DEB11432574100965461 /* chapter-screen.png */,
 				EF35084A142CFE9300249654 /* game-over.png */,
 				EF836A4C142EFE39009EBFF6 /* ending-credits.png */,
 				EF35084B142CFE9300249654 /* main-menu.png */,
@@ -770,6 +807,14 @@
 			children = (
 				EF91F16A1423DCDC002683D4 /* level_02.z1level */,
 				EF5574501421C5890035F6C2 /* level_01.z1level */,
+				EF24DE9E143229A900965461 /* level_03.z1level */,
+				EF24DE9F143229A900965461 /* level_04.z1level */,
+				EF24DEA0143229A900965461 /* level_05.z1level */,
+				EF24DEA1143229A900965461 /* level_06.z1level */,
+				EF24DEA2143229A900965461 /* level_07.z1level */,
+				EF24DEA3143229A900965461 /* level_08.z1level */,
+				EF24DEA4143229A900965461 /* level_09.z1level */,
+				EF24DEA5143229A900965461 /* level_10.z1level */,
 				EFE6E5AD142BDA1400B594AD /* udg.level_list */,
 			);
 			name = Levels;
@@ -1188,6 +1233,11 @@
 				EF9771A7142A8807005DA458 /* ui_click_ok.wav */,
 				EF9771A8142A8807005DA458 /* ui_click_up.wav */,
 				EF14EDE21422C2AC00D19D92 /* Run_3_minute_edit.mp3 */,
+				EF24DE961432254C00965461 /* sfx-credits-screen.mp3 */,
+				EF24DE971432254C00965461 /* sfx-death-screen.mp3 */,
+				EF24DE981432254C00965461 /* sfx-game-logo.mp3 */,
+				EF24DE991432254C00965461 /* sfx-level-start.mp3 */,
+				EF24DE941432253900965461 /* music-new-a-thousand-new-paths.mp3 */,
 				EFE599B313D338C700062F86 /* explosion.wav */,
 				EF72D95D13D778D800ABD27F /* player_explosion.wav */,
 				EF72D95E13D778D800ABD27F /* quick_hit.wav */,
@@ -1379,6 +1429,21 @@
 				EF24DE891431AC8200965461 /* button-saga-hover.png in Resources */,
 				EF24DE8A1431AC8200965461 /* button-start-hover.png in Resources */,
 				EF24DE8B1431AC8200965461 /* button-vote-hover.png in Resources */,
+				EF24DE951432253900965461 /* music-new-a-thousand-new-paths.mp3 in Resources */,
+				EF24DE9A1432254C00965461 /* sfx-credits-screen.mp3 in Resources */,
+				EF24DE9B1432254C00965461 /* sfx-death-screen.mp3 in Resources */,
+				EF24DE9C1432254C00965461 /* sfx-game-logo.mp3 in Resources */,
+				EF24DE9D1432254C00965461 /* sfx-level-start.mp3 in Resources */,
+				EF24DEA6143229A900965461 /* level_03.z1level in Resources */,
+				EF24DEA7143229A900965461 /* level_04.z1level in Resources */,
+				EF24DEA8143229A900965461 /* level_05.z1level in Resources */,
+				EF24DEA9143229A900965461 /* level_06.z1level in Resources */,
+				EF24DEAA143229A900965461 /* level_07.z1level in Resources */,
+				EF24DEAB143229A900965461 /* level_08.z1level in Resources */,
+				EF24DEAC143229A900965461 /* level_09.z1level in Resources */,
+				EF24DEAD143229A900965461 /* level_10.z1level in Resources */,
+				EF24DEB21432574100965461 /* chapter-screen.png in Resources */,
+				EF24DEB41432574F00965461 /* dialog-boxes.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1498,6 +1563,7 @@
 				EFE6E5B5142BFE8100B594AD /* Z1GameOverOverlay.m in Sources */,
 				EF350863142D0F4A00249654 /* Z1MessageOverlay.m in Sources */,
 				EF9EAE911431A56700FEE580 /* GDSpriteButton.m in Sources */,
+				EF24DEB014324E1100965461 /* Z1PreLevelScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

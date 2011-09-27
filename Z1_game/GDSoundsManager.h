@@ -15,12 +15,15 @@
 @interface GDSoundsManager : NSObject 
 {
     NSMutableDictionary* _sounds;
+    NSMutableDictionary* _music;
 }
 
 + (GDSoundsManager*) sharedSoundsManager;
 
 - (NSSound*) soundForName:(NSString*)inName;
-
 - (void) playSoundForName:(NSString*)inName;
+
+- (void) playMusicForSceneNamed:(NSString*)name;
+- (void) playMusicFromFilename:(NSString*)name;
 
 @end

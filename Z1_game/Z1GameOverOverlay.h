@@ -11,8 +11,10 @@
 
 @interface Z1GameOverOverlay : CCLayer 
 {
-
+    BOOL showing;
 }
+
+@property BOOL showing;
 
 - (id) initAndFinsihed:(BOOL)finished;
 

@@ -8,6 +8,7 @@
 
 #import "Z1LevelManager.h"
 #import "Z1GameScreen.h"
+#import "Z1PreLevelScreen.h"
 #import "Z1Player.h"
 
 #define DEFAULT_LEVEL_LIST @"udg"
@@ -72,12 +73,7 @@ static Z1LevelManager* sharedInstance = nil;
     self.currentLevelIndex = whichIndex;
     NSString* whichLevel = [self.levelList objectAtIndex:self.currentLevelIndex];
     
-    CCScene *scene = [CCScene node];
-	
-    // cheat this first time
-	Z1GameScreen *layer = [[[Z1GameScreen alloc] initWithFile:whichLevel] autorelease];
-	
-	[scene addChild: layer];
+    CCScene *scene = [Z1PreLevelScreen sceneWithFile:whichLevel];
 	
 	return scene;
 }

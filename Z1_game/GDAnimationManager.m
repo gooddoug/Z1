@@ -212,11 +212,11 @@ static GDAnimationManager* _animationManager = nil;
          } forKey:@"SpiralOutCounterClockwiseAndCircle"];
         
         // log the names of the animations
-        for (NSString* aKey in [blockDict keyEnumerator]) 
+        /*for (NSString* aKey in [blockDict keyEnumerator]) 
         {
             NSLog(@"%@\n", aKey);
         }
-        
+        */
         _animationManager.animations = [NSDictionary dictionaryWithDictionary:blockDict];
     }
     return _animationManager;

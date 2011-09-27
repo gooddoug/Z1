@@ -7,6 +7,7 @@
 //
 
 #import "Z1MessageOverlay.h"
+#import "GDSoundsManager.h"
 
 @interface Z1MessageOverlay ()
 
@@ -58,6 +59,7 @@
 {
     if (self.showing)
         return;
+    [[GDSoundsManager sharedSoundsManager] playMusicForSceneNamed:@"credits"];
     float howLong = 1.0;
     CCMoveBy* moveAnimation = [CCMoveBy actionWithDuration:howLong position:ccp(0.0, -(self.monitor.contentSize.height + 200))];
     [self.monitor runAction:moveAnimation];
@@ -77,6 +79,7 @@
 {
     if (!self.showing)
         return;
+    [[GDSoundsManager sharedSoundsManager] playMusicForSceneNamed:@"mainMenu"];
     float howLong = 1.0;
     CCMoveBy* moveAnimation = [CCMoveBy actionWithDuration:howLong position:ccp(0.0, self.monitor.contentSize.height + 200)];
     [self.monitor runAction:moveAnimation];

@@ -51,7 +51,8 @@
         {
             self.rotation = [rot floatValue];
         }
-        NSNumber* startInside = [NSNumber numberWithBool:NO];
+        self.startInside = NO;
+        NSNumber* startInside = nil;
         if ((startInside = [inDict objectForKey:@"startInside"]))
         {
             self.startInside = [startInside boolValue];

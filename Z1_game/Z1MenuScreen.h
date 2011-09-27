@@ -7,22 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "GDBaseEffectsScreen.h"
 #import "cocos2d.h"
 #import "Z1MessageOverlay.h"
 #import "GDSpriteButton.h"
 
-@interface Z1MenuScreen : GDBaseEffectsScreen 
+@interface Z1MenuScreen : CCLayer 
 {
     Z1MessageOverlay* _messageOverlay;
     NSArray* _buttonArray;
     GDSpriteButton* _activeButton;
-    int activeIndex;
+    long activeIndex;
 }
 
 @property (nonatomic, retain) NSArray* buttonArray;
 @property (nonatomic, retain) GDSpriteButton* activeButton;
-@property int activeIndex;
+@property long activeIndex;
 @property (nonatomic, retain, readonly) Z1MessageOverlay* messageOverlay;
 
 +(CCScene*) scene;
