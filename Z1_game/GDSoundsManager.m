@@ -107,4 +107,9 @@ static GDSoundsManager* _soundsManager = nil;
     [[SimpleAudioEngine sharedEngine] playBackgroundMusic:name];
 }
 
+- (void) stopPlayingMusic
+{
+    [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
+}
+
 @end

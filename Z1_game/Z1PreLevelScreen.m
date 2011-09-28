@@ -157,7 +157,7 @@
     [chatNode addChild:chatBackground z:1];
     [chatNode addChild:actorSprite];
     [chatNode addChild:textLabel z:2];
-    chatNode.position = ccp(10.0, 100.0);
+    chatNode.position = ccp(50.0, 100.0);
     
     for (CCNode* aChatNode in self.scriptNodes) 
     {

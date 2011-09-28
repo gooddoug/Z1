@@ -77,6 +77,8 @@
 		EF24E05E1432DFAF00965461 /* asteroid07_04_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0381432DFAF00965461 /* asteroid07_04_64.png */; };
 		EF24E05F1432DFAF00965461 /* asteroid07_05_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0391432DFAF00965461 /* asteroid07_05_64.png */; };
 		EF24E0601432DFAF00965461 /* asteroid07_06_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E03A1432DFAF00965461 /* asteroid07_06_64.png */; };
+		EF24E0621432E6D300965461 /* end-screen.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0611432E6D300965461 /* end-screen.png */; };
+		EF24E0651432E70400965461 /* Z1EndScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = EF24E0641432E70400965461 /* Z1EndScreen.m */; };
 		EF35084E142CFE9300249654 /* game-over.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35084A142CFE9300249654 /* game-over.png */; };
 		EF35084F142CFE9300249654 /* main-menu.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35084B142CFE9300249654 /* main-menu.png */; };
 		EF350851142CFE9300249654 /* monitor.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35084D142CFE9300249654 /* monitor.png */; };
@@ -371,6 +373,9 @@
 		EF24E0381432DFAF00965461 /* asteroid07_04_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid07_04_64.png; sourceTree = "<group>"; };
 		EF24E0391432DFAF00965461 /* asteroid07_05_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid07_05_64.png; sourceTree = "<group>"; };
 		EF24E03A1432DFAF00965461 /* asteroid07_06_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid07_06_64.png; sourceTree = "<group>"; };
+		EF24E0611432E6D300965461 /* end-screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "end-screen.png"; sourceTree = "<group>"; };
+		EF24E0631432E70300965461 /* Z1EndScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1EndScreen.h; sourceTree = "<group>"; };
+		EF24E0641432E70400965461 /* Z1EndScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1EndScreen.m; sourceTree = "<group>"; };
 		EF35084A142CFE9300249654 /* game-over.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "game-over.png"; sourceTree = "<group>"; };
 		EF35084B142CFE9300249654 /* main-menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-menu.png"; sourceTree = "<group>"; };
 		EF35084D142CFE9300249654 /* monitor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monitor.png; sourceTree = "<group>"; };
@@ -769,6 +774,8 @@
 				EF72D95113D5DEFD00ABD27F /* Z1GameScreen.m */,
 				EF14EDF81423B9A300D19D92 /* Z1LevelManager.h */,
 				EF14EDF91423B9A300D19D92 /* Z1LevelManager.m */,
+				EF24E0631432E70300965461 /* Z1EndScreen.h */,
+				EF24E0641432E70400965461 /* Z1EndScreen.m */,
 			);
 			name = GameScreen;
 			sourceTree = "<group>";
@@ -891,6 +898,7 @@
 		EF8F0187142A4C6E00A774E1 /* Backgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				EF24E0611432E6D300965461 /* end-screen.png */,
 				EF24DEB31432574F00965461 /* dialog-boxes.png */,
 				EF24DEB11432574100965461 /* chapter-screen.png */,
 				EF35084A142CFE9300249654 /* game-over.png */,
@@ -1575,6 +1583,7 @@
 				EF24E05E1432DFAF00965461 /* asteroid07_04_64.png in Resources */,
 				EF24E05F1432DFAF00965461 /* asteroid07_05_64.png in Resources */,
 				EF24E0601432DFAF00965461 /* asteroid07_06_64.png in Resources */,
+				EF24E0621432E6D300965461 /* end-screen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1694,6 +1703,7 @@
 				EF350863142D0F4A00249654 /* Z1MessageOverlay.m in Sources */,
 				EF9EAE911431A56700FEE580 /* GDSpriteButton.m in Sources */,
 				EF24DEB014324E1100965461 /* Z1PreLevelScreen.m in Sources */,
+				EF24E0651432E70400965461 /* Z1EndScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

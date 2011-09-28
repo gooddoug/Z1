@@ -9,6 +9,7 @@
 #import "Z1LevelManager.h"
 #import "Z1GameScreen.h"
 #import "Z1PreLevelScreen.h"
+#import "Z1EndScreen.h"
 #import "Z1Player.h"
 
 #define DEFAULT_LEVEL_LIST @"udg"
@@ -67,8 +68,7 @@ static Z1LevelManager* sharedInstance = nil;
 {
     if (whichIndex >= [self.levelList count])
     {
-        NSLog(@"Trying to index past the level list, we're at the end");
-        return nil;
+        return [Z1EndScreen scene];
     }
     self.currentLevelIndex = whichIndex;
     NSString* whichLevel = [self.levelList objectAtIndex:self.currentLevelIndex];

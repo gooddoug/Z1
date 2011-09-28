@@ -25,5 +25,6 @@
 
 - (void) playMusicForSceneNamed:(NSString*)name;
 - (void) playMusicFromFilename:(NSString*)name;
+- (void) stopPlayingMusic;
 
 @end
