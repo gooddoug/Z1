@@ -289,22 +289,52 @@
     }
 }
 
-- (void)createExplosionAtPoint:(CGPoint)aPoint  
+- (void) deleteExplosion:(id)node
 {
-    CCParticleExplosion* expl = [[[CCParticleExplosion alloc] init] autorelease];
-    expl.position = aPoint;
-    expl.scale = 0.5;
-    expl.life = 1.0f;
-    expl.lifeVar = 0.5;
-    ccColor4F aStartColor = {0.9f, 0.25f, 0.0f, 1.0f};
-    ccColor4F aEndColor = {0.0f, 0.0f, 0.0f, 0.0f};
-    ccColor4F aStartColorVar = {0.0f, 1.0f, 0.0f, 0.0f};
-    expl.startColor = aStartColor;
-    expl.endColor = aEndColor;
-    expl.startColorVar = aStartColorVar;
-    [self addChild:expl z:13];
-    [[GDSoundsManager sharedSoundsManager] playSoundForName:@"explosion"];
+	[self removeChild:node cleanup:TRUE];
+}
 
+- (void) newExplosionAtPoint:(CGPoint)aPoint
+{
+	CCSprite* explosionSprite = [CCSprite spriteWithFile:@"fire.png"];
+	explosionSprite.position = aPoint;
+	ccColor3B spriteColor = ccc3((arc4random() % 127) + 127, (arc4random() % 255), 0); // red and yellow randoms
+	explosionSprite.color = spriteColor;
+	
+	[self addChild:explosionSprite z:2];
+	
+	id scaleAction = [CCScaleTo actionWithDuration:0.25 scale:5.0];
+	id fadeAction = [CCFadeOut actionWithDuration:0.25];
+	id deleteAction = [CCCallFuncN actionWithTarget:self selector:@selector(deleteExplosion:)];
+	
+	[explosionSprite runAction:[CCSequence actions:scaleAction, fadeAction, deleteAction, nil]];
+	
+	// Now the explosion particle system
+	CCParticleSystem* emitter = [[CCParticleExplosion alloc] initWithTotalParticles:50];
+	emitter.life = 0.25;
+	emitter.lifeVar = 0.125;
+	[self addChild:emitter z:0];
+	
+	emitter.texture = [[CCTextureCache sharedTextureCache] addImage: @"stars.png"];
+	
+	emitter.autoRemoveOnFinish = YES;
+	emitter.position = aPoint;
+    [[GDSoundsManager sharedSoundsManager] playSoundForName:@"explosion"];
+}
+
+- (void) playerExplosionAtPoint:(CGPoint)aPoint
+{
+    [self newExplosionAtPoint:aPoint];
+    // now overlay a ring...
+    CCSprite* ringSprite = [CCSprite spriteWithFile:@"ring.png"];
+    
+    CCScaleTo* scaleAction = [CCScaleTo actionWithDuration:0.15 scale:1.5];
+    CCFadeOut* fadeAction = [CCFadeOut actionWithDuration:0.5];
+    CCCallFuncN* deleteAction = [CCCallFuncN actionWithTarget:self selector:@selector(deleteExplosion:)];
+    
+    ringSprite.position = aPoint;
+    [ringSprite runAction:[CCSequence actions:scaleAction, fadeAction, deleteAction, nil]];
+    [self addChild:ringSprite z:3];
 }
 
 - (void) resolveFire
@@ -332,7 +362,7 @@
                     anEnemy.dead = YES;
                     aShot.hitSomething = YES;
                                         
-                    [self createExplosionAtPoint:centerEnemy];
+                    [self newExplosionAtPoint:centerEnemy];
                     Z1Player* player = [Z1Player sharedPlayer];
                     player.score += 100;
                     [self.scoreLabel setString:[NSString stringWithFormat:@"%4d", player.score]];
@@ -356,7 +386,9 @@
         {
             NSLog(@"BOOM!");
             anEnemy.dead = YES;
-            [self createExplosionAtPoint:centerEnemy];
+            [self newExplosionAtPoint:centerEnemy];
+            CGPoint centerPlayer = CGPointMake(playerRect.origin.x + (playerRect.size.width/2), playerRect.origin.y + (playerRect.size.height / 2));
+            [self playerExplosionAtPoint:centerPlayer];
             [self playerDied];
         }
     }

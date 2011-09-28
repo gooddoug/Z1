@@ -10,6 +10,10 @@
 			<key>name</key>
 			<string>GDParticleFog</string>
 		</dict>
+		<dict>
+			<key>name</key>
+			<string>GDSparklingStars</string>
+		</dict>
 	</array>
 	<key>id</key>
 	<string>1</string>

@@ -106,7 +106,7 @@
 			<key>rotation</key>
 			<string>0</string>
 			<key>speed</key>
-			<real>10</real>
+			<real>20</real>
 			<key>sprite</key>
 			<string>alien001_01_64.png</string>
 			<key>startInside</key>
@@ -124,11 +124,11 @@
 			<key>rotation</key>
 			<string>90</string>
 			<key>speed</key>
-			<real>10</real>
-			<key>startInside</key>
-			<true/>
+			<real>25</real>
 			<key>sprite</key>
 			<string>alien001_02_64.png</string>
+			<key>startInside</key>
+			<true/>
 			<key>when</key>
 			<real>8</real>
 		</dict>
