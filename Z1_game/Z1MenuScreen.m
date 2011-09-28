@@ -51,6 +51,7 @@
     {
         [self setIsMouseEnabled:YES];
         [self setIsKeyboardEnabled:YES];
+        [[GDSoundsManager sharedSoundsManager] playMusicForSceneNamed:@"mainMenu"];
         
         CGSize size = [[CCDirector sharedDirector] winSize];
         // add background image

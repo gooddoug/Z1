@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>backgroundMusic</key>
-	<string>Run_3_minute_edit.mp3</string>
+	<string>music-new-a-thousand-new-paths.mp3</string>
 	<key>effects</key>
 	<array>
 		<dict>
@@ -102,13 +102,15 @@
 			<key>howMany</key>
 			<real>12</real>
 			<key>movementAnimation</key>
-			<string>SpiralOutCounterClockwiseAndCircle</string>
+			<string>SpiralOutClockwiseAndCircle</string>
 			<key>rotation</key>
 			<string>0</string>
 			<key>speed</key>
 			<real>10</real>
 			<key>sprite</key>
 			<string>alien001_01_64.png</string>
+			<key>startInside</key>
+			<true/>
 			<key>when</key>
 			<real>2</real>
 		</dict>
@@ -118,11 +120,13 @@
 			<key>howMany</key>
 			<real>12</real>
 			<key>movementAnimation</key>
-			<string>SpiralOutClockwiseAndCircle</string>
+			<string>SpiralOutCounterClockwiseAndCircle</string>
 			<key>rotation</key>
 			<string>90</string>
 			<key>speed</key>
 			<real>10</real>
+			<key>startInside</key>
+			<true/>
 			<key>sprite</key>
 			<string>alien001_02_64.png</string>
 			<key>when</key>

@@ -44,20 +44,12 @@
     {        
         self.isKeyboardEnabled = YES;
         self.isMouseEnabled = YES;
-        [[GDSoundsManager sharedSoundsManager] playMusicForSceneNamed:@"mainMenu"];
+        [[GDSoundsManager sharedSoundsManager] playSoundForName:@"junivision"];
         
         CGSize size = [[CCDirector sharedDirector] winSize];
 		CCSprite* background = [CCSprite spriteWithFile:@"title-screen-start.png"];
         background.position = ccp(size.width / 2.0, size.height /2);
         [self addChild:background z:0];
-        
-        CCSprite* endBackground = [CCSprite spriteWithFile:@"title-screen-end.png"];
-        endBackground.position = ccp(size.width / 2.0, size.height /2);
-        endBackground.opacity = 0.0;
-        CCFadeIn* backgroundFadeAction = [CCFadeIn actionWithDuration:3.0];
-        CCDelayTime* backgroundDelayAction = [CCDelayTime actionWithDuration:1.0];
-        [endBackground runAction:[CCSequence actions:backgroundDelayAction, backgroundFadeAction, nil]];
-        [self addChild:endBackground z:1];
         
         // add press any key label
         CCLabelTTF* pressKeyLabel = [CCLabelTTF labelWithString:@"Press any key" fontName:@"Helvetica" fontSize:48];
@@ -89,10 +81,7 @@
 - (void) moveOn:(id)sender
 {
     self.movedOn = YES;
-    [[GDSoundsManager sharedSoundsManager] playSoundForName:SCREEN_TRANSITION];
-    CCTransitionScene* trans = [CCTransitionFade transitionWithDuration:1 
-                                                                  scene:[Z1MenuScreen scene] 
-                                                              withColor:ccWHITE];
+    CCTransitionScene* trans = [CCTransitionFade transitionWithDuration:1 scene:[Z1MenuScreen scene] withColor:ccWHITE];
     [[CCDirector sharedDirector] replaceScene:trans];
 }
 

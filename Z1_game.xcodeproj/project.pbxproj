@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EF14EDE31422C2AC00D19D92 /* Run_3_minute_edit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF14EDE21422C2AC00D19D92 /* Run_3_minute_edit.mp3 */; };
-		EF14EDE91422CC2E00D19D92 /* Z1PreLevelOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = EF14EDE81422CC2E00D19D92 /* Z1PreLevelOverlay.m */; };
 		EF14EDF41423088600D19D92 /* Artur-head.png in Resources */ = {isa = PBXBuildFile; fileRef = EF14EDF11423088500D19D92 /* Artur-head.png */; };
 		EF14EDF51423088600D19D92 /* Asha-head.png in Resources */ = {isa = PBXBuildFile; fileRef = EF14EDF21423088500D19D92 /* Asha-head.png */; };
 		EF14EDF61423088600D19D92 /* Lea-head.png in Resources */ = {isa = PBXBuildFile; fileRef = EF14EDF31423088500D19D92 /* Lea-head.png */; };
@@ -34,6 +33,50 @@
 		EF24DEB014324E1100965461 /* Z1PreLevelScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = EF24DEAF14324E1100965461 /* Z1PreLevelScreen.m */; };
 		EF24DEB21432574100965461 /* chapter-screen.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24DEB11432574100965461 /* chapter-screen.png */; };
 		EF24DEB41432574F00965461 /* dialog-boxes.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24DEB31432574F00965461 /* dialog-boxes.png */; };
+		EF24E00C1432D84900965461 /* menu-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0091432D84900965461 /* menu-hover.png */; };
+		EF24E00D1432D84900965461 /* menu-press.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E00A1432D84900965461 /* menu-press.png */; };
+		EF24E00E1432D84900965461 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E00B1432D84900965461 /* menu.png */; };
+		EF24E0111432D8C800965461 /* junivision.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF24E00F1432D8C800965461 /* junivision.wav */; };
+		EF24E0121432D8C800965461 /* sfx-menu-click.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0101432D8C800965461 /* sfx-menu-click.wav */; };
+		EF24E0141432DD5100965461 /* ship2_64x64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0131432DD5100965461 /* ship2_64x64.png */; };
+		EF24E03B1432DFAF00965461 /* asteroid01_01_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0151432DFAF00965461 /* asteroid01_01_64.png */; };
+		EF24E03C1432DFAF00965461 /* asteroid01_02_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0161432DFAF00965461 /* asteroid01_02_64.png */; };
+		EF24E03D1432DFAF00965461 /* asteroid01_03_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0171432DFAF00965461 /* asteroid01_03_64.png */; };
+		EF24E03E1432DFAF00965461 /* asteroid01_04_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0181432DFAF00965461 /* asteroid01_04_64.png */; };
+		EF24E03F1432DFAF00965461 /* asteroid01_05_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0191432DFAF00965461 /* asteroid01_05_64.png */; };
+		EF24E0401432DFAF00965461 /* asteroid02_01_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E01A1432DFAF00965461 /* asteroid02_01_64.png */; };
+		EF24E0411432DFAF00965461 /* asteroid02_02_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E01B1432DFAF00965461 /* asteroid02_02_64.png */; };
+		EF24E0421432DFAF00965461 /* asteroid02_03_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E01C1432DFAF00965461 /* asteroid02_03_64.png */; };
+		EF24E0431432DFAF00965461 /* asteroid02_04_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E01D1432DFAF00965461 /* asteroid02_04_64.png */; };
+		EF24E0441432DFAF00965461 /* asteroid02_05_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E01E1432DFAF00965461 /* asteroid02_05_64.png */; };
+		EF24E0451432DFAF00965461 /* asteroid03_01_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E01F1432DFAF00965461 /* asteroid03_01_64.png */; };
+		EF24E0461432DFAF00965461 /* asteroid03_02_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0201432DFAF00965461 /* asteroid03_02_64.png */; };
+		EF24E0471432DFAF00965461 /* asteroid03_03_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0211432DFAF00965461 /* asteroid03_03_64.png */; };
+		EF24E0481432DFAF00965461 /* asteroid03_04_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0221432DFAF00965461 /* asteroid03_04_64.png */; };
+		EF24E0491432DFAF00965461 /* asteroid03_05_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0231432DFAF00965461 /* asteroid03_05_64.png */; };
+		EF24E04A1432DFAF00965461 /* asteroid04_01_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0241432DFAF00965461 /* asteroid04_01_64.png */; };
+		EF24E04B1432DFAF00965461 /* asteroid04_02_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0251432DFAF00965461 /* asteroid04_02_64.png */; };
+		EF24E04C1432DFAF00965461 /* asteroid04_03_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0261432DFAF00965461 /* asteroid04_03_64.png */; };
+		EF24E04D1432DFAF00965461 /* asteroid04_04_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0271432DFAF00965461 /* asteroid04_04_64.png */; };
+		EF24E04E1432DFAF00965461 /* asteroid04_05_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0281432DFAF00965461 /* asteroid04_05_64.png */; };
+		EF24E04F1432DFAF00965461 /* asteroid05_01_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0291432DFAF00965461 /* asteroid05_01_64.png */; };
+		EF24E0501432DFAF00965461 /* asteroid05_02_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E02A1432DFAF00965461 /* asteroid05_02_64.png */; };
+		EF24E0511432DFAF00965461 /* asteroid05_03_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E02B1432DFAF00965461 /* asteroid05_03_64.png */; };
+		EF24E0521432DFAF00965461 /* asteroid05_04_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E02C1432DFAF00965461 /* asteroid05_04_64.png */; };
+		EF24E0531432DFAF00965461 /* asteroid05_05_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E02D1432DFAF00965461 /* asteroid05_05_64.png */; };
+		EF24E0541432DFAF00965461 /* asteroid05_06_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E02E1432DFAF00965461 /* asteroid05_06_64.png */; };
+		EF24E0551432DFAF00965461 /* asteroid06_01_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E02F1432DFAF00965461 /* asteroid06_01_64.png */; };
+		EF24E0561432DFAF00965461 /* asteroid06_02_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0301432DFAF00965461 /* asteroid06_02_64.png */; };
+		EF24E0571432DFAF00965461 /* asteroid06_03_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0311432DFAF00965461 /* asteroid06_03_64.png */; };
+		EF24E0581432DFAF00965461 /* asteroid06_04_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0321432DFAF00965461 /* asteroid06_04_64.png */; };
+		EF24E0591432DFAF00965461 /* asteroid06_05_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0331432DFAF00965461 /* asteroid06_05_64.png */; };
+		EF24E05A1432DFAF00965461 /* asteroid06_06_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0341432DFAF00965461 /* asteroid06_06_64.png */; };
+		EF24E05B1432DFAF00965461 /* asteroid07_01_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0351432DFAF00965461 /* asteroid07_01_64.png */; };
+		EF24E05C1432DFAF00965461 /* asteroid07_02_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0361432DFAF00965461 /* asteroid07_02_64.png */; };
+		EF24E05D1432DFAF00965461 /* asteroid07_03_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0371432DFAF00965461 /* asteroid07_03_64.png */; };
+		EF24E05E1432DFAF00965461 /* asteroid07_04_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0381432DFAF00965461 /* asteroid07_04_64.png */; };
+		EF24E05F1432DFAF00965461 /* asteroid07_05_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0391432DFAF00965461 /* asteroid07_05_64.png */; };
+		EF24E0601432DFAF00965461 /* asteroid07_06_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E03A1432DFAF00965461 /* asteroid07_06_64.png */; };
 		EF35084E142CFE9300249654 /* game-over.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35084A142CFE9300249654 /* game-over.png */; };
 		EF35084F142CFE9300249654 /* main-menu.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35084B142CFE9300249654 /* main-menu.png */; };
 		EF350851142CFE9300249654 /* monitor.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35084D142CFE9300249654 /* monitor.png */; };
@@ -121,9 +164,8 @@
 		EF836A64142F01C7009EBFF6 /* head-nikori.png in Resources */ = {isa = PBXBuildFile; fileRef = EF836A58142F01C7009EBFF6 /* head-nikori.png */; };
 		EF836A65142F01C7009EBFF6 /* head-vicente.png in Resources */ = {isa = PBXBuildFile; fileRef = EF836A59142F01C7009EBFF6 /* head-vicente.png */; };
 		EF836A67142F0667009EBFF6 /* easter-egg.png in Resources */ = {isa = PBXBuildFile; fileRef = EF836A66142F0667009EBFF6 /* easter-egg.png */; };
-		EF8F018D142A4C8800A774E1 /* title-screen-end.png in Resources */ = {isa = PBXBuildFile; fileRef = EF8F0189142A4C8800A774E1 /* title-screen-end.png */; };
 		EF8F018E142A4C8800A774E1 /* title-screen-start.png in Resources */ = {isa = PBXBuildFile; fileRef = EF8F018A142A4C8800A774E1 /* title-screen-start.png */; };
-		EF8F0196142A62BA00A774E1 /* ship2_64x64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF8F0194142A62BA00A774E1 /* ship2_64x64.png */; };
+		EF8F0196142A62BA00A774E1 /* ship-hammer-64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF8F0194142A62BA00A774E1 /* ship-hammer-64.png */; };
 		EF8F019A142A6D3D00A774E1 /* Z1Player.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8F0199142A6D3C00A774E1 /* Z1Player.m */; };
 		EF91F16B1423DCDC002683D4 /* level_02.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EF91F16A1423DCDC002683D4 /* level_02.z1level */; };
 		EF9771A9142A8807005DA458 /* ui_click_ok.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF9771A7142A8807005DA458 /* ui_click_ok.wav */; };
@@ -256,20 +298,8 @@
 		EFF097AB140DAAF80025FBD6 /* ship2.png in Resources */ = {isa = PBXBuildFile; fileRef = EFF097A9140DAAF80025FBD6 /* ship2.png */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		EF7F565C140FDC6600D8B26A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EF7F5658140FDC6600D8B26A /* Z1-editor.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EF7F551E140FDC6300D8B26A;
-			remoteInfo = "Z1-editor";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		EF14EDE21422C2AC00D19D92 /* Run_3_minute_edit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Run_3_minute_edit.mp3; sourceTree = "<group>"; };
-		EF14EDE71422CC2D00D19D92 /* Z1PreLevelOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1PreLevelOverlay.h; sourceTree = "<group>"; };
-		EF14EDE81422CC2E00D19D92 /* Z1PreLevelOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1PreLevelOverlay.m; sourceTree = "<group>"; };
 		EF14EDF11423088500D19D92 /* Artur-head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artur-head.png"; sourceTree = "<group>"; };
 		EF14EDF21423088500D19D92 /* Asha-head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Asha-head.png"; sourceTree = "<group>"; };
 		EF14EDF31423088500D19D92 /* Lea-head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lea-head.png"; sourceTree = "<group>"; };
@@ -297,6 +327,50 @@
 		EF24DEAF14324E1100965461 /* Z1PreLevelScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1PreLevelScreen.m; sourceTree = "<group>"; };
 		EF24DEB11432574100965461 /* chapter-screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chapter-screen.png"; sourceTree = "<group>"; };
 		EF24DEB31432574F00965461 /* dialog-boxes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dialog-boxes.png"; sourceTree = "<group>"; };
+		EF24E0091432D84900965461 /* menu-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-hover.png"; sourceTree = "<group>"; };
+		EF24E00A1432D84900965461 /* menu-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-press.png"; sourceTree = "<group>"; };
+		EF24E00B1432D84900965461 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		EF24E00F1432D8C800965461 /* junivision.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = junivision.wav; sourceTree = "<group>"; };
+		EF24E0101432D8C800965461 /* sfx-menu-click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "sfx-menu-click.wav"; sourceTree = "<group>"; };
+		EF24E0131432DD5100965461 /* ship2_64x64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship2_64x64.png; sourceTree = "<group>"; };
+		EF24E0151432DFAF00965461 /* asteroid01_01_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid01_01_64.png; sourceTree = "<group>"; };
+		EF24E0161432DFAF00965461 /* asteroid01_02_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid01_02_64.png; sourceTree = "<group>"; };
+		EF24E0171432DFAF00965461 /* asteroid01_03_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid01_03_64.png; sourceTree = "<group>"; };
+		EF24E0181432DFAF00965461 /* asteroid01_04_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid01_04_64.png; sourceTree = "<group>"; };
+		EF24E0191432DFAF00965461 /* asteroid01_05_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid01_05_64.png; sourceTree = "<group>"; };
+		EF24E01A1432DFAF00965461 /* asteroid02_01_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid02_01_64.png; sourceTree = "<group>"; };
+		EF24E01B1432DFAF00965461 /* asteroid02_02_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid02_02_64.png; sourceTree = "<group>"; };
+		EF24E01C1432DFAF00965461 /* asteroid02_03_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid02_03_64.png; sourceTree = "<group>"; };
+		EF24E01D1432DFAF00965461 /* asteroid02_04_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid02_04_64.png; sourceTree = "<group>"; };
+		EF24E01E1432DFAF00965461 /* asteroid02_05_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid02_05_64.png; sourceTree = "<group>"; };
+		EF24E01F1432DFAF00965461 /* asteroid03_01_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid03_01_64.png; sourceTree = "<group>"; };
+		EF24E0201432DFAF00965461 /* asteroid03_02_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid03_02_64.png; sourceTree = "<group>"; };
+		EF24E0211432DFAF00965461 /* asteroid03_03_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid03_03_64.png; sourceTree = "<group>"; };
+		EF24E0221432DFAF00965461 /* asteroid03_04_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid03_04_64.png; sourceTree = "<group>"; };
+		EF24E0231432DFAF00965461 /* asteroid03_05_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid03_05_64.png; sourceTree = "<group>"; };
+		EF24E0241432DFAF00965461 /* asteroid04_01_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid04_01_64.png; sourceTree = "<group>"; };
+		EF24E0251432DFAF00965461 /* asteroid04_02_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid04_02_64.png; sourceTree = "<group>"; };
+		EF24E0261432DFAF00965461 /* asteroid04_03_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid04_03_64.png; sourceTree = "<group>"; };
+		EF24E0271432DFAF00965461 /* asteroid04_04_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid04_04_64.png; sourceTree = "<group>"; };
+		EF24E0281432DFAF00965461 /* asteroid04_05_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid04_05_64.png; sourceTree = "<group>"; };
+		EF24E0291432DFAF00965461 /* asteroid05_01_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid05_01_64.png; sourceTree = "<group>"; };
+		EF24E02A1432DFAF00965461 /* asteroid05_02_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid05_02_64.png; sourceTree = "<group>"; };
+		EF24E02B1432DFAF00965461 /* asteroid05_03_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid05_03_64.png; sourceTree = "<group>"; };
+		EF24E02C1432DFAF00965461 /* asteroid05_04_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid05_04_64.png; sourceTree = "<group>"; };
+		EF24E02D1432DFAF00965461 /* asteroid05_05_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid05_05_64.png; sourceTree = "<group>"; };
+		EF24E02E1432DFAF00965461 /* asteroid05_06_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid05_06_64.png; sourceTree = "<group>"; };
+		EF24E02F1432DFAF00965461 /* asteroid06_01_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid06_01_64.png; sourceTree = "<group>"; };
+		EF24E0301432DFAF00965461 /* asteroid06_02_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid06_02_64.png; sourceTree = "<group>"; };
+		EF24E0311432DFAF00965461 /* asteroid06_03_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid06_03_64.png; sourceTree = "<group>"; };
+		EF24E0321432DFAF00965461 /* asteroid06_04_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid06_04_64.png; sourceTree = "<group>"; };
+		EF24E0331432DFAF00965461 /* asteroid06_05_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid06_05_64.png; sourceTree = "<group>"; };
+		EF24E0341432DFAF00965461 /* asteroid06_06_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid06_06_64.png; sourceTree = "<group>"; };
+		EF24E0351432DFAF00965461 /* asteroid07_01_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid07_01_64.png; sourceTree = "<group>"; };
+		EF24E0361432DFAF00965461 /* asteroid07_02_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid07_02_64.png; sourceTree = "<group>"; };
+		EF24E0371432DFAF00965461 /* asteroid07_03_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid07_03_64.png; sourceTree = "<group>"; };
+		EF24E0381432DFAF00965461 /* asteroid07_04_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid07_04_64.png; sourceTree = "<group>"; };
+		EF24E0391432DFAF00965461 /* asteroid07_05_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid07_05_64.png; sourceTree = "<group>"; };
+		EF24E03A1432DFAF00965461 /* asteroid07_06_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid07_06_64.png; sourceTree = "<group>"; };
 		EF35084A142CFE9300249654 /* game-over.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "game-over.png"; sourceTree = "<group>"; };
 		EF35084B142CFE9300249654 /* main-menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-menu.png"; sourceTree = "<group>"; };
 		EF35084D142CFE9300249654 /* monitor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monitor.png; sourceTree = "<group>"; };
@@ -316,7 +390,6 @@
 		EF72D95713D7764900ABD27F /* GDSoundsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDSoundsManager.m; sourceTree = "<group>"; };
 		EF72D95D13D778D800ABD27F /* player_explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = player_explosion.wav; sourceTree = "<group>"; };
 		EF72D95E13D778D800ABD27F /* quick_hit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = quick_hit.wav; sourceTree = "<group>"; };
-		EF7F5658140FDC6600D8B26A /* Z1-editor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Z1-editor.xcodeproj"; path = "Z1-editor/Z1-editor.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		EF7F565E14113DA500D8B26A /* GDEffectProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDEffectProtocol.h; sourceTree = "<group>"; };
 		EF7F565F141143B400D8B26A /* GDUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDUtilities.h; sourceTree = "<group>"; };
 		EF7F5660141143B400D8B26A /* GDUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDUtilities.m; sourceTree = "<group>"; };
@@ -393,9 +466,8 @@
 		EF836A58142F01C7009EBFF6 /* head-nikori.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "head-nikori.png"; sourceTree = "<group>"; };
 		EF836A59142F01C7009EBFF6 /* head-vicente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "head-vicente.png"; sourceTree = "<group>"; };
 		EF836A66142F0667009EBFF6 /* easter-egg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "easter-egg.png"; sourceTree = "<group>"; };
-		EF8F0189142A4C8800A774E1 /* title-screen-end.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title-screen-end.png"; sourceTree = "<group>"; };
 		EF8F018A142A4C8800A774E1 /* title-screen-start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title-screen-start.png"; sourceTree = "<group>"; };
-		EF8F0194142A62BA00A774E1 /* ship2_64x64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship2_64x64.png; sourceTree = "<group>"; };
+		EF8F0194142A62BA00A774E1 /* ship-hammer-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ship-hammer-64.png"; sourceTree = "<group>"; };
 		EF8F0198142A6D3C00A774E1 /* Z1Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1Player.h; sourceTree = "<group>"; };
 		EF8F0199142A6D3C00A774E1 /* Z1Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1Player.m; sourceTree = "<group>"; };
 		EF91F16A1423DCDC002683D4 /* level_02.z1level */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level_02.z1level; sourceTree = "<group>"; };
@@ -689,8 +761,6 @@
 			isa = PBXGroup;
 			children = (
 				EFE599A313D3387000062F86 /* GDGameScreenProtocol.h */,
-				EF14EDE71422CC2D00D19D92 /* Z1PreLevelOverlay.h */,
-				EF14EDE81422CC2E00D19D92 /* Z1PreLevelOverlay.m */,
 				EF24DEAE14324E1100965461 /* Z1PreLevelScreen.h */,
 				EF24DEAF14324E1100965461 /* Z1PreLevelScreen.m */,
 				EFE6E5B3142BFE8100B594AD /* Z1GameOverOverlay.h */,
@@ -706,6 +776,9 @@
 		EF350852142D009F00249654 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				EF24E0091432D84900965461 /* menu-hover.png */,
+				EF24E00A1432D84900965461 /* menu-press.png */,
+				EF24E00B1432D84900965461 /* menu.png */,
 				EF836A34142EF6AB009EBFF6 /* button-credits-press.png */,
 				EF24DE821431AC8200965461 /* button-credits-hover.png */,
 				EF24DE831431AC8200965461 /* button-restart-hover.png */,
@@ -727,17 +800,47 @@
 			name = Buttons;
 			sourceTree = "<group>";
 		};
-		EF7F5659140FDC6600D8B26A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EF7F565D140FDC6600D8B26A /* Z1-editor.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		EF8369D3142DB674009EBFF6 /* enemy sprites */ = {
 			isa = PBXGroup;
 			children = (
+				EF24E0151432DFAF00965461 /* asteroid01_01_64.png */,
+				EF24E0161432DFAF00965461 /* asteroid01_02_64.png */,
+				EF24E0171432DFAF00965461 /* asteroid01_03_64.png */,
+				EF24E0181432DFAF00965461 /* asteroid01_04_64.png */,
+				EF24E0191432DFAF00965461 /* asteroid01_05_64.png */,
+				EF24E01A1432DFAF00965461 /* asteroid02_01_64.png */,
+				EF24E01B1432DFAF00965461 /* asteroid02_02_64.png */,
+				EF24E01C1432DFAF00965461 /* asteroid02_03_64.png */,
+				EF24E01D1432DFAF00965461 /* asteroid02_04_64.png */,
+				EF24E01E1432DFAF00965461 /* asteroid02_05_64.png */,
+				EF24E01F1432DFAF00965461 /* asteroid03_01_64.png */,
+				EF24E0201432DFAF00965461 /* asteroid03_02_64.png */,
+				EF24E0211432DFAF00965461 /* asteroid03_03_64.png */,
+				EF24E0221432DFAF00965461 /* asteroid03_04_64.png */,
+				EF24E0231432DFAF00965461 /* asteroid03_05_64.png */,
+				EF24E0241432DFAF00965461 /* asteroid04_01_64.png */,
+				EF24E0251432DFAF00965461 /* asteroid04_02_64.png */,
+				EF24E0261432DFAF00965461 /* asteroid04_03_64.png */,
+				EF24E0271432DFAF00965461 /* asteroid04_04_64.png */,
+				EF24E0281432DFAF00965461 /* asteroid04_05_64.png */,
+				EF24E0291432DFAF00965461 /* asteroid05_01_64.png */,
+				EF24E02A1432DFAF00965461 /* asteroid05_02_64.png */,
+				EF24E02B1432DFAF00965461 /* asteroid05_03_64.png */,
+				EF24E02C1432DFAF00965461 /* asteroid05_04_64.png */,
+				EF24E02D1432DFAF00965461 /* asteroid05_05_64.png */,
+				EF24E02E1432DFAF00965461 /* asteroid05_06_64.png */,
+				EF24E02F1432DFAF00965461 /* asteroid06_01_64.png */,
+				EF24E0301432DFAF00965461 /* asteroid06_02_64.png */,
+				EF24E0311432DFAF00965461 /* asteroid06_03_64.png */,
+				EF24E0321432DFAF00965461 /* asteroid06_04_64.png */,
+				EF24E0331432DFAF00965461 /* asteroid06_05_64.png */,
+				EF24E0341432DFAF00965461 /* asteroid06_06_64.png */,
+				EF24E0351432DFAF00965461 /* asteroid07_01_64.png */,
+				EF24E0361432DFAF00965461 /* asteroid07_02_64.png */,
+				EF24E0371432DFAF00965461 /* asteroid07_03_64.png */,
+				EF24E0381432DFAF00965461 /* asteroid07_04_64.png */,
+				EF24E0391432DFAF00965461 /* asteroid07_05_64.png */,
+				EF24E03A1432DFAF00965461 /* asteroid07_06_64.png */,
 				EF8369D4142DB68C009EBFF6 /* alien001_01_64.png */,
 				EF8369D5142DB68C009EBFF6 /* alien001_02_64.png */,
 				EF8369D6142DB68C009EBFF6 /* alien001_03_64.png */,
@@ -795,7 +898,6 @@
 				EF35084B142CFE9300249654 /* main-menu.png */,
 				EF836A66142F0667009EBFF6 /* easter-egg.png */,
 				EF35084D142CFE9300249654 /* monitor.png */,
-				EF8F0189142A4C8800A774E1 /* title-screen-end.png */,
 				EF8F018A142A4C8800A774E1 /* title-screen-start.png */,
 				EF8369D1142D1B2C009EBFF6 /* black_background.png */,
 			);
@@ -805,8 +907,8 @@
 		EFB5EA2213D889190058DB94 /* Levels */ = {
 			isa = PBXGroup;
 			children = (
-				EF91F16A1423DCDC002683D4 /* level_02.z1level */,
 				EF5574501421C5890035F6C2 /* level_01.z1level */,
+				EF91F16A1423DCDC002683D4 /* level_02.z1level */,
 				EF24DE9E143229A900965461 /* level_03.z1level */,
 				EF24DE9F143229A900965461 /* level_04.z1level */,
 				EF24DEA0143229A900965461 /* level_05.z1level */,
@@ -826,7 +928,6 @@
 				EF9EAD11142F938900FEE580 /* Z1_icon.icns */,
 				EFE6E5AF142BFC9000B594AD /* License.txt */,
 				EFE6E5B1142BFD0400B594AD /* Readme.txt */,
-				EF7F5658140FDC6600D8B26A /* Z1-editor.xcodeproj */,
 				EFE5986213D337A400062F86 /* Z1_game */,
 				EFE5985513D337A400062F86 /* Frameworks */,
 				EFE5985313D337A400062F86 /* Products */,
@@ -1217,7 +1318,8 @@
 				EF836A2A142DBC41009EBFF6 /* red-square.png */,
 				EFE599CE13D34FCE00062F86 /* galaxy.png */,
 				EFE599A813D338A100062F86 /* shot.png */,
-				EF8F0194142A62BA00A774E1 /* ship2_64x64.png */,
+				EF8F0194142A62BA00A774E1 /* ship-hammer-64.png */,
+				EF24E0131432DD5100965461 /* ship2_64x64.png */,
 				EFE599A913D338A100062F86 /* ship1.png */,
 				EFE599AA13D338A100062F86 /* smoke.png */,
 				EFE599D813D3FF8700062F86 /* stars.png */,
@@ -1230,6 +1332,8 @@
 		EFE599B213D338B100062F86 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				EF24E00F1432D8C800965461 /* junivision.wav */,
+				EF24E0101432D8C800965461 /* sfx-menu-click.wav */,
 				EF9771A7142A8807005DA458 /* ui_click_ok.wav */,
 				EF9771A8142A8807005DA458 /* ui_click_up.wav */,
 				EF14EDE21422C2AC00D19D92 /* Run_3_minute_edit.mp3 */,
@@ -1285,28 +1389,12 @@
 			mainGroup = EFE5984713D337A400062F86;
 			productRefGroup = EFE5985313D337A400062F86 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = EF7F5659140FDC6600D8B26A /* Products */;
-					ProjectRef = EF7F5658140FDC6600D8B26A /* Z1-editor.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				EFE5985113D337A400062F86 /* Z1 */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		EF7F565D140FDC6600D8B26A /* Z1-editor.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "Z1-editor.app";
-			remoteRef = EF7F565C140FDC6600D8B26A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EFE5985013D337A400062F86 /* Resources */ = {
@@ -1339,9 +1427,8 @@
 				EF14EDF51423088600D19D92 /* Asha-head.png in Resources */,
 				EF14EDF61423088600D19D92 /* Lea-head.png in Resources */,
 				EF91F16B1423DCDC002683D4 /* level_02.z1level in Resources */,
-				EF8F018D142A4C8800A774E1 /* title-screen-end.png in Resources */,
 				EF8F018E142A4C8800A774E1 /* title-screen-start.png in Resources */,
-				EF8F0196142A62BA00A774E1 /* ship2_64x64.png in Resources */,
+				EF8F0196142A62BA00A774E1 /* ship-hammer-64.png in Resources */,
 				EF9771A9142A8807005DA458 /* ui_click_ok.wav in Resources */,
 				EF9771AA142A8807005DA458 /* ui_click_up.wav in Resources */,
 				EFE6E5AE142BDA1400B594AD /* udg.level_list in Resources */,
@@ -1444,6 +1531,50 @@
 				EF24DEAD143229A900965461 /* level_10.z1level in Resources */,
 				EF24DEB21432574100965461 /* chapter-screen.png in Resources */,
 				EF24DEB41432574F00965461 /* dialog-boxes.png in Resources */,
+				EF24E00C1432D84900965461 /* menu-hover.png in Resources */,
+				EF24E00D1432D84900965461 /* menu-press.png in Resources */,
+				EF24E00E1432D84900965461 /* menu.png in Resources */,
+				EF24E0111432D8C800965461 /* junivision.wav in Resources */,
+				EF24E0121432D8C800965461 /* sfx-menu-click.wav in Resources */,
+				EF24E0141432DD5100965461 /* ship2_64x64.png in Resources */,
+				EF24E03B1432DFAF00965461 /* asteroid01_01_64.png in Resources */,
+				EF24E03C1432DFAF00965461 /* asteroid01_02_64.png in Resources */,
+				EF24E03D1432DFAF00965461 /* asteroid01_03_64.png in Resources */,
+				EF24E03E1432DFAF00965461 /* asteroid01_04_64.png in Resources */,
+				EF24E03F1432DFAF00965461 /* asteroid01_05_64.png in Resources */,
+				EF24E0401432DFAF00965461 /* asteroid02_01_64.png in Resources */,
+				EF24E0411432DFAF00965461 /* asteroid02_02_64.png in Resources */,
+				EF24E0421432DFAF00965461 /* asteroid02_03_64.png in Resources */,
+				EF24E0431432DFAF00965461 /* asteroid02_04_64.png in Resources */,
+				EF24E0441432DFAF00965461 /* asteroid02_05_64.png in Resources */,
+				EF24E0451432DFAF00965461 /* asteroid03_01_64.png in Resources */,
+				EF24E0461432DFAF00965461 /* asteroid03_02_64.png in Resources */,
+				EF24E0471432DFAF00965461 /* asteroid03_03_64.png in Resources */,
+				EF24E0481432DFAF00965461 /* asteroid03_04_64.png in Resources */,
+				EF24E0491432DFAF00965461 /* asteroid03_05_64.png in Resources */,
+				EF24E04A1432DFAF00965461 /* asteroid04_01_64.png in Resources */,
+				EF24E04B1432DFAF00965461 /* asteroid04_02_64.png in Resources */,
+				EF24E04C1432DFAF00965461 /* asteroid04_03_64.png in Resources */,
+				EF24E04D1432DFAF00965461 /* asteroid04_04_64.png in Resources */,
+				EF24E04E1432DFAF00965461 /* asteroid04_05_64.png in Resources */,
+				EF24E04F1432DFAF00965461 /* asteroid05_01_64.png in Resources */,
+				EF24E0501432DFAF00965461 /* asteroid05_02_64.png in Resources */,
+				EF24E0511432DFAF00965461 /* asteroid05_03_64.png in Resources */,
+				EF24E0521432DFAF00965461 /* asteroid05_04_64.png in Resources */,
+				EF24E0531432DFAF00965461 /* asteroid05_05_64.png in Resources */,
+				EF24E0541432DFAF00965461 /* asteroid05_06_64.png in Resources */,
+				EF24E0551432DFAF00965461 /* asteroid06_01_64.png in Resources */,
+				EF24E0561432DFAF00965461 /* asteroid06_02_64.png in Resources */,
+				EF24E0571432DFAF00965461 /* asteroid06_03_64.png in Resources */,
+				EF24E0581432DFAF00965461 /* asteroid06_04_64.png in Resources */,
+				EF24E0591432DFAF00965461 /* asteroid06_05_64.png in Resources */,
+				EF24E05A1432DFAF00965461 /* asteroid06_06_64.png in Resources */,
+				EF24E05B1432DFAF00965461 /* asteroid07_01_64.png in Resources */,
+				EF24E05C1432DFAF00965461 /* asteroid07_02_64.png in Resources */,
+				EF24E05D1432DFAF00965461 /* asteroid07_03_64.png in Resources */,
+				EF24E05E1432DFAF00965461 /* asteroid07_04_64.png in Resources */,
+				EF24E05F1432DFAF00965461 /* asteroid07_05_64.png in Resources */,
+				EF24E0601432DFAF00965461 /* asteroid07_06_64.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1557,7 +1688,6 @@
 				EFF097A6140D8F020025FBD6 /* GDStarBackground.m in Sources */,
 				EF7F5661141143B400D8B26A /* GDUtilities.m in Sources */,
 				EF7F5664141672D400D8B26A /* GDBasicSprite.m in Sources */,
-				EF14EDE91422CC2E00D19D92 /* Z1PreLevelOverlay.m in Sources */,
 				EF14EDFA1423B9A300D19D92 /* Z1LevelManager.m in Sources */,
 				EF8F019A142A6D3D00A774E1 /* Z1Player.m in Sources */,
 				EFE6E5B5142BFE8100B594AD /* Z1GameOverOverlay.m in Sources */,

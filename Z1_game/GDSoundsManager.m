@@ -41,6 +41,7 @@ static GDSoundsManager* _soundsManager = nil;
         self.sounds = [NSMutableDictionary dictionary];
         // preload any sounds here
         NSSound* temp = [self soundForName:@"BasicWeapon"];
+        temp = [self soundForName:@"sfx-menu-click"];
         #pragma unused (temp)
         self.music = [NSMutableDictionary dictionary];
         [self.music setObject:@"sfx-level-start.mp3" forKey:@"levelIntro"];

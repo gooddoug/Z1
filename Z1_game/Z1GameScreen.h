@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "GDGameScreenProtocol.h"
-#import "Z1PreLevelOverlay.h"
 #import "Z1GameOverOverlay.h"
 
 @class GDInputManager;
@@ -29,7 +28,6 @@
     NSDictionary* _levelDescription;
     CCSprite* _backgroundSprite;
     NSArray* _spawners;
-    Z1PreLevelOverlay* _overlay;
     Z1GameOverOverlay* _gameOverScreen;
     CCLabelAtlas* _scoreLabel;
 }
@@ -40,6 +38,5 @@
 + (CCScene*) sceneWithDictionary:(NSDictionary*)levelDict;
 
 - (id) initWithDictionary:(NSDictionary*)levelDict;
-- (void) prelevelScriptsFinished;
 
 @end

@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 // some constants:
-#define SCREEN_TRANSITION @"ui_click_ok"
+#define SCREEN_TRANSITION @"sfx_menu_click"
 
 
 @interface GDSoundsManager : NSObject 

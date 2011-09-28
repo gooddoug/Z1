@@ -25,7 +25,6 @@
 @property (nonatomic, retain) NSArray* spawners;
 @property float time;
 @property int spawnerIndex;
-@property (nonatomic, retain) Z1PreLevelOverlay* overlay;
 @property (nonatomic, retain) Z1GameOverOverlay* gameOverScreen;
 @property (nonatomic, retain) CCLabelAtlas* scoreLabel;
 @property BOOL started;
@@ -46,7 +45,7 @@
 @synthesize inputManager = _inputManager, playerSprite = _playerSprite, enemySprites = _enemySprites;
 @synthesize playerShots = _playerShots, effects = _effects, time = _time, spawnerIndex = _spawnerIndex, started = _started;
 
-@synthesize levelDescription = _levelDescription, backgroundSprite = _backgroundSprite, spawners = _spawners, overlay = _overlay, gameOverScreen = _gameOverScreen, gameOver = _gameOver, scoreLabel = _scoreLabel;
+@synthesize levelDescription = _levelDescription, backgroundSprite = _backgroundSprite, spawners = _spawners, gameOverScreen = _gameOverScreen, gameOver = _gameOver, scoreLabel = _scoreLabel;
 
 +(CCScene*) scene
 {
@@ -111,19 +110,12 @@
                 
         self.levelDescription = levelDict;
         
-        // background music
-        NSString* backgroundMusicName = [self.levelDescription objectForKey:@"backgroundMusic"];
-        if(!backgroundMusicName)
-            backgroundMusicName = @"Run_3_minute_edit.mp3";
-        [[GDSoundsManager sharedSoundsManager] playMusicFromFilename:backgroundMusicName];
-        
         // player ship
         NSString* shipSprite = [self.levelDescription objectForKey:@"shipSprite"];
         if (!shipSprite)
             shipSprite = @"ship2_64x64.png";
             
         self.playerSprite = [CCSprite spriteWithFile:shipSprite];
-        //self.playerSprite.scale = 0.5;
         self.playerSprite.flipY = YES;
         
         self.playerSprite.anchorPoint = ccp( 0.65 , 6.0 );
@@ -451,6 +443,16 @@
 {
     [[CCDirector sharedDirector] popScene];
     [[GDSoundsManager sharedSoundsManager] playMusicForSceneNamed:@"mainMenu"];
+}
+
+- (void) startLevel
+{
+    self.started = YES;
+    // background music
+    NSString* backgroundMusicName = [self.levelDescription objectForKey:@"backgroundMusic"];
+    if(!backgroundMusicName)
+        backgroundMusicName = @"Run_3_minute_edit.mp3";
+    [[GDSoundsManager sharedSoundsManager] playMusicFromFilename:backgroundMusicName];
 }
 
 - (void) endLevel
