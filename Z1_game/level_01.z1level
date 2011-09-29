@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>backgroundMusic</key>
-	<string>Run_3_minute_edit.mp3</string>
+	<string>music-new-a-thousand-new-paths.mp3</string>
 	<key>effects</key>
 	<array>
 		<dict>
@@ -21,6 +21,8 @@
 	<string>Level 1</string>
 	<key>nextLevel</key>
 	<string>2</string>
+    <key>destinationImage</key>
+    <string>planet-prison-256.png</string>
 	<key>preLevelScripts</key>
 	<array>
 		<dict>
@@ -38,9 +40,9 @@
 			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
 			ICJJIGRyZWFtZWQgYSB0aG91c2FuZCBuZXcgcGF0aHMuIEkgd29r
 			ZSBhbmQgd2Fsa2VkIG15IG9sZCBvbmUuIlwKTXkgZGFkIGxvdmVz
-			IGhpcyBwcm92ZXJicy4gSG93IGRvZXMgaGUgc25lYWsgdGhlc2Ug
-			b24gYm9hcmQgYW5kXAp3aGF0IGRvZXMgaXQgaGF2ZSB0byBkbyB3
-			aXRoIG15IGZpbmFsIHRlc3Q/fQ==
+			IGhpcyBwcm92ZXJicy5cCkhvdyBkb2VzIGhlIHNuZWFrIHRoZXNl
+			IG9uIGJvYXJkIGFuZCB3aGF0IGRvZXMgaXQgaGF2ZSB0byBkbyB3
+			aXRoXApteSBmaW5hbCB0ZXN0P30=
 			</data>
 		</dict>
 		<dict>
@@ -112,9 +114,9 @@
 			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
 			IEkgbmVlZCB5b3UgdG8gZm9jdXMgTGVhLiBOb25lIG9mIHRoaXMg
 			Z3JhZHVhdGVkLWF0LXRoZS10b3Atb2YtbXlcCmNsYXNzIHJ1YmJp
-			c2hcJzg1IFlvdSBzZW50IHRoZSBTcGFjaW8gYmFjayB0byB0aGUg
-			dGF4cGF5ZXJzIG9uXAptaXNzaW9uIDQuIFlvdSBoYXZlIGNvbnRy
-			b2wuIH0=
+			c2guIFlvdSBzZW50IHRoZSBTcGFjaW8gYmFjayB0byB0aGUgdGF4
+			cGF5ZXJzIG9uXAptaXNzaW9uIDQuIFlvdSBoYXZlIGNvbnRyb2wu
+			IH0=
 			</data>
 		</dict>
 		<dict>
@@ -130,12 +132,13 @@
 			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
 			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
 			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IEkgaGF2ZSBjb250cm9sIExpZXV0ZW5hbnQtQ29tbWFuZGVyLiBJ
-			IHNlbnQgaXQgYmFjayB0byB0aGVcCnN0b2NraG9sZGVycy4gV2Ug
-			ZG9uJ3Qgd29yayBmb3IgdGhlIGdvdmVybm1lbnQuIEFueXdheXMs
-			IGxldCdzXAp0YWxrIGFib3V0IG1vcmUgaW50ZXJlc3RpbmcgdGhp
-			bmdzLi4gbGlrZSBob3cgQXNoYSBzZWVtcyB0byBhbHdheXNcCmJl
-			IGluIHRoZSBtZXNzIHdoZW4geW91IGNvbWUgb2ZmIGR1dHkufQ==
+			IEkgaGF2ZSBjb250cm9sIExpZXV0ZW5hbnQtQ29tbWFuZGVyLiBV
+			bW0sIEkgc2VudCBpdCBiYWNrIHRvIHRoZVwKc3RvY2tob2xkZXJz
+			LiBXZSBkb24ndCB3b3JrIGZvciB0aGUgZ292ZXJubWVudC4gQW55
+			d2F5cywgbGV0J3MgdGFsa1wKYWJvdXQgbW9yZSBpbnRlcmVzdGlu
+			ZyB0aGluZ3MsIGxpa2UgaG93IEFzaGEgc2VlbXMgdG8gYWx3YXlz
+			IGJlIGluXAp0aGUgbWVzcyB3aGVuIHlvdSBjb21lIG9mZiBkdXR5
+			Ln0=
 			</data>
 		</dict>
 		<dict>
@@ -181,33 +184,53 @@
 	<array>
 		<dict>
 			<key>howLong</key>
-			<real>4</real>
+			<real>10</real>
 			<key>howMany</key>
-			<real>5</real>
+			<real>10</real>
 			<key>movementAnimation</key>
 			<string>ZoomOut</string>
 			<key>rotation</key>
 			<string>90</string>
 			<key>speed</key>
-			<real>40</real>
+			<real>5</real>
 			<key>sprite</key>
 			<string>asteroid01_01_64.png</string>
+			<key>startInside</key>
+			<true/>
 			<key>when</key>
 			<real>1</real>
 		</dict>
 		<dict>
 			<key>howLong</key>
-			<real>5</real>
+			<real>10</real>
 			<key>howMany</key>
-			<real>4</real>
+			<real>10</real>
 			<key>movementAnimation</key>
 			<string>ZoomOut</string>
 			<key>rotation</key>
 			<string>270</string>
 			<key>speed</key>
-			<real>80</real>
+			<real>10</real>
 			<key>sprite</key>
-			<string>asteroid03_02_64.png</string>
+			<string>asteroid01_02_64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>5</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>10</real>
+			<key>howMany</key>
+			<real>10</real>
+			<key>movementAnimation</key>
+			<string>ZoomOut</string>
+			<key>rotation</key>
+			<string>45</string>
+			<key>speed</key>
+			<real>5</real>
+			<key>sprite</key>
+			<string>asteroid01_03_64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
@@ -215,57 +238,39 @@
 		</dict>
 		<dict>
 			<key>howLong</key>
-			<real>4</real>
+			<real>10</real>
 			<key>howMany</key>
-			<real>6</real>
-			<key>movementAnimation</key>
-			<string>ZoomOut</string>
-			<key>rotation</key>
-			<string>45</string>
-			<key>speed</key>
-			<real>40</real>
-			<key>sprite</key>
-			<string>asteroid04_03_64.png</string>
-			<key>startInside</key>
-			<true/>
-			<key>when</key>
-			<real>5</real>
-		</dict>
-		<dict>
-			<key>howLong</key>
-			<real>1</real>
-			<key>howMany</key>
-			<real>1</real>
+			<real>20</real>
 			<key>movementAnimation</key>
 			<string>ZoomOut</string>
 			<key>rotation</key>
 			<string>60</string>
 			<key>speed</key>
-			<real>1</real>
+			<real>10</real>
 			<key>sprite</key>
-			<string>asteroid05_03_64.png</string>
+			<string>asteroid01_04_64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
-			<real>17</real>
+			<real>11</real>
 		</dict>
 		<dict>
 			<key>howLong</key>
-			<real>1</real>
+			<real>10</real>
 			<key>howMany</key>
-			<real>1</real>
+			<real>20</real>
 			<key>movementAnimation</key>
 			<string>ZoomOut</string>
 			<key>rotation</key>
-			<string>75</string>
+			<string>45</string>
 			<key>speed</key>
-			<real>1</real>
+			<real>5</real>
 			<key>sprite</key>
-			<string>asteroid06_04_64.png</string>
+			<string>asteroid01_05_64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
-			<real>18</real>
+			<real>14</real>
 		</dict>
 		<dict>
 			<key>howLong</key>
@@ -273,17 +278,17 @@
 			<key>howMany</key>
 			<real>3</real>
 			<key>movementAnimation</key>
-			<string>SimpleSpiralInClockwise</string>
+			<string>SpiralInAndOutCounterClockwise</string>
 			<key>rotation</key>
 			<string>90</string>
 			<key>speed</key>
 			<real>1</real>
 			<key>sprite</key>
-			<string>alien005_14_64.png</string>
+			<string>alien001_03_64.png</string>
 			<key>startInside</key>
 			<false/>
 			<key>when</key>
-			<real>19</real>
+			<real>18</real>
 		</dict>
 	</array>
 </dict>

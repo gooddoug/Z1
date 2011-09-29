@@ -215,8 +215,8 @@ static GDAnimationManager* _animationManager = nil;
         /*for (NSString* aKey in [blockDict keyEnumerator]) 
         {
             NSLog(@"%@\n", aKey);
-        }
-        */
+        }*/
+        
         _animationManager.animations = [NSDictionary dictionaryWithDictionary:blockDict];
     }
     return _animationManager;

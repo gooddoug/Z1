@@ -33,7 +33,8 @@
 - (void) sweepForDead;
 - (void) resolveFire;
 - (void) playerDied;
-- (void) endLevel;
+- (void) endLevel:(id)sender;
+- (void) showDestination;
 - (void) resolvePlayerCollision;
 - (void) handleInput:(ccTime)dt;
 - (void) checkSpawners:(ccTime)dt;
@@ -146,8 +147,6 @@
 		[CCTexture2D setDefaultAlphaPixelFormat:currentFormat];
         self.scoreLabel.position = ccp(100.0, 700.0);
         [self addChild:self.scoreLabel];
-        
-        self.started = YES;
     }
     return self;
 }
@@ -416,7 +415,7 @@
         {
             if (!self.gameOver)
             {
-                [self endLevel];
+                [self showDestination];
             }
         }
     }
@@ -464,7 +463,7 @@
     [self addChild:self.gameOverScreen z:100];
     self.gameOver = YES;
     [self removeChild:self.playerSprite cleanup:YES];
-    CCDelayTime* delayEndAction = [CCDelayTime actionWithDuration:8];
+    CCDelayTime* delayEndAction = [CCDelayTime actionWithDuration:18];
     CCCallFunc* popSceneAction = [CCCallFunc actionWithTarget:self selector:@selector(moveOn:)];
     CCFadeOut* fadeOutAction = [CCFadeOut actionWithDuration:2.0];
     [self runAction:[CCSequence actions:delayEndAction, fadeOutAction, popSceneAction, nil]];
@@ -487,16 +486,32 @@
     [[GDSoundsManager sharedSoundsManager] playMusicFromFilename:backgroundMusicName];
 }
 
-- (void) endLevel
+- (void) showDestination
 {
-    BOOL endGame = !([[Z1LevelManager sharedLevelManager] moveToNextLevel]);
-    if (endGame)
+    self.started = NO;
+    NSString* destImageName = [self.levelDescription objectForKey:@"destinationImage"];
+    if (!destImageName)
     {
-        self.gameOverScreen = [[[Z1GameOverOverlay alloc] initAndFinsihed:YES] autorelease];
-        [self addChild:self.gameOverScreen z:100];
-        self.gameOver = YES;
-        [self removeChild:self.playerSprite cleanup:YES];
+        [self endLevel:self];
+        return;
     }
+    CCSprite* destination = [CCSprite spriteWithFile:destImageName];
+    CGSize size = [[CCDirector sharedDirector] winSize];
+    destination.position = ccp(size.width / 2, size.height / 2);
+    destination.scale = 0.01;
+    // actions
+    CCScaleTo* scale1Action = [CCScaleTo actionWithDuration:1.5 scale:0.75];
+    CCScaleTo* scale2Action = [CCScaleTo actionWithDuration:1.0 scale:1.0];
+    CCScaleTo* scale3Action = [CCScaleTo actionWithDuration:1.5 scale:1.5];
+    CCDelayTime* delayAction = [CCDelayTime actionWithDuration:2];
+    CCCallFunc* endAction = [CCCallFunc actionWithTarget:self selector:@selector(endLevel:)];
+    [destination runAction:[CCSequence actions:scale1Action, scale2Action, scale3Action, delayAction, endAction, nil]];
+    [self addChild:destination z:15];
+}
+
+- (void) endLevel:(id)sender
+{
+    [[Z1LevelManager sharedLevelManager] moveToNextLevel];
 }
 
 @end

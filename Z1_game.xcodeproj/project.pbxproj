@@ -81,6 +81,7 @@
 		EF24E0651432E70400965461 /* Z1EndScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = EF24E0641432E70400965461 /* Z1EndScreen.m */; };
 		EF24E06B1433A05600965461 /* ring.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E06A1433A05500965461 /* ring.png */; };
 		EF24E06E1433A66200965461 /* GDSparklingStars.m in Sources */ = {isa = PBXBuildFile; fileRef = EF24E06D1433A66200965461 /* GDSparklingStars.m */; };
+		EF24E07414344C6700965461 /* planet-prison-256.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E07314344C6700965461 /* planet-prison-256.png */; };
 		EF35084E142CFE9300249654 /* game-over.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35084A142CFE9300249654 /* game-over.png */; };
 		EF35084F142CFE9300249654 /* main-menu.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35084B142CFE9300249654 /* main-menu.png */; };
 		EF350851142CFE9300249654 /* monitor.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35084D142CFE9300249654 /* monitor.png */; };
@@ -381,6 +382,7 @@
 		EF24E06A1433A05500965461 /* ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ring.png; sourceTree = "<group>"; };
 		EF24E06C1433A66200965461 /* GDSparklingStars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSparklingStars.h; sourceTree = "<group>"; };
 		EF24E06D1433A66200965461 /* GDSparklingStars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDSparklingStars.m; sourceTree = "<group>"; };
+		EF24E07314344C6700965461 /* planet-prison-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "planet-prison-256.png"; sourceTree = "<group>"; };
 		EF35084A142CFE9300249654 /* game-over.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "game-over.png"; sourceTree = "<group>"; };
 		EF35084B142CFE9300249654 /* main-menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-menu.png"; sourceTree = "<group>"; };
 		EF35084D142CFE9300249654 /* monitor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monitor.png; sourceTree = "<group>"; };
@@ -1341,6 +1343,7 @@
 				EFE599D813D3FF8700062F86 /* stars.png */,
 				EFE599AC13D338A100062F86 /* fire.png */,
 				EFF097A9140DAAF80025FBD6 /* ship2.png */,
+				EF24E07314344C6700965461 /* planet-prison-256.png */,
 			);
 			name = Sprites;
 			sourceTree = "<group>";
@@ -1593,6 +1596,7 @@
 				EF24E0601432DFAF00965461 /* asteroid07_06_64.png in Resources */,
 				EF24E0621432E6D300965461 /* end-screen.png in Resources */,
 				EF24E06B1433A05600965461 /* ring.png in Resources */,
+				EF24E07414344C6700965461 /* planet-prison-256.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

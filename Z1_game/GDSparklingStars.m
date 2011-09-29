@@ -36,11 +36,11 @@
         for (int i = 0; i < howMany; i++) 
         {
             CCSprite* aStar = [CCSprite spriteWithFile:@"stars.png"];
-            float x = (1.0 / (float)arc4random()) * size.width;
-            float y = (1.0 / (float)arc4random()) * size.height;
-            float blinkOnDelay = (1.0 / (float)arc4random()) * 4.0 + 1;
-            float blinkOffDelay = (1.0 / (float)arc4random()) * 2.0;
-            float scale = (1.0 / (float)arc4random()) * 0.5;
+            float x = (arc4random() % (int)size.width) + ((arc4random() % 100) * 0.01);
+            float y = (arc4random() % (int)size.height) + ((arc4random() % 100) * 0.01);
+            float blinkOnDelay = (arc4random() % 5) + ((arc4random() % 100) * 0.01);
+            float blinkOffDelay = (arc4random() % 2) + ((arc4random() % 100) * 0.01);
+            float scale = (float)(arc4random() % 10) * 0.025;
             BOOL visible = (arc4random() % 4) < 3;
             aStar.position = ccp(x, y);
             aStar.scale = scale;

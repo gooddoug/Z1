@@ -37,7 +37,7 @@
 			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
 			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
 			IEFzaGEhXApJIGRpZG4ndCB0aGluayB5b3Ugd291bGQgc3Vydml2
-			ZSFcClwKSSdtIHNvIGhhcHB5IHlvdSBtYWRlIGl0Ln0=
+			ZSEgSSdtIHNvIGhhcHB5IHlvdSBtYWRlIGl0Ln0=
 			</data>
 		</dict>
 		<dict>
@@ -54,8 +54,8 @@
 			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
 			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
 			IEkgZGlkbid0IHRoaW5rIEkgd2FzIGdvaW5nIHRvIG1ha2UgaXQg
-			YmFjaywgZWl0aGVyLlwKXApXaGF0IHdlcmUgdGhvc2UgdGhpbmdz
-			LCBBcnR1cj99
+			YmFjaywgZWl0aGVyLlwKV2hhdCB3ZXJlIHRob3NlIHRoaW5ncywg
+			QXJ0dXI/fQ==
 			</data>
 		</dict>
 		<dict>
@@ -106,7 +106,7 @@
 			<key>rotation</key>
 			<string>0</string>
 			<key>speed</key>
-			<real>20</real>
+			<real>10</real>
 			<key>sprite</key>
 			<string>alien001_01_64.png</string>
 			<key>startInside</key>
@@ -124,7 +124,7 @@
 			<key>rotation</key>
 			<string>90</string>
 			<key>speed</key>
-			<real>25</real>
+			<real>10</real>
 			<key>sprite</key>
 			<string>alien001_02_64.png</string>
 			<key>startInside</key>
