@@ -309,7 +309,7 @@
 	[explosionSprite runAction:[CCSequence actions:scaleAction, fadeAction, deleteAction, nil]];
 	
 	// Now the explosion particle system
-	CCParticleSystem* emitter = [[CCParticleExplosion alloc] initWithTotalParticles:50];
+	CCParticleSystem* emitter = [[[CCParticleExplosion alloc] initWithTotalParticles:50] autorelease];
 	emitter.life = 0.25;
 	emitter.lifeVar = 0.125;
 	[self addChild:emitter z:0];
@@ -503,10 +503,18 @@
     CCScaleTo* scale1Action = [CCScaleTo actionWithDuration:1.5 scale:0.75];
     CCScaleTo* scale2Action = [CCScaleTo actionWithDuration:1.0 scale:1.0];
     CCScaleTo* scale3Action = [CCScaleTo actionWithDuration:1.5 scale:1.5];
-    CCDelayTime* delayAction = [CCDelayTime actionWithDuration:2];
+    CCDelayTime* delayAction = [CCDelayTime actionWithDuration:4];
     CCCallFunc* endAction = [CCCallFunc actionWithTarget:self selector:@selector(endLevel:)];
     [destination runAction:[CCSequence actions:scale1Action, scale2Action, scale3Action, delayAction, endAction, nil]];
     [self addChild:destination z:15];
+    //wait and zoom the player in...
+    // TODO: Make this less clucky or find a way to do it with an easeOut model
+    CCDelayTime* playerDelay = [CCDelayTime actionWithDuration:3.85];
+    CCScaleTo* playerScale1 = [CCScaleTo actionWithDuration:0.5 scale:0.25];
+    CCScaleTo* playerScale2 = [CCScaleTo actionWithDuration:0.5 scale:0.1];
+    CCScaleTo* playerScale3 = [CCScaleTo actionWithDuration:1.5 scale:0.01];
+    [self.playerSprite runAction:[CCSequence actions:playerDelay, playerScale1, playerScale2, playerScale3, nil]];
+    // after, add final dialog
 }
 
 - (void) endLevel:(id)sender

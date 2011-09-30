@@ -39,4 +39,7 @@
 
 - (id) initWithDictionary:(NSDictionary*)levelDict;
 
+- (void) startLevel;
+- (void) moveOn:(id) sender;
+
 @end

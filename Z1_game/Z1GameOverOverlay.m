@@ -9,6 +9,7 @@
 #import "Z1GameOverOverlay.h"
 #import "SimpleAudioEngine.h"
 #import "GDSoundsManager.h"
+#import "Z1GameScreen.h"
 
 #define X_SQUARES 80
 #define Y_SQUARES 60
@@ -77,7 +78,7 @@
         if(self.showing)
         {
             self.showing = NO;
-            [self.parent moveOn:self];
+            [(Z1GameScreen*)self.parent moveOn:self];
             return YES;
         }
     }

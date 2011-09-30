@@ -44,7 +44,7 @@ static GDSoundsManager* _soundsManager = nil;
         temp = [self soundForName:@"sfx-menu-click"];
         #pragma unused (temp)
         self.music = [NSMutableDictionary dictionary];
-        [self.music setObject:@"sfx-level-start.mp3" forKey:@"levelIntro"];
+        [self.music setObject:@"sfx-level-start.wav" forKey:@"levelIntro"];
         [self.music setObject:@"sfx-game-logo.mp3" forKey:@"mainMenu"];
         [self.music setObject:@"sfx-death-screen.mp3" forKey:@"gameOver"];
         [self.music setObject:@"sfx-credits-screen.mp3" forKey:@"credits"];

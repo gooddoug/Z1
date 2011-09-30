@@ -71,7 +71,7 @@
 
 - (void) done:(id)sender
 {
-    [[[self.gameScene children] objectAtIndex:0] startLevel];
+    [(Z1GameScreen*)[[self.gameScene children] objectAtIndex:0] startLevel];
     CCTransitionScene* trans = [CCTransitionFade transitionWithDuration:1 scene:self.gameScene withColor:ccBLACK];
     [[CCDirector sharedDirector] replaceScene:trans];
 }

@@ -82,6 +82,10 @@
 		EF24E06B1433A05600965461 /* ring.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E06A1433A05500965461 /* ring.png */; };
 		EF24E06E1433A66200965461 /* GDSparklingStars.m in Sources */ = {isa = PBXBuildFile; fileRef = EF24E06D1433A66200965461 /* GDSparklingStars.m */; };
 		EF24E07414344C6700965461 /* planet-prison-256.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E07314344C6700965461 /* planet-prison-256.png */; };
+		EF24E0761434D27E00965461 /* sfx-level-start.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0751434D27E00965461 /* sfx-level-start.wav */; };
+		EF24E07914353A1E00965461 /* Z1StoryScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = EF24E07814353A1A00965461 /* Z1StoryScreen.m */; };
+		EF24E07B14353AB800965461 /* main-menu-night.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E07A14353AB800965461 /* main-menu-night.png */; };
+		EF24E07D14353E6300965461 /* saga.txt in Resources */ = {isa = PBXBuildFile; fileRef = EF24E07C14353E6300965461 /* saga.txt */; };
 		EF35084E142CFE9300249654 /* game-over.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35084A142CFE9300249654 /* game-over.png */; };
 		EF35084F142CFE9300249654 /* main-menu.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35084B142CFE9300249654 /* main-menu.png */; };
 		EF350851142CFE9300249654 /* monitor.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35084D142CFE9300249654 /* monitor.png */; };
@@ -383,6 +387,11 @@
 		EF24E06C1433A66200965461 /* GDSparklingStars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSparklingStars.h; sourceTree = "<group>"; };
 		EF24E06D1433A66200965461 /* GDSparklingStars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDSparklingStars.m; sourceTree = "<group>"; };
 		EF24E07314344C6700965461 /* planet-prison-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "planet-prison-256.png"; sourceTree = "<group>"; };
+		EF24E0751434D27E00965461 /* sfx-level-start.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "sfx-level-start.wav"; sourceTree = "<group>"; };
+		EF24E07714353A1700965461 /* Z1StoryScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1StoryScreen.h; sourceTree = "<group>"; };
+		EF24E07814353A1A00965461 /* Z1StoryScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1StoryScreen.m; sourceTree = "<group>"; };
+		EF24E07A14353AB800965461 /* main-menu-night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-menu-night.png"; sourceTree = "<group>"; };
+		EF24E07C14353E6300965461 /* saga.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = saga.txt; sourceTree = "<group>"; };
 		EF35084A142CFE9300249654 /* game-over.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "game-over.png"; sourceTree = "<group>"; };
 		EF35084B142CFE9300249654 /* main-menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-menu.png"; sourceTree = "<group>"; };
 		EF35084D142CFE9300249654 /* monitor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monitor.png; sourceTree = "<group>"; };
@@ -906,6 +915,7 @@
 			isa = PBXGroup;
 			children = (
 				EF24E0611432E6D300965461 /* end-screen.png */,
+				EF24E07A14353AB800965461 /* main-menu-night.png */,
 				EF24DEB31432574F00965461 /* dialog-boxes.png */,
 				EF24DEB11432574100965461 /* chapter-screen.png */,
 				EF35084A142CFE9300249654 /* game-over.png */,
@@ -977,6 +987,8 @@
 				EFE5998213D337A700062F86 /* AppDelegate.m */,
 				EFE5998413D337A700062F86 /* Z1SplashScreen.h */,
 				EFE5998513D337A700062F86 /* Z1SplashScreen.m */,
+				EF24E07714353A1700965461 /* Z1StoryScreen.h */,
+				EF24E07814353A1A00965461 /* Z1StoryScreen.m */,
 				EF350861142D0F4A00249654 /* Z1MessageOverlay.h */,
 				EF350862142D0F4A00249654 /* Z1MessageOverlay.m */,
 				EFE599D513D3FD3D00062F86 /* Z1MenuScreen.h */,
@@ -1009,6 +1021,7 @@
 				EFB5EA2213D889190058DB94 /* Levels */,
 				EFE599BB13D33BF300062F86 /* logo-crop.png */,
 				EF72D93313D4F50A00ABD27F /* TextBackground.png */,
+				EF24E07C14353E6300965461 /* saga.txt */,
 				EF72D92A13D48A3100ABD27F /* credits.txt */,
 				EF72D94E13D5532C00ABD27F /* end.txt */,
 				EFE599B213D338B100062F86 /* Sounds */,
@@ -1360,6 +1373,7 @@
 				EF24DE971432254C00965461 /* sfx-death-screen.mp3 */,
 				EF24DE981432254C00965461 /* sfx-game-logo.mp3 */,
 				EF24DE991432254C00965461 /* sfx-level-start.mp3 */,
+				EF24E0751434D27E00965461 /* sfx-level-start.wav */,
 				EF24DE941432253900965461 /* music-new-a-thousand-new-paths.mp3 */,
 				EFE599B313D338C700062F86 /* explosion.wav */,
 				EF72D95D13D778D800ABD27F /* player_explosion.wav */,
@@ -1597,6 +1611,9 @@
 				EF24E0621432E6D300965461 /* end-screen.png in Resources */,
 				EF24E06B1433A05600965461 /* ring.png in Resources */,
 				EF24E07414344C6700965461 /* planet-prison-256.png in Resources */,
+				EF24E0761434D27E00965461 /* sfx-level-start.wav in Resources */,
+				EF24E07B14353AB800965461 /* main-menu-night.png in Resources */,
+				EF24E07D14353E6300965461 /* saga.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1718,6 +1735,7 @@
 				EF24DEB014324E1100965461 /* Z1PreLevelScreen.m in Sources */,
 				EF24E0651432E70400965461 /* Z1EndScreen.m in Sources */,
 				EF24E06E1433A66200965461 /* GDSparklingStars.m in Sources */,
+				EF24E07914353A1E00965461 /* Z1StoryScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,7 @@
 #import "Z1Player.h"
 #import "Z1LevelManager.h"
 #import "Z1PreLevelScreen.h"
+#import "Z1StoryScreen.h"
 #import "GDSoundsManager.h"
 
 @implementation Z1MenuScreen
@@ -161,7 +162,8 @@
 
 - (void) saga:(id)sender
 {
-    NSLog(@"Oh the tales we'll tell");
+    CCScene* sagaScene = [Z1StoryScreen scene];
+    [[CCDirector sharedDirector] pushScene:sagaScene]; 
 }
 
 - (void) quit:(id)sender
