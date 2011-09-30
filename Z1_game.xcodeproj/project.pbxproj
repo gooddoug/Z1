@@ -305,7 +305,6 @@
 		EFE6E5B2142BFD0400B594AD /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = EFE6E5B1142BFD0400B594AD /* Readme.txt */; };
 		EFE6E5B5142BFE8100B594AD /* Z1GameOverOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE6E5B4142BFE8100B594AD /* Z1GameOverOverlay.m */; };
 		EFE6E5B7142C00F700B594AD /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE6E5B6142C00F700B594AD /* square.png */; };
-		EFF097A6140D8F020025FBD6 /* GDStarBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF097A5140D8F020025FBD6 /* GDStarBackground.m */; };
 		EFF097AB140DAAF80025FBD6 /* ship2.png in Resources */ = {isa = PBXBuildFile; fileRef = EFF097A9140DAAF80025FBD6 /* ship2.png */; };
 /* End PBXBuildFile section */
 
@@ -738,8 +737,6 @@
 		EFE6E5B3142BFE8100B594AD /* Z1GameOverOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1GameOverOverlay.h; sourceTree = "<group>"; };
 		EFE6E5B4142BFE8100B594AD /* Z1GameOverOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1GameOverOverlay.m; sourceTree = "<group>"; };
 		EFE6E5B6142C00F700B594AD /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square.png; sourceTree = "<group>"; };
-		EFF097A4140D8F020025FBD6 /* GDStarBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDStarBackground.h; sourceTree = "<group>"; };
-		EFF097A5140D8F020025FBD6 /* GDStarBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDStarBackground.m; sourceTree = "<group>"; };
 		EFF097A9140DAAF80025FBD6 /* ship2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1337,8 +1334,6 @@
 				EF24E06D1433A66200965461 /* GDSparklingStars.m */,
 				EFE5999F13D3385C00062F86 /* GDParticleFog.h */,
 				EFE599A013D3385C00062F86 /* GDParticleFog.m */,
-				EFF097A4140D8F020025FBD6 /* GDStarBackground.h */,
-				EFF097A5140D8F020025FBD6 /* GDStarBackground.m */,
 			);
 			name = Effects;
 			sourceTree = "<group>";
@@ -1732,7 +1727,6 @@
 				EF72D95213D5DEFF00ABD27F /* Z1GameScreen.m in Sources */,
 				EF72D95513D64D7000ABD27F /* GDAnimationManager.m in Sources */,
 				EF72D95813D7764C00ABD27F /* GDSoundsManager.m in Sources */,
-				EFF097A6140D8F020025FBD6 /* GDStarBackground.m in Sources */,
 				EF7F5661141143B400D8B26A /* GDUtilities.m in Sources */,
 				EF7F5664141672D400D8B26A /* GDBasicSprite.m in Sources */,
 				EF14EDFA1423B9A300D19D92 /* Z1LevelManager.m in Sources */,

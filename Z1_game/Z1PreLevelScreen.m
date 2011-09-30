@@ -69,6 +69,10 @@
         self.skipButton.position = ccp(size.width - ([self.skipButton contentSize].width + 10.0), 10.0);
         [self addChild:self.skipButton z:10];
         
+        CCLabelTTF* levelName = [CCLabelTTF labelWithString:[levelDescription objectForKey:@"name"] fontName:@"Lucida Grande" fontSize:24];
+        levelName.position = ccp(size.width / 2, 50);
+        [self addChild:levelName z:10];
+        
         [self nextScript];
     }
     return self;

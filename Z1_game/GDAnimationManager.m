@@ -164,7 +164,7 @@ static GDAnimationManager* _animationManager = nil;
                  aSprite.dead = YES;
              }
             
-             aSprite.scale = aSprite.scale + (dt * 0.25);
+             aSprite.scale = aSprite.scale + (dt * 0.1);
              
          } forKey:@"ZoomOut"];
         

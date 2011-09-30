@@ -90,9 +90,8 @@ static Z1LevelManager* sharedInstance = nil;
 - (CCScene*) nextGameScreen
 {
     Z1Player* player = [Z1Player sharedPlayer];
-    player.lastLevel = self.currentLevelIndex;
-    
     self.currentLevelIndex++; 
+    player.lastLevel = self.currentLevelIndex;
     
     CCScene* nextScene = [self levelSceneAtIndex:self.currentLevelIndex];
     

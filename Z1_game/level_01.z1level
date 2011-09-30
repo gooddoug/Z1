@@ -261,15 +261,15 @@
 	<array>
 		<dict>
 			<key>howLong</key>
-			<real>10</real>
+			<real>15</real>
 			<key>howMany</key>
-			<real>10</real>
+			<real>5</real>
 			<key>movementAnimation</key>
 			<string>ZoomOut</string>
 			<key>rotation</key>
 			<string>90</string>
 			<key>speed</key>
-			<real>5</real>
+			<real>1</real>
 			<key>sprite</key>
 			<string>asteroid01_01_64.png</string>
 			<key>startInside</key>
@@ -279,27 +279,27 @@
 		</dict>
 		<dict>
 			<key>howLong</key>
-			<real>10</real>
+			<real>20</real>
 			<key>howMany</key>
-			<real>10</real>
+			<real>5</real>
 			<key>movementAnimation</key>
 			<string>ZoomOut</string>
 			<key>rotation</key>
 			<string>270</string>
 			<key>speed</key>
-			<real>10</real>
+			<real>2</real>
 			<key>sprite</key>
 			<string>asteroid01_02_64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
-			<real>5</real>
+			<real>2</real>
 		</dict>
 		<dict>
 			<key>howLong</key>
-			<real>10</real>
+			<real>40</real>
 			<key>howMany</key>
-			<real>10</real>
+			<real>8</real>
 			<key>movementAnimation</key>
 			<string>ZoomOut</string>
 			<key>rotation</key>
@@ -311,47 +311,65 @@
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
-			<real>10</real>
+			<real>3.5</real>
 		</dict>
 		<dict>
 			<key>howLong</key>
-			<real>10</real>
+			<real>40</real>
 			<key>howMany</key>
-			<real>20</real>
+			<real>10</real>
 			<key>movementAnimation</key>
 			<string>ZoomOut</string>
 			<key>rotation</key>
-			<string>60</string>
+			<string>1</string>
 			<key>speed</key>
-			<real>10</real>
+			<real>1</real>
 			<key>sprite</key>
 			<string>asteroid01_04_64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
-			<real>11</real>
+			<real>4</real>
 		</dict>
 		<dict>
 			<key>howLong</key>
-			<real>10</real>
-			<key>howMany</key>
 			<real>20</real>
+			<key>howMany</key>
+			<real>5</real>
 			<key>movementAnimation</key>
 			<string>ZoomOut</string>
 			<key>rotation</key>
-			<string>45</string>
+			<string>190</string>
 			<key>speed</key>
-			<real>5</real>
+			<real>3</real>
 			<key>sprite</key>
 			<string>asteroid01_05_64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
-			<real>14</real>
+			<real>5</real>
 		</dict>
 		<dict>
 			<key>howLong</key>
+			<real>15</real>
+			<key>howMany</key>
+			<real>3</real>
+			<key>movementAnimation</key>
+			<string>SpiralInAndOutClockwise</string>
+			<key>rotation</key>
+			<string>290</string>
+			<key>speed</key>
 			<real>1</real>
+			<key>sprite</key>
+			<string>asteroid01_02_64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>15</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>1.25</real>
 			<key>howMany</key>
 			<real>3</real>
 			<key>movementAnimation</key>
@@ -359,13 +377,13 @@
 			<key>rotation</key>
 			<string>90</string>
 			<key>speed</key>
-			<real>1</real>
+			<real>5</real>
 			<key>sprite</key>
 			<string>alien001_03_64.png</string>
 			<key>startInside</key>
 			<false/>
 			<key>when</key>
-			<real>18</real>
+			<real>38</real>
 		</dict>
 	</array>
 </dict>

@@ -288,7 +288,7 @@
 	<array>
 		<dict>
 			<key>howLong</key>
-			<real>4</real>
+			<real>30</real>
 			<key>howMany</key>
 			<real>12</real>
 			<key>movementAnimation</key>
@@ -296,7 +296,7 @@
 			<key>rotation</key>
 			<string>0</string>
 			<key>speed</key>
-			<real>10</real>
+			<real>30</real>
 			<key>sprite</key>
 			<string>alien001_01_64.png</string>
 			<key>startInside</key>
@@ -306,7 +306,7 @@
 		</dict>
 		<dict>
 			<key>howLong</key>
-			<real>4</real>
+			<real>30</real>
 			<key>howMany</key>
 			<real>12</real>
 			<key>movementAnimation</key>
@@ -314,13 +314,65 @@
 			<key>rotation</key>
 			<string>90</string>
 			<key>speed</key>
-			<real>10</real>
+			<real>40</real>
 			<key>sprite</key>
 			<string>alien001_02_64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
-			<real>8</real>
+			<real>10</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>20</real>
+			<key>howMany</key>
+			<real>6</real>
+			<key>movementAnimation</key>
+			<string>SimpleSpiralOutCounterClockwise</string>
+			<key>rotation</key>
+			<string>270</string>
+			<key>speed</key>
+			<real>30</real>
+			<key>sprite</key>
+			<string>alien001_01_64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>20</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>10</real>
+			<key>howMany</key>
+			<real>7</real>
+			<key>movementAnimation</key>
+			<string>SimpleSpiralOutClockwise</string>
+			<key>rotation</key>
+			<string>180</string>
+			<key>speed</key>
+			<real>60</real>
+			<key>sprite</key>
+			<string>alien001_01_64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>30</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>10</real>
+			<key>howMany</key>
+			<real>3</real>
+			<key>movementAnimation</key>
+			<string>SimpleSpiralInCounterClockwise</string>
+			<key>rotation</key>
+			<string>0</string>
+			<key>speed</key>
+			<real>15</real>
+			<key>sprite</key>
+			<string>alien001_02_64.png</string>
+			<key>when</key>
+			<real>40</real>
 		</dict>
 	</array>
 </dict>
