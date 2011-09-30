@@ -21,6 +21,7 @@
     NSMutableSet* _playerShots;
     float _time;
     int _spawnerIndex;
+    int _scriptIndex;
     BOOL _started;
     BOOL _gameOver;
     
@@ -28,6 +29,8 @@
     NSDictionary* _levelDescription;
     CCSprite* _backgroundSprite;
     NSArray* _spawners;
+    NSArray* _postScripts;
+    NSMutableArray* _scriptNodes;
     Z1GameOverOverlay* _gameOverScreen;
     CCLabelAtlas* _scoreLabel;
 }

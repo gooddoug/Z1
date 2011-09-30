@@ -3,7 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>backgroundMusic</key>
-	<string>music-new-a-thousand-new-paths.mp3</string>
+	<string>music-touring-with-the-88ers.mp3</string>
+	<key>destinationImage</key>
+	<string>space-battle-256.png</string>
 	<key>effects</key>
 	<array>
 		<dict>
@@ -18,16 +20,16 @@
 	<key>id</key>
 	<string>2</string>
 	<key>name</key>
-	<string>test_2</string>
+	<string>Unit 88</string>
 	<key>nextLevel</key>
 	<string>2</string>
-	<key>preLevelScripts</key>
+	<key>postLevelScripts</key>
 	<array>
 		<dict>
 			<key>actor</key>
-			<string>artur</string>
+			<string>lea</string>
 			<key>summary</key>
-			<string>I thought you wouldn't survive</string>
+			<string>wiped</string>
 			<key>text</key>
 			<data>
 			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
@@ -36,33 +38,15 @@
 			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
 			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
 			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IEFzaGEhXApJIGRpZG4ndCB0aGluayB5b3Ugd291bGQgc3Vydml2
-			ZSEgSSdtIHNvIGhhcHB5IHlvdSBtYWRlIGl0Ln0=
-			</data>
-		</dict>
-		<dict>
-			<key>actor</key>
-			<string>asha</string>
-			<key>summary</key>
-			<string>I thought I was dead</string>
-			<key>text</key>
-			<data>
-			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
-			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
-			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
-			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
-			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IEkgZGlkbid0IHRoaW5rIEkgd2FzIGdvaW5nIHRvIG1ha2UgaXQg
-			YmFjaywgZWl0aGVyLlwKV2hhdCB3ZXJlIHRob3NlIHRoaW5ncywg
-			QXJ0dXI/fQ==
+			IENcJ2U4blwnZTAhIFRoZXkncmUgd2lwZWQgb3V0ISBJJ20gbm90
+			IGdldHRpbmcgYW55IGxpZmUgcmVhZGluZ3MufQ==
 			</data>
 		</dict>
 		<dict>
 			<key>actor</key>
 			<string>artur</string>
 			<key>summary</key>
-			<string>I don't know</string>
+			<string>get kan</string>
 			<key>text</key>
 			<data>
 			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
@@ -71,14 +55,14 @@
 			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
 			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
 			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IEkgZG9uJ3Qga25vdywgQXNoYX0=
+			IEdldCBtZSBLYW4gVCdpdSBvbiB0aGUgY29uc29sZS59
 			</data>
 		</dict>
 		<dict>
 			<key>actor</key>
 			<string>lea</string>
 			<key>summary</key>
-			<string>I know</string>
+			<string>vapor</string>
 			<key>text</key>
 			<data>
 			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
@@ -87,13 +71,219 @@
 			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
 			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
 			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IEkga25vdyB3aGF0IHRoZXkgYXJlLCBidXQgeW91IHdvbid0IGJl
-			bGlldmUgbWUuXApUaGV5IGFyZSAiQm9vdHkgUGlyYXRlcyEifQ==
+			IFBhdGNoaW5nIHRocm91Z2guIEJlIHN1cmUgdG8gdGVsbCBoaW0g
+			dGhhdCBoZSdzIGdvdHRlbiBhbGwgdGhlXAo4OGVycyB2YXBvcml6
+			ZWQufQ==
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>kan</string>
+			<key>summary</key>
+			<string>status?</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
+			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
+			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
+			IFRoaXMgaXMgU2hpYnUgQ29udHJvbC4gV2hhdCBpcyB5b3VyIHN0
+			YXR1cz99
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>artur</string>
+			<key>summary</key>
+			<string>zero</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
+			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
+			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
+			IEJhbmRpdHMnIEVQUyBtYXRjaGluZyBlYXJsaWVyIHByb2JlIGZv
+			cmNlLiBBZGFtYWggUGFsYWRpblwKQ2xhc3MgMy4gVW5pdCA4OCBz
+			dXJ2aXZvcnMgemVyby59
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>kan</string>
+			<key>summary</key>
+			<string>good job</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
+			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
+			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
+			IEdvb2QgSm9iLCBadWx1LiBQbGVhc2UgcmV0dXJuIGZvciBkZWJy
+			aWVmaW5nLn0=
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>lea</string>
+			<key>summary</key>
+			<string>shit</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
+			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
+			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
+			IEdvb2Qgam9iPyBXZSBkaWQgc2hpdC59
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>artur</string>
+			<key>summary</key>
+			<string>settle</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
+			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
+			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
+			IFNldHRsZSBkb3duLiBUaGF0J3MgYW4gb3JkZXIuIEFuZCBJIHdh
+			bnQgeW91IHRvIHdhdGNoIHlvdXIgc3RlcFwKYXJvdW5kIEthbiBU
+			J2l1LiBTb21ldGhpbmcgYWJvdXQgaGlzIHRyYW5zZmVyIG91dCBo
+			ZXJlXCc4NSBuZXZlclwKbWluZCwgeW91IHNlZSBoaW0sIHlvdSBn
+			byB0aGUgb3RoZXIgZGlyZWN0aW9uLn0=
+			</data>
+		</dict>
+	</array>
+	<key>preLevelScripts</key>
+	<array>
+		<dict>
+			<key>actor</key>
+			<string>kan</string>
+			<key>summary</key>
+			<string>Message broadcast</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIFNoaWJ1IENvbnRy
+			b2wgdG8gYWxsIG91dGx5aW5nIHZlc3NlbHMuIFBsZWFzZSBhZGp1
+			c3QgdG8gSUJTIDEyMDNcCmZvciByZWxheSBmcm9tIExhemFyZXYg
+			SGlnaCBDb21tYW5kLn0=
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>ckarl</string>
+			<key>summary</key>
+			<string>Bogeys in system</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIFRoaXMgaXMgQ29t
+			bWFuZGVyIENrYXJsIHNwZWFraW5nLiBPdXIgUlRzIGhhdmUgcGlj
+			a2VkIHVwIHNldmVyYWxcCmludHJ1c2lvbnMgaW50byB0aGUgZ2Fs
+			YXh5LiBXZSBhcmUgdW5hYmxlIHRvIHZlcmlmeSB0aGVpciBFUFMg
+			YXRcCnRoaXMgdGltZS4gQXNzdW1lIGhvc3RpbGUuIFJlcGVhdCwg
+			YXNzdW1lIGhvc3RpbGUuIFlvdXJcCnN1Yi1jb21tYW5kZXJzIHdp
+			bGwgZGlyZWN0IHlvdXIgSE9QUy59
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>kan</string>
+			<key>summary</key>
+			<string>Unit 88 orders</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIFVuaXQgODgsIHBy
+			b2NlZWQgdG8gc2VjdG9yIDc2OS59
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>artur</string>
+			<key>summary</key>
+			<string>That's us</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIFRoYXQncyB1cy4g
+			SSBoYXZlIGNvbnRyb2wufQ==
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>lea</string>
+			<key>summary</key>
+			<string>That's stupid, too far</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIFlvdSBoYXZlIGNv
+			bnRyb2wuIFdlIG11c3QgYmUgdGhlIGZ1cnRoZXN0IGZyb20gU2Vj
+			dG9yIDc2OSEgVGhlcmVcCnByb2JhYmx5IHdvbid0IGJlIGFueSBi
+			b2dleXMgbGVmdCEgVGhpcyBIT1AgaXMgc3R1cGlkLiBXaHkgZGlk
+			IGhlXApzZW5kIHVzIHNvIGZhcj99
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>artur</string>
+			<key>summary</key>
+			<string>Lea's right</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIEZvciBvbmNlLCB5
+			b3UgbWlnaHQgYmUgbWFraW5nIHNlbnNlIExlYS4gQW5kIGJ5IHRo
+			ZSB3YXksXApjb25ncmF0dWxhdGlvbnMgb24gcGFzc2luZyB5b3Vy
+			IGZpbmFsLiBIZXJlIHdlIGdvLn0=
 			</data>
 		</dict>
 	</array>
 	<key>shipSprite</key>
-	<string>ship2.png</string>
+	<string>ship-hammer-64.png</string>
 	<key>spawners</key>
 	<array>
 		<dict>

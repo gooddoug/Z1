@@ -4,6 +4,8 @@
 <dict>
 	<key>backgroundMusic</key>
 	<string>music-new-a-thousand-new-paths.mp3</string>
+	<key>destinationImage</key>
+	<string>planet-prison-256.png</string>
 	<key>effects</key>
 	<array>
 		<dict>
@@ -18,11 +20,85 @@
 	<key>id</key>
 	<string>1</string>
 	<key>name</key>
-	<string>Level 1</string>
+	<string>Training Day</string>
 	<key>nextLevel</key>
 	<string>2</string>
-    <key>destinationImage</key>
-    <string>planet-prison-256.png</string>
+	<key>postLevelScripts</key>
+	<array>
+		<dict>
+			<key>actor</key>
+			<string>lea</string>
+			<key>summary</key>
+			<string>?</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
+			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
+			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
+			IFRlbGwgbWUgdGhhdCBsYXN0IGJpdCB3YXNuJ3QgcGFydCBvZiB0
+			aGUgdGVzdD99
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>artur</string>
+			<key>summary</key>
+			<string>no</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
+			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
+			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
+			IFRoYXQncyBhIG5lZ2F0aXZlLiBJIHdhcyBhbmFseXppbmcgdGhl
+			aXIgRVBTIChlbGVjdHJvbmljIHByb2ZpbGVcCnNpZ25hdHVyZSkg
+			d2hpbGUgeW91IHdlcmUgZG9pbmcgdGhhdCBuaWNlIGppbmsgYmFj
+			ayB0aGVyZS59
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>lea</string>
+			<key>summary</key>
+			<string>match</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
+			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
+			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
+			IE1hdGNoIGxvb2tzIGNvbXBsZXRlLiBBZGFtYWg/IFdoYXQgdGhl
+			IGhlY2sgYXJlIHRoZSBBZGEncyBkb2luZ1wKb3V0IGhlcmU/IEkg
+			dGhvdWdodCB0aGV5IHNwZW5kIGFsbCB0aGVpciB0aW1lIGNydXNh
+			ZGluZyBhZ2FpbnN0XApTaG9yaW5pIFNvcmFuP30=
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>artur</string>
+			<key>summary</key>
+			<string>?</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
+			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
+			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
+			IFdobydzIHRvIHNheSB3aXRoIFRoZSBPcmRlciBvZiBBZGFtYWgu
+			IEknbSBqdXN0IGEgcGlsb3QuIEkganVzdFwKa25vdyBob3cgdG8g
+			c2hvb3Qgc3R1ZmYufQ==
+			</data>
+		</dict>
+	</array>
 	<key>preLevelScripts</key>
 	<array>
 		<dict>
@@ -32,17 +108,18 @@
 			<string>1-1</string>
 			<key>text</key>
 			<data>
-			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
-			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
-			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
-			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
-			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			ICJJIGRyZWFtZWQgYSB0aG91c2FuZCBuZXcgcGF0aHMuIEkgd29r
-			ZSBhbmQgd2Fsa2VkIG15IG9sZCBvbmUuIlwKTXkgZGFkIGxvdmVz
-			IGhpcyBwcm92ZXJicy5cCkhvdyBkb2VzIGhlIHNuZWFrIHRoZXNl
-			IG9uIGJvYXJkIGFuZCB3aGF0IGRvZXMgaXQgaGF2ZSB0byBkbyB3
-			aXRoXApteSBmaW5hbCB0ZXN0P30=
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwICJJIGRyZWFtZWQg
+			YSB0aG91c2FuZCBuZXcgcGF0aHMuIEkgd29rZSBhbmQgd2Fsa2Vk
+			IG15IG9sZCBvbmUuIlwKTXkgZGFkIGxvdmVzIGhpcyBwcm92ZXJi
+			cy4gSG93IGRvZXMgaGUgc25lYWsgdGhlc2Ugb24gYm9hcmQgYW5k
+			XAp3aGF0IGRvZXMgaXQgaGF2ZSB0byBkbyB3aXRoIG15IGZpbmFs
+			IHRlc3Q/fQ==
 			</data>
 		</dict>
 		<dict>

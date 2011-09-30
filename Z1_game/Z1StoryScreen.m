@@ -64,7 +64,6 @@
         pressKeyLabel.opacity = 0.0;
         CCFadeIn* fadeAction = [CCFadeIn actionWithDuration:1.0];
         CCDelayTime* delayAction = [CCDelayTime actionWithDuration:4.5];
-        CCCallFunc* moveOnAction = [CCCallFunc actionWithTarget:self selector:@selector(moveOn:)];
         CCDelayTime* delay10Action = [CCDelayTime actionWithDuration:10];
         [pressKeyLabel runAction:[CCSequence actions:delayAction, fadeAction, delay10Action, nil]];
         [self addChild:pressKeyLabel z:10];

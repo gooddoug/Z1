@@ -49,6 +49,11 @@
             NSLog(@"can't find the level");
         }
         NSDictionary* levelDescription = [NSDictionary dictionaryWithContentsOfFile:levelPath];
+        // background music
+        NSString* backgroundMusicName = [levelDescription objectForKey:@"backgroundMusic"];
+        if(!backgroundMusicName)
+            backgroundMusicName = @"Run_3_minute_edit.mp3";
+        [[GDSoundsManager sharedSoundsManager] playMusicFromFilename:backgroundMusicName];
         
         self.gameScene = [Z1GameScreen sceneWithDictionary:levelDescription];
         self.scriptIndex = 0;
@@ -164,6 +169,13 @@
     {
         CCMoveBy* moveAction = [CCMoveBy actionWithDuration:0.5 position:ccp(0.0, dialogSize.height + padding)];
         [aChatNode runAction:moveAction];
+        for (CCSprite* aSprite in aChatNode.children) 
+        {
+            float op = aSprite.opacity - 20;
+            if (op < 0) 
+                op = 0.0;
+            aSprite.opacity = op;
+        }
         
     }
     

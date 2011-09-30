@@ -25,6 +25,9 @@
 @property (nonatomic, retain) NSArray* spawners;
 @property float time;
 @property int spawnerIndex;
+@property int scriptIndex;
+@property (nonatomic, retain) NSArray* postScripts;
+@property (nonatomic, retain) NSMutableArray* scriptNodes;
 @property (nonatomic, retain) Z1GameOverOverlay* gameOverScreen;
 @property (nonatomic, retain) CCLabelAtlas* scoreLabel;
 @property BOOL started;
@@ -38,13 +41,14 @@
 - (void) resolvePlayerCollision;
 - (void) handleInput:(ccTime)dt;
 - (void) checkSpawners:(ccTime)dt;
+- (void) nextScript:(id)sender;
 
 @end
 
 @implementation Z1GameScreen
 
 @synthesize inputManager = _inputManager, playerSprite = _playerSprite, enemySprites = _enemySprites;
-@synthesize playerShots = _playerShots, effects = _effects, time = _time, spawnerIndex = _spawnerIndex, started = _started;
+@synthesize playerShots = _playerShots, effects = _effects, time = _time, spawnerIndex = _spawnerIndex, started = _started, scriptIndex = _scriptIndex, postScripts = _postScripts, scriptNodes = _scriptNodes;
 
 @synthesize levelDescription = _levelDescription, backgroundSprite = _backgroundSprite, spawners = _spawners, gameOverScreen = _gameOverScreen, gameOver = _gameOver, scoreLabel = _scoreLabel;
 
@@ -80,6 +84,8 @@
     [_effects release];
     [_levelDescription release];
     [_backgroundSprite release];
+    [_postScripts release];
+    [_scriptNodes release];
     
     [super dealloc];
 }
@@ -107,6 +113,7 @@
         self.inputManager = [[[GDInputManager alloc] init] autorelease];
         [self scheduleUpdate];
         self.enemySprites = [NSMutableArray array];
+        self.scriptNodes = [NSMutableArray array];
         self.playerShots = [NSMutableSet set];
                 
         self.levelDescription = levelDict;
@@ -140,6 +147,8 @@
         self.effects = tempEffects;
         self.spawners = [self.levelDescription objectForKey:@"spawners"];
         
+        self.postScripts = [self.levelDescription objectForKey:@"postLevelScripts"];
+        
         // 
         CCTexture2DPixelFormat currentFormat = [CCTexture2D defaultAlphaPixelFormat];
 		[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
@@ -164,6 +173,16 @@
     if (self.started) 
     {
         return [self.inputManager handleKeyUp:event];
+    }
+    if (self.gameOver)
+    {
+        unsigned char key = [event keyCode];
+        if (key == 53)
+        {
+            // skip
+            [self endLevel:self];
+        }
+        [self nextScript:self];
     }
     return NO;
 }
@@ -415,6 +434,7 @@
         {
             if (!self.gameOver)
             {
+                self.effects = nil;
                 [self showDestination];
             }
         }
@@ -429,6 +449,13 @@
     {
         return;
     }
+    for (CCParticleSystem* anEffect in _effects) 
+    {
+        //[self removeChild:anEffect cleanup:YES];
+        if ([anEffect respondsToSelector:@selector(setDuration:)])
+            [anEffect setDuration:1.0];
+    }
+    
     NSArray* temp = [effects retain];
     [_effects release];
     _effects = temp;
@@ -479,16 +506,12 @@
 - (void) startLevel
 {
     self.started = YES;
-    // background music
-    NSString* backgroundMusicName = [self.levelDescription objectForKey:@"backgroundMusic"];
-    if(!backgroundMusicName)
-        backgroundMusicName = @"Run_3_minute_edit.mp3";
-    [[GDSoundsManager sharedSoundsManager] playMusicFromFilename:backgroundMusicName];
 }
 
 - (void) showDestination
 {
     self.started = NO;
+    self.gameOver = YES;
     NSString* destImageName = [self.levelDescription objectForKey:@"destinationImage"];
     if (!destImageName)
     {
@@ -504,7 +527,7 @@
     CCScaleTo* scale2Action = [CCScaleTo actionWithDuration:1.0 scale:1.0];
     CCScaleTo* scale3Action = [CCScaleTo actionWithDuration:1.5 scale:1.5];
     CCDelayTime* delayAction = [CCDelayTime actionWithDuration:4];
-    CCCallFunc* endAction = [CCCallFunc actionWithTarget:self selector:@selector(endLevel:)];
+    CCCallFunc* endAction = [CCCallFunc actionWithTarget:self selector:@selector(nextScript:)];
     [destination runAction:[CCSequence actions:scale1Action, scale2Action, scale3Action, delayAction, endAction, nil]];
     [self addChild:destination z:15];
     //wait and zoom the player in...
@@ -521,5 +544,55 @@
 {
     [[Z1LevelManager sharedLevelManager] moveToNextLevel];
 }
+
+- (void) nextScript:(id)sender
+{
+    if (self.scriptIndex >= [self.postScripts count]) 
+    {
+        [self endLevel:self];
+        return;
+    }
+    NSDictionary* currentScript = [self.postScripts objectAtIndex:self.scriptIndex];
+    if (!currentScript)
+    {
+        [self endLevel:self];
+        return;
+    }
+    // create the node that will hold everything
+    CCNode* chatNode = [CCNode node];
+    CCSprite* chatBackground = [CCSprite spriteWithFile:@"dialog-boxes.png"];
+    CCSprite* actorSprite = [CCSprite spriteWithFile:[NSString stringWithFormat:@"head-%@.png", [currentScript objectForKey:@"actor"]]];
+    NSString* text = [[[[NSAttributedString alloc] initWithData:[currentScript objectForKey:@"text"] options:nil documentAttributes:nil error:nil] autorelease] string];
+    CCLabelTTF* textLabel = [CCLabelTTF labelWithString:text fontName:@"Lucida Grande" fontSize:18.0];
+    float padding = 10.0;
+    CGSize dialogSize = [chatBackground contentSize];
+    CGSize actorSize = [actorSprite contentSize];
+    CGSize nodeSize = CGSizeMake(dialogSize.width + actorSize.width + padding, dialogSize.height);
+    [chatNode setContentSize:nodeSize];
+    chatBackground.position = ccp((dialogSize.width / 2) + actorSize.width + padding, dialogSize.height / 2);
+    actorSprite.position = ccp(actorSize.width / 2, dialogSize.height / 2);
+    textLabel.position = ccp((dialogSize.width / 2) + actorSize.width + padding + padding, (dialogSize.height / 2) + padding);
+    [chatNode addChild:chatBackground z:1];
+    [chatNode addChild:actorSprite];
+    [chatNode addChild:textLabel z:2];
+    chatNode.position = ccp(50.0, 100.0);
+    
+    for (CCNode* aChatNode in self.scriptNodes) 
+    {
+        CCMoveBy* moveAction = [CCMoveBy actionWithDuration:0.5 position:ccp(0.0, dialogSize.height + padding)];
+        [aChatNode runAction:moveAction];
+        
+    }
+    
+    chatNode.visible = NO;
+    CCToggleVisibility* visibility = [CCToggleVisibility action];
+    CCDelayTime* delay = [CCDelayTime actionWithDuration:0.6];
+    [chatNode runAction:[CCSequence actions:delay, visibility, nil]];
+    
+    [self.scriptNodes addObject:chatNode];
+    [self addChild:chatNode z:200];    
+    self.scriptIndex++;
+}
+
 
 @end
