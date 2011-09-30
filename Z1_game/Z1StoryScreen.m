@@ -37,7 +37,7 @@
     {        
         self.isKeyboardEnabled = YES;
         self.isMouseEnabled = YES;
-        [[GDSoundsManager sharedSoundsManager] playSoundForName:@"junivision"];
+        //[[GDSoundsManager sharedSoundsManager] playSoundForName:@"junivision"];
         
         CGSize size = [[CCDirector sharedDirector] winSize];
 		CCSprite* background = [CCSprite spriteWithFile:@"main-menu-night.png"];

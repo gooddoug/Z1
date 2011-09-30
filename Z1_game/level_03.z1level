@@ -4,19 +4,45 @@
 <dict>
 	<key>backgroundMusic</key>
 	<string>Run_3_minute_edit.mp3</string>
+	<key>destinationImage</key>
+	<string>planet-prison-256.png</string>
 	<key>effects</key>
 	<array>
 		<dict>
 			<key>name</key>
 			<string>GDParticleFog</string>
 		</dict>
+		<dict>
+			<key>name</key>
+			<string>GDParticleStarfield</string>
+		</dict>
 	</array>
 	<key>id</key>
-	<string>1</string>
+	<string>3</string>
 	<key>name</key>
-	<string>simple_test</string>
+	<string>Escort</string>
 	<key>nextLevel</key>
 	<string>2</string>
+	<key>postLevelScripts</key>
+	<array>
+		<dict>
+			<key>actor</key>
+			<string>artur</string>
+			<key>summary</key>
+			<string>?</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
+			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
+			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
+			IE5ldmVyIGdvbm5hIGdpdmUsIG5ldmVyIGdvbm5hIGdpdmVcJzg1
+			XApnaXZlIHlvdSB1cH0=
+			</data>
+		</dict>
+	</array>
 	<key>preLevelScripts</key>
 	<array>
 		<dict>
@@ -32,8 +58,9 @@
 			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
 			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
 			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IFlvdSBtdXN0IGh1cnJ5IHRvIHlvdXIgc2hpcC5cClwKSSdsbCBt
-			aXNzIHlvdSF9
+			IE5ldmVyIGdvbm5hIGdpdmUgeW91IHVwXApOZXZlciBnb25uYSBs
+			ZXQgeW91IGRvd25cCk5ldmVyIGdvbm5hIHJ1biBhcm91bmQgYW5k
+			IGRlc2VydCB5b3V9
 			</data>
 		</dict>
 		<dict>
@@ -49,8 +76,7 @@
 			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
 			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
 			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IFRoZXJlJ3Mgbm8gdGltZSBmb3IgbXVzaHkgc3R1ZmYsIEkgaGF2
-			ZSB0byBzYXZlIGh1bWFuaXR5IX0=
+			IE5ldmVyIGdvbm5hIHNheSBnb29kYnllIX0=
 			</data>
 		</dict>
 	</array>
@@ -60,17 +86,17 @@
 	<array>
 		<dict>
 			<key>howLong</key>
-			<real>4</real>
+			<real>1</real>
 			<key>howMany</key>
-			<real>5</real>
+			<real>1</real>
 			<key>movementAnimation</key>
-			<string>SimpleSpiralInClockwise</string>
+			<string>FollowPlayer</string>
 			<key>rotation</key>
-			<string>90</string>
+			<string>0</string>
 			<key>speed</key>
 			<real>40</real>
 			<key>sprite</key>
-			<string>alien001_01_64.png</string>
+			<string>ship2.png</string>
 			<key>when</key>
 			<real>1</real>
 		</dict>

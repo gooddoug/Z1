@@ -7,15 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "cocos2d.h"
 
 @interface Z1Player : NSObject
 {
     int _score;
     int _lastLevel;
+    
+    CCSprite* _sprite;
 }
 
 @property int score;
 @property int lastLevel;
+@property (nonatomic, retain) CCSprite* sprite;
 
 + (Z1Player*) sharedPlayer;
 

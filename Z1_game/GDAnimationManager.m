@@ -7,7 +7,7 @@
 //
 
 #import "GDAnimationManager.h"
-
+#import "Z1Player.h"
 
 @implementation GDAnimationManager
 
@@ -210,6 +210,32 @@ static GDAnimationManager* _animationManager = nil;
              aSprite.rotation = aSprite.rotation - (dt * aSprite.speed);
              
          } forKey:@"SpiralOutCounterClockwiseAndCircle"];
+        
+        [blockDict setObject:^(ccTime dt, GDBasicSprite* aSprite)
+         {
+             if (![aSprite.animInfo boolValue]) 
+             {
+                 aSprite.anchorPoint = ccp( 0.5 , 6.8 );
+                 aSprite.animInfo = [NSNumber numberWithBool:YES];
+             }
+             float playerRot = [Z1Player sharedPlayer].sprite.rotation;
+             float escortRot = aSprite.rotation;
+             float diff = playerRot - escortRot;
+             
+             float rotFactor = 40 * dt;
+             float factor = (diff < 0.0) ? -1.0 : 1.0;
+             
+             
+             
+             if (abs(diff) > rotFactor)
+             {
+                 // rotate 20
+                 aSprite.rotation = aSprite.rotation + factor * rotFactor;
+             } else {
+                 aSprite.rotation = aSprite.rotation + diff;
+             }
+             
+         } forKey:@"FollowPlayer"];
         
         // log the names of the animations
         /*for (NSString* aKey in [blockDict keyEnumerator]) 

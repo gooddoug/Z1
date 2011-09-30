@@ -130,6 +130,7 @@
         self.playerSprite.position = ccp( size.width /2 , size.height/2 );
         
         [self addChild:self.playerSprite z:20];
+        [Z1Player sharedPlayer].sprite = self.playerSprite;
             
         /*NSString* backgroundName = [self.levelDescription objectForKey:@"background"];
         if (backgroundName)
@@ -393,6 +394,8 @@
 - (void) resolvePlayerCollision
 {
     CGRect playerRect = [self.playerSprite boundingBox];
+    CGPoint centerPlayer = CGPointMake(playerRect.origin.x + (playerRect.size.width / 2), playerRect.origin.y + (playerRect.size.height / 2));
+    float exSize = 25.0; // be smarter about this later
     
     // again simple brute force...
     for (GDBasicSprite* anEnemy in self.enemySprites) 
@@ -400,14 +403,20 @@
         CGRect enemyRect = [anEnemy boundingBox]; // get boundingBox to account for rotation and anchorPoint offset
         CGPoint centerEnemy = CGPointMake(enemyRect.origin.x + (enemyRect.size.width / 2), enemyRect.origin.y + (enemyRect.size.height / 2));
         // check whether the enemy's center is in the bounding box (makes for a small kill box for now)
-        if (CGRectContainsPoint(playerRect, centerEnemy))
+        float distX = abs(centerPlayer.x - centerEnemy.x);
+        if (distX <= exSize)
         {
-            NSLog(@"BOOM!");
-            anEnemy.dead = YES;
-            [self newExplosionAtPoint:centerEnemy];
-            CGPoint centerPlayer = CGPointMake(playerRect.origin.x + (playerRect.size.width/2), playerRect.origin.y + (playerRect.size.height / 2));
-            [self playerExplosionAtPoint:centerPlayer];
-            [self playerDied];
+            float distY = abs(centerPlayer.y - centerEnemy.y);
+            float dist = sqrtf((distX*distX) + (distY*distY));
+            if (dist <= exSize)
+            {
+                NSLog(@"BOOM!");
+                anEnemy.dead = YES;
+                [self newExplosionAtPoint:centerEnemy];
+                CGPoint centerPlayer = CGPointMake(playerRect.origin.x + (playerRect.size.width/2), playerRect.origin.y + (playerRect.size.height / 2));
+                [self playerExplosionAtPoint:centerPlayer];
+                [self playerDied];
+            }
         }
     }
 }
@@ -542,6 +551,7 @@
 
 - (void) endLevel:(id)sender
 {
+    [Z1Player sharedPlayer].sprite = nil;
     [[Z1LevelManager sharedLevelManager] moveToNextLevel];
 }
 

@@ -10,7 +10,7 @@
 
 @implementation Z1Player
 
-@synthesize score = _score;
+@synthesize score = _score, sprite = _sprite;
 
 static Z1Player* _staticPlayer = nil;
 
@@ -31,6 +31,13 @@ static Z1Player* _staticPlayer = nil;
                                    [NSNumber numberWithInt:0], @"score",
                                    nil];
     [defaults registerDefaults:defaultValues];
+}
+
+- (void) dealloc
+{
+    [_sprite release];
+    
+    [super dealloc];
 }
 
 - (id)init
