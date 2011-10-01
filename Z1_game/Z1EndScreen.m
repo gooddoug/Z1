@@ -42,6 +42,9 @@
 {
 	if(( self = [self initWithEffectNames:[NSArray array]] )) 
     {        
+        NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setBool:YES forKey:@"gameFinished"];
+        
         self.isKeyboardEnabled = YES;
         self.isMouseEnabled = YES;
         [[GDSoundsManager sharedSoundsManager] stopPlayingMusic];

@@ -187,6 +187,7 @@
 		EF95B38C14379B8F0098EFAC /* ship-adamah-64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF95B38B14379B8F0098EFAC /* ship-adamah-64.png */; };
 		EF95B38F14379BA90098EFAC /* ship-shorini-soran-64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF95B38D14379BA90098EFAC /* ship-shorini-soran-64.png */; };
 		EF95B39014379BA90098EFAC /* ship-unit21-64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF95B38E14379BA90098EFAC /* ship-unit21-64.png */; };
+		EF95B3921437D2B80098EFAC /* head-sy-siya.png in Resources */ = {isa = PBXBuildFile; fileRef = EF95B3911437D2B80098EFAC /* head-sy-siya.png */; };
 		EF9EAD10142F933300FEE580 /* Z1_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = EF9EAD0F142F933300FEE580 /* Z1_icon.icns */; };
 		EF9EAD12142F938900FEE580 /* Z1_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = EF9EAD11142F938900FEE580 /* Z1_icon.icns */; };
 		EF9EAE911431A56700FEE580 /* GDSpriteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EAE901431A56700FEE580 /* GDSpriteButton.m */; };
@@ -505,6 +506,7 @@
 		EF95B38B14379B8F0098EFAC /* ship-adamah-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ship-adamah-64.png"; sourceTree = "<group>"; };
 		EF95B38D14379BA90098EFAC /* ship-shorini-soran-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ship-shorini-soran-64.png"; sourceTree = "<group>"; };
 		EF95B38E14379BA90098EFAC /* ship-unit21-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ship-unit21-64.png"; sourceTree = "<group>"; };
+		EF95B3911437D2B80098EFAC /* head-sy-siya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "head-sy-siya.png"; sourceTree = "<group>"; };
 		EF9EAD0F142F933300FEE580 /* Z1_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Z1_icon.icns; sourceTree = "<group>"; };
 		EF9EAD11142F938900FEE580 /* Z1_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Z1_icon.icns; sourceTree = "<group>"; };
 		EF9EAE8F1431A56700FEE580 /* GDSpriteButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSpriteButton.h; sourceTree = "<group>"; };
@@ -764,6 +766,7 @@
 			children = (
 				EF836A4E142F01C7009EBFF6 /* head-albert.png */,
 				EF836A4F142F01C7009EBFF6 /* head-artur-clone.png */,
+				EF95B3911437D2B80098EFAC /* head-sy-siya.png */,
 				EF836A50142F01C7009EBFF6 /* head-artur-hurt.png */,
 				EF836A51142F01C7009EBFF6 /* head-artur.png */,
 				EF836A52142F01C7009EBFF6 /* head-asha-ai.png */,
@@ -1639,6 +1642,7 @@
 				EF95B38C14379B8F0098EFAC /* ship-adamah-64.png in Resources */,
 				EF95B38F14379BA90098EFAC /* ship-shorini-soran-64.png in Resources */,
 				EF95B39014379BA90098EFAC /* ship-unit21-64.png in Resources */,
+				EF95B3921437D2B80098EFAC /* head-sy-siya.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

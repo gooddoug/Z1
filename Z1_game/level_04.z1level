@@ -10,6 +10,10 @@
 			<key>name</key>
 			<string>GDParticleFog</string>
 		</dict>
+		<dict>
+			<key>name</key>
+			<string>GDParticleStarfield</string>
+		</dict>
 	</array>
 	<key>id</key>
 	<string>4</string>
@@ -289,6 +293,43 @@
 			ZSBqdXN0IGJlY29tZSBhXApzaHV0dGxlIHB1a2UufQ==
 			</data>
 		</dict>
+		<dict>
+			<key>actor</key>
+			<string>artur</string>
+			<key>summary</key>
+			<string>04-08</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2MFx0eDI4ODBcdHgzNjAw
+			XHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4NjQ4MFx0eDcyMDBcdHg3
+			OTIwXHR4ODY0MFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2Yw
+			IEFydGZ1bCBEb2RnZXIgcmVwb3J0aW5nIHRvIFVuaXQgMjEuIEkn
+			bSBzdXBwb3NlZCB0b1wKZG8gYSBzY2FuIG9mIHRoZSBhcmVhLiBB
+			bnlvbmUgcmVzcG9uZGluZz99
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>artur</string>
+			<key>summary</key>
+			<string>04-09</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2MFx0eDI4ODBcdHgzNjAw
+			XHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4NjQ4MFx0eDcyMDBcdHg3
+			OTIwXHR4ODY0MFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2Yw
+			IFRoaXMgaXMgTGlldXRlbmFudC1Db21tYW5kZXIgQXJ0dXIhIEJy
+			ZWFrIG9mZiB5b3VyXAphdHRhY2ssIFVuaXQgMjEuIEJyZWFrIG9m
+			ZiB5b3VyIGF0dGFjayEgQnJlYWsgb2ZmIHlvdXJcCmF0dGFjayBv
+			ciBJIHdpbGwgYmUgZm9yY2VkIHRvIGRlZmVuZCBteXNlbGYhfQ==
+			</data>
+		</dict>
 	</array>
 	<key>shipSprite</key>
 	<string>ship-hammer-64.png</string>
@@ -296,107 +337,399 @@
 	<array>
 		<dict>
 			<key>howLong</key>
-			<real>4</real>
+			<real>8</real>
 			<key>howMany</key>
-			<real>5</real>
+			<real>12</real>
 			<key>movementAnimation</key>
-			<string>SimpleSpiralInClockwise</string>
+			<string>SimpleSpiralOutClockwise</string>
 			<key>rotation</key>
-			<string>90</string>
+			<string>0</string>
 			<key>speed</key>
-			<real>40</real>
+			<real>25</real>
 			<key>sprite</key>
-			<string>alien001_01_64.png</string>
+			<string>ship-unit21-64.png</string>
+			<key>startInside</key>
+			<true/>
 			<key>when</key>
-			<real>1</real>
+			<real>2</real>
 		</dict>
 		<dict>
 			<key>howLong</key>
-			<real>5</real>
+			<real>8</real>
 			<key>howMany</key>
-			<real>4</real>
+			<real>12</real>
 			<key>movementAnimation</key>
-			<string>SimpleSpiralInCounterClockwise</string>
+			<string>SimpleSpiralOutCounterClockwise</string>
 			<key>rotation</key>
-			<string>270</string>
+			<string>180</string>
 			<key>speed</key>
-			<real>80</real>
+			<real>25</real>
 			<key>sprite</key>
-			<string>alien001_01_64.png</string>
+			<string>ship-unit21-64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>4</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>10</real>
+			<key>howMany</key>
+			<real>16</real>
+			<key>movementAnimation</key>
+			<string>SimpleSpiralOutCounterClockwise</string>
+			<key>rotation</key>
+			<string>90</string>
+			<key>speed</key>
+			<real>60</real>
+			<key>sprite</key>
+			<string>ship-unit21-64.png</string>
+			<key>startInside</key>
+			<true/>
 			<key>when</key>
 			<real>10</real>
 		</dict>
 		<dict>
 			<key>howLong</key>
+			<real>12</real>
+			<key>howMany</key>
+			<real>16</real>
+			<key>movementAnimation</key>
+			<string>SimpleSpiralOutCounterClockwise</string>
+			<key>rotation</key>
+			<string>270</string>
+			<key>speed</key>
+			<real>64</real>
+			<key>sprite</key>
+			<string>ship-unit21-64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>12</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
 			<real>4</real>
 			<key>howMany</key>
-			<real>6</real>
+			<real>2</real>
 			<key>movementAnimation</key>
-			<string>SpiralOutClockwiseAndCircle</string>
+			<string>ZoomOut</string>
 			<key>rotation</key>
 			<string>45</string>
 			<key>speed</key>
-			<real>40</real>
+			<real>4</real>
 			<key>sprite</key>
-			<string>alien001_03_64.png</string>
+			<string>ship-unit21-64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
-			<real>5</real>
+			<real>22</real>
 		</dict>
 		<dict>
 			<key>howLong</key>
-			<real>1</real>
+			<real>4</real>
 			<key>howMany</key>
-			<real>1</real>
+			<real>2</real>
 			<key>movementAnimation</key>
 			<string>ZoomOut</string>
 			<key>rotation</key>
-			<string>60</string>
+			<string>135</string>
 			<key>speed</key>
-			<real>1</real>
+			<real>4</real>
 			<key>sprite</key>
-			<string>alien001_03_64.png</string>
+			<string>ship-unit21-64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
-			<real>17</real>
+			<real>22</real>
 		</dict>
 		<dict>
 			<key>howLong</key>
-			<real>1</real>
+			<real>4</real>
 			<key>howMany</key>
-			<real>1</real>
+			<real>2</real>
 			<key>movementAnimation</key>
 			<string>ZoomOut</string>
 			<key>rotation</key>
-			<string>75</string>
+			<string>225</string>
 			<key>speed</key>
-			<real>1</real>
+			<real>4</real>
 			<key>sprite</key>
-			<string>alien001_03_64.png</string>
+			<string>ship-unit21-64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
-			<real>18</real>
+			<real>22</real>
 		</dict>
 		<dict>
 			<key>howLong</key>
-			<real>1</real>
+			<real>4</real>
 			<key>howMany</key>
-			<real>1</real>
+			<real>2</real>
+			<key>movementAnimation</key>
+			<string>ZoomOut</string>
+			<key>rotation</key>
+			<string>315</string>
+			<key>speed</key>
+			<real>4</real>
+			<key>sprite</key>
+			<string>ship-unit21-64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>22</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>4</real>
+			<key>howMany</key>
+			<real>2</real>
+			<key>movementAnimation</key>
+			<string>ZoomOut</string>
+			<key>rotation</key>
+			<string>0</string>
+			<key>speed</key>
+			<real>8</real>
+			<key>sprite</key>
+			<string>ship-unit21-64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>23</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>4</real>
+			<key>howMany</key>
+			<real>2</real>
 			<key>movementAnimation</key>
 			<string>ZoomOut</string>
 			<key>rotation</key>
 			<string>90</string>
 			<key>speed</key>
-			<real>1</real>
+			<real>8</real>
 			<key>sprite</key>
-			<string>alien001_03_64.png</string>
+			<string>ship-unit21-64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
-			<real>19</real>
+			<real>23</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>4</real>
+			<key>howMany</key>
+			<real>2</real>
+			<key>movementAnimation</key>
+			<string>ZoomOut</string>
+			<key>rotation</key>
+			<string>180</string>
+			<key>speed</key>
+			<real>8</real>
+			<key>sprite</key>
+			<string>ship-unit21-64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>23</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>4</real>
+			<key>howMany</key>
+			<real>2</real>
+			<key>movementAnimation</key>
+			<string>ZoomOut</string>
+			<key>rotation</key>
+			<string>270</string>
+			<key>speed</key>
+			<real>8</real>
+			<key>sprite</key>
+			<string>ship-unit21-64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>23</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>15</real>
+			<key>howMany</key>
+			<real>10</real>
+			<key>movementAnimation</key>
+			<string>SpiralOutClockwiseAndCircle</string>
+			<key>rotation</key>
+			<string>12</string>
+			<key>speed</key>
+			<real>35</real>
+			<key>sprite</key>
+			<string>ship-unit21-64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>24</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>16</real>
+			<key>howMany</key>
+			<real>12</real>
+			<key>movementAnimation</key>
+			<string>SpiralOutCounterClockwiseAndCircle</string>
+			<key>rotation</key>
+			<string>212</string>
+			<key>speed</key>
+			<real>40</real>
+			<key>sprite</key>
+			<string>ship-unit21-64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>30</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>4</real>
+			<key>howMany</key>
+			<real>2</real>
+			<key>movementAnimation</key>
+			<string>ZoomOut</string>
+			<key>rotation</key>
+			<string>0</string>
+			<key>speed</key>
+			<real>4</real>
+			<key>sprite</key>
+			<string>ship-unit21-64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>31</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>4</real>
+			<key>howMany</key>
+			<real>2</real>
+			<key>movementAnimation</key>
+			<string>ZoomOut</string>
+			<key>rotation</key>
+			<string>90</string>
+			<key>speed</key>
+			<real>4</real>
+			<key>sprite</key>
+			<string>ship-unit21-64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>31</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>4</real>
+			<key>howMany</key>
+			<real>2</real>
+			<key>movementAnimation</key>
+			<string>ZoomOut</string>
+			<key>rotation</key>
+			<string>180</string>
+			<key>speed</key>
+			<real>4</real>
+			<key>sprite</key>
+			<string>ship-unit21-64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>31</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>4</real>
+			<key>howMany</key>
+			<real>2</real>
+			<key>movementAnimation</key>
+			<string>ZoomOut</string>
+			<key>rotation</key>
+			<string>270</string>
+			<key>speed</key>
+			<real>4</real>
+			<key>sprite</key>
+			<string>ship-unit21-64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>31</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>4</real>
+			<key>howMany</key>
+			<real>2</real>
+			<key>movementAnimation</key>
+			<string>ZoomOut</string>
+			<key>rotation</key>
+			<string>45</string>
+			<key>speed</key>
+			<real>8</real>
+			<key>sprite</key>
+			<string>ship-unit21-64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>32</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>4</real>
+			<key>howMany</key>
+			<real>2</real>
+			<key>movementAnimation</key>
+			<string>ZoomOut</string>
+			<key>rotation</key>
+			<string>135</string>
+			<key>speed</key>
+			<real>7</real>
+			<key>sprite</key>
+			<string>ship-unit21-64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>32</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>4</real>
+			<key>howMany</key>
+			<real>2</real>
+			<key>movementAnimation</key>
+			<string>ZoomOut</string>
+			<key>rotation</key>
+			<string>225</string>
+			<key>speed</key>
+			<real>6</real>
+			<key>sprite</key>
+			<string>ship-unit21-64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>32</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>10</real>
+			<key>howMany</key>
+			<real>2</real>
+			<key>movementAnimation</key>
+			<string>ZoomOut</string>
+			<key>rotation</key>
+			<string>315</string>
+			<key>speed</key>
+			<real>5</real>
+			<key>sprite</key>
+			<string>ship-unit21-64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>32</real>
 		</dict>
 	</array>
 </dict>

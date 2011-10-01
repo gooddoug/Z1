@@ -40,6 +40,8 @@
         self.howLong = [[inDict objectForKey:@"howLong"] intValue];
         self.howMany = [[inDict objectForKey:@"howMany"] intValue];
         self.movementAnimation = [[GDAnimationManager sharedAnimationManager] movementAnimationForKey:[inDict objectForKey:@"movementAnimation"]];
+        if (!self.movementAnimation)
+            NSLog(@"No animation found for %@", [inDict objectForKey:@"movementAnimation"]);
         self.spriteSpeed = [[inDict objectForKey:@"speed"] floatValue];
         if([inDict objectForKey:@"x"])
             self.position = ccp([[inDict objectForKey:@"x"] floatValue], [[inDict objectForKey:@"y"] floatValue]);
