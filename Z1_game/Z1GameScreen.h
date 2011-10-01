@@ -24,6 +24,7 @@
     int _scriptIndex;
     BOOL _started;
     BOOL _gameOver;
+    BOOL _wait;
     
     NSArray* _effects;
     NSDictionary* _levelDescription;
@@ -36,6 +37,7 @@
 }
 
 @property (nonatomic, retain) NSDictionary* levelDescription;
+@property BOOL wait;
 
 +(CCScene*) scene;
 + (CCScene*) sceneWithDictionary:(NSDictionary*)levelDict;

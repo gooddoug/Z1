@@ -19,6 +19,7 @@
     
     GDSpriteButton* _skipButton;
     CCScene* _gameScene;
+    BOOL _wait;
 }
 
 @property (nonatomic, retain) NSArray* scripts;
@@ -26,6 +27,7 @@
 @property int scriptIndex;
 @property (nonatomic, retain) GDSpriteButton* skipButton;
 @property (nonatomic, retain) CCScene* gameScene;
+@property BOOL wait;
 
 +(CCScene *) sceneWithFile:(NSString*)inName;
 

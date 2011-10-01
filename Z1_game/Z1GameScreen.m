@@ -48,7 +48,7 @@
 @implementation Z1GameScreen
 
 @synthesize inputManager = _inputManager, playerSprite = _playerSprite, enemySprites = _enemySprites;
-@synthesize playerShots = _playerShots, effects = _effects, time = _time, spawnerIndex = _spawnerIndex, started = _started, scriptIndex = _scriptIndex, postScripts = _postScripts, scriptNodes = _scriptNodes;
+@synthesize playerShots = _playerShots, effects = _effects, time = _time, spawnerIndex = _spawnerIndex, started = _started, wait = _wait, scriptIndex = _scriptIndex, postScripts = _postScripts, scriptNodes = _scriptNodes;
 
 @synthesize levelDescription = _levelDescription, backgroundSprite = _backgroundSprite, spawners = _spawners, gameOverScreen = _gameOverScreen, gameOver = _gameOver, scoreLabel = _scoreLabel;
 
@@ -521,6 +521,7 @@
 {
     self.started = NO;
     self.gameOver = YES;
+    self.wait = NO;
     NSString* destImageName = [self.levelDescription objectForKey:@"destinationImage"];
     if (!destImageName)
     {
@@ -536,7 +537,10 @@
     CCScaleTo* scale2Action = [CCScaleTo actionWithDuration:1.0 scale:1.0];
     CCScaleTo* scale3Action = [CCScaleTo actionWithDuration:1.5 scale:1.5];
     CCDelayTime* delayAction = [CCDelayTime actionWithDuration:4];
-    CCCallFunc* endAction = [CCCallFunc actionWithTarget:self selector:@selector(nextScript:)];
+    CCCallBlock* endAction = [CCCallBlock actionWithBlock:^{
+        self.wait = NO;
+        [self nextScript:self];
+    }];
     [destination runAction:[CCSequence actions:scale1Action, scale2Action, scale3Action, delayAction, endAction, nil]];
     [self addChild:destination z:15];
     //wait and zoom the player in...
@@ -557,6 +561,8 @@
 
 - (void) nextScript:(id)sender
 {
+    if (self.wait)
+        return;
     if (self.scriptIndex >= [self.postScripts count]) 
     {
         [self endLevel:self];
@@ -568,6 +574,7 @@
         [self endLevel:self];
         return;
     }
+    self.wait = YES;
     [[GDSoundsManager sharedSoundsManager] playSoundForName:@"dialog_display"];
     
     // create the node that will hold everything
@@ -599,7 +606,10 @@
     chatNode.visible = NO;
     CCToggleVisibility* visibility = [CCToggleVisibility action];
     CCDelayTime* delay = [CCDelayTime actionWithDuration:0.6];
-    [chatNode runAction:[CCSequence actions:delay, visibility, nil]];
+    CCCallBlock* done = [CCCallBlock actionWithBlock:^{
+        self.wait = NO;
+    }];
+    [chatNode runAction:[CCSequence actions:delay, visibility, done, nil]];
     
     [self.scriptNodes addObject:chatNode];
     [self addChild:chatNode z:200];    

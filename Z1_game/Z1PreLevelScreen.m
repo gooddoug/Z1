@@ -12,7 +12,7 @@
 
 @implementation Z1PreLevelScreen
 
-@synthesize scripts = _scripts, scriptIndex = _scriptIndex, scriptNodes = _scriptNodes, skipButton = _skipButton, gameScene = _gameScene;
+@synthesize scripts = _scripts, scriptIndex = _scriptIndex, scriptNodes = _scriptNodes, skipButton = _skipButton, gameScene = _gameScene, wait = _wait;
 
 +(CCScene *) sceneWithFile:(NSString*)inName
 {
@@ -139,6 +139,8 @@
 
 - (void) nextScript
 {
+    if (self.wait)
+        return;
     if (self.scriptIndex >= [self.scripts count]) 
     {
         [self done:self];
@@ -150,6 +152,7 @@
         [self done:self];
         return;
     }
+    self.wait = YES;
     [[GDSoundsManager sharedSoundsManager] playSoundForName:@"dialog_display"];
     // create the node that will hold everything
     CCNode* chatNode = [CCNode node];
@@ -187,7 +190,10 @@
     chatNode.visible = NO;
     CCToggleVisibility* visibility = [CCToggleVisibility action];
     CCDelayTime* delay = [CCDelayTime actionWithDuration:0.6];
-    [chatNode runAction:[CCSequence actions:delay, visibility, nil]];
+    CCCallBlock* done = [CCCallBlock actionWithBlock:^{
+        self.wait = NO;
+    }];
+    [chatNode runAction:[CCSequence actions:delay, visibility, done, nil]];
     
     [self.scriptNodes addObject:chatNode];
     [self addChild:chatNode z:5];    
