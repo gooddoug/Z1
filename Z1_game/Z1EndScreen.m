@@ -8,6 +8,7 @@
 
 #import "Z1EndScreen.h"
 #import "Z1MenuScreen.h"
+#import "Z1Player.h"
 #import "GDSoundsManager.h"
 
 @interface Z1EndScreen ()
@@ -81,6 +82,7 @@
 - (void) moveOn:(id)sender
 {
     self.movedOn = YES;
+    [[Z1Player sharedPlayer] resetPlayer];
     CCTransitionScene* trans = [CCTransitionFade transitionWithDuration:1 scene:[Z1MenuScreen scene] withColor:ccWHITE];
     [[CCDirector sharedDirector] replaceScene:trans];
 }

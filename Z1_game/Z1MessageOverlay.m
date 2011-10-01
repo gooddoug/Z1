@@ -7,6 +7,7 @@
 //
 
 #import "Z1MessageOverlay.h"
+#import "Z1MenuScreen.h"
 #import "GDSoundsManager.h"
 
 @interface Z1MessageOverlay ()
@@ -18,13 +19,14 @@
 
 @implementation Z1MessageOverlay
 
-@synthesize showing = _showing, textSprite = _textSprite, text = _text;
+@synthesize showing = _showing, textSprite = _textSprite, text = _text, animating = _animating;
 
 - (id) initWithText:(NSString*)inMessage
 {
     if (( self = [super init] ))
     {
         self.showing = NO;
+        self.animating = NO;
         self.text = inMessage;
     }
     return self;
@@ -57,8 +59,9 @@
 
 - (void) show
 {
-    if (self.showing)
+    if (self.showing || self.animating)
         return;
+    self.animating = YES;
     [[GDSoundsManager sharedSoundsManager] playMusicForSceneNamed:@"credits"];
     float howLong = 1.0;
     CCMoveBy* moveAnimation = [CCMoveBy actionWithDuration:howLong position:ccp(0.0, -(self.monitor.contentSize.height + 200))];
@@ -69,7 +72,10 @@
     textSprite.opacity = 0.0;
     CCFadeIn* fadeInAction = [CCFadeIn actionWithDuration:0.25];
     CCDelayTime* delayAction = [CCDelayTime actionWithDuration:howLong];
-    CCSequence* action = [CCSequence actionsWithArray:[NSArray arrayWithObjects:delayAction, fadeInAction, nil]];
+    CCCallBlock* doneAction = [CCCallBlock actionWithBlock:^{
+        self.animating = NO;
+    }];
+    CCSequence* action = [CCSequence actionsWithArray:[NSArray arrayWithObjects:delayAction, fadeInAction, doneAction, nil]];
     [textSprite runAction:action];
     self.textSprite = textSprite;
     [self addChild:self.textSprite z:220];
@@ -77,12 +83,18 @@
 
 - (void) hide
 {
-    if (!self.showing)
+    if ((!self.showing) || self.animating)
         return;
+    self.animating = YES;
     [[GDSoundsManager sharedSoundsManager] playMusicForSceneNamed:@"mainMenu"];
     float howLong = 1.0;
     CCMoveBy* moveAnimation = [CCMoveBy actionWithDuration:howLong position:ccp(0.0, self.monitor.contentSize.height + 200)];
-    [self.monitor runAction:moveAnimation];
+    CCCallBlock* doneAction = [CCCallBlock actionWithBlock:^{
+        self.animating = NO;
+        Z1MenuScreen* menu = (Z1MenuScreen*)self.parent;
+        menu.doingSomething = NO;
+    }];
+    [self.monitor runAction:[CCSequence actions:moveAnimation, doneAction, nil]];
     self.showing = NO;
     [self removeChild:self.textSprite cleanup:YES];
 }

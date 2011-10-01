@@ -261,7 +261,7 @@
 		</dict>
 	</array>
 	<key>shipSprite</key>
-	<string>ship-hammer-64.png</string>
+	<string>ship-ladyhawk-64.png</string>
 	<key>spawners</key>
 	<array>
 		<dict>

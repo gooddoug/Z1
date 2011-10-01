@@ -40,7 +40,7 @@
             float y = (arc4random() % (int)size.height) + ((arc4random() % 100) * 0.01);
             float blinkOnDelay = (arc4random() % 5) + ((arc4random() % 100) * 0.01);
             float blinkOffDelay = (arc4random() % 2) + ((arc4random() % 100) * 0.01);
-            float scale = (float)(arc4random() % 10) * 0.025;
+            float scale = (float)(arc4random() % 10) * 0.02;
             BOOL visible = (arc4random() % 4) < 3;
             aStar.position = ccp(x, y);
             aStar.scale = scale;

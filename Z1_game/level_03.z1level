@@ -84,16 +84,17 @@
 			<string>03-11</string>
 			<key>text</key>
 			<data>
-			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
-			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
-			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
-			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
-			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IERyIEh3YW4uIExldCB1cyBkaXNwZWwgd2l0aCB0aGUgZm9ybWFs
-			aXRpZXMuIFRoZSBaMSBQcm9qZWN0IGlzXAp0aHJlZSB0aW1lcyBv
-			dmVyIGJ1ZGdldC4gWW91ciBhc3Npc3RhbnQncyBwcmVzZW50YXRp
-			b24gaGFzIG5vdFwKY2FsbWVkIGludmVzdG9yIGZlYXJzLn0=
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIERyLiBId2FuLiBM
+			ZXQgdXMgZGlzcGVsIHdpdGggdGhlIGZvcm1hbGl0aWVzLiBUaGUg
+			WjEgUHJvamVjdCBpc1wKdGhyZWUgdGltZXMgb3ZlciBidWRnZXQu
+			IFlvdXIgYXNzaXN0YW50J3MgcHJlc2VudGF0aW9uIGhhcyBub3Rc
+			CmNhbG0gaW52ZXN0b3IgZmVhcnMufQ==
 			</data>
 		</dict>
 		<dict>
@@ -260,8 +261,8 @@
 			bmsgeW91LCBidXQgSSBwcmVmZXIgdG8ga2VlcCBidXN5LiBUaGlz
 			IGlzXApuZWVkLXRvLWtub3cgYnV0IHdlJ3ZlIGdvdCBpbmNvbWlu
 			ZyBzdWl0cyBmcm9tIERyYWtlXApoZWFkcXVhcnRlcnMuIFN1Yi1j
-			b21tYW5kZXIgS2FuIFQtJ2l1IGhhcyBiZWVuIGtpbmQgZW5vdWdo
-			IHRvXAphc3NpZ24gbWUgYXMgb2ZmaWNpYWwgYmFieXNpdHRlci59
+			b21tYW5kZXIgS2FuIFQtJ2l1IGhhcyBhc3NpZ25lZCBtZSB0byBl
+			c2NvcnRcCnRoZWlyIHNoaXAgaW50byB0aGUgc3lzdGVtLn0=
 			</data>
 		</dict>
 		<dict>
@@ -291,15 +292,16 @@
 			<string>03-04</string>
 			<key>text</key>
 			<data>
-			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
-			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
-			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2MFx0eDI4ODBcdHgzNjAw
-			XHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4NjQ4MFx0eDcyMDBcdHg3
-			OTIwXHR4ODY0MFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2Yw
-			IFlvdSBjYW4gZmluZCBoaW0gaW4gdGhlIGFyYm9yZXR1bSB3aXRo
-			IExlYS4gVGhleSdyZSBoYXZpbmcgYVwKY2VsZWJyYXRvcnkgZGlu
-			bmVyLiBEb2N0b3IsIEkgd2FzIHdvbmRlcmluZyBpZi4uLj99
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2
+			MFx0eDI4ODBcdHgzNjAwXHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4
+			NjQ4MFx0eDcyMDBcdHg3OTIwXHR4ODY0MFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2YwIFlvdSBjYW4gZmlu
+			ZCBoaW0gaW4gdGhlIGFyYm9yZXR1bSB3aXRoIExlYS4gVGhleSdy
+			ZSBoYXZpbmcgYVwKY2VsZWJyYXRvcnkgZGlubmVyLiBEb2N0b3Is
+			IEkgd2FzIHdvbmRlcmluZyBpZj99
 			</data>
 		</dict>
 		<dict>
@@ -309,13 +311,14 @@
 			<string>03-05</string>
 			<key>text</key>
 			<data>
-			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
-			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
-			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2MFx0eDI4ODBcdHgzNjAw
-			XHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4NjQ4MFx0eDcyMDBcdHg3
-			OTIwXHR4ODY0MFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2Yw
-			IFlvdSB3ZXJlIHdvbmRlcmluZyBpZi4uLj99
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2
+			MFx0eDI4ODBcdHgzNjAwXHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4
+			NjQ4MFx0eDcyMDBcdHg3OTIwXHR4ODY0MFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2YwIFlvdSB3ZXJlIHdv
+			bmRlcmluZyBpZj99
 			</data>
 		</dict>
 		<dict>
@@ -363,19 +366,17 @@
 	<array>
 		<dict>
 			<key>howLong</key>
-			<real>40</real>
+			<real>4</real>
 			<key>howMany</key>
-			<real>15</real>
+			<real>5</real>
 			<key>movementAnimation</key>
-			<string>SimpleSpiralOutClockwise</string>
+			<string>SimpleSpiralInClockwise</string>
 			<key>rotation</key>
 			<string>90</string>
 			<key>speed</key>
 			<real>40</real>
 			<key>sprite</key>
 			<string>alien001_01_64.png</string>
-			<key>startInside</key>
-			<true/>
 			<key>when</key>
 			<real>1</real>
 		</dict>
@@ -466,24 +467,6 @@
 			<true/>
 			<key>when</key>
 			<real>19</real>
-		</dict>
-		<dict>
-			<key>howLong</key>
-			<real>15</real>
-			<key>howMany</key>
-			<real>15</real>
-			<key>movementAnimation</key>
-			<string>SpiralOutAndCircle</string>
-			<key>rotation</key>
-			<string>190</string>
-			<key>speed</key>
-			<real>60</real>
-			<key>sprite</key>
-			<string>alien001_01_64.png</string>
-			<key>startInside</key>
-			<true/>
-			<key>when</key>
-			<real>20</real>
 		</dict>
 	</array>
 </dict>

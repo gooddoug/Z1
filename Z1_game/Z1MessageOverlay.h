@@ -15,10 +15,12 @@
     CCSprite* _monitor;
     CCSprite* _textSprite;
     BOOL _showing;
+    BOOL _animating;
 }
 
 @property (nonatomic, retain) NSString* text;
 @property BOOL showing;
+@property BOOL animating;
 
 - (id) initWithText:(NSString*)inMessage;
 

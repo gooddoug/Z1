@@ -279,7 +279,7 @@
     NSMutableArray* oldShots = [NSMutableArray array];
     for (GDPlayerShot* aShot in self.playerShots) 
     {
-        if (aShot.scale < 0.01 || aShot.hitSomething)
+        if (aShot.scale < 0.04 || aShot.hitSomething)
         {
             [self removeChild:aShot cleanup:YES];
             [oldShots addObject:aShot];

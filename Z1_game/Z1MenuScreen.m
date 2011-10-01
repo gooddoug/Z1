@@ -15,7 +15,7 @@
 
 @implementation Z1MenuScreen
 
-@synthesize buttonArray = _buttonArray, activeButton = _activeButton, activeIndex;
+@synthesize buttonArray = _buttonArray, activeButton = _activeButton, activeIndex, doingSomething = _doingSomething;
 
 + (void) initialize
 {
@@ -50,6 +50,7 @@
 {
     if ((self = [super init]))
     {
+        self.doingSomething = NO;
         [self setIsMouseEnabled:YES];
         [self setIsKeyboardEnabled:YES];
         [[GDSoundsManager sharedSoundsManager] playMusicForSceneNamed:@"mainMenu"];
@@ -125,6 +126,7 @@
     }
     else
     {
+        self.doingSomething = YES;
         NSString* creditsPath = [[NSBundle mainBundle] pathForResource:@"credits" ofType:@"txt"];
         NSString* creditsText = [NSString stringWithContentsOfFile:creditsPath encoding:NSUTF8StringEncoding error:nil];
         self.messageOverlay.text = creditsText;
@@ -134,7 +136,6 @@
         dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
             [self.messageOverlay hide];
         });
-        [[GDSoundsManager sharedSoundsManager] playSoundForName:SCREEN_TRANSITION];
     }
 }
 
@@ -146,6 +147,7 @@
     }
     else
     {
+        self.doingSomething = YES;
         NSString* creditsPath = [[NSBundle mainBundle] pathForResource:@"end" ofType:@"txt"];
         NSString* creditsText = [NSString stringWithContentsOfFile:creditsPath encoding:NSUTF8StringEncoding error:nil];
         self.messageOverlay.text = creditsText;
@@ -156,7 +158,6 @@
             [self.messageOverlay hide];
             [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.udevgames.com/entries/210"]];
         });
-        [[GDSoundsManager sharedSoundsManager] playSoundForName:SCREEN_TRANSITION];
     }
 }
 
@@ -174,6 +175,7 @@
     }
     else
     {
+        self.doingSomething = YES;
         NSString* creditsPath = [[NSBundle mainBundle] pathForResource:@"end" ofType:@"txt"];
         NSString* creditsText = [NSString stringWithContentsOfFile:creditsPath encoding:NSUTF8StringEncoding error:nil];
         self.messageOverlay.text = creditsText;
@@ -184,7 +186,6 @@
             [self.messageOverlay hide];
             [NSApp terminate:self];
         });
-        [[GDSoundsManager sharedSoundsManager] playSoundForName:SCREEN_TRANSITION];
     }
 }
 
@@ -239,12 +240,13 @@
 - (BOOL) ccMouseUp:(NSEvent *)event
 {
     // do whatever state stuff needs to be done now, before checking buttons...
-    if (_messageOverlay && self.messageOverlay.showing)
+    if (_messageOverlay && self.messageOverlay.showing && !self.messageOverlay.animating)
     {
         [self.messageOverlay hide];
         return YES;
     }
-    
+    if (self.doingSomething)
+        return NO;
     // did we click a button?
     GDSpriteButton* aButton = [self buttonForMouseEvent:event];
     if (aButton)

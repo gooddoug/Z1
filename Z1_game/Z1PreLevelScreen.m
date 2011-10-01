@@ -150,6 +150,7 @@
         [self done:self];
         return;
     }
+    [[GDSoundsManager sharedSoundsManager] playSoundForName:@"dialog_display"];
     // create the node that will hold everything
     CCNode* chatNode = [CCNode node];
     CCSprite* chatBackground = [CCSprite spriteWithFile:@"dialog-boxes.png"];

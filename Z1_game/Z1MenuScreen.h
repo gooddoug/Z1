@@ -17,12 +17,15 @@
     NSArray* _buttonArray;
     GDSpriteButton* _activeButton;
     long activeIndex;
+    
+    BOOL _doingSomething;
 }
 
 @property (nonatomic, retain) NSArray* buttonArray;
 @property (nonatomic, retain) GDSpriteButton* activeButton;
 @property long activeIndex;
 @property (nonatomic, retain, readonly) Z1MessageOverlay* messageOverlay;
+@property BOOL doingSomething;
 
 +(CCScene*) scene;
 

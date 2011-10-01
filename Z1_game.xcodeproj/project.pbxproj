@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EF14EDE31422C2AC00D19D92 /* Run_3_minute_edit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF14EDE21422C2AC00D19D92 /* Run_3_minute_edit.mp3 */; };
-		EF14EDF41423088600D19D92 /* Artur-head.png in Resources */ = {isa = PBXBuildFile; fileRef = EF14EDF11423088500D19D92 /* Artur-head.png */; };
-		EF14EDF51423088600D19D92 /* Asha-head.png in Resources */ = {isa = PBXBuildFile; fileRef = EF14EDF21423088500D19D92 /* Asha-head.png */; };
-		EF14EDF61423088600D19D92 /* Lea-head.png in Resources */ = {isa = PBXBuildFile; fileRef = EF14EDF31423088500D19D92 /* Lea-head.png */; };
 		EF14EDFA1423B9A300D19D92 /* Z1LevelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF14EDF91423B9A300D19D92 /* Z1LevelManager.m */; };
 		EF24DE871431AC8200965461 /* button-credits-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24DE821431AC8200965461 /* button-credits-hover.png */; };
 		EF24DE881431AC8200965461 /* button-restart-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24DE831431AC8200965461 /* button-restart-hover.png */; };
@@ -38,7 +35,6 @@
 		EF24E00E1432D84900965461 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E00B1432D84900965461 /* menu.png */; };
 		EF24E0111432D8C800965461 /* junivision.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF24E00F1432D8C800965461 /* junivision.wav */; };
 		EF24E0121432D8C800965461 /* sfx-menu-click.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0101432D8C800965461 /* sfx-menu-click.wav */; };
-		EF24E0141432DD5100965461 /* ship2_64x64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0131432DD5100965461 /* ship2_64x64.png */; };
 		EF24E03B1432DFAF00965461 /* asteroid01_01_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0151432DFAF00965461 /* asteroid01_01_64.png */; };
 		EF24E03C1432DFAF00965461 /* asteroid01_02_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0161432DFAF00965461 /* asteroid01_02_64.png */; };
 		EF24E03D1432DFAF00965461 /* asteroid01_03_64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24E0171432DFAF00965461 /* asteroid01_03_64.png */; };
@@ -98,7 +94,6 @@
 		EF350863142D0F4A00249654 /* Z1MessageOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = EF350862142D0F4A00249654 /* Z1MessageOverlay.m */; };
 		EF5574511421C5890035F6C2 /* level_01.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EF5574501421C5890035F6C2 /* level_01.z1level */; };
 		EF72D92B13D48A3100ABD27F /* credits.txt in Resources */ = {isa = PBXBuildFile; fileRef = EF72D92A13D48A3100ABD27F /* credits.txt */; };
-		EF72D93413D4F50A00ABD27F /* TextBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = EF72D93313D4F50A00ABD27F /* TextBackground.png */; };
 		EF72D94213D5011200ABD27F /* ClippingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EF72D94113D5011200ABD27F /* ClippingNode.m */; };
 		EF72D94F13D5532D00ABD27F /* end.txt in Resources */ = {isa = PBXBuildFile; fileRef = EF72D94E13D5532C00ABD27F /* end.txt */; };
 		EF72D95213D5DEFF00ABD27F /* Z1GameScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = EF72D95113D5DEFD00ABD27F /* Z1GameScreen.m */; };
@@ -183,6 +178,8 @@
 		EF8F0196142A62BA00A774E1 /* ship-hammer-64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF8F0194142A62BA00A774E1 /* ship-hammer-64.png */; };
 		EF8F019A142A6D3D00A774E1 /* Z1Player.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8F0199142A6D3C00A774E1 /* Z1Player.m */; };
 		EF91F16B1423DCDC002683D4 /* level_02.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EF91F16A1423DCDC002683D4 /* level_02.z1level */; };
+		EF95B37D143786FD0098EFAC /* ship-ladyhawk-64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF95B37C143786FD0098EFAC /* ship-ladyhawk-64.png */; };
+		EF95B380143788420098EFAC /* space-battle-512.png in Resources */ = {isa = PBXBuildFile; fileRef = EF95B37F143788420098EFAC /* space-battle-512.png */; };
 		EF9EAD10142F933300FEE580 /* Z1_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = EF9EAD0F142F933300FEE580 /* Z1_icon.icns */; };
 		EF9EAD12142F938900FEE580 /* Z1_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = EF9EAD11142F938900FEE580 /* Z1_icon.icns */; };
 		EF9EAE911431A56700FEE580 /* GDSpriteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EAE901431A56700FEE580 /* GDSpriteButton.m */; };
@@ -288,7 +285,6 @@
 		EFE599A213D3385C00062F86 /* GDParticleFog.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE599A013D3385C00062F86 /* GDParticleFog.m */; };
 		EFE599A613D3387000062F86 /* GDInputManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE599A513D3387000062F86 /* GDInputManager.m */; };
 		EFE599AD13D338A100062F86 /* shot.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE599A813D338A100062F86 /* shot.png */; };
-		EFE599AE13D338A100062F86 /* ship1.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE599A913D338A100062F86 /* ship1.png */; };
 		EFE599AF13D338A100062F86 /* smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE599AA13D338A100062F86 /* smoke.png */; };
 		EFE599B113D338A100062F86 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE599AC13D338A100062F86 /* fire.png */; };
 		EFE599B513D338C700062F86 /* explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = EFE599B313D338C700062F86 /* explosion.wav */; };
@@ -305,14 +301,10 @@
 		EFE6E5B2142BFD0400B594AD /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = EFE6E5B1142BFD0400B594AD /* Readme.txt */; };
 		EFE6E5B5142BFE8100B594AD /* Z1GameOverOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE6E5B4142BFE8100B594AD /* Z1GameOverOverlay.m */; };
 		EFE6E5B7142C00F700B594AD /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE6E5B6142C00F700B594AD /* square.png */; };
-		EFF097AB140DAAF80025FBD6 /* ship2.png in Resources */ = {isa = PBXBuildFile; fileRef = EFF097A9140DAAF80025FBD6 /* ship2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EF14EDE21422C2AC00D19D92 /* Run_3_minute_edit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Run_3_minute_edit.mp3; sourceTree = "<group>"; };
-		EF14EDF11423088500D19D92 /* Artur-head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artur-head.png"; sourceTree = "<group>"; };
-		EF14EDF21423088500D19D92 /* Asha-head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Asha-head.png"; sourceTree = "<group>"; };
-		EF14EDF31423088500D19D92 /* Lea-head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lea-head.png"; sourceTree = "<group>"; };
 		EF14EDF81423B9A300D19D92 /* Z1LevelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1LevelManager.h; sourceTree = "<group>"; };
 		EF14EDF91423B9A300D19D92 /* Z1LevelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1LevelManager.m; sourceTree = "<group>"; };
 		EF24DE821431AC8200965461 /* button-credits-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-credits-hover.png"; sourceTree = "<group>"; };
@@ -342,7 +334,6 @@
 		EF24E00B1432D84900965461 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		EF24E00F1432D8C800965461 /* junivision.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = junivision.wav; sourceTree = "<group>"; };
 		EF24E0101432D8C800965461 /* sfx-menu-click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "sfx-menu-click.wav"; sourceTree = "<group>"; };
-		EF24E0131432DD5100965461 /* ship2_64x64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship2_64x64.png; sourceTree = "<group>"; };
 		EF24E0151432DFAF00965461 /* asteroid01_01_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid01_01_64.png; sourceTree = "<group>"; };
 		EF24E0161432DFAF00965461 /* asteroid01_02_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid01_02_64.png; sourceTree = "<group>"; };
 		EF24E0171432DFAF00965461 /* asteroid01_03_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid01_03_64.png; sourceTree = "<group>"; };
@@ -406,7 +397,6 @@
 		EF350862142D0F4A00249654 /* Z1MessageOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1MessageOverlay.m; sourceTree = "<group>"; };
 		EF5574501421C5890035F6C2 /* level_01.z1level */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level_01.z1level; sourceTree = "<group>"; };
 		EF72D92A13D48A3100ABD27F /* credits.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = credits.txt; sourceTree = "<group>"; };
-		EF72D93313D4F50A00ABD27F /* TextBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextBackground.png; sourceTree = "<group>"; };
 		EF72D94013D5011200ABD27F /* ClippingNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClippingNode.h; sourceTree = "<group>"; };
 		EF72D94113D5011200ABD27F /* ClippingNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClippingNode.m; sourceTree = "<group>"; };
 		EF72D94E13D5532C00ABD27F /* end.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = end.txt; sourceTree = "<group>"; };
@@ -499,6 +489,8 @@
 		EF8F0198142A6D3C00A774E1 /* Z1Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1Player.h; sourceTree = "<group>"; };
 		EF8F0199142A6D3C00A774E1 /* Z1Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1Player.m; sourceTree = "<group>"; };
 		EF91F16A1423DCDC002683D4 /* level_02.z1level */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level_02.z1level; sourceTree = "<group>"; };
+		EF95B37C143786FD0098EFAC /* ship-ladyhawk-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ship-ladyhawk-64.png"; sourceTree = "<group>"; };
+		EF95B37F143788420098EFAC /* space-battle-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "space-battle-512.png"; sourceTree = "<group>"; };
 		EF9EAD0F142F933300FEE580 /* Z1_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Z1_icon.icns; sourceTree = "<group>"; };
 		EF9EAD11142F938900FEE580 /* Z1_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Z1_icon.icns; sourceTree = "<group>"; };
 		EF9EAE8F1431A56700FEE580 /* GDSpriteButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSpriteButton.h; sourceTree = "<group>"; };
@@ -714,7 +706,6 @@
 		EFE599A413D3387000062F86 /* GDInputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDInputManager.h; sourceTree = "<group>"; };
 		EFE599A513D3387000062F86 /* GDInputManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDInputManager.m; sourceTree = "<group>"; };
 		EFE599A813D338A100062F86 /* shot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shot.png; sourceTree = "<group>"; };
-		EFE599A913D338A100062F86 /* ship1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship1.png; sourceTree = "<group>"; };
 		EFE599AA13D338A100062F86 /* smoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smoke.png; sourceTree = "<group>"; };
 		EFE599AC13D338A100062F86 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
 		EFE599B313D338C700062F86 /* explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosion.wav; sourceTree = "<group>"; };
@@ -735,7 +726,6 @@
 		EFE6E5B3142BFE8100B594AD /* Z1GameOverOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1GameOverOverlay.h; sourceTree = "<group>"; };
 		EFE6E5B4142BFE8100B594AD /* Z1GameOverOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1GameOverOverlay.m; sourceTree = "<group>"; };
 		EFE6E5B6142C00F700B594AD /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square.png; sourceTree = "<group>"; };
-		EFF097A9140DAAF80025FBD6 /* ship2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -771,9 +761,6 @@
 				EF836A57142F01C7009EBFF6 /* head-lea.png */,
 				EF836A58142F01C7009EBFF6 /* head-nikori.png */,
 				EF836A59142F01C7009EBFF6 /* head-vicente.png */,
-				EF14EDF11423088500D19D92 /* Artur-head.png */,
-				EF14EDF21423088500D19D92 /* Asha-head.png */,
-				EF14EDF31423088500D19D92 /* Lea-head.png */,
 			);
 			name = Actors;
 			sourceTree = "<group>";
@@ -1020,7 +1007,6 @@
 				EF8F0187142A4C6E00A774E1 /* Backgrounds */,
 				EFB5EA2213D889190058DB94 /* Levels */,
 				EFE599BB13D33BF300062F86 /* logo-crop.png */,
-				EF72D93313D4F50A00ABD27F /* TextBackground.png */,
 				EF24E07C14353E6300965461 /* saga.txt */,
 				EF72D92A13D48A3100ABD27F /* credits.txt */,
 				EF72D94E13D5532C00ABD27F /* end.txt */,
@@ -1344,13 +1330,12 @@
 				EFE599CE13D34FCE00062F86 /* galaxy.png */,
 				EFE599A813D338A100062F86 /* shot.png */,
 				EF8F0194142A62BA00A774E1 /* ship-hammer-64.png */,
-				EF24E0131432DD5100965461 /* ship2_64x64.png */,
-				EFE599A913D338A100062F86 /* ship1.png */,
 				EFE599AA13D338A100062F86 /* smoke.png */,
 				EFE599D813D3FF8700062F86 /* stars.png */,
 				EFE599AC13D338A100062F86 /* fire.png */,
-				EFF097A9140DAAF80025FBD6 /* ship2.png */,
+				EF95B37C143786FD0098EFAC /* ship-ladyhawk-64.png */,
 				EF24E07314344C6700965461 /* planet-lazarev-256.png */,
+				EF95B37F143788420098EFAC /* space-battle-512.png */,
 				EF24E07E14356CDB00965461 /* space-battle-256.png */,
 			);
 			name = Sprites;
@@ -1436,7 +1421,6 @@
 				EFE5986C13D337A400062F86 /* fps_images.png in Resources */,
 				EFE5986E13D337A400062F86 /* icon.icns in Resources */,
 				EFE599AD13D338A100062F86 /* shot.png in Resources */,
-				EFE599AE13D338A100062F86 /* ship1.png in Resources */,
 				EFE599AF13D338A100062F86 /* smoke.png in Resources */,
 				EFE599B113D338A100062F86 /* fire.png in Resources */,
 				EFE599B513D338C700062F86 /* explosion.wav in Resources */,
@@ -1446,16 +1430,11 @@
 				EFE599D113D3F49600062F86 /* fog.png in Resources */,
 				EFE599D913D3FF8700062F86 /* stars.png in Resources */,
 				EF72D92B13D48A3100ABD27F /* credits.txt in Resources */,
-				EF72D93413D4F50A00ABD27F /* TextBackground.png in Resources */,
 				EF72D94F13D5532D00ABD27F /* end.txt in Resources */,
 				EF72D96313D778D900ABD27F /* player_explosion.wav in Resources */,
 				EF72D96413D778D900ABD27F /* quick_hit.wav in Resources */,
-				EFF097AB140DAAF80025FBD6 /* ship2.png in Resources */,
 				EF5574511421C5890035F6C2 /* level_01.z1level in Resources */,
 				EF14EDE31422C2AC00D19D92 /* Run_3_minute_edit.mp3 in Resources */,
-				EF14EDF41423088600D19D92 /* Artur-head.png in Resources */,
-				EF14EDF51423088600D19D92 /* Asha-head.png in Resources */,
-				EF14EDF61423088600D19D92 /* Lea-head.png in Resources */,
 				EF91F16B1423DCDC002683D4 /* level_02.z1level in Resources */,
 				EF8F018E142A4C8800A774E1 /* title-screen-start.png in Resources */,
 				EF8F0196142A62BA00A774E1 /* ship-hammer-64.png in Resources */,
@@ -1564,7 +1543,6 @@
 				EF24E00E1432D84900965461 /* menu.png in Resources */,
 				EF24E0111432D8C800965461 /* junivision.wav in Resources */,
 				EF24E0121432D8C800965461 /* sfx-menu-click.wav in Resources */,
-				EF24E0141432DD5100965461 /* ship2_64x64.png in Resources */,
 				EF24E03B1432DFAF00965461 /* asteroid01_01_64.png in Resources */,
 				EF24E03C1432DFAF00965461 /* asteroid01_02_64.png in Resources */,
 				EF24E03D1432DFAF00965461 /* asteroid01_03_64.png in Resources */,
@@ -1615,6 +1593,8 @@
 				EF24E0851436DE9A00965461 /* music-mixed-signals.mp3 in Resources */,
 				EF24E0871436DECC00965461 /* dialog_display.wav in Resources */,
 				EF24E0891436E24400965461 /* head-hwan.png in Resources */,
+				EF95B37D143786FD0098EFAC /* ship-ladyhawk-64.png in Resources */,
+				EF95B380143788420098EFAC /* space-battle-512.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
