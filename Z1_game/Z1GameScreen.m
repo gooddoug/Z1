@@ -590,7 +590,7 @@
     [chatNode setContentSize:nodeSize];
     chatBackground.position = ccp((dialogSize.width / 2) + actorSize.width + padding, dialogSize.height / 2);
     actorSprite.position = ccp(actorSize.width / 2, dialogSize.height / 2);
-    textLabel.position = ccp((dialogSize.width / 2) + actorSize.width + padding + padding, (dialogSize.height / 2) + padding);
+    textLabel.position = ccp((dialogSize.width / 2) + actorSize.width + padding + padding, (dialogSize.height / 2));
     [chatNode addChild:chatBackground z:1];
     [chatNode addChild:actorSprite];
     [chatNode addChild:textLabel z:2];

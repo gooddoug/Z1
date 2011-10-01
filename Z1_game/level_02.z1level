@@ -302,7 +302,7 @@
 			<key>speed</key>
 			<real>30</real>
 			<key>sprite</key>
-			<string>alien001_01_64.png</string>
+			<string>ship-adamah-64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
@@ -320,7 +320,7 @@
 			<key>speed</key>
 			<real>40</real>
 			<key>sprite</key>
-			<string>alien001_02_64.png</string>
+			<string>ship-adamah-64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
@@ -338,7 +338,7 @@
 			<key>speed</key>
 			<real>30</real>
 			<key>sprite</key>
-			<string>alien001_01_64.png</string>
+			<string>ship-adamah-64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
@@ -356,7 +356,7 @@
 			<key>speed</key>
 			<real>60</real>
 			<key>sprite</key>
-			<string>alien001_01_64.png</string>
+			<string>ship-adamah-64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
@@ -374,7 +374,7 @@
 			<key>speed</key>
 			<real>15</real>
 			<key>sprite</key>
-			<string>alien001_02_64.png</string>
+			<string>ship-adamah-64.png</string>
 			<key>when</key>
 			<real>40</real>
 		</dict>

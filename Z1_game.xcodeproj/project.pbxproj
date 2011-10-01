@@ -184,6 +184,9 @@
 		EF95B384143792910098EFAC /* ship-malleus-64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF95B383143792910098EFAC /* ship-malleus-64.png */; };
 		EF95B388143797EB0098EFAC /* ship-exec-64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF95B387143797EB0098EFAC /* ship-exec-64.png */; };
 		EF95B38A143798290098EFAC /* eternity-before-256.png in Resources */ = {isa = PBXBuildFile; fileRef = EF95B389143798290098EFAC /* eternity-before-256.png */; };
+		EF95B38C14379B8F0098EFAC /* ship-adamah-64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF95B38B14379B8F0098EFAC /* ship-adamah-64.png */; };
+		EF95B38F14379BA90098EFAC /* ship-shorini-soran-64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF95B38D14379BA90098EFAC /* ship-shorini-soran-64.png */; };
+		EF95B39014379BA90098EFAC /* ship-unit21-64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF95B38E14379BA90098EFAC /* ship-unit21-64.png */; };
 		EF9EAD10142F933300FEE580 /* Z1_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = EF9EAD0F142F933300FEE580 /* Z1_icon.icns */; };
 		EF9EAD12142F938900FEE580 /* Z1_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = EF9EAD11142F938900FEE580 /* Z1_icon.icns */; };
 		EF9EAE911431A56700FEE580 /* GDSpriteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EAE901431A56700FEE580 /* GDSpriteButton.m */; };
@@ -499,6 +502,9 @@
 		EF95B383143792910098EFAC /* ship-malleus-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ship-malleus-64.png"; sourceTree = "<group>"; };
 		EF95B387143797EB0098EFAC /* ship-exec-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ship-exec-64.png"; sourceTree = "<group>"; };
 		EF95B389143798290098EFAC /* eternity-before-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eternity-before-256.png"; sourceTree = "<group>"; };
+		EF95B38B14379B8F0098EFAC /* ship-adamah-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ship-adamah-64.png"; sourceTree = "<group>"; };
+		EF95B38D14379BA90098EFAC /* ship-shorini-soran-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ship-shorini-soran-64.png"; sourceTree = "<group>"; };
+		EF95B38E14379BA90098EFAC /* ship-unit21-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ship-unit21-64.png"; sourceTree = "<group>"; };
 		EF9EAD0F142F933300FEE580 /* Z1_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Z1_icon.icns; sourceTree = "<group>"; };
 		EF9EAD11142F938900FEE580 /* Z1_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Z1_icon.icns; sourceTree = "<group>"; };
 		EF9EAE8F1431A56700FEE580 /* GDSpriteButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSpriteButton.h; sourceTree = "<group>"; };
@@ -821,6 +827,9 @@
 		EF8369D3142DB674009EBFF6 /* enemy sprites */ = {
 			isa = PBXGroup;
 			children = (
+				EF95B38D14379BA90098EFAC /* ship-shorini-soran-64.png */,
+				EF95B38E14379BA90098EFAC /* ship-unit21-64.png */,
+				EF95B38B14379B8F0098EFAC /* ship-adamah-64.png */,
 				EF24E0151432DFAF00965461 /* asteroid01_01_64.png */,
 				EF24E0161432DFAF00965461 /* asteroid01_02_64.png */,
 				EF24E0171432DFAF00965461 /* asteroid01_03_64.png */,
@@ -1627,6 +1636,9 @@
 				EF95B384143792910098EFAC /* ship-malleus-64.png in Resources */,
 				EF95B388143797EB0098EFAC /* ship-exec-64.png in Resources */,
 				EF95B38A143798290098EFAC /* eternity-before-256.png in Resources */,
+				EF95B38C14379B8F0098EFAC /* ship-adamah-64.png in Resources */,
+				EF95B38F14379BA90098EFAC /* ship-shorini-soran-64.png in Resources */,
+				EF95B39014379BA90098EFAC /* ship-unit21-64.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

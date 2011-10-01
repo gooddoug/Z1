@@ -312,7 +312,7 @@
 			<key>speed</key>
 			<real>5</real>
 			<key>sprite</key>
-			<string>asteroid01_03_64.png</string>
+			<string>asteroid01_01_64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
@@ -330,7 +330,7 @@
 			<key>speed</key>
 			<real>1</real>
 			<key>sprite</key>
-			<string>asteroid01_04_64.png</string>
+			<string>asteroid01_03_64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
@@ -348,7 +348,7 @@
 			<key>speed</key>
 			<real>3</real>
 			<key>sprite</key>
-			<string>asteroid01_05_64.png</string>
+			<string>asteroid01_01_64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
@@ -366,7 +366,7 @@
 			<key>speed</key>
 			<real>1</real>
 			<key>sprite</key>
-			<string>asteroid01_02_64.png</string>
+			<string>asteroid02_05_64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
@@ -384,7 +384,7 @@
 			<key>speed</key>
 			<real>5</real>
 			<key>sprite</key>
-			<string>alien001_03_64.png</string>
+			<string>ship-adamah-64.png</string>
 			<key>startInside</key>
 			<false/>
 			<key>when</key>

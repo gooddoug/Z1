@@ -213,28 +213,51 @@ static GDAnimationManager* _animationManager = nil;
         
         [blockDict setObject:^(ccTime dt, GDBasicSprite* aSprite)
          {
-             if (![aSprite.animInfo boolValue]) 
+             if (!aSprite.animInfo) 
              {
                  aSprite.anchorPoint = ccp( 0.5 , 6.8 );
-                 aSprite.animInfo = [NSNumber numberWithBool:YES];
+                 
+                 aSprite.animInfo = [NSNumber numberWithFloat:0.0];
              }
+             aSprite.animInfo = [NSNumber numberWithFloat:[aSprite.animInfo floatValue] + dt];
              float playerRot = [Z1Player sharedPlayer].sprite.rotation;
              float escortRot = aSprite.rotation;
+             if (playerRot > 270.0 && escortRot < 100.0)
+             {
+                 escortRot = escortRot + 360;
+                 //NSLog(@"p:%f e:%f escort +", playerRot, escortRot);
+             }
+             if (playerRot < 100.0 && escortRot > 270.0)
+             {
+                 //NSLog(@"p:%f e:%f escort -", playerRot, escortRot);
+                 escortRot = escortRot - 360;
+             }
              float diff = playerRot - escortRot;
              
-             float rotFactor = 40 * dt;
+             float rotFactor = 70 * dt;
+             if (diff > 45)
+             {
+                 rotFactor = 130 * dt;
+             }
              float factor = (diff < 0.0) ? -1.0 : 1.0;
-             
-             
              
              if (abs(diff) > rotFactor)
              {
-                 // rotate 20
+                 // rotate 70
                  aSprite.rotation = aSprite.rotation + factor * rotFactor;
              } else {
                  aSprite.rotation = aSprite.rotation + diff;
              }
              
+             if ([aSprite.animInfo floatValue] > 58.0)
+             {
+                 aSprite.scale = aSprite.scale - (0.1 * dt);
+                 if (aSprite.scale < 0.0)
+                 {
+                     aSprite.dead = YES;
+                     aSprite.scale = 0.0;
+                 }
+             }
          } forKey:@"FollowPlayer"];
         
         // log the names of the animations
