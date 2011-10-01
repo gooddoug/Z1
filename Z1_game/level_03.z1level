@@ -3,33 +3,85 @@
 <plist version="1.0">
 <dict>
 	<key>backgroundMusic</key>
-	<string>Run_3_minute_edit.mp3</string>
+	<string>music-im-just-a-pilot.mp3</string>
 	<key>destinationImage</key>
-	<string>planet-prison-256.png</string>
+	<string>planet-lazarev-256.png</string>
 	<key>effects</key>
 	<array>
 		<dict>
 			<key>name</key>
 			<string>GDParticleFog</string>
 		</dict>
-		<dict>
-			<key>name</key>
-			<string>GDParticleStarfield</string>
-		</dict>
 	</array>
 	<key>id</key>
 	<string>3</string>
 	<key>name</key>
-	<string>Escort</string>
+	<string>Chance Meeting</string>
 	<key>nextLevel</key>
 	<string>2</string>
 	<key>postLevelScripts</key>
 	<array>
 		<dict>
 			<key>actor</key>
+			<string>vicente</string>
+			<key>summary</key>
+			<string>03-08</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIEV4Y2VsbGVudCBm
+			bHlpbmcgQ2FwdGFpbi4gSSBjYW4gc2VlIHdoeSB3ZSBwYXkgcGls
+			b3RzIHNvIHdlbGwgb3V0XApoZXJlLn0=
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
 			<string>artur</string>
 			<key>summary</key>
-			<string>?</string>
+			<string>03-09</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIEl0J3MgTGlldXRl
+			bmFudC1Db21tYW5kZXIuIFdlIGhhdmUgYW4gaW5jb21pbmcgbWVz
+			c2FnZSBmcm9tXApTZW5pb3IgU2NpZW50aXN0IERyLiBId2FuLn0=
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>hwan</string>
+			<key>summary</key>
+			<string>03-10</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIEhlbGxvLCBJJ20g
+			RHIuIEh3YW4uIFN1Yi1jb21tYW5kZXIgS2FuIFQnaXUgaGFzIGF1
+			dGhlbnRpY2F0ZWRcCnlvdXIgRHluYUtleS4gSSBtdXN0IGFkbWl0
+			IHRoYXQgeW91J3ZlIGNhdWdodCB1cyBhdCBhIGJhZCB0aW1lLlwK
+			UGVyaGFwcywgSSBjYW5cJzg1fQ==
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>vicente</string>
+			<key>summary</key>
+			<string>03-11</string>
 			<key>text</key>
 			<data>
 			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
@@ -38,8 +90,135 @@
 			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
 			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
 			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IE5ldmVyIGdvbm5hIGdpdmUsIG5ldmVyIGdvbm5hIGdpdmVcJzg1
-			XApnaXZlIHlvdSB1cH0=
+			IERyIEh3YW4uIExldCB1cyBkaXNwZWwgd2l0aCB0aGUgZm9ybWFs
+			aXRpZXMuIFRoZSBaMSBQcm9qZWN0IGlzXAp0aHJlZSB0aW1lcyBv
+			dmVyIGJ1ZGdldC4gWW91ciBhc3Npc3RhbnQncyBwcmVzZW50YXRp
+			b24gaGFzIG5vdFwKY2FsbWVkIGludmVzdG9yIGZlYXJzLn0=
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>hwan</string>
+			<key>summary</key>
+			<string>03-12</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIEkgaGF2ZSBzcGVu
+			dCBteSBsaWZlIG9uIHRoZSBaMSB0ZWNobm9sb2d5LiBJIGFzc3Vy
+			ZSB5b3Ugd2UgYXJlXApwcm9ncmVzc2luZyBhbmQgd2Ugd2lsbCBy
+			ZXZvbHV0aW9uaXplIHNwYWNlIHRyYXZlbC4gRnVydGhlcm1vcmUs
+			XAp3aGVuIEkgc2lnbmVkIG9uLCBJIHdhcyBhc3N1cmVkIHVubGlt
+			aXRlZCBzdXBwb3J0LiBJIG11c3QgcHJvdGVzdFwKdGhlXCc4NX0=
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>vicente</string>
+			<key>summary</key>
+			<string>03-13</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2
+			MFx0eDI4ODBcdHgzNjAwXHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4
+			NjQ4MFx0eDcyMDBcdHg3OTIwXHR4ODY0MFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2YwIFllcywgYWJvdXQg
+			dGhlIGNvbnRyYWN0LiBTZW5pb3IgbWFuYWdlbWVudCwgaW4gaW5q
+			dW5jdGlvbiB3aXRoXAppdHMgbWFqb3Igc2hhcmVob2xkZXIsIGhh
+			cyBkZWNpZGVkIHRvIGJ1eSBvdXQgeW91ciBjb250cmFjdC5cCkVm
+			ZmVjdGl2ZSBpbW1lZGlhdGVseSwgeW91ciBlbXBsb3ltZW50IHdp
+			dGggRHJha2UgUmVsaWFuY2UgR3JvdXBcCmlzIHRlcm1pbmF0ZWQu
+			IEkgYW0gdHJhbnNtaXR0aW5nIHRoZSBsZWdhbGl0aWVzIGFzIHdl
+			bGwgYXNcCmRldGFpbHMgb2YgeW91ciBzZXZlcmFuY2UgcGFja2Fn
+			ZS59
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>hwan</string>
+			<key>summary</key>
+			<string>03-14</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2
+			MFx0eDI4ODBcdHgzNjAwXHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4
+			NjQ4MFx0eDcyMDBcdHg3OTIwXHR4ODY0MFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2YwIFNldmVyYW5jZSBw
+			YWNrYWdlPyBUaGlzIGlzIG5vdCBhYm91dCBtb25leSEgVGhpcyBp
+			cyBhYm91dCB0aGVcCmZ1dHVyZSBvZiBtYW5raW5kIX0=
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>vicente</string>
+			<key>summary</key>
+			<string>03-15</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2
+			MFx0eDI4ODBcdHgzNjAwXHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4
+			NjQ4MFx0eDcyMDBcdHg3OTIwXHR4ODY0MFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2YwIEluZGVlZCBhbmQg
+			bWFua2luZCB3YWl0cyBmb3Igbm8gbWFuLiBTdWItY29tbWFuZGVy
+			IEthbiwgcGxlYXNlXApyZW1vdmUgTXIuIEh3YW4gZnJvbSBjb21w
+			YW55IHByb3BlcnR5LiBEci4gQXNoYS4gSSBhc3N1bWUgeW91IGFy
+			ZVwKbmVhcmJ5LiBBcyBFeGVjdXRpdmUgVmljZSBQcmVzaWRlbnQg
+			b2YgU3RyYXRlZ2ljIEluaXRpYXRpdmVzLCBJXAp3b3VsZCBsaWtl
+			IHRvIG9mZmVyIHlvdSB0aGUgcG9zaXRpb24gb2YgU2VuaW9yIFNj
+			aWVudGlzdCBvbiB0aGVcCloxIFByb2plY3QuIERvIHlvdSBhY2Nl
+			cHQ/fQ==
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>asha</string>
+			<key>summary</key>
+			<string>03-16</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2
+			MFx0eDI4ODBcdHgzNjAwXHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4
+			NjQ4MFx0eDcyMDBcdHg3OTIwXHR4ODY0MFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2YwIEkgZG8sIHdpdGgg
+			b25lIGNvbmRpdGlvbi4gUGxlYXNlIGFsbG93IG1lIHRvIGluZm9y
+			bSBEci4gSHdhbidzXApkYXVnaHRlciBvZiB0aGUgY2hhbmdlcyBw
+			ZXJzb25hbGx5Ln0=
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>vicente</string>
+			<key>summary</key>
+			<string>03-17</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2
+			MFx0eDI4ODBcdHgzNjAwXHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4
+			NjQ4MFx0eDcyMDBcdHg3OTIwXHR4ODY0MFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2YwIFllcywgeWVzLCB0
+			aGF0J3MgZmluZS4gVGhlIHRpbWUgZm9yIGV4cGVyaW1lbnRzIGlz
+			IG92ZXIuIFByZXBhcmVcCnRoZSBaMSB0ZXN0IHZlc3NlbCBmb3Ig
+			aXRzIGZpcnN0IHRlc3QufQ==
 			</data>
 		</dict>
 	</array>
@@ -47,56 +226,156 @@
 	<array>
 		<dict>
 			<key>actor</key>
-			<string>artur</string>
+			<string>asha</string>
 			<key>summary</key>
-			<string>Fly away</string>
+			<string>03-01</string>
 			<key>text</key>
 			<data>
-			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
-			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
-			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
-			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
-			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IE5ldmVyIGdvbm5hIGdpdmUgeW91IHVwXApOZXZlciBnb25uYSBs
-			ZXQgeW91IGRvd25cCk5ldmVyIGdvbm5hIHJ1biBhcm91bmQgYW5k
-			IGRlc2VydCB5b3V9
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIExpZXV0ZW5hbnQt
+			Q29tbWFuZGVyIEFydHVyISBMZWF2aW5nIHNvIHNvb24/IEthbiBU
+			J2l1IHdpbGwgYmUgdGhlXApkZWF0aCBvZiB5b3UhIFBlcmhhcHMg
+			SSBjb3VsZCBzcGVhayB0byB0aGUgQ29tbWFuZGVyP30=
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>artur</string>
+			<key>summary</key>
+			<string>03-02</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIERvY3RvciEgVGhh
+			bmsgeW91LCBidXQgSSBwcmVmZXIgdG8ga2VlcCBidXN5LiBUaGlz
+			IGlzXApuZWVkLXRvLWtub3cgYnV0IHdlJ3ZlIGdvdCBpbmNvbWlu
+			ZyBzdWl0cyBmcm9tIERyYWtlXApoZWFkcXVhcnRlcnMuIFN1Yi1j
+			b21tYW5kZXIgS2FuIFQtJ2l1IGhhcyBiZWVuIGtpbmQgZW5vdWdo
+			IHRvXAphc3NpZ24gbWUgYXMgb2ZmaWNpYWwgYmFieXNpdHRlci59
 			</data>
 		</dict>
 		<dict>
 			<key>actor</key>
 			<string>asha</string>
 			<key>summary</key>
-			<string>No time</string>
+			<string>03-03</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIEFuIGluc3BlY3Rp
+			b24gbm93PyBJdCdzIG9ubHkgYmVlbiB0d28gbW9udGhzIHNpbmNl
+			IG15XApwcmVzZW50YXRpb24gdG8gdGhlIGJvYXJkLiBUaGFua3Mg
+			Zm9yIHNoYXJpbmcgdGhlIGludGVsLiBJIGhhZFwKYmV0dGVyIGZp
+			bmQgRHIuIEh3YW4ufQ==
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>artur</string>
+			<key>summary</key>
+			<string>03-04</string>
 			<key>text</key>
 			<data>
 			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
 			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
 			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
-			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
-			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IE5ldmVyIGdvbm5hIHNheSBnb29kYnllIX0=
+			XHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2MFx0eDI4ODBcdHgzNjAw
+			XHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4NjQ4MFx0eDcyMDBcdHg3
+			OTIwXHR4ODY0MFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2Yw
+			IFlvdSBjYW4gZmluZCBoaW0gaW4gdGhlIGFyYm9yZXR1bSB3aXRo
+			IExlYS4gVGhleSdyZSBoYXZpbmcgYVwKY2VsZWJyYXRvcnkgZGlu
+			bmVyLiBEb2N0b3IsIEkgd2FzIHdvbmRlcmluZyBpZi4uLj99
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>asha</string>
+			<key>summary</key>
+			<string>03-05</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2MFx0eDI4ODBcdHgzNjAw
+			XHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4NjQ4MFx0eDcyMDBcdHg3
+			OTIwXHR4ODY0MFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2Yw
+			IFlvdSB3ZXJlIHdvbmRlcmluZyBpZi4uLj99
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>artur</string>
+			<key>summary</key>
+			<string>03-06</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2
+			MFx0eDI4ODBcdHgzNjAwXHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4
+			NjQ4MFx0eDcyMDBcdHg3OTIwXHR4ODY0MFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2YwIFVtXCc4NS4gaWYg
+			eW91IGNvdWxkIHRlbGwgTGVhIG5vdCB0byBkcmluayB0b28gbXVj
+			aC59
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>asha</string>
+			<key>summary</key>
+			<string>03-07</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2
+			MFx0eDI4ODBcdHgzNjAwXHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4
+			NjQ4MFx0eDcyMDBcdHg3OTIwXHR4ODY0MFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2YwIE9oLCB5ZXMsIHdl
+			bGwuIE9mIGNvdXJzZS4gVGhvdWdoIExlYSBoYXNuJ3QgY2hhbmdl
+			ZCBtdWNoIHNpbmNlXApvdXIgYWNhZGVteSBkYXlzLiBJIGRvdWJ0
+			IHNoZSdsbCBsaXN0ZW4uIEJlIHNhZmVcCkxpZXV0ZW5hbnQtQ29t
+			bWFuZGVyLn0=
 			</data>
 		</dict>
 	</array>
 	<key>shipSprite</key>
-	<string>ship2_64x64.png</string>
+	<string>ship-hammer-64.png</string>
 	<key>spawners</key>
 	<array>
 		<dict>
 			<key>howLong</key>
-			<real>1</real>
+			<real>40</real>
 			<key>howMany</key>
-			<real>1</real>
+			<real>15</real>
 			<key>movementAnimation</key>
-			<string>FollowPlayer</string>
+			<string>SimpleSpiralOutClockwise</string>
 			<key>rotation</key>
-			<string>0</string>
+			<string>90</string>
 			<key>speed</key>
 			<real>40</real>
 			<key>sprite</key>
-			<string>ship2.png</string>
+			<string>alien001_01_64.png</string>
+			<key>startInside</key>
+			<true/>
 			<key>when</key>
 			<real>1</real>
 		</dict>
@@ -187,6 +466,24 @@
 			<true/>
 			<key>when</key>
 			<real>19</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>15</real>
+			<key>howMany</key>
+			<real>15</real>
+			<key>movementAnimation</key>
+			<string>SpiralOutAndCircle</string>
+			<key>rotation</key>
+			<string>190</string>
+			<key>speed</key>
+			<real>60</real>
+			<key>sprite</key>
+			<string>alien001_01_64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>20</real>
 		</dict>
 	</array>
 </dict>

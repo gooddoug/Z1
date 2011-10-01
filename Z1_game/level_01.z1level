@@ -5,7 +5,7 @@
 	<key>backgroundMusic</key>
 	<string>music-new-a-thousand-new-paths.mp3</string>
 	<key>destinationImage</key>
-	<string>planet-prison-256.png</string>
+	<string>planet-lazarev-256.png</string>
 	<key>effects</key>
 	<array>
 		<dict>
@@ -29,73 +29,75 @@
 			<key>actor</key>
 			<string>lea</string>
 			<key>summary</key>
-			<string>?</string>
+			<string>01-09</string>
 			<key>text</key>
 			<data>
-			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
-			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
-			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
-			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
-			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IFRlbGwgbWUgdGhhdCBsYXN0IGJpdCB3YXNuJ3QgcGFydCBvZiB0
-			aGUgdGVzdD99
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIFRlbGwgbWUgdGhh
+			dCBsYXN0IGJpdCB3YXNuJ3QgcGFydCBvZiB0aGUgdGVzdD99
 			</data>
 		</dict>
 		<dict>
 			<key>actor</key>
 			<string>artur</string>
 			<key>summary</key>
-			<string>no</string>
+			<string>01-10</string>
 			<key>text</key>
 			<data>
-			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
-			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
-			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
-			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
-			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IFRoYXQncyBhIG5lZ2F0aXZlLiBJIHdhcyBhbmFseXppbmcgdGhl
-			aXIgRVBTIChlbGVjdHJvbmljIHByb2ZpbGVcCnNpZ25hdHVyZSkg
-			d2hpbGUgeW91IHdlcmUgZG9pbmcgdGhhdCBuaWNlIGppbmsgYmFj
-			ayB0aGVyZS59
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIFRoYXQncyBhIG5l
+			Z2F0aXZlLiBJIHdhcyBhbmFseXppbmcgdGhlaXIgRVBTIHdoaWxl
+			IHlvdSB3ZXJlIGRvaW5nXAp0aGF0IG5pY2UgamluayBiYWNrIHRo
+			ZXJlLiB9
 			</data>
 		</dict>
 		<dict>
 			<key>actor</key>
 			<string>lea</string>
 			<key>summary</key>
-			<string>match</string>
+			<string>01-11</string>
 			<key>text</key>
 			<data>
-			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
-			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
-			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
-			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
-			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IE1hdGNoIGxvb2tzIGNvbXBsZXRlLiBBZGFtYWg/IFdoYXQgdGhl
-			IGhlY2sgYXJlIHRoZSBBZGEncyBkb2luZ1wKb3V0IGhlcmU/IEkg
-			dGhvdWdodCB0aGV5IHNwZW5kIGFsbCB0aGVpciB0aW1lIGNydXNh
-			ZGluZyBhZ2FpbnN0XApTaG9yaW5pIFNvcmFuP30=
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIE1hdGNoIGxvb2tz
+			IGNvbXBsZXRlLiBBZGFtYWg/IFdoYXQgdGhlIGhlY2sgYXJlIHRo
+			ZSBBZGEncyBkb2luZ1wKb3V0IGhlcmU/IEkgdGhvdWdodCB0aGV5
+			IHNwZW5kIGFsbCB0aGVpciB0aW1lIGNydXNhZGluZyBhZ2FpbnN0
+			XApTaG9yaW5pIFNvcmFuP30=
 			</data>
 		</dict>
 		<dict>
 			<key>actor</key>
 			<string>artur</string>
 			<key>summary</key>
-			<string>?</string>
+			<string>01-12</string>
 			<key>text</key>
 			<data>
-			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
-			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
-			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
-			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
-			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IFdobydzIHRvIHNheSB3aXRoIFRoZSBPcmRlciBvZiBBZGFtYWgu
-			IEknbSBqdXN0IGEgcGlsb3QuIEkganVzdFwKa25vdyBob3cgdG8g
-			c2hvb3Qgc3R1ZmYufQ==
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIFdobydzIHRvIHNh
+			eSB3aXRoIFRoZSBPcmRlciBvZiBBZGFtYWg/IEknbSBqdXN0IGEg
+			cGlsb3QuIEkganVzdFwKa25vdyBob3cgdG8gc2hvb3Qgc3R1ZmYu
+			fQ==
 			</data>
 		</dict>
 	</array>
@@ -105,7 +107,7 @@
 			<key>actor</key>
 			<string>lea</string>
 			<key>summary</key>
-			<string>1-1</string>
+			<string>01-01</string>
 			<key>text</key>
 			<data>
 			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
@@ -126,7 +128,7 @@
 			<key>actor</key>
 			<string>artur</string>
 			<key>summary</key>
-			<string>1-2</string>
+			<string>01-02</string>
 			<key>text</key>
 			<data>
 			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
@@ -145,7 +147,7 @@
 			<key>actor</key>
 			<string>artur</string>
 			<key>summary</key>
-			<string>1-3</string>
+			<string>01-03</string>
 			<key>text</key>
 			<data>
 			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
@@ -162,45 +164,48 @@
 			<key>actor</key>
 			<string>kan</string>
 			<key>summary</key>
-			<string>1-4</string>
+			<string>01-04</string>
 			<key>text</key>
 			<data>
-			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
-			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
-			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
-			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
-			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IFVuZGVyc3Rvb2QgQXJ0ZnVsIERvZGdlci4gVHJhaW5pbmcgZXhl
-			cmNpc2UgMTIgcmVjb3JkaW5nIGluXApwcm9ncmVzcy4gR29vZCBs
-			dWNrIExhZHlIYXdrLn0=
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIFVuZGVyc3Rvb2Qg
+			QXJ0ZnVsIERvZGdlci4gRmluYWwgdHJhaW5pbmcgZXhlcmNpc2Ug
+			MTIgcmVjb3JkaW5nIGluXApwcm9ncmVzcy4gTW9kaWZpY2F0aW9u
+			IG9mIG1pc3Npb24gZ29hbCBmcm9tIDMwJSB0byA1MCUuIEdvb2Qg
+			bHVja1wKTGFkeUhhd2sufQ==
 			</data>
 		</dict>
 		<dict>
 			<key>actor</key>
 			<string>artur</string>
 			<key>summary</key>
-			<string>1-5</string>
+			<string>01-05</string>
 			<key>text</key>
 			<data>
-			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
-			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
-			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
-			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
-			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IEkgbmVlZCB5b3UgdG8gZm9jdXMgTGVhLiBOb25lIG9mIHRoaXMg
-			Z3JhZHVhdGVkLWF0LXRoZS10b3Atb2YtbXlcCmNsYXNzIHJ1YmJp
-			c2guIFlvdSBzZW50IHRoZSBTcGFjaW8gYmFjayB0byB0aGUgdGF4
-			cGF5ZXJzIG9uXAptaXNzaW9uIDQuIFlvdSBoYXZlIGNvbnRyb2wu
-			IH0=
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIDUwJT8gSG93IGlu
+			dGVyZXN0aW5nLiBPSywgSSBuZWVkIHlvdSB0byBmb2N1cyBMZWEu
+			IE5vbmUgb2YgdGhpc1wKZ3JhZHVhdGVkLWF0LXRoZS10b3Atb2Yt
+			bXkgY2xhc3MgcnViYmlzaC4gWW91IHNlbnQgdGhlIFNwYWNpb1wK
+			YmFjayB0byB0aGUgdGF4cGF5ZXJzIG9uIG1pc3Npb24gNC4gWW91
+			IGhhdmUgY29udHJvbC4gfQ==
 			</data>
 		</dict>
 		<dict>
 			<key>actor</key>
 			<string>lea</string>
 			<key>summary</key>
-			<string>1-6</string>
+			<string>01-06</string>
 			<key>text</key>
 			<data>
 			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
@@ -222,7 +227,7 @@
 			<key>actor</key>
 			<string>artur</string>
 			<key>summary</key>
-			<string>1-7</string>
+			<string>01-07</string>
 			<key>text</key>
 			<data>
 			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
@@ -240,7 +245,7 @@
 			<key>actor</key>
 			<string>lea</string>
 			<key>summary</key>
-			<string>1-8</string>
+			<string>01-08</string>
 			<key>text</key>
 			<data>
 			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc

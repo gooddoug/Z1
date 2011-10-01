@@ -3,92 +3,338 @@
 <plist version="1.0">
 <dict>
 	<key>backgroundMusic</key>
-	<string>Run_3_minute_edit.mp3</string>
+	<string>music-mixed-signals.mp3</string>
 	<key>effects</key>
 	<array>
 		<dict>
 			<key>name</key>
 			<string>GDParticleFog</string>
 		</dict>
+		<dict>
+			<key>name</key>
+			<string>GDParticleStarfield</string>
+		</dict>
 	</array>
 	<key>id</key>
-	<string>1</string>
+	<string>4</string>
 	<key>name</key>
-	<string>simple_test</string>
+	<string>Mixed Signals</string>
 	<key>nextLevel</key>
 	<string>2</string>
-	<key>preLevelScripts</key>
+	<key>postLevelScripts</key>
 	<array>
 		<dict>
 			<key>actor</key>
-			<string>artur</string>
+			<string>asha</string>
 			<key>summary</key>
-			<string>Fly away</string>
+			<string>04-08</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIFNoaWJ1IENvbnRy
+			b2wuIFoxIGNvcmUgYXQgOTUlLiBIb2xkaW5nIHN0ZWFkeS4gQW55
+			IHdvcmQgb25cCkxpZXV0ZW5hbnQtQ29tbWFuZGVyIEFydHVyP30=
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>lea</string>
+			<key>summary</key>
+			<string>04-09</string>
 			<key>text</key>
 			<data>
 			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
 			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
 			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
-			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
-			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IFlvdSBtdXN0IGh1cnJ5IHRvIHlvdXIgc2hpcC5cClwKSSdsbCBt
-			aXNzIHlvdSF9
+			XHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2MFx0eDI4ODBcdHgzNjAw
+			XHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4NjQ4MFx0eDcyMDBcdHg3
+			OTIwXHR4ODY0MFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2Yw
+			IEFuZCBteSBmYXRoZXIsIGFzayBhYm91dCBteSBmYXRoZXIgZGFt
+			biBpdCF9
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>vicente</string>
+			<key>summary</key>
+			<string>04-10</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2
+			MFx0eDI4ODBcdHgzNjAwXHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4
+			NjQ4MFx0eDcyMDBcdHg3OTIwXHR4ODY0MFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2YwIEV0ZXJuaXR5LCB0
+			aGlzIGlzIERpcmVjdG9yIERyYWtlLiBPbiBiZWhhbGYgb2YgRHJh
+			a2UgUmVsaWFuY2VcCkdyb3VwLCB3ZSB3aXNoIHlvdSBib3RoIGdv
+			ZHNwZWVkLCBtYW5raW5kJ3MgaG9wZXMgYW5kIGRyZWFtcyBhcmVc
+			CmluIHlvdXIgaGFuZHMufQ==
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>lea</string>
+			<key>summary</key>
+			<string>04-11</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2
+			MFx0eDI4ODBcdHgzNjAwXHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4
+			NjQ4MFx0eDcyMDBcdHg3OTIwXHR4ODY0MFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2YwIFVudGlsIEkgaGVh
+			ciBmcm9tIG15IGZhdGhlciwgdGhpcyBiaXJkIGlzbid0IGdvaW5n
+			IGFueXdoZXJlLn0=
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>vicente</string>
+			<key>summary</key>
+			<string>04-12</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2
+			MFx0eDI4ODBcdHgzNjAwXHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4
+			NjQ4MFx0eDcyMDBcdHg3OTIwXHR4ODY0MFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2YwIFN1Yi1jb21tYW5k
+			ZXIgS2FuLCBvdmVycmlkZSwgYW5kIGVuZ2FnZSB0aGUgWjEufQ==
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>artur</string>
+			<key>summary</key>
+			<string>04-13</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2
+			MFx0eDI4ODBcdHgzNjAwXHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4
+			NjQ4MFx0eDcyMDBcdHg3OTIwXHR4ODY0MFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2YwIE5vb29vb29vb29v
+			b28hfQ==
 			</data>
 		</dict>
 		<dict>
 			<key>actor</key>
 			<string>asha</string>
 			<key>summary</key>
-			<string>No time</string>
+			<string>04-14</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2
+			MFx0eDI4ODBcdHgzNjAwXHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4
+			NjQ4MFx0eDcyMDBcdHg3OTIwXHR4ODY0MFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2YwIEFydHVyP30=
+			</data>
+		</dict>
+	</array>
+	<key>preLevelScripts</key>
+	<array>
+		<dict>
+			<key>actor</key>
+			<string>ckarl</string>
+			<key>summary</key>
+			<string>04-01</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIEthbiwgSSd2ZSBq
+			dXN0IGJlZW4gaW5mb3JtZWQgeW91J3ZlIGJlZW4gbW9uaXRvcmlu
+			ZyBhIGNvZGVkXApzaWduYWwgZnJvbSBBbmdlbGlhLiBXaHkgd2Fz
+			bid0IEkgaW5mb3JtZWQgYW5kIHdobyBleGFjdGx5IGlzXApicm9h
+			ZGNhc3RpbmcgaXQ/fQ==
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>kan</string>
+			<key>summary</key>
+			<string>04-02</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIFdpdGggdGhlIHJl
+			Y2VudCB1cGhlYXZhbCBpbiB0aGUgc2NpZW5jZSBkZXBhcnRtZW50
+			IGFuZCB0aGVcCmltcGVuZGluZyBaMSB0ZXN0LCBJIGZlbHQgaXQg
+			ZGlkbid0IHdhcnJhbnQgeW91ciBhdHRlbnRpb24uXApUZWNobmlj
+			YWxseSwgdGhlIHNpZ25hbCBpcyBvcmlnaW5hdGluZyBmcm9tIEFu
+			Z2VsaWEncyA3dGggbW9vbixcCnNpci4gSSdtIHN1cmUgaXRzIGp1
+			c3Qgc29tZSBtYWxmdW5jdGlvbmluZyBwcm9iZSBsZWZ0IG92ZXIg
+			ZnJvbVwKdGhlIG9yaWdpbmFsIHN5c3RlbSBzdXJ2ZXkuIEkndmUg
+			ZGlzcGF0Y2hlZCBMaWV1dGVuYW50LUNvbW1hbmRlclwKQXJ0dXIg
+			dG8gaW52ZXN0aWdhdGUufQ==
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>ckarl</string>
+			<key>summary</key>
+			<string>04-03</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIFZlcnkgd2VsbC4g
+			S2VlcCBtZSBwb3N0ZWQgb24gYW55IGRldmVsb3BtZW50cy4gQW5k
+			IEthbiwgc2VuZCBhXAp0ZWNoIHRvIG15IGNvbnNvbGUuIFRoZSBE
+			eW5hS2V5IGFycmF5IHN5bmMgaXMgb2ZmIGFnYWluLiBDYW4ndFwK
+			dGhleSBnZXQgdGhlIGJsb29keSB0aGluZyB0byBydW4gZm9yIHR3
+			byB3ZWVrcyB3aXRob3V0IGEgZ2xpdGNoP1wKTWlnaHQgd2FudCB0
+			byB3b3JrIGEgbmV3IG9uZSBpbnRvIG91ciBidWRnZXQgZm9yIHRo
+			ZSBmb3VydGhcCnF1YXJ0ZXIufQ==
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>kan</string>
+			<key>summary</key>
+			<string>04-04</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2
+			MFx0eDI4ODBcdHgzNjAwXHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4
+			NjQ4MFx0eDcyMDBcdHg3OTIwXHR4ODY0MFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2YwIFNoaWJ1IENvbnRy
+			b2wgdG8gRXRlcm5pdHkuIFBsZWFzZSByZXBvcnQgc3RhdHVzLlwK
+			XAp9
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>lea</string>
+			<key>summary</key>
+			<string>04-05</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2
+			MFx0eDI4ODBcdHgzNjAwXHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4
+			NjQ4MFx0eDcyMDBcdHg3OTIwXHR4ODY0MFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2YwIEFsbCBzeXN0ZW1z
+			IG5vcm1hbCwgVCBtaW51cyAzIGhvdXJzIHNpci4gUmVxdWVzdCBy
+			ZWxheSB0byBEci5cCkh3YW4ufQ==
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>kan</string>
+			<key>summary</key>
+			<string>04-06</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2
+			MFx0eDI4ODBcdHgzNjAwXHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4
+			NjQ4MFx0eDcyMDBcdHg3OTIwXHR4ODY0MFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2YwIFRoYXQgaXMgbmVn
+			YXRpdmUgU2t5SGF3ay4gRHIuIEh3YW4gaXMgY3VycmVudGx5IHdp
+			dGggRGlyZWN0b3JcCkRyYWtlLiBJIHdpbGwgZm9yd2FyZCB5b3Vy
+			IHJlcXVlc3QufQ==
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>lea</string>
+			<key>summary</key>
+			<string>04-07</string>
 			<key>text</key>
 			<data>
 			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
 			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
 			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
-			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
-			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IFRoZXJlJ3Mgbm8gdGltZSBmb3IgbXVzaHkgc3R1ZmYsIEkgaGF2
-			ZSB0byBzYXZlIGh1bWFuaXR5IX0=
+			XHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2MFx0eDI4ODBcdHgzNjAw
+			XHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4NjQ4MFx0eDcyMDBcdHg3
+			OTIwXHR4ODY0MFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2Yw
+			IFNvbWV0aGluZydzIG5vdCByaWdodCBBc2hhLiBUaGlzIGlzIHRo
+			ZSBjdWxtaW5hdGlvbiBvZiBhbGwgaGlzXAp3b3JrXCc4NSBhbmQg
+			aGUncyBpbiBtZWV0aW5ncz8gTm90IHRvIG1lbnRpb24gaGlzIGRh
+			dWdodGVyIGlzIGFib3V0XAp0byBtYWtlIGhpc3RvcnkhIERhbW4s
+			IEkgbmVlZCBvbmUgb2YgaGlzIHN0dXBpZCBwcm92ZXJicyB0byBj
+			YWxtXApteSBqaXR0ZXJzLiBBcnR1ciB3YXMgcmlnaHQsIG1heWJl
+			IEkgc2hvdWxkIGhhdmUganVzdCBiZWNvbWUgYVwKc2h1dHRsZSBw
+			dWtlLn0=
 			</data>
 		</dict>
 	</array>
 	<key>shipSprite</key>
-	<string>ship2_64x64.png</string>
+	<string>ship-hammer-64.png</string>
 	<key>spawners</key>
 	<array>
 		<dict>
 			<key>howLong</key>
-			<real>4</real>
+			<real>35</real>
 			<key>howMany</key>
-			<real>5</real>
+			<real>10</real>
 			<key>movementAnimation</key>
-			<string>SimpleSpiralInClockwise</string>
+			<string>SimpleSpiralOutClockwise</string>
 			<key>rotation</key>
 			<string>90</string>
 			<key>speed</key>
 			<real>40</real>
 			<key>sprite</key>
 			<string>alien001_01_64.png</string>
+			<key>startInside</key>
+			<true/>
 			<key>when</key>
 			<real>1</real>
 		</dict>
 		<dict>
 			<key>howLong</key>
-			<real>5</real>
+			<real>35</real>
 			<key>howMany</key>
-			<real>4</real>
+			<real>10</real>
 			<key>movementAnimation</key>
-			<string>SimpleSpiralInCounterClockwise</string>
+			<string>SimpleSpiralOutCounterClockwise</string>
 			<key>rotation</key>
 			<string>270</string>
 			<key>speed</key>
 			<real>80</real>
 			<key>sprite</key>
 			<string>alien001_01_64.png</string>
+			<key>startInside</key>
+			<true/>
 			<key>when</key>
-			<real>10</real>
+			<real>1</real>
 		</dict>
 		<dict>
 			<key>howLong</key>
@@ -106,25 +352,25 @@
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
-			<real>5</real>
+			<real>25</real>
 		</dict>
 		<dict>
 			<key>howLong</key>
-			<real>1</real>
+			<real>10</real>
 			<key>howMany</key>
-			<real>1</real>
+			<real>5</real>
 			<key>movementAnimation</key>
-			<string>ZoomOut</string>
+			<string>SpiralOutCounterClockwiseAndCircle</string>
 			<key>rotation</key>
 			<string>60</string>
 			<key>speed</key>
-			<real>1</real>
+			<real>30</real>
 			<key>sprite</key>
 			<string>alien001_03_64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
-			<real>17</real>
+			<real>30</real>
 		</dict>
 		<dict>
 			<key>howLong</key>
@@ -142,7 +388,7 @@
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
-			<real>18</real>
+			<real>31</real>
 		</dict>
 		<dict>
 			<key>howLong</key>
@@ -160,7 +406,7 @@
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
-			<real>19</real>
+			<real>32</real>
 		</dict>
 	</array>
 </dict>

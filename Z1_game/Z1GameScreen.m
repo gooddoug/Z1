@@ -279,7 +279,7 @@
     NSMutableArray* oldShots = [NSMutableArray array];
     for (GDPlayerShot* aShot in self.playerShots) 
     {
-        if (aShot.scale < 0.002 || aShot.hitSomething)
+        if (aShot.scale < 0.01 || aShot.hitSomething)
         {
             [self removeChild:aShot cleanup:YES];
             [oldShots addObject:aShot];
@@ -524,7 +524,7 @@
     NSString* destImageName = [self.levelDescription objectForKey:@"destinationImage"];
     if (!destImageName)
     {
-        [self endLevel:self];
+        [self nextScript:self];
         return;
     }
     CCSprite* destination = [CCSprite spriteWithFile:destImageName];
@@ -568,6 +568,8 @@
         [self endLevel:self];
         return;
     }
+    [[GDSoundsManager sharedSoundsManager] playSoundForName:@"dialog_display"];
+    
     // create the node that will hold everything
     CCNode* chatNode = [CCNode node];
     CCSprite* chatBackground = [CCSprite spriteWithFile:@"dialog-boxes.png"];

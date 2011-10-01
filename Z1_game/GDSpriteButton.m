@@ -7,6 +7,7 @@
 //
 
 #import "GDSpriteButton.h"
+#import "GDSoundsManager.h"
 
 
 @implementation GDSpriteButton
@@ -74,6 +75,7 @@
 
 - (void) activate
 {
+    [[GDSoundsManager sharedSoundsManager] playSoundForName:@"sfx-menu-click"];
     self.selected = NO;
     if (self.selectedSprite)
     {
