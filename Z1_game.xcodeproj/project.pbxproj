@@ -182,6 +182,8 @@
 		EF95B380143788420098EFAC /* space-battle-512.png in Resources */ = {isa = PBXBuildFile; fileRef = EF95B37F143788420098EFAC /* space-battle-512.png */; };
 		EF95B382143792830098EFAC /* shibu-control-512.png in Resources */ = {isa = PBXBuildFile; fileRef = EF95B381143792820098EFAC /* shibu-control-512.png */; };
 		EF95B384143792910098EFAC /* ship-malleus-64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF95B383143792910098EFAC /* ship-malleus-64.png */; };
+		EF95B388143797EB0098EFAC /* ship-exec-64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF95B387143797EB0098EFAC /* ship-exec-64.png */; };
+		EF95B38A143798290098EFAC /* eternity-before-256.png in Resources */ = {isa = PBXBuildFile; fileRef = EF95B389143798290098EFAC /* eternity-before-256.png */; };
 		EF9EAD10142F933300FEE580 /* Z1_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = EF9EAD0F142F933300FEE580 /* Z1_icon.icns */; };
 		EF9EAD12142F938900FEE580 /* Z1_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = EF9EAD11142F938900FEE580 /* Z1_icon.icns */; };
 		EF9EAE911431A56700FEE580 /* GDSpriteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EAE901431A56700FEE580 /* GDSpriteButton.m */; };
@@ -495,6 +497,8 @@
 		EF95B37F143788420098EFAC /* space-battle-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "space-battle-512.png"; sourceTree = "<group>"; };
 		EF95B381143792820098EFAC /* shibu-control-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shibu-control-512.png"; sourceTree = "<group>"; };
 		EF95B383143792910098EFAC /* ship-malleus-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ship-malleus-64.png"; sourceTree = "<group>"; };
+		EF95B387143797EB0098EFAC /* ship-exec-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ship-exec-64.png"; sourceTree = "<group>"; };
+		EF95B389143798290098EFAC /* eternity-before-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eternity-before-256.png"; sourceTree = "<group>"; };
 		EF9EAD0F142F933300FEE580 /* Z1_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Z1_icon.icns; sourceTree = "<group>"; };
 		EF9EAD11142F938900FEE580 /* Z1_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Z1_icon.icns; sourceTree = "<group>"; };
 		EF9EAE8F1431A56700FEE580 /* GDSpriteButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSpriteButton.h; sourceTree = "<group>"; };
@@ -920,6 +924,29 @@
 			name = Backgrounds;
 			sourceTree = "<group>";
 		};
+		EF95B385143797610098EFAC /* Destinations */ = {
+			isa = PBXGroup;
+			children = (
+				EF95B389143798290098EFAC /* eternity-before-256.png */,
+				EF24E07314344C6700965461 /* planet-lazarev-256.png */,
+				EF95B381143792820098EFAC /* shibu-control-512.png */,
+				EF95B37F143788420098EFAC /* space-battle-512.png */,
+				EF24E07E14356CDB00965461 /* space-battle-256.png */,
+			);
+			name = Destinations;
+			sourceTree = "<group>";
+		};
+		EF95B386143797750098EFAC /* Ships */ = {
+			isa = PBXGroup;
+			children = (
+				EF95B387143797EB0098EFAC /* ship-exec-64.png */,
+				EF8F0194142A62BA00A774E1 /* ship-hammer-64.png */,
+				EF95B37C143786FD0098EFAC /* ship-ladyhawk-64.png */,
+				EF95B383143792910098EFAC /* ship-malleus-64.png */,
+			);
+			name = Ships;
+			sourceTree = "<group>";
+		};
 		EFB5EA2213D889190058DB94 /* Levels */ = {
 			isa = PBXGroup;
 			children = (
@@ -1333,16 +1360,11 @@
 				EF836A2A142DBC41009EBFF6 /* red-square.png */,
 				EFE599CE13D34FCE00062F86 /* galaxy.png */,
 				EFE599A813D338A100062F86 /* shot.png */,
-				EF8F0194142A62BA00A774E1 /* ship-hammer-64.png */,
+				EF95B386143797750098EFAC /* Ships */,
 				EFE599AA13D338A100062F86 /* smoke.png */,
 				EFE599D813D3FF8700062F86 /* stars.png */,
 				EFE599AC13D338A100062F86 /* fire.png */,
-				EF95B37C143786FD0098EFAC /* ship-ladyhawk-64.png */,
-				EF95B383143792910098EFAC /* ship-malleus-64.png */,
-				EF24E07314344C6700965461 /* planet-lazarev-256.png */,
-				EF95B381143792820098EFAC /* shibu-control-512.png */,
-				EF95B37F143788420098EFAC /* space-battle-512.png */,
-				EF24E07E14356CDB00965461 /* space-battle-256.png */,
+				EF95B385143797610098EFAC /* Destinations */,
 			);
 			name = Sprites;
 			sourceTree = "<group>";
@@ -1603,6 +1625,8 @@
 				EF95B380143788420098EFAC /* space-battle-512.png in Resources */,
 				EF95B382143792830098EFAC /* shibu-control-512.png in Resources */,
 				EF95B384143792910098EFAC /* ship-malleus-64.png in Resources */,
+				EF95B388143797EB0098EFAC /* ship-exec-64.png in Resources */,
+				EF95B38A143798290098EFAC /* eternity-before-256.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
