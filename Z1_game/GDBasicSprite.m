@@ -63,7 +63,7 @@
         CGPoint center = ccp( size.width /2 , size.height/2 );
         self.position = center;
         self.contentSize = self.sprite.contentSize;
-        float anchorFactor = ((size.height / 2.25) / self.sprite.contentSize.height) + 1;
+        float anchorFactor = ((size.height / 1.5) / self.sprite.contentSize.height) + 1;
         self.anchorPoint = ccp( 0.5 , anchorFactor );
     }
     

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EF14EDE31422C2AC00D19D92 /* Run_3_minute_edit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF14EDE21422C2AC00D19D92 /* Run_3_minute_edit.mp3 */; };
 		EF14EDFA1423B9A300D19D92 /* Z1LevelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF14EDF91423B9A300D19D92 /* Z1LevelManager.m */; };
 		EF24DE871431AC8200965461 /* button-credits-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24DE821431AC8200965461 /* button-credits-hover.png */; };
 		EF24DE881431AC8200965461 /* button-restart-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24DE831431AC8200965461 /* button-restart-hover.png */; };
@@ -23,10 +22,6 @@
 		EF24DEA7143229A900965461 /* level_04.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EF24DE9F143229A900965461 /* level_04.z1level */; };
 		EF24DEA8143229A900965461 /* level_05.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EF24DEA0143229A900965461 /* level_05.z1level */; };
 		EF24DEA9143229A900965461 /* level_06.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EF24DEA1143229A900965461 /* level_06.z1level */; };
-		EF24DEAA143229A900965461 /* level_07.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EF24DEA2143229A900965461 /* level_07.z1level */; };
-		EF24DEAB143229A900965461 /* level_08.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EF24DEA3143229A900965461 /* level_08.z1level */; };
-		EF24DEAC143229A900965461 /* level_09.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EF24DEA4143229A900965461 /* level_09.z1level */; };
-		EF24DEAD143229A900965461 /* level_10.z1level in Resources */ = {isa = PBXBuildFile; fileRef = EF24DEA5143229A900965461 /* level_10.z1level */; };
 		EF24DEB014324E1100965461 /* Z1PreLevelScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = EF24DEAF14324E1100965461 /* Z1PreLevelScreen.m */; };
 		EF24DEB21432574100965461 /* chapter-screen.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24DEB11432574100965461 /* chapter-screen.png */; };
 		EF24DEB41432574F00965461 /* dialog-boxes.png in Resources */ = {isa = PBXBuildFile; fileRef = EF24DEB31432574F00965461 /* dialog-boxes.png */; };
@@ -194,6 +189,10 @@
 		EF95B39A143826340098EFAC /* shibu-raskin-256.png in Resources */ = {isa = PBXBuildFile; fileRef = EF95B398143826330098EFAC /* shibu-raskin-256.png */; };
 		EF95B39C143831C40098EFAC /* defbots-64.png in Resources */ = {isa = PBXBuildFile; fileRef = EF95B39B143831C40098EFAC /* defbots-64.png */; };
 		EF95B39E14383C950098EFAC /* saga-screen.png in Resources */ = {isa = PBXBuildFile; fileRef = EF95B39D14383C950098EFAC /* saga-screen.png */; };
+		EF95B3A31438B4ED0098EFAC /* music-feel-the-peace.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF95B39F1438B4ED0098EFAC /* music-feel-the-peace.mp3 */; };
+		EF95B3A41438B4ED0098EFAC /* music-run.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF95B3A01438B4ED0098EFAC /* music-run.mp3 */; };
+		EF95B3A51438B4ED0098EFAC /* music-the-rift.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF95B3A11438B4ED0098EFAC /* music-the-rift.mp3 */; };
+		EF95B3A61438B4ED0098EFAC /* music-who-to-believe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF95B3A21438B4ED0098EFAC /* music-who-to-believe.mp3 */; };
 		EF9EAD10142F933300FEE580 /* Z1_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = EF9EAD0F142F933300FEE580 /* Z1_icon.icns */; };
 		EF9EAD12142F938900FEE580 /* Z1_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = EF9EAD11142F938900FEE580 /* Z1_icon.icns */; };
 		EF9EAE911431A56700FEE580 /* GDSpriteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EAE901431A56700FEE580 /* GDSpriteButton.m */; };
@@ -318,7 +317,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EF14EDE21422C2AC00D19D92 /* Run_3_minute_edit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Run_3_minute_edit.mp3; sourceTree = "<group>"; };
 		EF14EDF81423B9A300D19D92 /* Z1LevelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1LevelManager.h; sourceTree = "<group>"; };
 		EF14EDF91423B9A300D19D92 /* Z1LevelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1LevelManager.m; sourceTree = "<group>"; };
 		EF24DE821431AC8200965461 /* button-credits-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-credits-hover.png"; sourceTree = "<group>"; };
@@ -335,10 +333,6 @@
 		EF24DE9F143229A900965461 /* level_04.z1level */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level_04.z1level; sourceTree = "<group>"; };
 		EF24DEA0143229A900965461 /* level_05.z1level */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level_05.z1level; sourceTree = "<group>"; };
 		EF24DEA1143229A900965461 /* level_06.z1level */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level_06.z1level; sourceTree = "<group>"; };
-		EF24DEA2143229A900965461 /* level_07.z1level */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level_07.z1level; sourceTree = "<group>"; };
-		EF24DEA3143229A900965461 /* level_08.z1level */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level_08.z1level; sourceTree = "<group>"; };
-		EF24DEA4143229A900965461 /* level_09.z1level */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level_09.z1level; sourceTree = "<group>"; };
-		EF24DEA5143229A900965461 /* level_10.z1level */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level_10.z1level; sourceTree = "<group>"; };
 		EF24DEAE14324E1100965461 /* Z1PreLevelScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z1PreLevelScreen.h; sourceTree = "<group>"; };
 		EF24DEAF14324E1100965461 /* Z1PreLevelScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Z1PreLevelScreen.m; sourceTree = "<group>"; };
 		EF24DEB11432574100965461 /* chapter-screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chapter-screen.png"; sourceTree = "<group>"; };
@@ -519,6 +513,10 @@
 		EF95B398143826330098EFAC /* shibu-raskin-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shibu-raskin-256.png"; sourceTree = "<group>"; };
 		EF95B39B143831C40098EFAC /* defbots-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "defbots-64.png"; sourceTree = "<group>"; };
 		EF95B39D14383C950098EFAC /* saga-screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "saga-screen.png"; sourceTree = "<group>"; };
+		EF95B39F1438B4ED0098EFAC /* music-feel-the-peace.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "music-feel-the-peace.mp3"; sourceTree = "<group>"; };
+		EF95B3A01438B4ED0098EFAC /* music-run.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "music-run.mp3"; sourceTree = "<group>"; };
+		EF95B3A11438B4ED0098EFAC /* music-the-rift.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "music-the-rift.mp3"; sourceTree = "<group>"; };
+		EF95B3A21438B4ED0098EFAC /* music-who-to-believe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "music-who-to-believe.mp3"; sourceTree = "<group>"; };
 		EF9EAD0F142F933300FEE580 /* Z1_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Z1_icon.icns; sourceTree = "<group>"; };
 		EF9EAD11142F938900FEE580 /* Z1_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Z1_icon.icns; sourceTree = "<group>"; };
 		EF9EAE8F1431A56700FEE580 /* GDSpriteButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSpriteButton.h; sourceTree = "<group>"; };
@@ -986,10 +984,6 @@
 				EF24DE9F143229A900965461 /* level_04.z1level */,
 				EF24DEA0143229A900965461 /* level_05.z1level */,
 				EF24DEA1143229A900965461 /* level_06.z1level */,
-				EF24DEA2143229A900965461 /* level_07.z1level */,
-				EF24DEA3143229A900965461 /* level_08.z1level */,
-				EF24DEA4143229A900965461 /* level_09.z1level */,
-				EF24DEA5143229A900965461 /* level_10.z1level */,
 				EFE6E5AD142BDA1400B594AD /* udg.level_list */,
 			);
 			name = Levels;
@@ -1405,7 +1399,6 @@
 				EF24E00F1432D8C800965461 /* junivision.wav */,
 				EF24E0101432D8C800965461 /* sfx-menu-click.wav */,
 				EF24E0861436DECC00965461 /* dialog_display.wav */,
-				EF14EDE21422C2AC00D19D92 /* Run_3_minute_edit.mp3 */,
 				EF24DE961432254C00965461 /* sfx-credits-screen.mp3 */,
 				EF24DE971432254C00965461 /* sfx-death-screen.mp3 */,
 				EF24DE981432254C00965461 /* sfx-game-logo.mp3 */,
@@ -1415,6 +1408,10 @@
 				EF24E0801435851500965461 /* music-touring-with-the-88ers.mp3 */,
 				EF24E0821436DE9900965461 /* music-im-just-a-pilot.mp3 */,
 				EF24E0831436DE9A00965461 /* music-mixed-signals.mp3 */,
+				EF95B39F1438B4ED0098EFAC /* music-feel-the-peace.mp3 */,
+				EF95B3A01438B4ED0098EFAC /* music-run.mp3 */,
+				EF95B3A11438B4ED0098EFAC /* music-the-rift.mp3 */,
+				EF95B3A21438B4ED0098EFAC /* music-who-to-believe.mp3 */,
 				EFE599B313D338C700062F86 /* explosion.wav */,
 				EF72D95D13D778D800ABD27F /* player_explosion.wav */,
 				EF72D95E13D778D800ABD27F /* quick_hit.wav */,
@@ -1492,7 +1489,6 @@
 				EF72D96313D778D900ABD27F /* player_explosion.wav in Resources */,
 				EF72D96413D778D900ABD27F /* quick_hit.wav in Resources */,
 				EF5574511421C5890035F6C2 /* level_01.z1level in Resources */,
-				EF14EDE31422C2AC00D19D92 /* Run_3_minute_edit.mp3 in Resources */,
 				EF91F16B1423DCDC002683D4 /* level_02.z1level in Resources */,
 				EF8F018E142A4C8800A774E1 /* title-screen-start.png in Resources */,
 				EF8F0196142A62BA00A774E1 /* ship-hammer-64.png in Resources */,
@@ -1590,10 +1586,6 @@
 				EF24DEA7143229A900965461 /* level_04.z1level in Resources */,
 				EF24DEA8143229A900965461 /* level_05.z1level in Resources */,
 				EF24DEA9143229A900965461 /* level_06.z1level in Resources */,
-				EF24DEAA143229A900965461 /* level_07.z1level in Resources */,
-				EF24DEAB143229A900965461 /* level_08.z1level in Resources */,
-				EF24DEAC143229A900965461 /* level_09.z1level in Resources */,
-				EF24DEAD143229A900965461 /* level_10.z1level in Resources */,
 				EF24DEB21432574100965461 /* chapter-screen.png in Resources */,
 				EF24DEB41432574F00965461 /* dialog-boxes.png in Resources */,
 				EF24E00C1432D84900965461 /* menu-hover.png in Resources */,
@@ -1667,6 +1659,10 @@
 				EF95B39A143826340098EFAC /* shibu-raskin-256.png in Resources */,
 				EF95B39C143831C40098EFAC /* defbots-64.png in Resources */,
 				EF95B39E14383C950098EFAC /* saga-screen.png in Resources */,
+				EF95B3A31438B4ED0098EFAC /* music-feel-the-peace.mp3 in Resources */,
+				EF95B3A41438B4ED0098EFAC /* music-run.mp3 in Resources */,
+				EF95B3A51438B4ED0098EFAC /* music-the-rift.mp3 in Resources */,
+				EF95B3A61438B4ED0098EFAC /* music-who-to-believe.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

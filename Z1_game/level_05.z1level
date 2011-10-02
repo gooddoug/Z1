@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>backgroundMusic</key>
-	<string>Run_3_minute_edit.mp3</string>
+	<string>music-run.mp3</string>
 	<key>destinationImage</key>
 	<string>lazarev-shibu-destroyed-512.png</string>
 	<key>effects</key>
@@ -20,7 +20,7 @@
 	<key>id</key>
 	<string>5</string>
 	<key>name</key>
-	<string>Double Crossed</string>
+	<string>All War is Deception</string>
 	<key>nextLevel</key>
 	<string>2</string>
 	<key>postLevelScripts</key>
@@ -32,15 +32,16 @@
 			<string>05-01</string>
 			<key>text</key>
 			<data>
-			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
-			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
-			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
-			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
-			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IE5vdCBnb29kLiBMYXphcmV2IEhpZ2ggQ29tbWFuZCBhIGNyYXRl
-			ci4gU2hpYnUgQ29udHJvbCBmbG9hdGluZ1wKanVuay4gQ29tbWFu
-			ZCBzdHJ1Y3R1cmUgb2J2aWF0ZWQufQ==
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIE5vdCBnb29kLiBM
+			YXphcmV2IEhpZ2ggQ29tbWFuZCBhIGNyYXRlci4gU2hpYnUgQ29u
+			dHJvbCBmbG9hdGluZ1wKanVuay4gQ29tbWFuZCBzdHJ1Y3R1cmUg
+			b2J2aWF0ZWQuIEFub3RoZXIgbWVzcy59
 			</data>
 		</dict>
 		<dict>
@@ -126,16 +127,17 @@
 			<string>05-06</string>
 			<key>text</key>
 			<data>
-			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
-			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
-			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
-			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
-			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IEhlbGxvPyEgSGVsbG8hPyBUaGlzIGlzIERyLiBId2FuLCBJIGFt
-			XCc4NSBJIG1lYW4gd2FzIGFuIGVtcGxveWVlXApvZiBEcmFrZSBS
-			ZWxpYW5jZSBHcm91cC4gUGxlYXNlIGFueW9uZT8gVGhleSdyZSBh
-			bGwgZGVhZFwnODV9
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIEhlbGxvPyEgSGVs
+			bG8hPyBUaGlzIGlzIERyLiBId2FuLCBJIGFtXCc4NSBJIG1lYW4g
+			SSB3YXMgYW4gZW1wbG95ZWVcCm9mIERyYWtlIFJlbGlhbmNlIEdy
+			b3VwLiBQbGVhc2UgYW55b25lPyBUaGV5J3JlIGFsbCBkZWFkXCc4
+			NX0=
 			</data>
 		</dict>
 	</array>
@@ -169,17 +171,18 @@
 			<string>05-02</string>
 			<key>text</key>
 			<data>
-			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
-			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
-			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
-			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
-			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IFRoZSBzdXJ2ZXkgcHJvYmUgd2FzIGFuIHVuZXhwZWN0ZWQgb3Bw
-			b3J0dW5pdHkgdG8gcmVtb3ZlIGhpbS5cClVuZm9ydHVuYXRlbHks
-			IHRoZSBMaWV1dGVuYW50LUNvbW1hbmRlciBsaXZlcy4gSSBoYXZl
-			IGFjdGl2YXRlZFwKb3VyIERlZkJvdHMgc28gbGV0IHVzIHNlZSBo
-			b3cgd2VsbCBBcnRmdWwgRG9kZ2VyIGRvZGdlcy59
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIFRoZSBzdXJ2ZXkg
+			cHJvYmUgd2FzIGFuIHVuZXhwZWN0ZWQgb3Bwb3J0dW5pdHkgdG8g
+			cmVtb3ZlIGhpbS5cClVuZm9ydHVuYXRlbHksIHRoZSBMaWV1dGVu
+			YW50LUNvbW1hbmRlciBsaXZlcy4gSSBoYXZlIGFjdGl2YXRlZFwK
+			b3VyIERlZkJvdHMgc28gbGV0IHVzIHNlZSBob3cgd2VsbCB0aGUg
+			QXJ0ZnVsIERvZGdlciBkb2RnZXMufQ==
 			</data>
 		</dict>
 		<dict>
@@ -212,19 +215,20 @@
 			<string>05-04</string>
 			<key>text</key>
 			<data>
-			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
-			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
-			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
-			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
-			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IE1vc3QgZXhjZWxsZW50IENvbW1hbmRlci0geW91IHNlZSBwYXN0
-			IG15IGNoYXJhZGUuIEkga25vdyB2ZXJ5XAp3ZWxsIG9mIHRoZSBz
-			ZWxmLWRlc3RydWN0IG1lY2hhbmlzbSBvbiBTaGlidSBDb250cm9s
-			LiBNb3N0XAp1bmZvcnR1bmF0ZSBmb3IgS2FuIFQnaXUgc2luY2Ug
-			SSBhbSBub3QgYWJvYXJkLiBHZW50bGVtYW4sIEkgYmlkXAp5b3Ug
-			ZmFyZXdlbGwuIFJlc3QgYXNzdXJlZCwgeW91ciBlZmZvcnRzIHNo
-			YWxsIG5vdCBnbyB1bm5vdGljZWQufQ==
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIE1vc3QgZXhjZWxs
+			ZW50IENvbW1hbmRlcjsgeW91IHNlZSBwYXN0IG15IGNoYXJhZGUu
+			IEkga25vdyB2ZXJ5XAp3ZWxsIG9mIHRoZSBzZWxmLWRlc3RydWN0
+			IG1lY2hhbmlzbSBvbiBTaGlidSBDb250cm9sLiBNb3N0XAp1bmZv
+			cnR1bmF0ZSBmb3IgS2FuIFQnaXUgc2luY2UgSSBhbSBub3QgYWJv
+			YXJkLiBHZW50bGVtYW4sIEkgYmlkXAp5b3UgZmFyZXdlbGwuIFJl
+			c3QgYXNzdXJlZCwgeW91ciBlZmZvcnRzIHNoYWxsIG5vdCBnbyB1
+			bm5vdGljZWQufQ==
 			</data>
 		</dict>
 		<dict>
@@ -234,16 +238,17 @@
 			<string>05-05</string>
 			<key>text</key>
 			<data>
-			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
-			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
-			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
-			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
-			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IEFkYW1haCBwaWchIFdoYXQgaXMgdGhpcz8hIFlvdSBkb3VibGUt
-			Y3Jvc3MgdXMhPyBNYXkgdGhlIFNob3JpbmlcCmNoYXNlIHlvdSB0
-			byB0aGUgZW5kcyBvZiB0aGUgdW5pdmVyc2UhIExvbmcgbGl2ZSBo
-			aXMgZ3JlYXRuZXNzXApBcG9zdGxlIFNob3JpbmkhfQ==
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIFdoYXQgaXMgdGhp
+			cz8hIEFkYW1haCBwaWchIFlvdSBkb3VibGUtY3Jvc3MgdXMhPyBN
+			YXkgdGhlIFNob3JpbmlcCmNoYXNlIHlvdSB0byB0aGUgZW5kcyBv
+			ZiB0aGUgdW5pdmVyc2UhIExvbmcgbGl2ZSBoaXMgZ3JlYXRuZXNz
+			XApBcG9zdGxlIFNob3JpbmkhfQ==
 			</data>
 		</dict>
 		<dict>
@@ -253,13 +258,14 @@
 			<string>05-06</string>
 			<key>text</key>
 			<data>
-			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
-			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
-			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
-			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
-			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IFdoZXJlPyBBbGl2ZSEgTGVhPyBObyBMZWEsIG9oIExlYVwnODV9
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIFdoZXJlPyBBbGl2
+			ZT8gQWxpdmUhfQ==
 			</data>
 		</dict>
 	</array>

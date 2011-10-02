@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>backgroundMusic</key>
-	<string>Run_3_minute_edit.mp3</string>
+	<string>music-the-rift.mp3</string>
 	<key>destinationImage</key>
 	<string>rift-512.png</string>
 	<key>effects</key>
@@ -16,7 +16,7 @@
 	<key>id</key>
 	<string>6</string>
 	<key>name</key>
-	<string>Beginnings End</string>
+	<string>Look Clearly</string>
 	<key>nextLevel</key>
 	<string>2</string>
 	<key>postLevelScripts</key>
@@ -28,20 +28,20 @@
 			<string>06-01</string>
 			<key>text</key>
 			<data>
-			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
-			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
-			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
-			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
-			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IFZhc3QgaXMgc3BhY2VcJzg1IGNvbXBsZXRlIGlzIHRoZSBkZXN0
-			cnVjdGlvbi4uLiBSZWNvbXBpbGluZ1wnODVcCkFydHVyLiBBcnR1
-			ci4gRG8geW91IGhlYXIgbWU/IEFydHVyP30=
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIFJlY29tcGlsaW5n
+			XCc4NSBBcnR1ci4gQXJ0dXIuIERvIHlvdSBoZWFyIG1lPyBBcnR1
+			cj99
 			</data>
 		</dict>
 		<dict>
 			<key>actor</key>
-			<string>artur-hurt</string>
+			<string>artur-clone</string>
 			<key>summary</key>
 			<string>06-02</string>
 			<key>text</key>
@@ -71,16 +71,16 @@
 			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
 			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
 			IFlvdSBhcmUgaW4gYSBSZWp1di4gUmVsYXguIEknbSBpbmNyZWFz
-			aW5nIEJpb3RyaWRlbWEgdG8gaW5jcmVhc2VcCnlvdXIgY29uY2lz
-			ZW5lc3MuIFlvdSB3ZXJlIGJhZGx5IGh1cnQgQXJ0dXIsIGl0IG1h
-			eSB0YWtlIHRpbWVcCmZvciB5b3UgdG8gcmVjb3Zlci4gV2hvIHNh
-			aWQgd2Ugc2hvdWxkIHN0b3AgdGhlIHRlc3QgQXJ0dXI/IFdoYXRc
-			CmRpZCB5b3UgZmluZCBvdXQgdGhlcmU/fQ==
+			aW5nIEJpb3RyaWRlbWEgdG8gaW5jcmVhc2VcCnlvdXIgY29uc2Np
+			b3VzbmVzcy4gWW91IHdlcmUgYmFkbHkgaHVydCBBcnR1ciwgaXQg
+			bWF5IHRha2UgdGltZSBmb3JcCnlvdSB0byByZWNvdmVyLiBXaG8g
+			c2FpZCB3ZSBzaG91bGQgc3RvcCB0aGUgdGVzdCBBcnR1cj8gV2hh
+			dCBkaWRcCnlvdSBmaW5kIG91dCB0aGVyZSBBcnR1cj99
 			</data>
 		</dict>
 		<dict>
 			<key>actor</key>
-			<string>artur-hurt</string>
+			<string>artur-clone</string>
 			<key>summary</key>
 			<string>06-04</string>
 			<key>text</key>
@@ -115,7 +115,7 @@
 		</dict>
 		<dict>
 			<key>actor</key>
-			<string>artur-hurt</string>
+			<string>artur-clone</string>
 			<key>summary</key>
 			<string>06-06</string>
 			<key>text</key>
@@ -162,18 +162,19 @@
 			<string>06-01</string>
 			<key>text</key>
 			<data>
-			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
-			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
-			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
-			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
-			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IExldHMgbWUgc3VtbWFyaXplLiBJbXBvc3RvciBhcnJpdmVzLiBS
-			ZXBsYWNlcyB5b3UuIE9yZGVycyBaMVwKdGVzdC4gWW91ciBhc3Np
-			c3RhbnQgYW5kIGRhdWdodGVyIGdvIHBvb2YuIENvbW1hbmRlciBz
-			YXZlcyB5b3VyXApsaWZlLiBMb3NlcyBoaXMuIFRha2VzIGRvd24g
-			YW5vdGhlciBpbXBvc3Rvci4gSSBzaG93IHVwLiBcCkludGVsbGln
-			ZW5jZSBhYm91bmQuIFdpc2RvbSwgdmVyeSBsaXR0bGUufQ==
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4
+			MFx0eDIyNDBcdHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4
+			NTA0MFx0eDU2MDBcdHg2MTYwXHR4NjcyMFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2YwIExldCBtZSBzdW1t
+			YXJpemUuIEltcG9zdG9yIGFycml2ZXMuIFJlcGxhY2VzIHlvdS4g
+			T3JkZXJzIFoxIHRlc3QuXApBc3Npc3RhbnQgYW5kIGRhdWdodGVy
+			IGdvIHBvb2YuIENvbW1hbmRlciBzYXZlcyB5b3VyIGxpZmUuIExv
+			c2VzXApoaXMuIFRha2VzIGRvd24gYW5vdGhlciBpbXBvc3Rvci4g
+			SSBzaG93IHVwLiBIbW0uLiBJbnRlbGxpZ2VuY2VcCmFib3VuZC4g
+			V2lzZG9tLCB2ZXJ5IGxpdHRsZS59
 			</data>
 		</dict>
 		<dict>
@@ -327,7 +328,7 @@
 		</dict>
 	</array>
 	<key>shipSprite</key>
-	<string>ship-malleus-64.png</string>
+	<string>ship-ladyhawk-64.png</string>
 	<key>spawners</key>
 	<array>
 		<dict>

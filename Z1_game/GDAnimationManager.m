@@ -215,7 +215,8 @@ static GDAnimationManager* _animationManager = nil;
          {
              if (!aSprite.animInfo) 
              {
-                 aSprite.anchorPoint = ccp( 0.5 , 6.8 );
+                 aSprite.anchorPoint = ccp( 0.5 , 6.5 );
+                 aSprite.scale = 1.0;
                  
                  aSprite.animInfo = [NSNumber numberWithFloat:0.0];
              }

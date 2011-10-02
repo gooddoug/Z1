@@ -373,7 +373,7 @@
     // stupid brute force test of all player shots with all enemies...
     for (GDPlayerShot* aShot in self.playerShots) 
     {
-        float exSize = 15.0; // be smarter about this later
+        float exSize = 20.0; // be smarter about this later
         CGRect shotRect = [aShot boundingBox]; // get boundingBox to account for rotation and anchorPoint offset
         CGPoint centerShot = CGPointMake(shotRect.origin.x + (shotRect.size.width / 2), shotRect.origin.y + (shotRect.size.height / 2));
         
@@ -407,7 +407,7 @@
 {
     CGRect playerRect = [self.playerSprite boundingBox];
     CGPoint centerPlayer = CGPointMake(playerRect.origin.x + (playerRect.size.width / 2), playerRect.origin.y + (playerRect.size.height / 2));
-    float exSize = 25.0; // be smarter about this later
+    float exSize = 30.0; // be smarter about this later
     
     // again simple brute force...
     for (GDBasicSprite* anEnemy in self.enemySprites) 

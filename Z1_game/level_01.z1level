@@ -302,7 +302,7 @@
 		</dict>
 		<dict>
 			<key>howLong</key>
-			<real>40</real>
+			<real>35</real>
 			<key>howMany</key>
 			<real>8</real>
 			<key>movementAnimation</key>
@@ -320,7 +320,7 @@
 		</dict>
 		<dict>
 			<key>howLong</key>
-			<real>40</real>
+			<real>34</real>
 			<key>howMany</key>
 			<real>10</real>
 			<key>movementAnimation</key>
@@ -364,7 +364,7 @@
 			<key>rotation</key>
 			<string>290</string>
 			<key>speed</key>
-			<real>1</real>
+			<real>2</real>
 			<key>sprite</key>
 			<string>asteroid02_05_64.png</string>
 			<key>startInside</key>

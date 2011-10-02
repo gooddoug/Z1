@@ -4,6 +4,8 @@
 <dict>
 	<key>backgroundMusic</key>
 	<string>music-mixed-signals.mp3</string>
+	<key>destinationImage</key>
+	<string>shibu-eternity-512.png</string>
 	<key>effects</key>
 	<array>
 		<dict>
@@ -48,14 +50,14 @@
 			<string>04-09</string>
 			<key>text</key>
 			<data>
-			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
-			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
-			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
-			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2
-			MFx0eDI4ODBcdHgzNjAwXHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4
-			NjQ4MFx0eDcyMDBcdHg3OTIwXHR4ODY0MFxxbFxxbmF0dXJhbFxw
-			YXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2YwIEFuZCBteSBmYXRo
-			ZXIsIGFzayBhYm91dCBteSBmYXRoZXIgZGFtIGl0IX0=
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2MFx0eDI4ODBcdHgzNjAw
+			XHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4NjQ4MFx0eDcyMDBcdHg3
+			OTIwXHR4ODY0MFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2Yw
+			IEFuZCBteSBmYXRoZXIsIGFzayBhYm91dCBteSBmYXRoZXIgZGFt
+			biBpdCF9
 			</data>
 		</dict>
 		<dict>
@@ -91,9 +93,9 @@
 			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2
 			MFx0eDI4ODBcdHgzNjAwXHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4
 			NjQ4MFx0eDcyMDBcdHg3OTIwXHR4ODY0MFxxbFxxbmF0dXJhbFxw
-			YXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2YwIFVudGlsIEkgaGVh
-			ciBmcm9tIG15IGZhdGhlciwgdGhpcyBiaXJkIGlzbid0IGdvaW5n
-			IGFueXdoZXJlLn0=
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2YwIFdoYXQhPyBVbnRp
+			bCBJIGhlYXIgZnJvbSBteSBmYXRoZXIsIHRoaXMgYmlyZCBpc24n
+			dCBnb2luZ1wKYW55d2hlcmUufQ==
 			</data>
 		</dict>
 		<dict>
@@ -286,29 +288,31 @@
 			YXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2YwIFNvbWV0aGluZydz
 			IG5vdCByaWdodCBBc2hhLiBUaGlzIGlzIHRoZSBjdWxtaW5hdGlv
 			biBvZiBhbGwgaGlzXAp3b3JrXCc4NSBhbmQgaGUncyBpbiBtZWV0
-			aW5ncz8gTm90IHRvIG1lbnRpb24gaGlzIGRhdWdodGVyIGlzIGFi
-			b3V0XAp0byBtYWtlIGhpc3RvcnkhIERhbSwgSSBuZWVkIG9uZSBv
-			ZiBoaXMgc3R1cGlkIHByb3ZlcmJzIHRvIGNhbG1cCm15IGppdHRl
-			cnMuIEFydHVyIHdhcyByaWdodCwgbWF5YmUgSSBzaG91bGQgaGF2
-			ZSBqdXN0IGJlY29tZSBhXApzaHV0dGxlIHB1a2UufQ==
+			aW5ncz8gRGFtLCBJIG5lZWQgb25lIG9mIGhpcyBzdHVwaWRcCnBy
+			b3ZlcmJzIHRvIGNhbG0gbXkgaml0dGVycy4gQXJ0dXIgd2FzIHJp
+			Z2h0LCBtYXliZSBJIHNob3VsZCBoYXZlXApqdXN0IGJlY29tZSBh
+			IHNodXR0bGUgcHVrZS59
 			</data>
 		</dict>
 		<dict>
 			<key>actor</key>
-			<string>artur</string>
+			<string>asha</string>
 			<key>summary</key>
 			<string>04-08</string>
 			<key>text</key>
 			<data>
-			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
-			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
-			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2MFx0eDI4ODBcdHgzNjAw
-			XHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4NjQ4MFx0eDcyMDBcdHg3
-			OTIwXHR4ODY0MFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2Yw
-			IEFydGZ1bCBEb2RnZXIgcmVwb3J0aW5nIHRvIFVuaXQgMjEuIEkn
-			bSBzdXBwb3NlZCB0b1wKZG8gYSBzY2FuIG9mIHRoZSBhcmVhLiBB
-			bnlvbmUgcmVzcG9uZGluZz99
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2
+			MFx0eDI4ODBcdHgzNjAwXHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4
+			NjQ4MFx0eDcyMDBcdHg3OTIwXHR4ODY0MFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2YwIEV0ZXJuaXR5IHRv
+			IEhhbW1lci4gWW91J3JlIGFib3V0IHRvIGxlYXZlIG91ciBMUlMu
+			IFlvdSBoYXZlIGxlc3NcCnRoYW4gdGhyZWUgaG91cnMgdG8gZ2V0
+			IGJhY2sgaGVyZSB0byB3YXRjaCB1cyBtYWtlIGhpc3RvcnkuIEFu
+			ZFwKdGhlbiBtYXliZSB3ZSBjYW4gcHV0IGFuIGVuZCB0byB0aGF0
+			ICd3b25kZXJpbmcnIG9mIHlvdXJzLn0=
 			</data>
 		</dict>
 		<dict>
@@ -318,16 +322,20 @@
 			<string>04-09</string>
 			<key>text</key>
 			<data>
-			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
-			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
-			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
-			XHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2MFx0eDI4ODBcdHgzNjAw
-			XHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4NjQ4MFx0eDcyMDBcdHg3
-			OTIwXHR4ODY0MFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2Yw
-			IFRoaXMgaXMgTGlldXRlbmFudC1Db21tYW5kZXIgQXJ0dXIhIEJy
-			ZWFrIG9mZiB5b3VyXAphdHRhY2ssIFVuaXQgMjEuIEJyZWFrIG9m
-			ZiB5b3VyIGF0dGFjayEgQnJlYWsgb2ZmIHlvdXJcCmF0dGFjayBv
-			ciBJIHdpbGwgYmUgZm9yY2VkIHRvIGRlZmVuZCBteXNlbGYhfQ==
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNv
+			Y29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJz
+			ZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVl
+			bjI1NVxibHVlMjU1O30KXHBhcmRcdHg3MjBcdHgxNDQwXHR4MjE2
+			MFx0eDI4ODBcdHgzNjAwXHR4NDMyMFx0eDUwNDBcdHg1NzYwXHR4
+			NjQ4MFx0eDcyMDBcdHg3OTIwXHR4ODY0MFxxbFxxbmF0dXJhbFxw
+			YXJkaXJuYXR1cmFsCgpcZjBcZnMzMiBcY2YwIFdlIGhhdmUgQW5n
+			ZWxpYSBvbiB2aXN1YWwgbm93LiBZb3UgdGVsbCBMZWEgSSB3b3Vs
+			ZG4ndCBtaXNzIGl0XApmb3IgdGhlIHdvcmxkLiBTaGUgbWlnaHQg
+			YmUgdGhlIGx1Y2tpZXN0IHBpbG90IG9uIHRoaXMgc2lkZSBvZlwK
+			dGhlIENvYWxpdGlvbi4gTWF5YmUgeW91IGFuZCBJIGNhblwnODUg
+			cGxlYXNlIGhvbGQgRXRlcm5pdHksIFVuaXQgMjFcCmhhcyB0dXJu
+			ZWQgYXJvdW5kIGFuZCBpcyBoZWFkaW5nIHN0cmFpZ2h0IGF0IG1l
+			Ln0=
 			</data>
 		</dict>
 	</array>

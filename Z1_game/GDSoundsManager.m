@@ -48,6 +48,7 @@ static GDSoundsManager* _soundsManager = nil;
         [self.music setObject:@"sfx-game-logo.mp3" forKey:@"mainMenu"];
         [self.music setObject:@"sfx-death-screen.mp3" forKey:@"gameOver"];
         [self.music setObject:@"sfx-credits-screen.mp3" forKey:@"credits"];
+        [self.music setObject:@"music-feel-the-peace.mp3" forKey:@"ending"];
     }
     
     return self;

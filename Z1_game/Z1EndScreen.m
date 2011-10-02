@@ -42,13 +42,12 @@
 {
 	if(( self = [self initWithEffectNames:[NSArray array]] )) 
     {        
+        [[GDSoundsManager sharedSoundsManager] playMusicForSceneNamed:@"ending"];
         NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
         [defaults setBool:YES forKey:@"gameFinished"];
         
         self.isKeyboardEnabled = YES;
         self.isMouseEnabled = YES;
-        [[GDSoundsManager sharedSoundsManager] stopPlayingMusic];
-        [[GDSoundsManager sharedSoundsManager] playSoundForName:@"junivision"];
         
         CGSize size = [[CCDirector sharedDirector] winSize];
 		CCSprite* background = [CCSprite spriteWithFile:@"end-screen.png"];
@@ -62,7 +61,7 @@
         CCFadeIn* fadeAction = [CCFadeIn actionWithDuration:1.0];
         CCDelayTime* delayAction = [CCDelayTime actionWithDuration:4.5];
         CCCallFunc* moveOnAction = [CCCallFunc actionWithTarget:self selector:@selector(moveOn:)];
-        CCDelayTime* delay10Action = [CCDelayTime actionWithDuration:10];
+        CCDelayTime* delay10Action = [CCDelayTime actionWithDuration:360];
         [pressKeyLabel runAction:[CCSequence actions:delayAction, fadeAction, delay10Action, moveOnAction, nil]];
         [self addChild:pressKeyLabel z:10];
 	}

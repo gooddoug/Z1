@@ -98,7 +98,7 @@
     enemySprite.rotation = self.rotation;
     enemySprite.animBlock = self.movementAnimation;
     enemySprite.scaleDirection = self.startInside ? -1 : 1;
-    enemySprite.scale = self.startInside ? 0.01 : 1.0;
+    enemySprite.scale = self.startInside ? 0.01 : 1.5;
     enemySprite.speed = self.spriteSpeed;
     
     [(Z1GameScreen*)self.parent addEnemySprite:enemySprite];
