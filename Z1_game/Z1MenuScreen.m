@@ -66,7 +66,7 @@
         [self addChild:background z:0];
         
         // add buttons
-        GDSpriteButton* startButton = [[[GDSpriteButton alloc] initWithTarget:self selector:@selector(start:) normalSprite:[CCSprite spriteWithFile:@"button-start.png"] selectedSprite:[CCSprite spriteWithFile:@"button-start-press.png"] hoverSprite:[CCSprite spriteWithFile:@"button-start-hover.png"]] autorelease];
+        GDSpriteButton* startButton = [[[GDSpriteButton alloc] initWithTarget:self selector:@selector(start:) normalSprite:[CCSprite spriteWithFile:@"button-continue.png"] selectedSprite:[CCSprite spriteWithFile:@"button-continue-press.png"] hoverSprite:[CCSprite spriteWithFile:@"button-continue-hover.png"]] autorelease];
         GDSpriteButton* restartButton = [[[GDSpriteButton alloc] initWithTarget:self selector:@selector(restart:) normalSprite:[CCSprite spriteWithFile:@"button-restart.png"] selectedSprite:[CCSprite spriteWithFile:@"button-restart-press.png"] hoverSprite:[CCSprite spriteWithFile:@"button-restart-hover.png"]] autorelease];
         GDSpriteButton* creditsButton = [[[GDSpriteButton alloc] initWithTarget:self selector:@selector(credits:) normalSprite:[CCSprite spriteWithFile:@"button-credits.png"] selectedSprite:[CCSprite spriteWithFile:@"button-credits-press.png"] hoverSprite:[CCSprite spriteWithFile:@"button-credits-hover.png"]] autorelease];
         GDSpriteButton* voteButton = [[[GDSpriteButton alloc] initWithTarget:self selector:@selector(vote:) normalSprite:[CCSprite spriteWithFile:@"button-vote.png"] selectedSprite:[CCSprite spriteWithFile:@"button-vote-press.png"] hoverSprite:[CCSprite spriteWithFile:@"button-vote-hover.png"]] autorelease];
