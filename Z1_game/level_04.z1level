@@ -339,7 +339,7 @@
 			<key>howLong</key>
 			<real>8</real>
 			<key>howMany</key>
-			<real>12</real>
+			<real>10</real>
 			<key>movementAnimation</key>
 			<string>SimpleSpiralOutClockwise</string>
 			<key>rotation</key>
@@ -357,7 +357,7 @@
 			<key>howLong</key>
 			<real>8</real>
 			<key>howMany</key>
-			<real>12</real>
+			<real>10</real>
 			<key>movementAnimation</key>
 			<string>SimpleSpiralOutCounterClockwise</string>
 			<key>rotation</key>
@@ -375,7 +375,7 @@
 			<key>howLong</key>
 			<real>10</real>
 			<key>howMany</key>
-			<real>16</real>
+			<real>12</real>
 			<key>movementAnimation</key>
 			<string>SimpleSpiralOutCounterClockwise</string>
 			<key>rotation</key>
@@ -393,7 +393,7 @@
 			<key>howLong</key>
 			<real>12</real>
 			<key>howMany</key>
-			<real>16</real>
+			<real>12</real>
 			<key>movementAnimation</key>
 			<string>SimpleSpiralOutCounterClockwise</string>
 			<key>rotation</key>
@@ -573,7 +573,7 @@
 			<key>howLong</key>
 			<real>16</real>
 			<key>howMany</key>
-			<real>12</real>
+			<real>10</real>
 			<key>movementAnimation</key>
 			<string>SpiralOutCounterClockwiseAndCircle</string>
 			<key>rotation</key>

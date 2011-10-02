@@ -5,7 +5,7 @@
 	<key>backgroundMusic</key>
 	<string>Run_3_minute_edit.mp3</string>
 	<key>destinationImage</key>
-	<string>shibu-control-512.png</string>
+	<string>lazarev-shibu-destroyed-512.png</string>
 	<key>effects</key>
 	<array>
 		<dict>
@@ -45,7 +45,7 @@
 		</dict>
 		<dict>
 			<key>actor</key>
-			<string>nikori</string>
+			<string>vicente</string>
 			<key>summary</key>
 			<string>05-02</string>
 			<key>text</key>
@@ -87,7 +87,7 @@
 		</dict>
 		<dict>
 			<key>actor</key>
-			<string>nikori</string>
+			<string>vicente</string>
 			<key>summary</key>
 			<string>05-04</string>
 			<key>text</key>
@@ -207,7 +207,7 @@
 		</dict>
 		<dict>
 			<key>actor</key>
-			<string>nikori</string>
+			<string>vicente</string>
 			<key>summary</key>
 			<string>05-04</string>
 			<key>text</key>
@@ -273,13 +273,15 @@
 			<key>howMany</key>
 			<real>5</real>
 			<key>movementAnimation</key>
-			<string>SimpleSpiralInClockwise</string>
+			<string>SpiralOutClockwiseAndAttack</string>
 			<key>rotation</key>
 			<string>90</string>
 			<key>speed</key>
 			<real>40</real>
 			<key>sprite</key>
-			<string>alien001_01_64.png</string>
+			<string>defbots-64.png</string>
+			<key>startInside</key>
+			<true/>
 			<key>when</key>
 			<real>1</real>
 		</dict>
@@ -289,13 +291,15 @@
 			<key>howMany</key>
 			<real>4</real>
 			<key>movementAnimation</key>
-			<string>SimpleSpiralInCounterClockwise</string>
+			<string>SpiralOutCounterClockwiseAndAttack</string>
 			<key>rotation</key>
 			<string>270</string>
 			<key>speed</key>
 			<real>80</real>
 			<key>sprite</key>
-			<string>alien001_01_64.png</string>
+			<string>defbots-64.png</string>
+			<key>startInside</key>
+			<true/>
 			<key>when</key>
 			<real>10</real>
 		</dict>
@@ -311,7 +315,7 @@
 			<key>speed</key>
 			<real>40</real>
 			<key>sprite</key>
-			<string>alien001_03_64.png</string>
+			<string>defbots-64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
@@ -323,13 +327,13 @@
 			<key>howMany</key>
 			<real>1</real>
 			<key>movementAnimation</key>
-			<string>ZoomOut</string>
+			<string>SpiralOutCounterClockwiseAndAttack</string>
 			<key>rotation</key>
 			<string>60</string>
 			<key>speed</key>
-			<real>1</real>
+			<real>25</real>
 			<key>sprite</key>
-			<string>alien001_03_64.png</string>
+			<string>defbots-64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
@@ -341,13 +345,13 @@
 			<key>howMany</key>
 			<real>1</real>
 			<key>movementAnimation</key>
-			<string>ZoomOut</string>
+			<string>SpiralOutClockwiseAndAttack</string>
 			<key>rotation</key>
 			<string>75</string>
 			<key>speed</key>
-			<real>1</real>
+			<real>40</real>
 			<key>sprite</key>
-			<string>alien001_03_64.png</string>
+			<string>defbots-64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
@@ -359,17 +363,107 @@
 			<key>howMany</key>
 			<real>1</real>
 			<key>movementAnimation</key>
-			<string>ZoomOut</string>
+			<string>SpiralOutCounterClockwiseAndAttack</string>
 			<key>rotation</key>
-			<string>90</string>
+			<string>0</string>
 			<key>speed</key>
-			<real>1</real>
+			<real>20</real>
 			<key>sprite</key>
-			<string>alien001_03_64.png</string>
+			<string>defbots-64.png</string>
 			<key>startInside</key>
 			<true/>
 			<key>when</key>
 			<real>19</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>6</real>
+			<key>howMany</key>
+			<real>10</real>
+			<key>movementAnimation</key>
+			<string>SpiralOutCounterClockwiseAndCircle</string>
+			<key>rotation</key>
+			<string>270</string>
+			<key>speed</key>
+			<real>35</real>
+			<key>sprite</key>
+			<string>defbots-64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>20</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>5</real>
+			<key>howMany</key>
+			<real>10</real>
+			<key>movementAnimation</key>
+			<string>SpiralOutClockwiseAndCircle</string>
+			<key>rotation</key>
+			<string>90</string>
+			<key>speed</key>
+			<real>25</real>
+			<key>sprite</key>
+			<string>defbots-64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>26</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>6</real>
+			<key>howMany</key>
+			<real>10</real>
+			<key>movementAnimation</key>
+			<string>SpiralOutCounterClockwiseAndAttack</string>
+			<key>rotation</key>
+			<string>0</string>
+			<key>speed</key>
+			<real>20</real>
+			<key>sprite</key>
+			<string>defbots-64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>30</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>5</real>
+			<key>howMany</key>
+			<real>6</real>
+			<key>movementAnimation</key>
+			<string>SpiralOutClockwiseAndAttack</string>
+			<key>rotation</key>
+			<string>45</string>
+			<key>speed</key>
+			<real>15</real>
+			<key>sprite</key>
+			<string>defbots-64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>35</real>
+		</dict>
+		<dict>
+			<key>howLong</key>
+			<real>6</real>
+			<key>howMany</key>
+			<real>7</real>
+			<key>movementAnimation</key>
+			<string>SpiralOutCounterClockwiseAndAttack</string>
+			<key>rotation</key>
+			<string>225</string>
+			<key>speed</key>
+			<real>25</real>
+			<key>sprite</key>
+			<string>defbots-64.png</string>
+			<key>startInside</key>
+			<true/>
+			<key>when</key>
+			<real>38</real>
 		</dict>
 	</array>
 </dict>

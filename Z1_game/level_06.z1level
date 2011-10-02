@@ -4,26 +4,162 @@
 <dict>
 	<key>backgroundMusic</key>
 	<string>Run_3_minute_edit.mp3</string>
+	<key>destinationImage</key>
+	<string>rift-512.png</string>
 	<key>effects</key>
 	<array>
 		<dict>
 			<key>name</key>
-			<string>GDParticleFog</string>
+			<string>GDParticleStarfield</string>
 		</dict>
 	</array>
 	<key>id</key>
-	<string>1</string>
+	<string>6</string>
 	<key>name</key>
-	<string>simple_test</string>
+	<string>Beginnings End</string>
 	<key>nextLevel</key>
 	<string>2</string>
+	<key>postLevelScripts</key>
+	<array>
+		<dict>
+			<key>actor</key>
+			<string>asha-ai</string>
+			<key>summary</key>
+			<string>06-01</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
+			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
+			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
+			IFZhc3QgaXMgc3BhY2VcJzg1IGNvbXBsZXRlIGlzIHRoZSBkZXN0
+			cnVjdGlvbi4uLiBSZWNvbXBpbGluZ1wnODVcCkFydHVyLiBBcnR1
+			ci4gRG8geW91IGhlYXIgbWU/IEFydHVyP30=
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>artur-hurt</string>
+			<key>summary</key>
+			<string>06-02</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
+			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
+			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
+			IExlYT8gQXNoYT8gSSBjYW4ndCBzZWUhIFdoYXQgaXMgdGhpcz8g
+			V2hlcmUgYW0gST8gV2hhdCBoYXBwZW5lZD9cCllvdSBoYXZlIHRv
+			IHN0b3AgdGhlIFoxIHRlc3QhIFRoZXkgc2FpZCBzbyF9
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>asha-ai</string>
+			<key>summary</key>
+			<string>06-03</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
+			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
+			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
+			IFlvdSBhcmUgaW4gYSBSZWp1di4gUmVsYXguIEknbSBpbmNyZWFz
+			aW5nIEJpb3RyaWRlbWEgdG8gaW5jcmVhc2VcCnlvdXIgY29uY2lz
+			ZW5lc3MuIFlvdSB3ZXJlIGJhZGx5IGh1cnQgQXJ0dXIsIGl0IG1h
+			eSB0YWtlIHRpbWVcCmZvciB5b3UgdG8gcmVjb3Zlci4gV2hvIHNh
+			aWQgd2Ugc2hvdWxkIHN0b3AgdGhlIHRlc3QgQXJ0dXI/IFdoYXRc
+			CmRpZCB5b3UgZmluZCBvdXQgdGhlcmU/fQ==
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>artur-hurt</string>
+			<key>summary</key>
+			<string>06-04</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
+			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
+			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
+			IFRoZXlcJzg1IEkgY2FuJ3QgcmVtZW1iZXIuIE15IG1lbW9yeVwn
+			ODUgV2h5IGNhbid0IEkgcmVtZW1iZXI/IFdoZXJlJ3NcCkxlYT8g
+			SSBjb3VsZG4ndCByZWFjaCB5b3VyIHNoaXAuIElzIHNoZSBPSz99
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>asha-ai</string>
+			<key>summary</key>
+			<string>06-05</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
+			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
+			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
+			IFlvdSd2ZSBoYWQgc29tZSBuZXVyb2xvZ2ljYWwgdHJhdW1hIEFy
+			dHVyLiBLZWVwIHRyeWluZyB0b1wKcmVtZW1iZXIufQ==
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>artur-hurt</string>
+			<key>summary</key>
+			<string>06-06</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
+			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
+			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
+			IFlvdSdyZSBub3QgdGVsbGluZyBtZSBhYm91dCBMZWEuIFRFTEwg
+			TUUgQUJPVVQgTEVBIX0=
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>asha-ai</string>
+			<key>summary</key>
+			<string>06-07</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
+			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
+			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
+			IEknbSBzb3JyeSBBcnR1ciBidXQgSSBuZWVkIHlvdSB0byBzbGVl
+			cCBub3cuIFRoYXQncyBnb29kLiBTbGVlcC5cCkluIG15IHdvbWIg
+			eW91IHJlanV2ZW5hdGUsIGZyYWdtZW50ZWQgdmlzaW9ucyBvZiBw
+			YXN0IGhvcnJvcnMsXAplbmRsZXNzIHN1ZmZlcmluZyBhbmQgdGhl
+			IGNoYW9zIG9mIGh1bWFuaXR5XCc5MnMgZ3JlYXQgcmV0cmVhdFwK
+			Y2xlYXIuIFJlYmlydGggaXMgbmVhci4gQWxsIHNoYWxsIGZlYXIu
+			fQ==
+			</data>
+		</dict>
+	</array>
 	<key>preLevelScripts</key>
 	<array>
 		<dict>
 			<key>actor</key>
-			<string>artur</string>
+			<string>sy-siya</string>
 			<key>summary</key>
-			<string>Fly away</string>
+			<string>06-01</string>
 			<key>text</key>
 			<data>
 			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
@@ -32,15 +168,19 @@
 			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
 			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
 			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IFlvdSBtdXN0IGh1cnJ5IHRvIHlvdXIgc2hpcC5cClwKSSdsbCBt
-			aXNzIHlvdSF9
+			IExldHMgbWUgc3VtbWFyaXplLiBJbXBvc3RvciBhcnJpdmVzLiBS
+			ZXBsYWNlcyB5b3UuIE9yZGVycyBaMVwKdGVzdC4gWW91ciBhc3Np
+			c3RhbnQgYW5kIGRhdWdodGVyIGdvIHBvb2YuIENvbW1hbmRlciBz
+			YXZlcyB5b3VyXApsaWZlLiBMb3NlcyBoaXMuIFRha2VzIGRvd24g
+			YW5vdGhlciBpbXBvc3Rvci4gSSBzaG93IHVwLiBcCkludGVsbGln
+			ZW5jZSBhYm91bmQuIFdpc2RvbSwgdmVyeSBsaXR0bGUufQ==
 			</data>
 		</dict>
 		<dict>
 			<key>actor</key>
-			<string>asha</string>
+			<string>hwan</string>
 			<key>summary</key>
-			<string>No time</string>
+			<string>06-02</string>
 			<key>text</key>
 			<data>
 			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
@@ -49,13 +189,145 @@
 			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
 			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
 			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
-			IFRoZXJlJ3Mgbm8gdGltZSBmb3IgbXVzaHkgc3R1ZmYsIEkgaGF2
-			ZSB0byBzYXZlIGh1bWFuaXR5IX0=
+			IE1lbiBpbiB0aGUgZ2FtZSBhcmUgYmxpbmQgdG8gd2hhdCBtZW4g
+			bG9va2luZyBvbiBzZWUgY2xlYXJseS4gSVwKa25vdyB3aGF0IHlv
+			dSBhcmUuIFRoZXJlIGFyZSB0aG9zZSB0aGF0IGZhaW50IGF0IHRo
+			ZSBtZXJlXAptZW50aW9uIG9mIHRoZSBTeS4gVGhlcmUgYXJlIHRo
+			b3NlIHRoYXQgdGhpbmsgeW91IG1vZGVybiBkYXlcCnNvcmNlcmVy
+			cy4gVGhlcmUgYXJlIGV2ZW4gdGhvc2UgdGhhdCB0aGluayB5b3Ug
+			bm90aGluZyBidXRcCmxlZ2VuZC59
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>sy-siya</string>
+			<key>summary</key>
+			<string>06-03</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
+			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
+			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
+			IFNob3cgeW91IHRvIHNlZSBjbGVhcmx5IEkgc2hhbGwuIFRoaXMg
+			YXJyYXkgd2FzIHdpcGVkIG91dC4gVGhpc1wKYXJyYXkgcmVtYWlu
+			ZWQgaW4tdGFja2VkLiBJbnRlcmVzdGluZyBpbmRlZWQuIEl0J3Mg
+			bm93IG9uIHRoZVwKTWFsbGV1cy4gQXMgdGhlIG9uZSB5b3UgY2Fs
+			bCBBcnR1ci59
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>hwan</string>
+			<key>summary</key>
+			<string>06-04</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
+			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
+			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
+			IE15IGdvZCwgd2hhdCBpcyB0aGF0PyBMb29rLCB0aG9zZSBzZWVt
+			IHRvIGJlIHNoaXBzISBXYWl0LFwKd2hlcmUgYXJlIHlvdSBnb2lu
+			Zz99
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>sy-siya</string>
+			<key>summary</key>
+			<string>06-05</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
+			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
+			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
+			IFlvdXIgc2hpcC4gTXVzdCBkZWFsIHdpdGggdGhpcyBuZXcgdGhy
+			ZWF0Ln0=
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>hwan</string>
+			<key>summary</key>
+			<string>06-06</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
+			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
+			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
+			IE15IHNoaXA/IEJ1dCB5b3UgaGF2ZSBhIHNoaXAhIFdoeSBhcmUg
+			eW91IHNlbmRpbmcgYXdheSB5b3VyXApzaGlwPyBNeSBkYXVnaHRl
+			ciwgeW91IGRpZG4ndCB0ZWxsIG1lIHdoYXQgeW91IHRoaW5rIGhh
+			cHBlbmVkIHRvXApteSBkYXVnaHRlcj8gSXMgc2hlIGFsaXZlP30=
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>sy-siya</string>
+			<key>summary</key>
+			<string>06-07</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
+			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
+			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
+			IE1hbGxldXMgaXMgb24gYXV0byBwaWxvdC4gU2V0IHRvIGxlYXZl
+			IHN5c3RlbSBhbmQgcmV0dXJuIHRvIFN5QWkuXApUaGUgU3kgbXVz
+			dCBiZSB3YXJuZWQuIFRoZSBhcnJheSBpcyB0aGUga2V5IHRvIHlv
+			dXIgZGF1Z2h0ZXInc1wKbGlmZS59
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>hwan</string>
+			<key>summary</key>
+			<string>06-08</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
+			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
+			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
+			IEhvdyBhYm91dCBtZT8gV2hhdCBzaG91bGQgSSBkbz8gSSdtIGEg
+			c2NpZW50aXN0LCBub3QgYSBmaWdodGVyIX0=
+			</data>
+		</dict>
+		<dict>
+			<key>actor</key>
+			<string>sy-siya</string>
+			<key>summary</key>
+			<string>06-09</string>
+			<key>text</key>
+			<data>
+			e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMTM4Cntc
+			Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9
+			CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O30K
+			XHBhcmRcdHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBcdHgyODAw
+			XHR4MzM2MFx0eDM5MjBcdHg0NDgwXHR4NTA0MFx0eDU2MDBcdHg2
+			MTYwXHR4NjcyMFxwYXJkaXJuYXR1cmFsCgpcZjBcZnMyNCBcY2Yw
+			IFlvdSBtaWdodCBiZSB1c2VmdWwgeWV0LiBDb21lIHdpdGggbWUu
+			IFdlIG1pZ2h0IHN1cnZpdmUgdGhpcy4gXApPciBkaWUgd2VsbC59
 			</data>
 		</dict>
 	</array>
 	<key>shipSprite</key>
-	<string>ship2_64x64.png</string>
+	<string>ship-malleus-64.png</string>
 	<key>spawners</key>
 	<array>
 		<dict>

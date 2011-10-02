@@ -260,6 +260,97 @@ static GDAnimationManager* _animationManager = nil;
              }
          } forKey:@"FollowPlayer"];
         
+        [blockDict setObject:^(ccTime dt, GDBasicSprite* aSprite)
+         {
+             float scaleFactor = 0.1;
+             if (aSprite.scale >= 2.0)
+             {
+                 aSprite.dead = YES;
+             }
+             if (aSprite.scale > 0.25)
+             {
+                 float playerRot = [Z1Player sharedPlayer].sprite.rotation;
+                 float enemyRot = aSprite.rotation;
+                 if (playerRot > 270.0 && enemyRot < 100.0)
+                 {
+                     enemyRot = enemyRot + 360;
+                     //NSLog(@"p:%f e:%f escort +", playerRot, enemyRot);
+                 }
+                 if (playerRot < 100.0 && enemyRot > 270.0)
+                 {
+                     //NSLog(@"p:%f e:%f escort -", playerRot, enemyRot);
+                     enemyRot = enemyRot - 360;
+                 }
+                 float diff = playerRot - enemyRot;
+                 
+                 float rotFactor = aSprite.speed * dt;
+                 if (diff > 45)
+                 {
+                     rotFactor = aSprite.speed * 2 * dt;
+                 }
+                 float factor = (diff < 0.0) ? -1.0 : 1.0;
+                 
+                 if (abs(diff) > rotFactor)
+                 {
+                     // rotate 70
+                     aSprite.rotation = aSprite.rotation + factor * rotFactor;
+                 } else {
+                     aSprite.rotation = aSprite.rotation + diff;
+                 }
+             }
+             else 
+             {
+                 aSprite.rotation = aSprite.rotation - (dt * aSprite.speed);
+             }
+             aSprite.scale = aSprite.scale + (dt * scaleFactor);
+        } forKey:@"SpiralOutCounterClockwiseAndAttack"];
+        
+        [blockDict setObject:^(ccTime dt, GDBasicSprite* aSprite)
+         {
+             float scaleFactor = 0.1;
+             if (aSprite.scale >= 2.0)
+             {
+                 aSprite.dead = YES;
+             }
+             if (aSprite.scale > 0.25)
+             {
+                 float playerRot = [Z1Player sharedPlayer].sprite.rotation;
+                 float enemyRot = aSprite.rotation;
+                 if (playerRot > 270.0 && enemyRot < 100.0)
+                 {
+                     enemyRot = enemyRot + 360;
+                     //NSLog(@"p:%f e:%f escort +", playerRot, enemyRot);
+                 }
+                 if (playerRot < 100.0 && enemyRot > 270.0)
+                 {
+                     //NSLog(@"p:%f e:%f escort -", playerRot, enemyRot);
+                     enemyRot = enemyRot - 360;
+                 }
+                 float diff = playerRot - enemyRot;
+                 
+                 float rotFactor = aSprite.speed * dt;
+                 if (diff > 45)
+                 {
+                     rotFactor = aSprite.speed * 2 * dt;
+                 }
+                 float factor = (diff < 0.0) ? -1.0 : 1.0;
+                 
+                 if (abs(diff) > rotFactor)
+                 {
+                     // rotate 70
+                     aSprite.rotation = aSprite.rotation + factor * rotFactor;
+                 } else {
+                     aSprite.rotation = aSprite.rotation + diff;
+                 }
+             }
+             else 
+             {
+                 aSprite.rotation = aSprite.rotation + (dt * aSprite.speed);
+             }
+             aSprite.scale = aSprite.scale + (dt * scaleFactor);
+             
+         } forKey:@"SpiralOutClockwiseAndAttack"];
+        
         // log the names of the animations
         /*for (NSString* aKey in [blockDict keyEnumerator]) 
         {

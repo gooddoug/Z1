@@ -40,23 +40,17 @@
         //[[GDSoundsManager sharedSoundsManager] playSoundForName:@"junivision"];
         
         CGSize size = [[CCDirector sharedDirector] winSize];
-		CCSprite* background = [CCSprite spriteWithFile:@"main-menu-night.png"];
+		CCSprite* background = [CCSprite spriteWithFile:@"saga-screen.png"];
         background.position = ccp(size.width / 2.0, size.height /2);
         [self addChild:background z:0];
         
-        CCNode* textNode = [CCNode node];
-        CCSprite* textBackground = [CCSprite spriteWithFile:@"black_background.png"];
-        textNode.contentSize = textBackground.contentSize;
-        [textNode addChild:textBackground z:0];
         NSString* textPath = [[NSBundle mainBundle] pathForResource:@"saga" ofType:@"txt"];
         NSString* text = [NSString stringWithContentsOfFile:textPath encoding:NSUTF8StringEncoding error:nil];
         CCLabelTTF* textLabel = [CCLabelTTF labelWithString:text fontName:@"Lucida Grande" fontSize:18];
-        //textLabel.position = ccp(textNode.contentSize.width / 2, textNode.contentSize.height / 2);
-        [textNode addChild:textLabel z:2];
         
-        textNode.position = ccp(724, size.height / 2);
+        textLabel.position = ccp(size.width / 2, (size.height / 2) - 70);
         
-        [self addChild:textNode];
+        [self addChild:textLabel];
         
         // add press any key label
         CCLabelTTF* pressKeyLabel = [CCLabelTTF labelWithString:@"Press any key" fontName:@"Helvetica" fontSize:48];

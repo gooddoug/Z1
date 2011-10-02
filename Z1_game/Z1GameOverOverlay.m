@@ -16,7 +16,7 @@
 
 @implementation Z1GameOverOverlay
 
-@synthesize showing;
+@synthesize showing, waiting;
 
 - (id) initAndFinsihed:(BOOL)finished
 {
@@ -24,6 +24,7 @@
     {
         [[GDSoundsManager sharedSoundsManager] playMusicForSceneNamed:@"gameOver"];
         self.isKeyboardEnabled = YES;
+        self.waiting = YES;
         float xOffset = 15.0;
         float yOffset = 15.0;
         for (int x = 0; x < X_SQUARES; x++) 
@@ -51,8 +52,20 @@
         
         CCFadeIn* fadeBackAction = [CCFadeIn actionWithDuration:2.0];
         CCDelayTime* delayBackAction = [CCDelayTime actionWithDuration:3.0];
-        [gameOverBackground runAction:[CCSequence actions:delayBackAction, fadeBackAction, nil]];
+        CCCallBlock* stopWaitingAction = [CCCallBlock actionWithBlock:^{
+            self.waiting = NO;
+        }];
+        [gameOverBackground runAction:[CCSequence actions:delayBackAction, fadeBackAction, stopWaitingAction, nil]];
         [self addChild:gameOverBackground];
+        
+        // add press any key label
+        CCLabelTTF* pressKeyLabel = [CCLabelTTF labelWithString:@"Press any key" fontName:@"Helvetica" fontSize:48];
+        pressKeyLabel.position = ccp(size.width / 2.0, 60.0);
+        pressKeyLabel.opacity = 0.0;
+        CCFadeIn* fadeAction = [CCFadeIn actionWithDuration:1.0];
+        CCDelayTime* delayAction = [CCDelayTime actionWithDuration:7.5];
+        [pressKeyLabel runAction:[CCSequence actions:delayAction, fadeAction, nil]];
+        [self addChild:pressKeyLabel z:10];
         
         if (finished)
         {
@@ -73,14 +86,13 @@
          
 - (BOOL) ccKeyDown:(NSEvent *)event
 {
-    if ([event keyCode] == 36 )
+    if (self.waiting)
+        return NO;
+    if(self.showing)
     {
-        if(self.showing)
-        {
-            self.showing = NO;
-            [(Z1GameScreen*)self.parent moveOn:self];
-            return YES;
-        }
+        self.showing = NO;
+        [(Z1GameScreen*)self.parent moveOn:self];
+        return YES;
     }
     return NO;
 }

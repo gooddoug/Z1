@@ -80,12 +80,16 @@
 {
     [_inputManager release];
     [_playerShots release];
+    [_playerSprite release];
+    [_spawners release];
     [_enemySprites release];
     [_effects release];
     [_levelDescription release];
     [_backgroundSprite release];
     [_postScripts release];
     [_scriptNodes release];
+    [_gameOverScreen release];
+    [_scoreLabel release];
     
     [super dealloc];
 }
@@ -163,8 +167,16 @@
 
 - (BOOL) ccKeyDown:(NSEvent *)event
 {
+    if (self.gameOverScreen.showing)
+    {
+        if (!self.gameOverScreen.waiting)
+        {
+            return [self.gameOverScreen ccKeyDown:event];
+        }
+    }
     if (self.started)
         return [self.inputManager handleKeyDown:event];
+    
     return NO;
 }
 
@@ -243,7 +255,7 @@
     if (self.inputManager.fire)
     {
         CGSize size = [[CCDirector sharedDirector] winSize];
-        GDPlayerShot* aShot = [GDPlayerShot shotAtRotation:self.playerSprite.rotation anchorPoint:ccp(0.5, 19.0)];
+        GDPlayerShot* aShot = [GDPlayerShot shotAtRotation:self.playerSprite.rotation anchorPoint:ccp(0.7, 19.0)]; // 0.7 allows for ofset of how big the ship is
         aShot.position = ccp( size.width /2 , size.height/2 );
         
         [self addChild:aShot z:10];
@@ -542,7 +554,7 @@
         [self nextScript:self];
     }];
     [destination runAction:[CCSequence actions:scale1Action, scale2Action, scale3Action, delayAction, endAction, nil]];
-    [self addChild:destination z:15];
+    [self addChild:destination z:8];
     //wait and zoom the player in...
     // TODO: Make this less clucky or find a way to do it with an easeOut model
     CCDelayTime* playerDelay = [CCDelayTime actionWithDuration:3.85];
